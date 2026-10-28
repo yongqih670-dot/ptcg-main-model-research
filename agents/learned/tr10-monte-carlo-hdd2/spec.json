@@ -1,0 +1,13 @@
+{
+  "id": "tr10-monte-carlo-hdd2",
+  "kind": "transformer_rl",
+  "path": "agents/learned/tr10-monte-carlo-hdd2",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+  "training_run_id": "20261027T094058Z_tr10-original-second-actual-counter_2063d8",
+  "training_config_sha256": "2663163eadf3f62391077675f751e21baf525d904ca6f35a8516c647e5886149",
+  "feature_schema": "full-inherited-blind-conditional-v3"
+}

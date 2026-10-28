@@ -1,0 +1,171 @@
+{
+  "at": "2026-10-28T05:24:01.837918+00:00",
+  "hypothesis_id": "TR12",
+  "authority": {
+    "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+    "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+  },
+  "parent_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "parent_full_state": {
+    "at": "2026-10-27T18:44:58.854683+00:00",
+    "requested_unique": 49166,
+    "actual_unique": 49173,
+    "new_unique_since_parent": 16391,
+    "full_state": {
+      "checkpoint": {
+        "path": "milestones/49166/checkpoint.pt",
+        "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+        "bytes": 46286389
+      },
+      "prefix": {
+        "path": "milestones/49166/archive-prefix.json",
+        "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+        "bytes": 810
+      }
+    },
+    "league_path": "milestones/49166/league.json",
+    "league_sha256": "66c67638414999df9a286dbd0d5787ff0c347e5071cd9cd34be6d3921a949c11",
+    "cursor": {
+      "version": 8,
+      "trained_decisions": 54914,
+      "next_series_id": 330
+    },
+    "pending": [],
+    "new_hypothesis_id": "TR11",
+    "contains_full_optimizer_and_all_RNG": true,
+    "not_promotion_evidence": true
+  },
+  "parent_actual_unique_decisions": 49173,
+  "parent_PPO_updates": 8,
+  "additional_actual_unique_decisions": 320768,
+  "absolute_unique_endpoint": 369941,
+  "training": {
+    "path": "configs/training/tr12_volume_320768.json",
+    "sha256": "8aa187712cf2e2771ca26e6b85bf597f3239ef42a8b7f9db95b74f16e24c595f"
+  },
+  "primary_evaluation": {
+    "path": "configs/evaluation/tr12_primary_template.json",
+    "sha256": "76f17efc177faa6666460bee7a7504f9655273e54897b5e486fe8e5096e972ec"
+  },
+  "secondary_evaluation": {
+    "path": "configs/evaluation/tr12_development_template.json",
+    "sha256": "5aeb4d99bbe0b9164165cbbebd6e520ca9b8a34f88bc9e1a5eca2adc1ef9d9d2"
+  },
+  "fixed_parent_spec": {
+    "path": "agents/learned/tr11-fixed-opponent/spec.json",
+    "sha256": "281b9560bb07ac29c8fe436c24a7eafc36cc6f245a30813491a3355152538633"
+  },
+  "release_anchor": {
+    "path": "research/opponents/release_anchor.json",
+    "sha256": "e50ade72d159608b06745f65c3a9cf3bfbdc321de34654cda4010f48f2ccd2de"
+  },
+  "opponent_manifest": {
+    "path": "research/opponents/development_TR12_frozen.json",
+    "sha256": "3b04490b3da83a77d27689c23942e0029eb11e48061fcaa14be789b4e73fe9bb"
+  },
+  "smoke": {
+    "series_count": 50,
+    "candidate": "completed_TR12_endpoint",
+    "reference": {
+      "kind": "public_rule",
+      "lineage": "dipam_unown_gradiant_ppo",
+      "archetype": "grass_acceleration",
+      "id": "ppo",
+      "path": "agents/public/ppo",
+      "weight": 0.25,
+      "files": {
+        "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+        "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+        "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+        "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+        "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+        "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+        "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+        "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+        "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+        "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+        "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+        "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+        "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+        "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+        "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+        "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+      },
+      "parameters": {
+        "_actor_seat_mode": "zero"
+      }
+    },
+    "seats": [
+      25,
+      25
+    ],
+    "policy_seed": 2026302800,
+    "purpose": "Reliability only; no score-based selection"
+  },
+  "limits": {
+    "project_total_GPU_job_hours_max": 120,
+    "project_total_CPU_job_hours_max": 60,
+    "new_phase_GPU_job_hours_max": 84,
+    "new_phase_CPU_job_hours_max": 12,
+    "new_hypothesis_combined_compute_hours_max": 96,
+    "all_new_phase_preparation_recovery_archival_and_evaluation_costs_count_toward_phase_limits": true,
+    "new_route_single_training_job_hours_max": 8,
+    "new_route_single_evaluation_job_hours_max": 6,
+    "scope_of_runtime_overrides": "Only the newly registered phase and its explicitly hash-bound jobs; not a global relaxation of old job deadlines.",
+    "new_phase_research_raw_runs_max": 20,
+    "new_phase_training_research_raw_runs_max": 16,
+    "new_phase_evaluation_research_raw_runs_max": 4,
+    "project_research_raw_runs_max": 64,
+    "existing_stage_baseline_raw_runs_unchanged": 10,
+    "existing_stage_new_raw_runs_max": 54,
+    "existing_stage_regular_raw_runs_max": 48,
+    "existing_stage_final_raw_runs_reserved": 6,
+    "additional_diagnostic_hypotheses_authorized": 1,
+    "diagnostic_hypotheses_total_max": 3,
+    "existing_stage_hypotheses_total_max_unchanged": 12,
+    "unused_extra_global_capacity_does_not_authorize_another_hypothesis": true,
+    "local_project_artifacts_GiB_max": 120,
+    "local_project_artifacts_warning_GiB": 100,
+    "local_disk_free_GiB_min_unchanged": 20,
+    "server_total_owned_project_GiB_max": 80,
+    "server_owned_project_warning_GiB": 64,
+    "server_write_filesystem_free_GiB_min_unchanged": 20,
+    "server_capacity_includes_retained_readonly_HDD1_copy": true,
+    "server_storage_override_requires_fresh_owner_realpath_mount_and_capacity_verification": true,
+    "final_reserves_unchanged": {
+      "research_raw_runs": 6,
+      "GPU_job_hours": 8,
+      "CPU_job_hours": 12
+    }
+  },
+  "retry_contract": {
+    "planned_segments_are_one_continuous_scientific_experiment": true,
+    "new_raw_run_is_charged_when_existing_runner_semantics_assign_a_new_research_run_id": true,
+    "same_raw_job_total_attempts_max": 3,
+    "zero_update_startup_retries_per_registered_job_max": 2,
+    "zero_update_startup_total_starts_per_registered_job_max": 3,
+    "zero_update_startup_repair_seconds_per_registered_job_max": 1800,
+    "zero_update_startup_repair_seconds_total_new_phase_max": 10800,
+    "startup_repair_time_is_inside_phase_GPU_CPU_combined_caps": true,
+    "bounded_engineering_acceptance_seconds_per_registered_job_max": 1800,
+    "same_failure_after_two_repairs_requires_root_cause_review_before_another_start": true,
+    "no_parallel_jobs_or_unknown_state_relaunch": true,
+    "each_start_requires_verified_prior_job_terminal_identity_and_current_resource_admission": true,
+    "retry_and_segment_deadlines": "Never extend an already-issued absolute job deadline. After verified termination, issue a new preregistered continuation ticket only within the remaining forward phase/run budget. Carry all previous charges, successful updates, pending samples and RNG forward.",
+    "any_positive_update_requires_latest_complete_state_recovery": true,
+    "checkpoint_interval_seconds_max_unchanged": 600,
+    "reliable_recovery_points_min_unchanged": 2,
+    "archive_optimization": "Reuse complete hash-verified existing archives and immutable objects where the route permits. Verify relevant differential behavior before using a changed transfer/ACK/backpressure route. No repeated full migration solely to amend budgets.",
+    "eviction": "Only exact owned objects with complete verified local archive ACKs and no live recovery references may be retired. Never drop failed-game evidence or unarchived unique data.",
+    "limits_are_caps_not_required_spend": true,
+    "stop_on_target_and_finish_evaluation_without_spending_unused_budget": true
+  },
+  "same_scientific_settings_except_training_volume": true,
+  "all_prior_results_attempts_and_costs_retained": true,
+  "final_holdout_access_authorized": false,
+  "no_intermediate_endpoint_selection": true,
+  "no_automatic_promotion": true,
+  "source_hash_binding_required_before_first_training": true,
+  "route_acceptance_required_before_training": true
+}

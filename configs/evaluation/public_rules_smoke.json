@@ -1,0 +1,57 @@
+{
+  "series_count": 18,
+  "policy_seed": 2026102301,
+  "save_all_replays": true,
+  "primary_change": "Reviewed public rule runtime adapter with distinct decks and per-seat state",
+  "success_criteria": "18 complete official BO3, both seats, zero invalid/error/timeout; static deck audit passes",
+  "matchups": [
+    {
+      "cell_id": "lucario-vs-alakazam",
+      "candidate": {
+        "id": "lucario",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario"
+      },
+      "reference": {
+        "id": "alakazam",
+        "kind": "public_rule",
+        "path": "agents/public/alakazam",
+        "lineage": "woominyo_alakazam"
+      },
+      "series_count": 6
+    },
+    {
+      "cell_id": "lucario-vs-archaludon",
+      "candidate": {
+        "id": "lucario",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario"
+      },
+      "reference": {
+        "id": "archaludon",
+        "kind": "public_rule",
+        "path": "agents/public/archaludon",
+        "lineage": "masami_archaludon"
+      },
+      "series_count": 6
+    },
+    {
+      "cell_id": "alakazam-vs-archaludon",
+      "candidate": {
+        "id": "alakazam",
+        "kind": "public_rule",
+        "path": "agents/public/alakazam",
+        "lineage": "woominyo_alakazam"
+      },
+      "reference": {
+        "id": "archaludon",
+        "kind": "public_rule",
+        "path": "agents/public/archaludon",
+        "lineage": "masami_archaludon"
+      },
+      "series_count": 6
+    }
+  ]
+}

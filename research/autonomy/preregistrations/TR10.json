@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-27T07:38:41.786248+00:00",
+  "hypothesis_id": "TR10",
+  "research": true,
+  "final": false,
+  "diagnostic": true,
+  "max_raw_runs": 4,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "d93ed43ebde7e753ce8cc291564dda9bfe281fddd76bed34c161cd3077bf55ef",
+    "af90e80669a74bd25ce16ce0d36f66c40a59fdf37354ca292a7a11a5768645ce",
+    "27eef8521891ef848fcdf461e73c0072972bd34e68abf8064b9ffd606933abee"
+  ],
+  "single_primary_change": "gae_lambda:0.95->1.0",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_attempts_max": 2,
+  "training_wall_seconds_max": 14400,
+  "training_attempt_seconds_max": 7200,
+  "hypothesis_compute_hours_max": 8,
+  "first_raw_training_run_attempts_max": 1,
+  "continuation_rule": "At most one original second with complete model/optimizer/allRNG/pending/fullhistory, exact first terminal proof and cumulativetime. No third/freshrepeat/renamedcontinuation. Route must explicitly admit this new diagnostic before recovery.",
+  "evaluation_template_path": "research/autonomy/preregistrations/TR10-screen-template.json",
+  "evaluation_template_sha256": "e775e65e52bd9b150716fbfd80d13b4adeb513af716d2c74eed82a92a1afc96d",
+  "evaluation_manifest": {
+    "path": "research/opponents/development_TR10_eight.json",
+    "sha256": "00d6826f1ee123687b733650ff37d5c186606305c351e7e466560cf159fbfe8e"
+  },
+  "proposal": {
+    "path": "research/proposals/transformer_rl_v3/TR10_MONTE_CARLO_DIAGNOSTIC.json",
+    "sha256": "9cc60b8158ac25b82f9529fe191ee8745b43365b27ca667ee23d635e44fd43f6"
+  },
+  "config_binding_amendments": "Only completed model spec/hash, exact second-attempt recovery binding or independent evaluation-stage counts/seed from this protocol. No primary variable or deadline relaxation.",
+  "screen_total_BO3": 480,
+  "confirmation_total_BO3": 1600,
+  "screen_BO3_per_arm": 240,
+  "confirmation_BO3_per_arm": 800,
+  "original_four_subpanel_weights_unchanged": true,
+  "confirmation_trigger": "Both original4 and full8 independent screen gain CI lower>0; no posthoc extension.",
+  "local_storage_plan_gib": {
+    "current": 57.40335922129452,
+    "growth_forecast": 1.0,
+    "protected_future_margin": 0.25,
+    "hard_max": 60
+  },
+  "no_final_pool_access_or_threshold_change": true,
+  "valid_hypothesis_requires_complete_training_and_planned_evaluation": true,
+  "updated_at": "2026-10-27T09:39:29.446255+00:00",
+  "original_second_recovery_binding": {
+    "path": "research/autonomy/engineering/TR10-original-second-route-review-20261027.json",
+    "sha256": "6d0f2926a035b9c43988b874a9cc686eb721af858cf94fbc60cb865b180a2866"
+  },
+  "actual_decision_accounting": "unique_successful_first_epoch_coverage_v1",
+  "accounting_correction_scope": "Forward fix of implementation overcount, preserves all original evidence/costs/attempts/stops. Target32768 actually trained unique decisions unchanged; no wall or run extension.",
+  "original_preregistration_preserved": {
+    "path": "research/autonomy/engineering/TR10-original-preregistration-before-second-preserved.json",
+    "sha256": "50375abbcbe418eb065757ef379b8fa440d52720fd152ade732ea8fc9f6d3527"
+  },
+  "bindings": [
+    {
+      "at": "2026-10-27T10:49:39.873244+00:00",
+      "previous_preregistration_sha256": "c1327664ae38c3aca3441502ddcd51bac8cf2eabd452702ef5f1317984d02d03",
+      "config_path": "configs/evaluation/tr10_screen.json",
+      "config_sha256": "a6a2bb5cfc524a010d903a40e6f9fc9edd8b056f54b82b9f28f591464c2a5107",
+      "reason": "Resolve completed training artifact only into unchanged precommitted screen template"
+    }
+  ]
+}

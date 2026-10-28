@@ -1,0 +1,450 @@
+[
+  {
+    "agent": "alakazam",
+    "cards": 60,
+    "failures": [],
+    "composition": [
+      {
+        "id": 131,
+        "name": "Duskull",
+        "count": 3
+      },
+      {
+        "id": 132,
+        "name": "Dusclops",
+        "count": 2
+      },
+      {
+        "id": 133,
+        "name": "Dusknoir",
+        "count": 2
+      },
+      {
+        "id": 741,
+        "name": "Abra",
+        "count": 3
+      },
+      {
+        "id": 109,
+        "name": "Abra",
+        "count": 1
+      },
+      {
+        "id": 742,
+        "name": "Kadabra",
+        "count": 4
+      },
+      {
+        "id": 743,
+        "name": "Alakazam",
+        "count": 3
+      },
+      {
+        "id": 235,
+        "name": "Budew",
+        "count": 1
+      },
+      {
+        "id": 343,
+        "name": "Shaymin",
+        "count": 1
+      },
+      {
+        "id": 140,
+        "name": "Fezandipiti ex",
+        "count": 1
+      },
+      {
+        "id": 1225,
+        "name": "Hilda",
+        "count": 4
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 4
+      },
+      {
+        "id": 1428,
+        "name": "Gwynn",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 1
+      },
+      {
+        "id": 1079,
+        "name": "Rare Candy",
+        "count": 3
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1086,
+        "name": "Buddy-Buddy Poffin",
+        "count": 3
+      },
+      {
+        "id": 1144,
+        "name": "Strange Timepiece",
+        "count": 1
+      },
+      {
+        "id": 1413,
+        "name": "Special Red Card",
+        "count": 1
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 2
+      },
+      {
+        "id": 1129,
+        "name": "Sacred Ash",
+        "count": 1
+      },
+      {
+        "id": 1088,
+        "name": "Prime Catcher",
+        "count": 1
+      },
+      {
+        "id": 19,
+        "name": "Telepath Psychic Energy",
+        "count": 4
+      },
+      {
+        "id": 5,
+        "name": "Basic {P} Energy",
+        "count": 2
+      },
+      {
+        "id": 272,
+        "name": "Lillie’s Clefairy ex",
+        "count": 1
+      },
+      {
+        "id": 1081,
+        "name": "Enhanced Hammer",
+        "count": 2
+      },
+      {
+        "id": 1340,
+        "name": "Patrat",
+        "count": 1
+      },
+      {
+        "id": 305,
+        "name": "Dunsparce",
+        "count": 1
+      },
+      {
+        "id": 66,
+        "name": "Dudunsparce",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "agent": "archaludon",
+    "cards": 60,
+    "failures": [],
+    "composition": [
+      {
+        "id": 169,
+        "name": "Duraludon",
+        "count": 4
+      },
+      {
+        "id": 190,
+        "name": "Archaludon ex",
+        "count": 4
+      },
+      {
+        "id": 666,
+        "name": "Cinderace",
+        "count": 4
+      },
+      {
+        "id": 1244,
+        "name": "Full Metal Lab",
+        "count": 4
+      },
+      {
+        "id": 57,
+        "name": "Relicanth",
+        "count": 1
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 4
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 4
+      },
+      {
+        "id": 1122,
+        "name": "Pokégear 3.0",
+        "count": 4
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 3
+      },
+      {
+        "id": 1147,
+        "name": "Jumbo Ice Cream",
+        "count": 4
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 4
+      },
+      {
+        "id": 1185,
+        "name": "Explorer’s Guidance",
+        "count": 4
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 8,
+        "name": "Basic {M} Energy",
+        "count": 11
+      }
+    ]
+  },
+  {
+    "agent": "lucario",
+    "cards": 60,
+    "failures": [],
+    "composition": [
+      {
+        "id": 6,
+        "name": "Basic {F} Energy",
+        "count": 14
+      },
+      {
+        "id": 673,
+        "name": "Makuhita",
+        "count": 2
+      },
+      {
+        "id": 674,
+        "name": "Hariyama",
+        "count": 2
+      },
+      {
+        "id": 675,
+        "name": "Lunatone",
+        "count": 2
+      },
+      {
+        "id": 676,
+        "name": "Solrock",
+        "count": 3
+      },
+      {
+        "id": 677,
+        "name": "Riolu",
+        "count": 4
+      },
+      {
+        "id": 678,
+        "name": "Mega Lucario ex",
+        "count": 4
+      },
+      {
+        "id": 1102,
+        "name": "Dusk Ball",
+        "count": 4
+      },
+      {
+        "id": 1123,
+        "name": "Switch",
+        "count": 2
+      },
+      {
+        "id": 1141,
+        "name": "Premium Power Pro",
+        "count": 4
+      },
+      {
+        "id": 1142,
+        "name": "Fighting Gong",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1159,
+        "name": "Hero’s Cape",
+        "count": 1
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1192,
+        "name": "Carmine",
+        "count": 3
+      },
+      {
+        "id": 1197,
+        "name": "Xerosic’s Machinations",
+        "count": 2
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 1252,
+        "name": "Gravity Mountain",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "agent": "ppo",
+    "cards": 60,
+    "failures": [],
+    "composition": [
+      {
+        "id": 96,
+        "name": "Teal Mask Ogerpon ex",
+        "count": 4
+      },
+      {
+        "id": 92,
+        "name": "Applin",
+        "count": 2
+      },
+      {
+        "id": 93,
+        "name": "Dipplin",
+        "count": 2
+      },
+      {
+        "id": 150,
+        "name": "Hydrapple ex",
+        "count": 2
+      },
+      {
+        "id": 917,
+        "name": "Chikorita",
+        "count": 2
+      },
+      {
+        "id": 709,
+        "name": "Bayleef",
+        "count": 2
+      },
+      {
+        "id": 710,
+        "name": "Meganium",
+        "count": 2
+      },
+      {
+        "id": 1071,
+        "name": "Meowth ex",
+        "count": 2
+      },
+      {
+        "id": 140,
+        "name": "Fezandipiti ex",
+        "count": 1
+      },
+      {
+        "id": 920,
+        "name": "Tapu Bulu",
+        "count": 1
+      },
+      {
+        "id": 1227,
+        "name": "Lillie's Determination",
+        "count": 4
+      },
+      {
+        "id": 1231,
+        "name": "Dawn",
+        "count": 2
+      },
+      {
+        "id": 1182,
+        "name": "Boss’s Orders",
+        "count": 2
+      },
+      {
+        "id": 1184,
+        "name": "Lana’s Aid",
+        "count": 1
+      },
+      {
+        "id": 1213,
+        "name": "Judge",
+        "count": 1
+      },
+      {
+        "id": 1121,
+        "name": "Ultra Ball",
+        "count": 4
+      },
+      {
+        "id": 1094,
+        "name": "Bug Catching Set",
+        "count": 4
+      },
+      {
+        "id": 1080,
+        "name": "Unfair Stamp",
+        "count": 1
+      },
+      {
+        "id": 1261,
+        "name": "Forest of Vitality",
+        "count": 4
+      },
+      {
+        "id": 1152,
+        "name": "Poké Pad",
+        "count": 2
+      },
+      {
+        "id": 1097,
+        "name": "Night Stretcher",
+        "count": 1
+      },
+      {
+        "id": 1,
+        "name": "Basic {G} Energy",
+        "count": 14
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-25T21:20:05.033016+00:00",
+  "hypothesis_id": "TR06",
+  "classification": "invalid",
+  "promotion_eligible": false,
+  "reason": "Original2attempts consumed: preSSHNameError then realWindows archive MAX_PATH failure. Target32768 notcompleted, nooptimization.",
+  "complete_BO3": 4,
+  "untrained_recoverable_decisions": 578,
+  "trained_decisions": 0,
+  "PPO_updates": 0,
+  "actual_training_seconds": 420.82800000021234,
+  "attempts_remaining": 0,
+  "full_archive_run_id": "20261025T211209Z_tr06-archive_5deb4f",
+  "analysis": {
+    "path": "runs/20261025T211751Z_win-archive-check_3e0eaf/analysis.json",
+    "sha256": "9d751afb724dbcddebef72927200cf144d2d15a1a336cb7a5de551a4612c01ec"
+  },
+  "actual_archive_repair": {
+    "path": "runs/20261025T211751Z_win-archive-check_3e0eaf/metrics.json",
+    "sha256": "7ac86d5b693a33c43d12c7f6ee0d91f899865482de2fb7f5090b63ff518983ce"
+  },
+  "entropy_effect": null,
+  "valid_hypothesis_and_no_promotion_counts_remain": 3,
+  "all_original_fees_attempts_and_stops_retained": true,
+  "champion_and_release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_accessed": false,
+  "no_third_or_renamed_TR06_continuation": true
+}

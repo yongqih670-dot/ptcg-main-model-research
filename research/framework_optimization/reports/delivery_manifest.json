@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "delivered_at": "2026-10-28T10:23:33.972458+00:00",
+  "files": [
+    {
+      "path": "baseline/ptcg_lab/archive_barrier.py",
+      "sha256": "0b1f18e362f52baf9c7e6277d338c02529d8b6b87e2b4c8c8c8cf3db8d00d9a1",
+      "bytes": 4189
+    },
+    {
+      "path": "baseline/ptcg_lab/checkpoint_refs.py",
+      "sha256": "b76213dfd17598e66dd807165cf13fc1473858d9c2d18a0b31a7fdaaba3ec264",
+      "bytes": 9777
+    },
+    {
+      "path": "baseline/ptcg_lab/rl_collector.py",
+      "sha256": "3821bcbd8b4dc69468f0766b284f4ad30c57a5cc4fbf7bf35886f24e89a52547",
+      "bytes": 5449
+    },
+    {
+      "path": "baseline/ptcg_lab/rl_core.py",
+      "sha256": "b062f42f3040a8f870ead2c8e2a099d4e3ef4190718fea00abc7925eac5952dd",
+      "bytes": 10459
+    },
+    {
+      "path": "baseline/ptcg_lab/rl_sampling.py",
+      "sha256": "c315109d45071a421b5ee26a8ab761e5e248104b57b26ddd6d214617529d25aa",
+      "bytes": 2241
+    },
+    {
+      "path": "baseline/ptcg_lab/sampling_parity.py",
+      "sha256": "2bd68380e80ca0531a930ea0384e645978a5100d8584859533958e07f9b59620",
+      "bytes": 2548
+    },
+    {
+      "path": "baseline/ptcg_lab/train_ppo.py",
+      "sha256": "5bc6d793e0481aba5d623adf6865fdbdc2c7dcbd7c0c2dbd53aedf97c8cfeaf3",
+      "bytes": 22626
+    },
+    {
+      "path": "baseline/ptcg_lab/training_checkpoint.py",
+      "sha256": "1fba2c67dd6885ca42c49d124c933770dec67cf440ce63289a789c40aa3ae1fe",
+      "bytes": 4858
+    },
+    {
+      "path": "baseline/research/prototypes/batched_actor_v1/conditional_batch.py",
+      "sha256": "98057ebe7e78f0cc4ebfda1b5e633e6d32c93dd53cb10827520c9f08434b52cd",
+      "bytes": 5809
+    },
+    {
+      "path": "benchmarks/analyze_logs.py",
+      "sha256": "c97eb9747a52572c4c106db82ab936509e259c046b24507e33c3a4c6f8d484a3",
+      "bytes": 4152
+    },
+    {
+      "path": "benchmarks/bench_packed.py",
+      "sha256": "0ab3b9177c19df771bc0e9725da5e959f49787a945d6689e864260f7af5b184a",
+      "bytes": 3425
+    },
+    {
+      "path": "benchmarks/bench_publication.py",
+      "sha256": "434b368df55832d6452a576962ab516e24bc8a18b37cd1217b89dca902d4647e",
+      "bytes": 2575
+    },
+    {
+      "path": "benchmarks/common.py",
+      "sha256": "74f20c5d4dff66681979d8b08636df2de316549b751b15881bb0ffa2f5e0a99c",
+      "bytes": 1964
+    },
+    {
+      "path": "benchmarks/cpu_acceptance.py",
+      "sha256": "83854f7a98322f70a7c11079c32ee48824eb55dac44333dde1d7a5be82a1a371",
+      "bytes": 7131
+    },
+    {
+      "path": "benchmarks/hardware_acceptance.py",
+      "sha256": "19b969b4eac41995927590388cf3b8b04f82170306436e40e2ca7ab6c54b5dbc",
+      "bytes": 9770
+    },
+    {
+      "path": "benchmarks/verify_delivery.py",
+      "sha256": "a54c9a9b03b54db4f774e2ddab5e64bcbc7d444507eebb855bf4f963e4735181",
+      "bytes": 1946
+    },
+    {
+      "path": "patches/checkpoint-publication.diff",
+      "sha256": "b87f2652b038fea1ccd93b656c70b53889f454b119d800a711cc404f9e3e4ea7",
+      "bytes": 3370
+    },
+    {
+      "path": "patches/ppo-injection.diff",
+      "sha256": "b9a0026bfd5bf8c17c19913632a29e5f5ab876dd0474d811ff65eb921f2d3705",
+      "bytes": 2797
+    },
+    {
+      "path": "PLAN_20261028.md",
+      "sha256": "aca9700e57a0971636188d430206a71c5ceccd6e5219faeef026ea05af88aae1",
+      "bytes": 11743
+    },
+    {
+      "path": "README.md",
+      "sha256": "1bfbe88ef52c13fb3909d008e486fee7a3426f3926532bcb4c1d14612ee73a79",
+      "bytes": 11733
+    },
+    {
+      "path": "reports/acceptance_requirements.json",
+      "sha256": "3af8ef4b20c4003fbf13a7f55952573b49ef9e90e0b2bb15ed6ce477fac13107",
+      "bytes": 2641
+    },
+    {
+      "path": "reports/baseline.json",
+      "sha256": "f2f11746847cc8ed02458e677343bc0640285ac0e6128bee0654915393305460",
+      "bytes": 9070
+    },
+    {
+      "path": "reports/dependency_manifest.json",
+      "sha256": "a29b1223bfaa7c69a0266a5035db2fd7487477008628eeba007e0e999a12d1a1",
+      "bytes": 2925
+    },
+    {
+      "path": "reports/engineering_time.json",
+      "sha256": "1ea10c5b8800d3405a526032c2fcbd9ce038ec90f6ee1457722fc535b52cf41f",
+      "bytes": 636
+    },
+    {
+      "path": "reports/input_manifest.json",
+      "sha256": "09306369c23831cb8dab61745f077a81b3af5d91d00dc33e9fe0999f9c491305",
+      "bytes": 2977
+    },
+    {
+      "path": "reports/packed_benchmark.json",
+      "sha256": "3ecfae7c5f016efa85a0714cf4a76e1ec9fbe81c03093449dcfc1a7d4b763b58",
+      "bytes": 4136
+    },
+    {
+      "path": "reports/packed_benchmark_initial.json",
+      "sha256": "d4568d9091d47681ebee6b5afbf534ca352c36f2cbb87bf3f85ce710c585ec3a",
+      "bytes": 3024
+    },
+    {
+      "path": "reports/phase_trace.json",
+      "sha256": "6e971fdef7adf6297b83b252bccd2c8e435424abce34789ca33990870f7fc442",
+      "bytes": 2443
+    },
+    {
+      "path": "reports/publication_benchmark.json",
+      "sha256": "7bebee01ec7e71e88a5f1eac79f4fb7cc43fd97bee1dd7ec8e5d1be23d97d134",
+      "bytes": 1404
+    },
+    {
+      "path": "reports/real_gradient_parity.json",
+      "sha256": "a013a11410dc821ede345e400e78b0c77794bcd291ea99d6fbe4ce57b1f1560f",
+      "bytes": 343
+    },
+    {
+      "path": "reports/tests.json",
+      "sha256": "ab5042f57815579828817d6101dce6ca06b250e9e30192c5d0a8eef08cb12889",
+      "bytes": 2957
+    },
+    {
+      "path": "reports/tests.txt",
+      "sha256": "a33f45b7b445cc3154a7c2aa1a07319aecdd978a8fe6f060135ac90db03942e5",
+      "bytes": 11619
+    },
+    {
+      "path": "source/fo/__init__.py",
+      "sha256": "e6d4db47a6787beda1e4d01a6498c84adc0db9337a2525e90d8a9a38240d1c19",
+      "bytes": 87
+    },
+    {
+      "path": "source/fo/archive_queue.py",
+      "sha256": "1a55d2784e93576bef2b001df97c7a230304ec960ab59bc36dde0deb4926a7ff",
+      "bytes": 4789
+    },
+    {
+      "path": "source/fo/backend.py",
+      "sha256": "e900fbf3f9418bf2dd744b2784b37f6e5bf8685528ce751fe370cef31bdd0b44",
+      "bytes": 1140
+    },
+    {
+      "path": "source/fo/checkpoint_refs.py",
+      "sha256": "d8a09b94396273c6be57830b1bf67df26451f4cdfb9b1c4765e2e65a7a620b30",
+      "bytes": 10205
+    },
+    {
+      "path": "source/fo/conditional_batch.py",
+      "sha256": "98057ebe7e78f0cc4ebfda1b5e633e6d32c93dd53cb10827520c9f08434b52cd",
+      "bytes": 5809
+    },
+    {
+      "path": "source/fo/coordinator.py",
+      "sha256": "61e3bca3fe3951cf370861d8b84be3b7517d7fa4ed587ac2728ffb418606c44d",
+      "bytes": 10664
+    },
+    {
+      "path": "source/fo/immutable_link.py",
+      "sha256": "e8546f68afdab56934c64b89fbf9d831dc4eba99f870c4348fc40f3d26a02dbc",
+      "bytes": 1428
+    },
+    {
+      "path": "source/fo/packed.py",
+      "sha256": "f8049d41b53663639854cceb9e8ce7b55b22d88bd94d6c827cf371b70d890016",
+      "bytes": 5030
+    },
+    {
+      "path": "source/fo/ppo.py",
+      "sha256": "ae9ebfa8bfcb023e40fa3363a29064deae193956b93bfef965e72c270920729d",
+      "bytes": 4008
+    },
+    {
+      "path": "source/fo/precision.py",
+      "sha256": "551a6d028a69d5320a581871fca287f918e91c3f28753cfe08b8334c5a2a2796",
+      "bytes": 2149
+    },
+    {
+      "path": "source/fo/profile_window.py",
+      "sha256": "9765952fae1b75d55361b79ba89bb8d3e9c689ca6479171939d52ba93c7c10aa",
+      "bytes": 2639
+    },
+    {
+      "path": "source/fo/timing.py",
+      "sha256": "678af922529e4cefe581dc7c82193ee353933e1593b3d077173696c9bcaf5b5c",
+      "bytes": 2636
+    },
+    {
+      "path": "tests/test_candidates.py",
+      "sha256": "86a2517c5eed640dad0464be1bc1da777b39b2db2ca11e870e9267f6ac8c1539",
+      "bytes": 16197
+    }
+  ],
+  "baseline_source_drift": [],
+  "local_delivery_bytes": 239518,
+  "local_physical_free_bytes": 166465474560,
+  "protected_original_source_files_unchanged": true,
+  "production_route_integrated": false,
+  "hardware_acceptance_performed": false,
+  "tests_passed": true,
+  "test_count": 65,
+  "actual_source_snapshot_count": 9,
+  "post_test_metadata_only_edit": {
+    "path": "benchmarks/bench_publication.py",
+    "change": "Report actual platform and pacing status on the future Linux payload; numerical measurement code unchanged.",
+    "syntax_checked": true
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "at": "2026-10-27T19:09:20.323121+00:00",
+  "hypothesis": "TR11",
+  "classification": "inconclusive",
+  "learning_signal_passed": false,
+  "promotion_eligible": false,
+  "overall_research_success": false,
+  "current_diagnostic_complete": true,
+  "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "training_attempts_used": 2,
+  "training_attempt_cap": 3,
+  "hypothesis_research_raw_used": 3,
+  "hypothesis_raw_cap": 4,
+  "counts": {
+    "new_complete_BO3": 108,
+    "new_complete_games": 282,
+    "new_sampled_decisions": 19492,
+    "new_actual_unique_PPO_decisions": 16391,
+    "new_PPO_updates": 3,
+    "unique_PPO_trained_decisions": 49173
+  },
+  "inherited_parent_decisions_not_recounted": 32782,
+  "optimizer_minibatch_updates": 110,
+  "gradient_health_passed": true,
+  "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+  "model_spec": "agents/learned/tr11-fixed-opponent/spec.json",
+  "parent_score": 0.535,
+  "endpoint_score": 0.5575,
+  "contrast": {
+    "gain": 0.0225,
+    "ci95": [
+      -0.04749999999999999,
+      0.09250000000000003
+    ],
+    "bootstrap_seed": 231102,
+    "bootstrap_samples": 20000,
+    "method": "independent completeBO3 resampling on the single frozen legal training opponent"
+  },
+  "frozen_learning_gate": "gain>=0.05 and95%CI lower>0,400 fresh completeBO3 per arm,200/200seats each",
+  "reliability_smoke_BO3": 50,
+  "diagnostic_BO3": 800,
+  "diagnostic_reliability": {
+    "errors": 0,
+    "invalid_actions": 0,
+    "timeouts": 0,
+    "internal_random_fallbacks": 0
+  },
+  "native_environment_seed_not_exposed": true,
+  "policy_seed_does_not_seed_native_games": true,
+  "no_additional_samples_or_model_selection": true,
+  "milestone_1_only_health_not_scored": true,
+  "scientific_interpretation": "Predeclared basic learning signal was not established on the single frozen legal opponent.",
+  "strength_limit": "A single training-opponent diagnosis cannot establish general strength or champion qualification.",
+  "evidence": {
+    "training_metrics": {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/metrics.json",
+      "sha256": "b9125d34d964c4c38ad23b9aadf8609efa5fd5611381158de7c682a0a4c29e17"
+    },
+    "terminal": {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-terminal.json",
+      "sha256": "a68c02bb150a6691b16589c3898d642aafbf42ad826a9dda2d1d9894adaf8f46"
+    },
+    "materialization": {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/hybrid-materialization.json",
+      "sha256": "cf4e20f7652a5a0498dc487cfd06688a17a0d022fe514015f23cc5e6a92013a1"
+    },
+    "actual_volume_audit": {
+      "path": "runs/20261027T185334Z_tr11-new-only-actual-volume_502795/metrics.json",
+      "sha256": "546e9e66239e3e97fcab5ab994b58009d26181c36ce7db0e764bb3f1ef334ac0"
+    },
+    "panel": {
+      "path": "runs/20261027T185516Z_tr11-fixed-parent-endpoint-800BO3_42d8ed/basic-learning-analysis.json",
+      "sha256": "4935dfba3b6b58944bca7cdbc2486697ae90a22d5c967d4edb7fc9b7fe05f732"
+    },
+    "smoke": {
+      "path": "runs/20261027T185356Z_tr11-fixed-50BO3-reliability_d5d93e/metrics.json",
+      "sha256": "b39e222741b8782f9680fd5e324cae24f7d6a3701886e64b598fec5986a8f1d1"
+    },
+    "failure_review": {
+      "path": "runs/20261027T185516Z_tr11-fixed-parent-endpoint-800BO3_42d8ed/failure-review.json",
+      "sha256": "c1b8a898ff311b69190a689f7fb99bddfed943a7f3bd4d7c065acf0366f01e1e"
+    }
+  },
+  "actual_project_unique_PPO_trained_decisions": 687865,
+  "actual_project_PPO_updates": 88,
+  "remaining_to_10M": 9312135,
+  "training_attempt_budget_evidence": {},
+  "budget_snapshot": {
+    "gpu_job_wall_hours": 23.02295702891669,
+    "cpu_job_wall_hours": 9.987923291916506,
+    "executed_research_experiments": 35,
+    "raw_replay_download_gib": 0.05754692666232586,
+    "new_workspace_artifacts_gib": 59.52138549275696,
+    "scope": "new_autonomous_research_cycle_only_existing_research_not_counted"
+  },
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "original_platform_Goal_remains_paused_and_incomplete": true,
+  "final_holdout_used": false,
+  "Kaggle_submitted": false,
+  "next_action": "No next hypothesis/training/evaluation under exhausted diagnostic allowance. Retain full evidence and wait for explicit revised research authorization."
+}

@@ -1,0 +1,184 @@
+{
+  "at": "2026-10-27T11:09:54.574997+00:00",
+  "hypothesis": "TR10",
+  "classification": "inconclusive",
+  "promotion_eligible": false,
+  "original_current_tasks_complete": true,
+  "overall_research_success": false,
+  "pause_requested_by_user": true,
+  "training_counts": {
+    "complete_BO3": 221,
+    "complete_games": 552,
+    "sampled_decisions": 35422,
+    "unique_PPO_trained_decisions": 32782,
+    "PPO_updates": 5
+  },
+  "PPO_optimizer_minibatch_updates": 232,
+  "training_attempts_used": 2,
+  "training_attempts_remaining": 0,
+  "training_wall_seconds": 10548.655999999988,
+  "model_sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+  "model_spec": "agents/learned/tr10-monte-carlo-hdd2/spec.json",
+  "full_eight": {
+    "candidate_score": 0.6541666666666667,
+    "anchor_score": 0.6458333333333334,
+    "gain": 0.008333333333333331,
+    "ci95": [
+      -0.06666666666666665,
+      0.08333333333333333
+    ],
+    "bootstrap_samples": 20000,
+    "method": "opponent-stratified independent complete BO3 resampling",
+    "weights": [
+      {
+        "candidate_cell": "candidate-vs-lucario",
+        "anchor_cell": "anchor-vs-lucario",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-alakazam",
+        "anchor_cell": "anchor-vs-alakazam",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-archaludon",
+        "anchor_cell": "anchor-vs-archaludon",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-ppo",
+        "anchor_cell": "anchor-vs-ppo",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-tr01-ppo",
+        "anchor_cell": "anchor-vs-tr01-ppo",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-tr02-ppo",
+        "anchor_cell": "anchor-vs-tr02-ppo",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-tr03-ppo",
+        "anchor_cell": "anchor-vs-tr03-ppo",
+        "weight": 0.125
+      },
+      {
+        "candidate_cell": "candidate-vs-tr09-epochs4-hdd2",
+        "anchor_cell": "anchor-vs-tr09-epochs4-hdd2",
+        "weight": 0.125
+      }
+    ]
+  },
+  "original_four": {
+    "candidate_score": 0.8583333333333334,
+    "anchor_score": 0.8166666666666667,
+    "gain": 0.04166666666666666,
+    "ci95": [
+      -0.04166666666666666,
+      0.12499999999999999
+    ],
+    "bootstrap_samples": 20000,
+    "method": "opponent-stratified independent complete BO3 resampling",
+    "weights": [
+      {
+        "candidate_cell": "candidate-vs-lucario",
+        "anchor_cell": "anchor-vs-lucario",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "candidate-vs-alakazam",
+        "anchor_cell": "anchor-vs-alakazam",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "candidate-vs-archaludon",
+        "anchor_cell": "anchor-vs-archaludon",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "candidate-vs-ppo",
+        "anchor_cell": "anchor-vs-ppo",
+        "weight": 0.25
+      }
+    ]
+  },
+  "screening_BO3": 480,
+  "screening_BO3_per_arm": 240,
+  "reliability_smoke_BO3": 50,
+  "candidate_reliability_BO3": 290,
+  "errors": 0,
+  "illegal_actions": 0,
+  "timeouts": 0,
+  "internal_random_fallbacks": 0,
+  "confirmation_triggered": false,
+  "confirmation_reason": "Both predeclared confidence intervals include zero; no additional1600BO3, posthoc extension or retuning.",
+  "scientific_interpretation": "No independent statistical evidence of improvement over the frozen anchor in either original4 or full8 panel. Opponent-specific gains are mixed; this does not establish an isolated causal lambda effect.",
+  "failure_review": {
+    "path": "runs/20261027T105441Z_tr10-independent-480BO3-screen_254cd1/failure-review.json",
+    "sha256": "f49b1151681b4761a0ad4c68561b4c26253d80de498224a59868ab586e1fecfb",
+    "reviewed_series": 16,
+    "public_observations": [
+      "Candidate series181 round2 ended with both sides one prize remaining and candidate deck count zero.",
+      "Candidate series363 lost both rounds with four and six prizes remaining; losses include large deficits as well as close endings.",
+      "No illegal actions, crashes, timeouts or internal random fallback explains the losses; public observations alone do not identify a causal defect."
+    ]
+  },
+  "evidence": {
+    "training_completion": {
+      "path": "research/autonomy/engineering/TR10-training-and-reliability-complete-20261027.json",
+      "sha256": "07f70d1986acf5ec21f9d90ec68a4934b791fcd6db774afe523a178d4421e52f"
+    },
+    "panel": {
+      "path": "runs/20261027T105441Z_tr10-independent-480BO3-screen_254cd1/panel-analysis.json",
+      "sha256": "a64e5c1f90b99599db8076d10936c3047548bec36e3da1c1d586d320566beccc"
+    },
+    "metrics": {
+      "path": "runs/20261027T105441Z_tr10-independent-480BO3-screen_254cd1/metrics.json",
+      "sha256": "883f7bc17c00fee39e8d59659363e7e39e44eefa8636e9507872fc4bcaea4195"
+    },
+    "candidate_spec": {
+      "path": "agents/learned/tr10-monte-carlo-hdd2/spec.json",
+      "sha256": "aa20472d1abd4e6b64f65487bd02697f93d9ddc1be9f1783b8595d5190f919eb"
+    },
+    "actual_volume_audit": {
+      "path": "runs/20261027T104620Z_actual-PPO-volume-audit_008f9d/metrics.json",
+      "sha256": "37aeeb8f4e12e4ac27003b30a19c49b340c77e653f4d7c9f815fd589caed3b73"
+    }
+  },
+  "actual_project_unique_PPO_trained_decisions": 671474,
+  "actual_project_PPO_updates": 85,
+  "remaining_to_10M": 9328526,
+  "old_legacy_ledger_preserved": {
+    "path": "research/autonomy/volume-revisions/actual-coverage-20261027/CURRENT_VOLUME.original.json",
+    "sha256": "17c37dcbbebef8207731c19b217a27e564d2d76cd8324c43a4431b02fd515e7a"
+  },
+  "gross_training_family_actual_decisions_per_second": 3.1076944778557607,
+  "same_unoptimized_route_10M_projected_GPU_job_hours": 893.83875975298,
+  "projection_is_not_budget_authorization": true,
+  "budget_snapshot": {
+    "gpu_job_wall_hours": 19.825504251138916,
+    "cpu_job_wall_hours": 9.325999732777621,
+    "executed_research_experiments": 32,
+    "raw_replay_download_gib": 0.05754692666232586,
+    "new_workspace_artifacts_gib": 59.91545910201967,
+    "scope": "new_autonomous_research_cycle_only_existing_research_not_counted"
+  },
+  "local_working_set_near_60GiB_resume_requires_capacity_plan": true,
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_holdout_used": false,
+  "Kaggle_submitted": false,
+  "uncompleted_final_gates": [
+    "10M training scale",
+    "Independent strength qualification",
+    "Second training seed",
+    "Final retained opponent pool",
+    "1000 candidate BO3 reliability",
+    "Actual local Linux CPU deployment",
+    "Kaggle selftest/20officialnonselftestBO3/rank verification"
+  ],
+  "next_action": "Wait for revised human requirements and explicit resume. No next hypothesis, training or evaluation."
+}

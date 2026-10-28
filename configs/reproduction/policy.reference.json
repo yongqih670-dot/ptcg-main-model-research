@@ -1,0 +1,487 @@
+{
+  "schema_version": 3,
+  "policy_version": "2026-10-28-v4-TR12-shared-wait-exempt",
+  "status": "active",
+  "competition_slug": "the-pokemon-company-ptcg-ai-battle-challenge-playground",
+  "timezone": "Asia/Shanghai",
+  "execution": {
+    "controller": "single_codex_goal_after_user_start",
+    "start_training_on_file_read": false,
+    "create_heartbeat_by_default": false,
+    "parallel_agents": false,
+    "max_concurrent_heavy_jobs": 1,
+    "cpu_workers_initial": 8,
+    "cpu_workers_max": 12,
+    "job_wall_hours_max": 2,
+    "hypothesis_compute_hours_max": 8,
+    "checkpoint_interval_minutes": 10,
+    "progress_interval_seconds": 60,
+    "external_research_minutes_per_question_max": 45,
+    "immutable_code_snapshot_per_run": true,
+    "same_failure_local_repairs_before_root_cause_review": 2,
+    "hybrid": {
+      "mode": "server_ppo_local_evaluation_and_archive",
+      "status": "active",
+      "server_workspace_target_gib": 64,
+      "server_workspace_hard_max_gib": 80,
+      "server_free_disk_reserve_gib": 20,
+      "initial_gpu_count": 1,
+      "preferred_physical_gpu_indices": [
+        6,
+        7
+      ],
+      "global_heavy_jobs_max": 1,
+      "local_ledger_is_authoritative": true,
+      "no_local_ppo_training": true,
+      "remote_training_requires_activation_and_recovery_acceptance": "staged_short_trial_after_basic_correctness; full_recovery_and_archive_before_long_unattended",
+      "shared_server_safety": {
+        "authorization_path": "research/autonomy/authorizations/shared-server-20261024.json",
+        "authorization_sha256": "ff920c33ae7371387c15122ecfb993ad6a6ac1d6344218308a71d44765c3df51",
+        "canonical_project_root": "SERVER_PROJECT_ROOT",
+        "require_os_uid_and_realpath_verification_for_all_writes": true,
+        "forbid_system_or_shared_environment_changes": true,
+        "forbid_sudo_reboot_bulk_kill": true,
+        "authorized_gpu_indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "maximum_concurrent_gpus": 1,
+        "gpu_idle_check_is_not_authorization": true,
+        "gpu_must_be_idle_at_start": true,
+        "initial_cpu_quota_cores": 2,
+        "initial_memory_max_gib": 32,
+        "initial_io_read_mib_per_second": 16,
+        "initial_io_write_mib_per_second": 16,
+        "io_guard_must_cover_descendants_and_stop_on_failure": false,
+        "all_guard_acceptance_required_before_installation_resume_or_training": false,
+        "kernel_io_controller_not_currently_delegated": true,
+        "application_io_guard_candidate_not_yet_verified": true,
+        "staged_execution": true,
+        "staged_authorization_path": "research/autonomy/activations/staged-server-20261024T164941/authorization.json",
+        "staged_authorization_sha256": "6687e332649578f8b09ec05ea71fb14862cd683887d77d3c33600d11e95cf420",
+        "hostwide_io_is_background_only": true,
+        "complete_io_entrypoint_refactor_required_before_install": false,
+        "installation_requires_directory_cpu_memory_disk_deadline_and_identity": true,
+        "short_training_trial_seconds_min": 300,
+        "short_training_trial_seconds_max": 600,
+        "short_training_trial_gpu_max": 1,
+        "short_training_trial_workers_max": 2,
+        "long_unattended_requires_full_recovery_and_archive_acceptance": true,
+        "cpu_quota_cores_max": 4,
+        "memory_max_gib_max": 62,
+        "per_GPU_resource_authorization": {
+          "path": "research/autonomy/authorizations/per-GPU-CPU-memory-share-20261026.json",
+          "sha256": "fbe920d536b7f0a91bdf61cac1091ce5d545131fe871efd3da634d386d728009"
+        },
+        "resource_quota_changes_apply_to_future_jobs_only": true,
+        "migration_authorization": {
+          "path": "research/autonomy/authorizations/hdd2-50GiB-throughput-20261027.json",
+          "sha256": "9010fd3d8650fa911ba2af95e16a62e4188f98599c9ec4355c853f320fbc7a4d"
+        },
+        "authorized_project_roots": [
+          "OLD_READONLY_ROOT/ptcg-hybrid-v3",
+          "SERVER_PROJECT_ROOT"
+        ],
+        "target_root_requires_full_acceptance_before_training": true,
+        "old_source_root_read_only": "OLD_READONLY_ROOT/ptcg-hybrid-v3",
+        "actual_HDD2_full_recovery_acceptance": {
+          "path": "runs/20261026T183141Z_hdd2-CUDA-full-restore_2cd9c7/metrics.json",
+          "sha256": "0bd50232f8aaa590653007d0ca6643d60e0d085b36bfe55e224bbbf938faebe1"
+        }
+      },
+      "server_workspace_warning_gib": 64,
+      "storage_migration_phase": "complete",
+      "active_root_until_acceptance": "OLD_READONLY_ROOT/ptcg-hybrid-v3",
+      "migration_target_root": "SERVER_PROJECT_ROOT",
+      "migration_authorization": {
+        "path": "research/autonomy/authorizations/hdd2-50GiB-throughput-20261027.json",
+        "sha256": "9010fd3d8650fa911ba2af95e16a62e4188f98599c9ec4355c853f320fbc7a4d"
+      },
+      "authorized_project_roots": {
+        "OLD_READONLY_ROOT/ptcg-hybrid-v3": "immutable_migration_source",
+        "SERVER_PROJECT_ROOT": "private_migration_destination"
+      },
+      "retained_old_root_counts_toward_50GiB": true,
+      "canonical_project_root": "SERVER_PROJECT_ROOT",
+      "active_project_root": "SERVER_PROJECT_ROOT",
+      "old_project_root_read_only": "OLD_READONLY_ROOT/ptcg-hybrid-v3",
+      "actual_full_migration_acceptance": {
+        "path": "runs/20261026T183141Z_hdd2-CUDA-full-restore_2cd9c7/metrics.json",
+        "sha256": "0bd50232f8aaa590653007d0ca6643d60e0d085b36bfe55e224bbbf938faebe1"
+      },
+      "future_storage_cadence": {
+        "status": "implemented_options_require_route_specific_actual_training_acceptance",
+        "checkpoint_interval_seconds": 600,
+        "minimum_reliable_points": 2,
+        "batch_transfer_interval_seconds": 600,
+        "batch_transfer_trigger_bytes": 1073741824,
+        "pending_warning_bytes": 8589934592,
+        "pending_hard_bytes": 12884901888,
+        "legacy_TR09_contract_not_silently_relaxed": true
+      },
+      "TR12_storage_scope": {
+        "hard_GiB": 80,
+        "warning_GiB": 64,
+        "authority": {
+          "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+          "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+        },
+        "remote_profile_difference_acceptance_required": true
+      }
+    },
+    "future_engineering_retry_rules": {
+      "future_only": true,
+      "read_only_preinitialize_connection_attempts_max": 3,
+      "zero_update_startup_engineering_retries_max": 2,
+      "zero_update_startup_total_attempts_max": 3,
+      "zero_update_startup_retry_seconds_max": 1200,
+      "all_retries_inside_original_job_deadline": true,
+      "all_time_and_failures_recorded": true,
+      "positive_same_job_terminal_proof_before_restart": true,
+      "sampled_data_RNG_and_state_preserved_even_before_first_update": true,
+      "already_trained_hypotheses_use_original_remaining_attempts_and_full_state": true,
+      "old_closed_hypotheses_and_old_attempts_unchanged": true,
+      "no_infinite_retry_or_new_rawrun_allowance": true
+    },
+    "forward_phase_overrides": {
+      "TR12": {
+        "authority": {
+          "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+          "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+        },
+        "GPU_hours": 84,
+        "CPU_hours": 12,
+        "combined_hours": 96,
+        "training_job_seconds_max": 28800,
+        "evaluation_job_seconds_max": 21600,
+        "engineering_job_seconds_max": 1800,
+        "single_raw_attempts_max": 3,
+        "only_registered_phase_jobs": true
+      }
+    }
+  },
+  "budget": {
+    "cloud_spend_allowed": false,
+    "paid_api_training_allowed": false,
+    "gpu_job_wall_hours_max": 120,
+    "gpu_job_wall_hours_reserved_final": 8,
+    "cpu_job_wall_hours_max": 60,
+    "cpu_job_wall_hours_reserved_final": 12,
+    "executed_research_experiments_max": 64,
+    "ram_working_target_gib": 22,
+    "vram_working_target_gib": 10,
+    "raw_replay_download_gib_max": 20,
+    "new_workspace_artifacts_gib_max": 120,
+    "disk_free_gib_min": 20,
+    "count_failed_runs": true,
+    "reset_on_resume": false,
+    "new_workspace_artifacts_warning_gib": 100
+  },
+  "evaluation": {
+    "unit": "complete_bo3_series",
+    "score": "(wins + 0.5 * draws) / series_count",
+    "confidence_level": 0.95,
+    "ci_method": "opponent_stratified_series_bootstrap",
+    "opponents_min": 8,
+    "archetypes_min": 4,
+    "independent_public_policy_sources_min": 3,
+    "freeze_release_anchor_and_weights": true,
+    "random_agent_allowed_as_release_anchor": false,
+    "final_holdout_required": true,
+    "freeze_final_sample_size_before_confirmatory_run": true,
+    "fresh_holdout_or_predeclared_correction_after_holdout_driven_tuning": true,
+    "smoke_bo3_series": 50,
+    "screen_series_per_opponent": 30,
+    "confirmation_series_per_opponent": 100,
+    "promotion_delta_ci_lower_must_exceed": 0.0,
+    "slower_candidate_min_gain": 0.02,
+    "final_series_per_policy_min": 1600,
+    "final_series_per_policy_max": 3200,
+    "final_macro_score_min": 0.55,
+    "final_weighted_gain_vs_anchor_min": 0.03,
+    "final_delta_ci_lower_must_exceed": 0.0,
+    "second_training_seed_direction_check_required": true,
+    "second_seed_applies_to": "stochastic_training_only_otherwise_document_na_and_use_fresh_evaluation_batch",
+    "reliability_series_min": 1000,
+    "observed_invalid_actions_max": 0,
+    "observed_crashes_max": 0,
+    "observed_timeouts_max": 0,
+    "cpu_p99_fraction_of_verified_call_limit_max": 0.5,
+    "timing_gate_mode": "per_call_if_positive_else_cumulative_round_budget",
+    "cpu_cumulative_round_budget_fraction_max": 0.5,
+    "all_observed_calls_and_matches_within_official_limits": true,
+    "linux_cpu_package_validation_required": true
+  },
+  "submission": {
+    "mode": "automatic_after_full_plan_start_and_gates_pass",
+    "submit_during_design": false,
+    "submit_unqualified_candidate": false,
+    "max_attempts_per_project_day": 2,
+    "max_attempts_total": 6,
+    "respect_lower_official_quota": true,
+    "recheck_rules_deadline_and_active_slots": true,
+    "idempotency_key": "competition_slug + release_sha256",
+    "normal_nonvalidation_bo3_min_for_feedback": 20,
+    "feedback_wait_hours_before_pending_report": 48,
+    "require_rating_or_rank_snapshot": true,
+    "stop_after_first_verified_release": true
+  },
+  "stopping": {
+    "mode": "bounded_hypothesis_stage",
+    "new_hypotheses_max": 12,
+    "new_raw_research_runs_max": 54,
+    "raw_research_count_still_increments_per_existing_ledger_semantics": true,
+    "raw_research_global_limit_unchanged": false,
+    "no_promotion_unit": "completed_valid_preregistered_hypothesis_with_planned_evaluation",
+    "consecutive_valid_hypotheses_without_promotion": 4,
+    "additional_diagnostic_hypotheses_max_total": 3,
+    "diagnostics_included_in_hypothesis_and_raw_run_caps": true,
+    "diagnostic_confirmation_allowed_within_caps": true,
+    "hypothesis_rename_does_not_reset_compute_cap": true,
+    "historical_counters_preserved_without_reinterpretation": true,
+    "new_stage_counters_start_only_after_explicit_activation": true,
+    "new_stage_counters_are_not_budget_counters": true,
+    "same_failure_local_repairs_before_root_cause_review": 2,
+    "do_not_relax_final_gates_without_user_instruction": true,
+    "do_not_claim_success_on_budget_or_plateau": true,
+    "retain_champion_and_evidence": true,
+    "new_raw_research_runs_reserved_final": 6,
+    "new_raw_research_runs_regular_max": 48,
+    "incomplete_hypotheses_still_enforce_compute_and_preregistered_job_caps": true,
+    "latest_forward_raw_allowance": {
+      "authority": {
+        "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+        "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+      },
+      "global": 64,
+      "new_stage": 54,
+      "regular": 48,
+      "reserved_final": 6
+    }
+  },
+  "runtime_clarification": "Official CABT package has actTimeout=0 and per-round cumulative time; use 50% cumulative budget target instead of multiplying a nonexistent positive per-call limit. Strength/budget gates unchanged.",
+  "activation": {
+    "executable": true,
+    "requires_explicit_user_start": true,
+    "requires_bounded_new_stage_authorization": true,
+    "requires_supervisor_schema_and_stop_guard_implementation": true,
+    "requires_atomic_activation_record": true,
+    "plan_path": "research/proposals/transformer_rl_v3/PLAN.md",
+    "start_prompt_path": "research/proposals/transformer_rl_v3/START.md",
+    "active_policy_path": "research/autonomy/policy.json",
+    "active_state_path": "research/autonomy/state.json",
+    "base_policy_sha256": "98d3426be97eae84fda7ea87384e37aecf0023554ff6bf12ed8cfdfdb3ba178b",
+    "base_state_sha256": "942095d19894f90f3801680fdbf13394c2afdf4061b84841738b0b6c2abd750d",
+    "baseline_state_updated_at": "2026-10-23T13:31:55.595283+00:00",
+    "baseline_status": "stopped_by_user",
+    "baseline_budget_used": {
+      "gpu_job_wall_hours": 0.027653695583496833,
+      "cpu_job_wall_hours": 0.8069147327778687,
+      "executed_research_experiments": 10,
+      "raw_replay_download_gib": 0.047813599929213524,
+      "new_workspace_artifacts_gib": 9.500606025569141,
+      "scope": "new_autonomous_research_cycle_only_existing_research_not_counted"
+    },
+    "baseline_stopping_history": {
+      "consecutive_valid_runs_without_promotion": 7,
+      "completed_pivot_runs": 2,
+      "started_pivot_runs": 2,
+      "policy": {
+        "consecutive_valid_experiments_without_promotion": 5,
+        "additional_low_cost_pivot_experiments_max": 2,
+        "do_not_relax_final_gates_without_user_instruction": true,
+        "do_not_claim_success_on_budget_or_plateau": true,
+        "retain_champion_and_evidence": true
+      }
+    },
+    "on_base_changed": "Read current evidence and reconcile proposal; never overwrite concurrent state",
+    "preserve_historical_records_and_cumulative_budgets": true,
+    "preserve_champion_anchor_and_final_holdout": true,
+    "do_not_start_from_reading_files": true,
+    "protected_file_hashes": {
+      "research/autonomy/policy.json": "98d3426be97eae84fda7ea87384e37aecf0023554ff6bf12ed8cfdfdb3ba178b",
+      "research/autonomy/state.json": "942095d19894f90f3801680fdbf13394c2afdf4061b84841738b0b6c2abd750d",
+      "research/AUTONOMOUS_RESEARCH.md": "c8219b5825c65eba42f326036c753e18a76091aa21bc2e70f4d379169e039788",
+      "research/START_AUTONOMOUS.md": "c0de6c9e4174af567127a51ace767768e6d409d046ace718b2ce9b8a9ea04481",
+      "AGENTS.md": "e41d50cef0bdf5df5df0a9875dfc3e3ae010bbed0ddd98733ca69217784ac9b1"
+    },
+    "cycle_id": "transformer-rl-v3-20261023T135448",
+    "authorized_at": "2026-10-23T13:54:48.583738+00:00",
+    "hybrid_preparation_receipt": "research/autonomy/activations/hybrid-preparation-20261024T112002/receipt.json",
+    "shared_server_safety_amendment_receipt": "research/autonomy/activations/shared-server-safety-20261024T140351/receipt.json",
+    "TR12_shared_wait_amendment_receipt": "research/autonomy/activations/TR12-wait-exemption-20261028/complete-receipt.json"
+  },
+  "research_design": {
+    "mainline": "full_verified_transformer_actor_warm_start_then_blind_ppo_league",
+    "transformer_required_for_primary_policy": true,
+    "engine": "official_cg_version_locked",
+    "parent_anchor_manifest": "research/opponents/release_anchor.json",
+    "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+    "first_actor_architecture": {
+      "d": 256,
+      "layers": 4,
+      "heads": 8,
+      "ffn": 512
+    },
+    "full_actor_initial_parity_required": true,
+    "critic_visibility": "same_player_visible_information_as_actor",
+    "oracle_inputs_and_losses_enabled": false,
+    "first_critic_initialization": "reset_blind_value_output_head_for_new_return_scale",
+    "learner_static_feature_cache": "disabled_or_rebuilt_with_gradients_each_update",
+    "deck_initially_fixed": true,
+    "multiselect": "conditional_pointer_full_sequence_log_probability",
+    "candidate_normalization": "one_global_softmax_one_STOP_no_silent_truncation",
+    "initial_ppo": {
+      "terminal_reward": {
+        "win": 1,
+        "loss": -1,
+        "draw": 0
+      },
+      "gamma": 1.0,
+      "gae_lambda": 0.95,
+      "actor_learning_rate": 3e-05,
+      "value_head_learning_rate": 0.0001,
+      "shared_trunk_optimizer_group": "actor_only_no_duplicate_parameters",
+      "clip": 0.2,
+      "epochs": 2,
+      "entropy_coefficient": 0.01,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "target_kl": 0.02,
+      "rollout_complete_learner_decisions": 8192,
+      "minibatch_initial": 256,
+      "minibatch_memory_fallbacks": [
+        128,
+        64
+      ]
+    },
+    "decision_milestones": [
+      1000000,
+      5000000,
+      20000000
+    ],
+    "milestones_are_targets_not_authorized_runtime_overrides": true,
+    "training_opponents": {
+      "fixed_diverse": 0.4,
+      "historical_learner": 0.3,
+      "latest_frozen_learner": 0.2,
+      "weakness_training_opponents": 0.1
+    },
+    "missing_historical_mass_destination": "fixed_diverse",
+    "opponent_frozen_within_series": true,
+    "final_holdout_never_used_for_training_or_selection": true,
+    "training_score_not_promotion_evidence": true,
+    "opponent_model": {
+      "default_enabled": false,
+      "model": "independent_small_transformer_after_data_and_bottleneck_gate",
+      "labels": "subsequently_publicly_executed_actions_only",
+      "input": "our_visible_information_before_action",
+      "hidden_hand_option_indices_as_labels": false
+    },
+    "search": {
+      "default_enabled": false,
+      "initial_choice_step_depths": [
+        1,
+        3
+      ],
+      "actor_top_k_initial": 4,
+      "fallback": "unchanged_actor",
+      "hidden_state_source": "public_evidence_and_training_priors_only",
+      "paired_compute_control_required": true
+    },
+    "compute_accounting": {
+      "integrated_gpu_ppo": "one_GPU_job_wall_clock_including_rollout_CPU_workers",
+      "separate_cpu_evaluation_or_data": "CPU_job_wall_clock",
+      "worker_multiplier": false,
+      "must_record_components": true
+    }
+  },
+  "planned_phase_allocations_hours": [
+    {
+      "phase": "TR00",
+      "gpu": 1,
+      "cpu": 2,
+      "final": false
+    },
+    {
+      "phase": "TR01",
+      "gpu": 3,
+      "cpu": 4,
+      "final": false
+    },
+    {
+      "phase": "TR02-TR04",
+      "gpu": 28,
+      "cpu": 14,
+      "final": false
+    },
+    {
+      "phase": "TR05-TR06",
+      "gpu": 10,
+      "cpu": 12,
+      "final": false
+    },
+    {
+      "phase": "TR07",
+      "gpu": 8,
+      "cpu": 14,
+      "final": false
+    },
+    {
+      "phase": "TR08-TR09",
+      "gpu": 8,
+      "cpu": 12,
+      "final": true
+    }
+  ],
+  "allocation_semantics": "Planning ceilings only; active remaining global/resource/hypothesis caps take precedence; no required spend",
+  "research_objective": {
+    "text": "在服务器进行高吞吐Transformer自博弈与blind actor-critic PPO，本地进行研究控制、独立评测、完整归档、部署与Kaggle提交；通过研究—实验—分析—调整—复验的循环，争取累计完成千万次自博弈训练，并以独立对战结果证明模型能力提升。",
+    "minimum_real_unique_PPO_trained_decisions_target": 10000000,
+    "separate_counters": [
+      "complete_games",
+      "complete_BO3",
+      "sampled_decisions",
+      "unique_committed_PPO_trained_decisions",
+      "PPO_updates"
+    ],
+    "epoch_reuse_or_resumed_copies_add_no_new_decisions": true,
+    "throughput_and_cost_measurement_before_large_milestone_admission": true,
+    "scale_not_a_success_or_budget_extension": true
+  },
+  "forward_authorizations": {
+    "TR11_attempt3_raw42": {
+      "path": "research/autonomy/authorizations/TR11-attempt3-raw4-project42-20261027.json",
+      "sha256": "bd0e53fda1a16de3f1049d301fb8d6589f9a698f3876886ddf0a163f70713acf"
+    },
+    "TR12_volume": {
+      "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+      "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+    },
+    "TR12_shared_wait": {
+      "path": "research/autonomy/authorizations/TR12-shared-wait-exemption-20261028.json",
+      "sha256": "1f4a7e4c79782ec85001a43e268957e9e57969f2be50cbd329d17047dd8627a4"
+    }
+  },
+  "shared_resource_wait_exemption": {
+    "authority": {
+      "path": "research/autonomy/authorizations/TR12-shared-wait-exemption-20261028.json",
+      "sha256": "1f4a7e4c79782ec85001a43e268957e9e57969f2be50cbd329d17047dd8627a4"
+    },
+    "spec": {
+      "schema": 1,
+      "authorization": {
+        "path": "research/autonomy/authorizations/TR12-shared-wait-exemption-20261028.json",
+        "sha256": "1f4a7e4c79782ec85001a43e268957e9e57969f2be50cbd329d17047dd8627a4"
+      },
+      "hard_safety_window_seconds": 86400,
+      "basis": "gross_wall_minus_verified_shared_resource_wait"
+    },
+    "legacy_budget_field_names_retained": true,
+    "basis": "gross original wall evidence minus separately verified shared wait",
+    "no_retroactive_change_to_closed_previous_raws": true,
+    "all_numeric_execution_budgets_unchanged": true
+  }
+}

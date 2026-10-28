@@ -1,0 +1,44 @@
+{
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_wall_seconds_max": 3600,
+  "hypothesis_hours_max": 8,
+  "planned_jobs": [
+    "train_ppo",
+    "50 BO3 engineering reliability smoke",
+    "240 BO3 fixed independent screen",
+    "conditional 800 BO3 independent confirmation if screen gain CI lower >0 and reliability passes"
+  ],
+  "config_binding_amendments": "After training, only bind frozen model spec, training run and resulting hashes; after screen, only bind screening_run_id and raise every arm/opponent to 100 BO3 for predeclared confirmation. Preserve prior preregistration revisions. Do not tune based on smoke.",
+  "promotion": "Only unchanged validate_confirmation all checks passed; screen never promotes.",
+  "failure_rule": "Two same-failure local repairs then root-cause review; failure runs remain charged and consume raw research slots.",
+  "final_pool_access": false,
+  "statistical_unit": "complete BO3; unpaired engine RNG; independent opponent-stratified bootstrap",
+  "final_gates_unchanged": true,
+  "hypothesis_id": "TR02",
+  "at": "2026-10-23T14:43:28.470811+00:00",
+  "hypothesis": "Reducing actor/shared-trunk learning rate from 3e-5 to 1e-5 improves sample use under the unchanged KL=0.02 guard and yields a stronger fixed-deck actor.",
+  "single_primary_change": "Actor/shared-trunk learning rate 1e-5 instead of TR01 3e-5; all other learning settings, original H002 initialization, fixed deck and league unchanged",
+  "motivation_report": "research/autonomy/TR01-result.json",
+  "comparison_to": "TR01",
+  "config_hashes": [
+    "01ef7ca651f0646b8787249699edd3282c00f7f5a225b1fa8e03cfc6a4f7517e",
+    "ef534daf0df9f7eb75cca7e976b20687b440b2154836094ed58ae8581875ddb7"
+  ],
+  "evaluation_template_path": "research/autonomy/preregistrations/TR02-screen-template.json",
+  "evaluation_template_sha256": "5c719a9d2cb56453e14aa4b4f2064dc9eb3119b711cae05fbcc2d0fa2908d262",
+  "bindings": [
+    {
+      "at": "2026-10-23T14:59:57.243264+00:00",
+      "previous_preregistration_sha256": "7e6d537e448bd13d2479a64a4e02fdee0254557f1f338b8e5cac029865a13dc4",
+      "config_path": "configs/evaluation/tr02_screen.json",
+      "config_sha256": "e502782d602f24f36aed62f19b8caa5ed5a3329b0e812a74c5e2320c9b80b192",
+      "reason": "Resolve completed training artifact only into unchanged precommitted screen template"
+    }
+  ]
+}

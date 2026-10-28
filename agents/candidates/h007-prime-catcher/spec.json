@@ -1,0 +1,9 @@
+{
+  "id": "ppo-zero-prime-catcher",
+  "kind": "public_rule",
+  "path": "agents/candidates/h007-prime-catcher",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  }
+}

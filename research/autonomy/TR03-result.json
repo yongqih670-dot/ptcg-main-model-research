@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-23T18:23:21.569850+00:00",
+  "hypothesis": "TR03",
+  "classification": "inconclusive",
+  "promotion_eligible": false,
+  "candidate_score": 0.875,
+  "anchor_score": 0.8,
+  "gain": 0.07500000000000001,
+  "ci95": [
+    -0.00833333333333336,
+    0.15833333333333335
+  ],
+  "series_per_arm": 120,
+  "unit": "complete BO3",
+  "screen_run_id": "20261023T181748Z_tr03-ppo-screen_d32f18",
+  "training_run_id": "20261023T151043Z_tr03-ppo-262k_a347a7",
+  "planned_independent_confirmation": "Not triggered: predeclared screen CI lower >0 condition not met. No posthoc extension.",
+  "reliability": "50 smoke plus240 screen BO3; zero errors/invalid actions/timeouts/random fallback. Not final qualification.",
+  "failure_review": {
+    "reviewed_series": 16,
+    "path": "runs/20261023T181748Z_tr03-ppo-screen_d32f18/failure-review.json",
+    "observations": [
+      "Most point gain is versus Lucario:27/30 vs20/30; Alakazam30/30 vs27/30; Archaludon29/30 both; PPO19/30 vs20/30. These are small independent samples.",
+      "Candidate series122 lost G3 with one prize remaining at turn12; series180 lost G1 with one prize remaining at turn10.",
+      "Candidate series181 lost G3 at turn5 without any attack, while series1 and13 had losing games with five or six prizes remaining. Public summaries support both early setup and prize tempo categories, not a single proven cause.",
+      "PPO matchups show turn-order sensitivity: candidate31/44 first-player game wins and15/38 second-player wins; anchor31/39 and15/38. These game-level descriptions cannot replace complete-BO3 inference or prove a causal training effect."
+    ],
+    "causal_limit": "Training/critic improvement and point estimates are not independent proof of competitive gain. No justified predictor or search change from these summaries alone."
+  },
+  "optimization_evidence": {
+    "decisions": 262165,
+    "complete_training_bo3": 1612,
+    "updates": 32,
+    "optimizer_steps": 1945,
+    "sample_presentations": 488528,
+    "kl_early_stop_count": 8,
+    "gpu_job_hours": 2.18638,
+    "resume_audit": "runs/20261023T151043Z_tr03-ppo-262k_a347a7/research-resume-audit.json"
+  },
+  "decision": "Retain unpromoted TR03; keep champion/anchor. Complete prepared package engineering check, then test GAE lambda0.99 vs0.95 as one new variable with original H002 full actor, unchanged262144 decision budget, LR, reward, deck and league. This is a hypothesis, not a proved bottleneck.",
+  "diagnostic_motivation": "research/autonomy/engineering/tr03-credit-conclusion.json",
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_used": false
+}

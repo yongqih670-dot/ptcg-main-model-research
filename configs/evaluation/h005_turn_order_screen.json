@@ -1,0 +1,194 @@
+{
+  "workers": 8,
+  "series_count": 240,
+  "policy_seed": 2026102318,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Only ACTOR_SEAT input: actual first/second order versus fixed zero; same checkpoint/deck/opponent weights",
+  "success_criteria": "Fixed 240 BO3, stratified independent BO3 delta CI; no errors; screen never promotes",
+  "matchups": [
+    {
+      "cell_id": "turn-order-vs-lucario",
+      "candidate": {
+        "id": "ppo-turn-order",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "turn_order"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-lucario",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "turn-order-vs-alakazam",
+      "candidate": {
+        "id": "ppo-turn-order",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "turn_order"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-alakazam",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "turn-order-vs-archaludon",
+      "candidate": {
+        "id": "ppo-turn-order",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "turn_order"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-archaludon",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "turn-order-vs-ppo",
+      "candidate": {
+        "id": "ppo-turn-order",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "turn_order"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-ppo",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate_cell": "turn-order-vs-lucario",
+      "anchor_cell": "anchor-vs-lucario",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "turn-order-vs-alakazam",
+      "anchor_cell": "anchor-vs-alakazam",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "turn-order-vs-archaludon",
+      "anchor_cell": "anchor-vs-archaludon",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "turn-order-vs-ppo",
+      "anchor_cell": "anchor-vs-ppo",
+      "weight": 0.25
+    }
+  ],
+  "evaluation_stage": "screening",
+  "hypothesis_id": "H005",
+  "parent_champion_run_id": "20261023T111657Z_h002-seat-confirmation_c49f14"
+}

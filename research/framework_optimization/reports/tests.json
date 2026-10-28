@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "tests": 65,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "seconds": 6.83247184753418,
+  "scope": "CPU engineering fixtures and production safety unit tests; no server/GPU acceptance",
+  "new_scientific_decisions": 0,
+  "source_sha256": {
+    "research/framework_optimization/source/fo/archive_queue.py": "1a55d2784e93576bef2b001df97c7a230304ec960ab59bc36dde0deb4926a7ff",
+    "research/framework_optimization/source/fo/backend.py": "e900fbf3f9418bf2dd744b2784b37f6e5bf8685528ce751fe370cef31bdd0b44",
+    "research/framework_optimization/source/fo/checkpoint_refs.py": "d8a09b94396273c6be57830b1bf67df26451f4cdfb9b1c4765e2e65a7a620b30",
+    "research/framework_optimization/source/fo/conditional_batch.py": "98057ebe7e78f0cc4ebfda1b5e633e6d32c93dd53cb10827520c9f08434b52cd",
+    "research/framework_optimization/source/fo/coordinator.py": "61e3bca3fe3951cf370861d8b84be3b7517d7fa4ed587ac2728ffb418606c44d",
+    "research/framework_optimization/source/fo/immutable_link.py": "e8546f68afdab56934c64b89fbf9d831dc4eba99f870c4348fc40f3d26a02dbc",
+    "research/framework_optimization/source/fo/packed.py": "f8049d41b53663639854cceb9e8ce7b55b22d88bd94d6c827cf371b70d890016",
+    "research/framework_optimization/source/fo/ppo.py": "ae9ebfa8bfcb023e40fa3363a29064deae193956b93bfef965e72c270920729d",
+    "research/framework_optimization/source/fo/precision.py": "551a6d028a69d5320a581871fca287f918e91c3f28753cfe08b8334c5a2a2796",
+    "research/framework_optimization/source/fo/profile_window.py": "9765952fae1b75d55361b79ba89bb8d3e9c689ca6479171939d52ba93c7c10aa",
+    "research/framework_optimization/source/fo/timing.py": "678af922529e4cefe581dc7c82193ee353933e1593b3d077173696c9bcaf5b5c",
+    "research/framework_optimization/source/fo/__init__.py": "e6d4db47a6787beda1e4d01a6498c84adc0db9337a2525e90d8a9a38240d1c19",
+    "research/framework_optimization/tests/test_candidates.py": "86a2517c5eed640dad0464be1bc1da777b39b2db2ca11e870e9267f6ac8c1539",
+    "research/framework_optimization/benchmarks/analyze_logs.py": "c97eb9747a52572c4c106db82ab936509e259c046b24507e33c3a4c6f8d484a3",
+    "research/framework_optimization/benchmarks/bench_packed.py": "0ab3b9177c19df771bc0e9725da5e959f49787a945d6689e864260f7af5b184a",
+    "research/framework_optimization/benchmarks/bench_publication.py": "72b5213cb1c8be2cde0913783cd6c877b0ff11a7b634750d1fcb4028de99acd5",
+    "research/framework_optimization/benchmarks/common.py": "74f20c5d4dff66681979d8b08636df2de316549b751b15881bb0ffa2f5e0a99c",
+    "research/framework_optimization/benchmarks/cpu_acceptance.py": "83854f7a98322f70a7c11079c32ee48824eb55dac44333dde1d7a5be82a1a371",
+    "research/framework_optimization/benchmarks/hardware_acceptance.py": "19b969b4eac41995927590388cf3b8b04f82170306436e40e2ca7ab6c54b5dbc",
+    "research/framework_optimization/benchmarks/verify_delivery.py": "a54c9a9b03b54db4f774e2ddab5e64bcbc7d444507eebb855bf4f963e4735181"
+  }
+}

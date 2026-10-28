@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-25T19:40:58.778905+00:00",
+  "hypothesis": "TR05",
+  "classification": "invalid",
+  "promotion_eligible": false,
+  "reason": "Target32768 incomplete; first attempt cleanly stopped for externalGPU occupancy, second terminated when legacy512KiB resource journal filled. Both original training attempts are consumed.",
+  "trained_decisions": 8283,
+  "target_decisions": 32768,
+  "missing_decisions": 24485,
+  "complete_BO3": 56,
+  "committed_PPO_updates": 1,
+  "PPO_minibatch_updates": 66,
+  "full_model_and_optimizer_finite": true,
+  "actor_oracle_checks_passed": true,
+  "published_checkpoint_sha256": "a0dac7d377a901816fbd315ab0ebc5942eb3097957b8cbad8de68023e47bfe7a",
+  "attempts": {
+    "count": 2,
+    "records": [
+      {
+        "attempt": 1,
+        "at": "2026-10-25T18:19:37.418522+00:00",
+        "seconds": 1984.8909999998286,
+        "exit_code": 1,
+        "status": "failed",
+        "compute_kind": "gpu"
+      },
+      {
+        "attempt": 1,
+        "at": "2026-10-25T19:13:50.240953+00:00",
+        "seconds": 2909.1090000001714,
+        "exit_code": 1,
+        "status": "failed",
+        "compute_kind": "gpu"
+      }
+    ],
+    "total_seconds": 4894.0,
+    "remaining": 0
+  },
+  "full_failure_archive": "runs/20261025T192352Z_tr05-failure-archive_c69021",
+  "forensic_evidence": {
+    "path": "runs/20261025T193613Z_tr05-full-forensics_532d03/analysis.json",
+    "sha256": "657eb39ac1ecdf298d4add542023fc81d83175190fb008dc1a7ed73a12775ea9"
+  },
+  "original_raw_sources_unchanged": true,
+  "engineering_root_cause": "Observed supervisor resource journal reached512KiB and raised before append. CPU/RAM/disk facts above are distinct from that journal cap; intermittent foreign GPU workloads caused cooperative waits, not the terminal exception. Original code, fees and failed attempts remain immutable.",
+  "competitive_value_gradient_effect": null,
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_holdout_used": false,
+  "valid_hypothesis_count_unchanged": 3,
+  "valid_no_promotion_streak_unchanged": 3,
+  "future_repairs": {
+    "journal": "ptcg_lab/resource_journal.py:8MiB cap/8KiB records, lossless oversized-record encoding;724 planned maximum records for7200s+4children;31localtests passed, actualservercapacitycheck pending.",
+    "checkpoint_IO": "Optional one-safe-point identity-checked hash reuse,49localtests passed; actualserverfullstateIOproof pending. Current failed frozen source/config unchanged.",
+    "local_capacity": "58.04GiB current footprint. Verify and retire only redundant1.514GiB unzipped installcache backedbyretainedpinnedwheel via controlledlocaljob; preserve allscientificrawrecords/model/config/attempts. Not yet performed.",
+    "local_Linux": "Bounded2GiB RAM-guest implementation19testspassed; actualLinuxruntime/4BO3parity not yet run. Originalsetupattempt/timecaps and finalstandards remain."
+  },
+  "next_action": "No furtherTR05attempt, freshinitializer or relabelling. Verify journal/IO changes with an actual bounded CPU-only server chain check; restore localstorage margin and realLinuxCPU validation. Then preregister a genuinely distinct single-variable scientific hypothesis from validatedfullH002, using unchanged final gates and originalledger. Engineeringtestweights cannot qualify."
+}

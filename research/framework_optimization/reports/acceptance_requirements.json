@@ -1,0 +1,90 @@
+{
+  "status": "not_a_ticket_not_reserved_not_executed",
+  "controller_thread": "01a17ce2-7684-7473-bcad-828961994ca4",
+  "gpu_payload": {
+    "maximum_job_seconds": 600,
+    "maximum_GPU_job_hours": 0.16666666666666666,
+    "cpu_cores": 3,
+    "memory_GiB": 32,
+    "GPUs": 1,
+    "preferred_physical": [
+      6,
+      7
+    ],
+    "allowed_physical": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "manifest_fields": [
+      "engineering_only=true",
+      "fixture_path",
+      "fixture_sha256",
+      "bundle_path",
+      "ppo (unchanged full baseline settings)",
+      "measurement_seconds (30..600)",
+      "modes (fp32,bf16,fp16)"
+    ]
+  },
+  "cpu_publication_payload": {
+    "maximum_job_seconds": 900,
+    "cpu_cores": 3,
+    "memory_GiB": 32,
+    "GPU_visible": false,
+    "manifest_fields": [
+      "engineering_only=true",
+      "kind=publication"
+    ]
+  },
+  "cpu_native_payload": {
+    "maximum_job_seconds": 1800,
+    "cpu_cores": 3,
+    "memory_GiB": 32,
+    "GPU_visible": false,
+    "torch_threads": 1,
+    "manifest_fields": [
+      "engineering_only=true",
+      "kind=native",
+      "source_checkpoint_path",
+      "source_checkpoint_sha256",
+      "bundle_path",
+      "source_path",
+      "fixed_opponent (full frozen spec and file hashes)",
+      "engine_manifest_sha256",
+      "seed",
+      "window_seconds (30..300)"
+    ]
+  },
+  "required_outer_guards": [
+    "sole-controller budget reservation and job registration",
+    "terminal identity before any next ticket",
+    "original absolute deadline",
+    "real UID/root/mount/disk and storage gate",
+    "3CPU/32GiB subject to lower current per-GPU share",
+    "controlled dispatcher payload admission (not implemented in production)",
+    "complete input SHA manifest",
+    "full ACK before original deletion and two recovery points",
+    "shared-GPU idle-at-start and ongoing cooperative protection",
+    "all descendants capped and accounted; no final reserve use"
+  ],
+  "numeric_gates": {
+    "logp_abs_max": 0.0001,
+    "value_abs_max": 0.0002,
+    "loss_abs_max": 0.0001,
+    "gradient_abs_max": 0.0002,
+    "parameter_after_step_abs_max": 2e-05,
+    "clip_fraction_difference": 0,
+    "same_KL_skip": true
+  },
+  "unknown": [
+    "native engine concurrency throughput",
+    "GPU packed throughput/parity",
+    "AMP eligibility",
+    "archive steady-state throughput",
+    "end-to-end optimized decisions/second gain",
+    "original controller exit cause"
+  ],
+  "new_scientific_training_authorized_by_this_artifact": false,
+  "production_defaults_changed": false
+}

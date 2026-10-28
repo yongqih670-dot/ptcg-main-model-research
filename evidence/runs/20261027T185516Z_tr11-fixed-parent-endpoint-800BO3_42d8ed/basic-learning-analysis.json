@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-27T19:09:19.994451+00:00",
+  "run_id": "20261027T185516Z_tr11-fixed-parent-endpoint-800BO3_42d8ed",
+  "complete": true,
+  "classification": "inconclusive",
+  "learning_signal_passed": false,
+  "contrast": {
+    "gain": 0.0225,
+    "ci95": [
+      -0.04749999999999999,
+      0.09250000000000003
+    ],
+    "bootstrap_seed": 231102,
+    "bootstrap_samples": 20000,
+    "method": "independent completeBO3 resampling on the single frozen legal training opponent"
+  },
+  "cells": {
+    "parent-vs-ppo": {
+      "series_count": 400,
+      "wins": 214,
+      "draws": 0,
+      "losses": 186,
+      "errors": 0,
+      "score_with_errors_counted_as_losses": 0.535,
+      "seats": {
+        "0": 200,
+        "1": 200
+      },
+      "series_seconds_total": 2174.03263120036,
+      "invalid_actions": 0,
+      "internal_random_fallbacks": 0,
+      "timeouts": 0,
+      "round_count_histogram": {
+        "3": 232,
+        "2": 168
+      },
+      "scope": "official Windows BO3 callable harness; local comparison, not final strength or Linux acceptance"
+    },
+    "endpoint-vs-ppo": {
+      "series_count": 400,
+      "wins": 223,
+      "draws": 0,
+      "losses": 177,
+      "errors": 0,
+      "score_with_errors_counted_as_losses": 0.5575,
+      "seats": {
+        "0": 200,
+        "1": 200
+      },
+      "series_seconds_total": 2192.8884716998145,
+      "invalid_actions": 0,
+      "internal_random_fallbacks": 0,
+      "timeouts": 0,
+      "round_count_histogram": {
+        "2": 161,
+        "3": 239
+      },
+      "scope": "official Windows BO3 callable harness; local comparison, not final strength or Linux acceptance"
+    }
+  },
+  "parent_score": 0.535,
+  "endpoint_score": 0.5575,
+  "preregistered_learning_gate": "gain>=0.05 and CI95lower>0",
+  "invalid_series": 0,
+  "promotion_eligible": false,
+  "final_or_general_strength_claim": false,
+  "native_environment_seed_not_exposed": true,
+  "no_additional_samples_or_model_selection": true,
+  "reason": "Single fixed-opponent learnability diagnosis; no independent multi-opponent promotion confirmation.",
+  "source_series_sha256": "97b1acccfc3d4e0a0dc28e60b595982917130b43cf46e4e71602f4f412c055cc",
+  "config_sha256": "126ce532e6f3beaf2197c4c6179756992ca734a2c56dc1b697810976a8a91432"
+}

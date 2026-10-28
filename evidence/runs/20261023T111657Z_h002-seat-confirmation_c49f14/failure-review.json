@@ -1,0 +1,2701 @@
+{
+  "scope": "post-match public-event diagnosis only; not training data",
+  "requested_maximum": 20,
+  "reviewed_series": 20,
+  "series": [
+    {
+      "series_id": 5,
+      "cell_id": "zero-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 17,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            1
+          ],
+          "deck_counts": [
+            23,
+            2
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 4
+            },
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 3
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 8,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            6
+          ],
+          "deck_counts": [
+            23,
+            15
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                79
+              ],
+              "turn": 8,
+              "card_id": 1071
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 105,
+      "cell_id": "physical-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 10,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            2,
+            0
+          ],
+          "deck_counts": [
+            15,
+            7
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                64
+              ],
+              "turn": 7,
+              "card_id": 96
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 10,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            4
+          ],
+          "deck_counts": [
+            20,
+            27
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                65
+              ],
+              "turn": 6,
+              "card_id": 96
+            },
+            {
+              "key": [
+                1,
+                81
+              ],
+              "turn": 8,
+              "card_id": 140
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 11,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            6
+          ],
+          "deck_counts": [
+            13,
+            5
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                74
+              ],
+              "turn": 3,
+              "card_id": 917
+            },
+            {
+              "key": [
+                1,
+                69
+              ],
+              "turn": 11,
+              "card_id": 93
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 205,
+      "cell_id": "zero-vs-alakazam",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 13,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            1
+          ],
+          "deck_counts": [
+            13,
+            1
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 917,
+              "attack_id": 1322,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 5
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                9
+              ],
+              "turn": 7,
+              "card_id": 133
+            },
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 13,
+              "card_id": 133
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 8,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            1
+          ],
+          "deck_counts": [
+            8,
+            12
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 8,
+              "card_id": 133
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 303,
+      "cell_id": "physical-vs-alakazam",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 13,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            1
+          ],
+          "deck_counts": [
+            2,
+            6
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 235,
+              "attack_id": 323,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 3,
+              "card_id": 132
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 4,
+          "winner": 0,
+          "reason": 3,
+          "candidate_won": false,
+          "remaining_prizes": [
+            5,
+            5
+          ],
+          "deck_counts": [
+            32,
+            45
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 741,
+              "attack_id": 1070,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 4,
+              "card_id": 132
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 483,
+      "cell_id": "zero-vs-archaludon",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 34,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            4
+          ],
+          "deck_counts": [
+            2,
+            0
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 5
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 9,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            2,
+            0
+          ],
+          "deck_counts": [
+            21,
+            10
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 3,
+          "turn": 16,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            4
+          ],
+          "deck_counts": [
+            19,
+            2
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 223,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 223,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 224,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 503,
+      "cell_id": "physical-vs-archaludon",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 18,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            26,
+            27
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 223,
+              "count": 4
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 6
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 223,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 8,
+          "winner": 0,
+          "reason": 3,
+          "candidate_won": false,
+          "remaining_prizes": [
+            3,
+            6
+          ],
+          "deck_counts": [
+            31,
+            38
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 223,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 600,
+      "cell_id": "zero-vs-ppo",
+      "candidate_seat": 0,
+      "games": [
+        {
+          "round": 1,
+          "turn": 10,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            1,
+            0
+          ],
+          "deck_counts": [
+            10,
+            4
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 12,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            15,
+            27
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 709,
+              "attack_id": 1027,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 3,
+              "card_id": 92
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 8,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            3,
+            0
+          ],
+          "deck_counts": [
+            18,
+            28
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 703,
+      "cell_id": "physical-vs-ppo",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 9,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            28,
+            13
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 10,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            6
+          ],
+          "deck_counts": [
+            25,
+            15
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 3,
+      "cell_id": "zero-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 14,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            1,
+            0
+          ],
+          "deck_counts": [
+            12,
+            11
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                69
+              ],
+              "turn": 5,
+              "card_id": 93
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 8,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            23,
+            7
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                65
+              ],
+              "turn": 6,
+              "card_id": 96
+            },
+            {
+              "key": [
+                1,
+                80
+              ],
+              "turn": 8,
+              "card_id": 1071
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 7,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            22,
+            8
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                79
+              ],
+              "turn": 3,
+              "card_id": 1071
+            },
+            {
+              "key": [
+                1,
+                66
+              ],
+              "turn": 5,
+              "card_id": 96
+            },
+            {
+              "key": [
+                1,
+                81
+              ],
+              "turn": 7,
+              "card_id": 140
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 109,
+      "cell_id": "physical-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 13,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            5
+          ],
+          "deck_counts": [
+            7,
+            5
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 4
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 674,
+              "attack_id": 978,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 16,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            1
+          ],
+          "deck_counts": [
+            9,
+            25
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 673,
+              "attack_id": 976,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 5
+            },
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                66
+              ],
+              "turn": 14,
+              "card_id": 96
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 234,
+      "cell_id": "zero-vs-alakazam",
+      "candidate_seat": 0,
+      "games": [
+        {
+          "round": 1,
+          "turn": 14,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            4,
+            0
+          ],
+          "deck_counts": [
+            21,
+            11
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 741,
+              "attack_id": 1070,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 917,
+              "attack_id": 1322,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 4
+            },
+            {
+              "seat": 1,
+              "card_id": 742,
+              "attack_id": 1071,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 709,
+              "attack_id": 1027,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                69
+              ],
+              "turn": 4,
+              "card_id": 133
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 17,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            1,
+            0
+          ],
+          "deck_counts": [
+            2,
+            7
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 235,
+              "attack_id": 323,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 6
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                69
+              ],
+              "turn": 15,
+              "card_id": 133
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 305,
+      "cell_id": "physical-vs-alakazam",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 9,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            22,
+            19
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 917,
+              "attack_id": 1322,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 742,
+              "attack_id": 1071,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 3,
+              "card_id": 132
+            },
+            {
+              "key": [
+                0,
+                6
+              ],
+              "turn": 7,
+              "card_id": 132
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 4,
+          "winner": 0,
+          "reason": 3,
+          "candidate_won": false,
+          "remaining_prizes": [
+            4,
+            5
+          ],
+          "deck_counts": [
+            27,
+            43
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 741,
+              "attack_id": 1070,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 501,
+      "cell_id": "physical-vs-archaludon",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 12,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            16,
+            26
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 224,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 140,
+              "attack_id": 183,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 12,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            22,
+            26
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 5
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 603,
+      "cell_id": "zero-vs-ppo",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 11,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            14,
+            17
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 917,
+              "attack_id": 1322,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 7,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            4,
+            0
+          ],
+          "deck_counts": [
+            22,
+            21
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 3,
+          "turn": 9,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            6
+          ],
+          "deck_counts": [
+            28,
+            12
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 701,
+      "cell_id": "physical-vs-ppo",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 10,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            6,
+            0
+          ],
+          "deck_counts": [
+            15,
+            25
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 4
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 2,
+          "turn": 10,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            5
+          ],
+          "deck_counts": [
+            20,
+            24
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 920,
+              "attack_id": 1326,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 3,
+          "turn": 9,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            12,
+            13
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 7,
+      "cell_id": "zero-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 12,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            2,
+            0
+          ],
+          "deck_counts": [
+            6,
+            14
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 92,
+              "attack_id": 114,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                63
+              ],
+              "turn": 3,
+              "card_id": 96
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 10,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            11,
+            21
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                64
+              ],
+              "turn": 4,
+              "card_id": 96
+            },
+            {
+              "key": [
+                1,
+                71
+              ],
+              "turn": 10,
+              "card_id": 150
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 35,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            5
+          ],
+          "deck_counts": [
+            8,
+            6
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 674,
+              "attack_id": 978,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 113,
+      "cell_id": "physical-vs-lucario",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 8,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            2,
+            0
+          ],
+          "deck_counts": [
+            18,
+            24
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                81
+              ],
+              "turn": 5,
+              "card_id": 140
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 14,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            6,
+            25
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 4
+            },
+            {
+              "seat": 0,
+              "card_id": 677,
+              "attack_id": 981,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                64
+              ],
+              "turn": 14,
+              "card_id": 96
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 9,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            21,
+            23
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 983,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 3
+            },
+            {
+              "seat": 0,
+              "card_id": 678,
+              "attack_id": 982,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 676,
+              "attack_id": 980,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    },
+    {
+      "series_id": 235,
+      "cell_id": "zero-vs-alakazam",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 15,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            2
+          ],
+          "deck_counts": [
+            2,
+            7
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 3
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 5,
+              "card_id": 133
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 11,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            4,
+            0
+          ],
+          "deck_counts": [
+            35,
+            26
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 235,
+              "attack_id": 323,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            }
+          ],
+          "public_zero_hp_events": []
+        },
+        {
+          "round": 3,
+          "turn": 11,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            3
+          ],
+          "deck_counts": [
+            25,
+            27
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 235,
+              "attack_id": 323,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 140,
+              "attack_id": 183,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 7,
+              "card_id": 132
+            },
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 7,
+              "card_id": 133
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 301,
+      "cell_id": "physical-vs-alakazam",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 12,
+          "winner": 1,
+          "reason": 1,
+          "candidate_won": true,
+          "remaining_prizes": [
+            1,
+            0
+          ],
+          "deck_counts": [
+            13,
+            7
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 93,
+              "attack_id": 115,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 3
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 1,
+              "card_id": 150,
+              "attack_id": 195,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 742,
+              "attack_id": 1071,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 9,
+              "card_id": 132
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 6,
+          "winner": 0,
+          "reason": 3,
+          "candidate_won": false,
+          "remaining_prizes": [
+            3,
+            2
+          ],
+          "deck_counts": [
+            20,
+            40
+          ],
+          "attacks": [
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                7
+              ],
+              "turn": 6,
+              "card_id": 132
+            },
+            {
+              "key": [
+                0,
+                6
+              ],
+              "turn": 6,
+              "card_id": 132
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "turn": 11,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            4
+          ],
+          "deck_counts": [
+            26,
+            25
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 743,
+              "attack_id": 1072,
+              "count": 4
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                0,
+                9
+              ],
+              "turn": 9,
+              "card_id": 133
+            },
+            {
+              "key": [
+                0,
+                8
+              ],
+              "turn": 11,
+              "card_id": 133
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "series_id": 505,
+      "cell_id": "physical-vs-archaludon",
+      "candidate_seat": 1,
+      "games": [
+        {
+          "round": 1,
+          "turn": 6,
+          "winner": 0,
+          "reason": 3,
+          "candidate_won": false,
+          "remaining_prizes": [
+            4,
+            6
+          ],
+          "deck_counts": [
+            33,
+            44
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 224,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 710,
+              "attack_id": 1028,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 1
+            }
+          ],
+          "public_zero_hp_events": [
+            {
+              "key": [
+                1,
+                73
+              ],
+              "turn": 2,
+              "card_id": 917
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "turn": 32,
+          "winner": 0,
+          "reason": 1,
+          "candidate_won": false,
+          "remaining_prizes": [
+            0,
+            6
+          ],
+          "deck_counts": [
+            4,
+            22
+          ],
+          "attacks": [
+            {
+              "seat": 0,
+              "card_id": 666,
+              "attack_id": 965,
+              "count": 1
+            },
+            {
+              "seat": 1,
+              "card_id": 96,
+              "attack_id": 120,
+              "count": 1
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 253,
+              "count": 2
+            },
+            {
+              "seat": 0,
+              "card_id": 169,
+              "attack_id": 223,
+              "count": 5
+            },
+            {
+              "seat": 0,
+              "card_id": 190,
+              "attack_id": 223,
+              "count": 8
+            }
+          ],
+          "public_zero_hp_events": []
+        }
+      ]
+    }
+  ]
+}

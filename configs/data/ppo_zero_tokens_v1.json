@@ -1,0 +1,18 @@
+{
+  "job_kind": "prepare_tokens",
+  "workers": 1,
+  "source_run": "PROJECT_ROOT\\runs\\20261023T111657Z_h002-seat-confirmation_c49f14",
+  "source_hashes": {
+    "series.jsonl": "feda0ececb9ece6f93f0c28f127323f5359aa1a0cfc590354a88da07014ae77d",
+    "config.json": "5fc304422392dab82d265a1d0bc9972317dd69f3d67599133118e6b8b2acf257",
+    "environment.json": "d3ca5a8192ee07505ed4451b57e386a8bc88b084e55d9fb69ecb76d1b5c49020"
+  },
+  "teacher_cell_prefix": "zero-vs-",
+  "expected_series": 400,
+  "teacher_parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "feature_bundle": "agents/frozen/ppo-zero-anchor",
+  "primary_change": "Full public-state token and conditional multiselect teacher encoding; no policy change",
+  "success_criteria": "All 400 complete BO3; all nonforced choices including STOP; no oracle; same split; immutable resumable shards"
+}

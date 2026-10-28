@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-10-23T12:41:04.018750+00:00",
+  "parent_manifest_sha256": "e50ade72d159608b06745f65c3a9cf3bfbdc321de34654cda4010f48f2ccd2de",
+  "model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "main_sha256": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+  "deck_sha256": "109c39bb221b1fb2d793ff50c2fb28a1aae0abfb362d63a979b665048cd004a9",
+  "replacement": {
+    "remove": {
+      "card_id": 1080,
+      "count": 1
+    },
+    "add": {
+      "card_id": 1088,
+      "count": 1
+    }
+  },
+  "cards": {
+    "1080": {
+      "name": "Unfair Stamp",
+      "card_type": 1,
+      "ace_spec": true,
+      "text": [
+        "You can use this card only if any of your Pokémon were Knocked Out during your opponent’s last turn.\n\nEach player shuffles their hand into their deck. Then, you draw 5 cards, and your opponent draws 2 cards."
+      ]
+    },
+    "1088": {
+      "name": "Prime Catcher",
+      "card_type": 1,
+      "ace_spec": true,
+      "text": [
+        "Switch in 1 of your opponent’s Benched Pokémon to the Active Spot. If you do, switch your Active Pokémon with 1 of your Benched Pokémon."
+      ]
+    }
+  },
+  "static_legality": "One ACE SPEC Item for another, absent in original; 60 cards; other counts and all policy/model/package files unchanged",
+  "submitted": false
+}

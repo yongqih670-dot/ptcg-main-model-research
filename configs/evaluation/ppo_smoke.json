@@ -1,0 +1,58 @@
+{
+  "series_count": 50,
+  "policy_seed": 2026102303,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Add original pretrained grass PPO with safe weights-only loading and round-isolated runtime",
+  "success_criteria": "50 complete official BO3 across 3 independent rule opponents, both seats, zero invalid/error/timeout/internal random fallback",
+  "matchups": [
+    {
+      "cell_id": "ppo-vs-lucario",
+      "candidate": {
+        "id": "ppo-grass",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo"
+      },
+      "reference": {
+        "id": "lucario",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario"
+      },
+      "series_count": 18
+    },
+    {
+      "cell_id": "ppo-vs-alakazam",
+      "candidate": {
+        "id": "ppo-grass",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo"
+      },
+      "reference": {
+        "id": "alakazam",
+        "kind": "public_rule",
+        "path": "agents/public/alakazam",
+        "lineage": "woominyo_alakazam"
+      },
+      "series_count": 16
+    },
+    {
+      "cell_id": "ppo-vs-archaludon",
+      "candidate": {
+        "id": "ppo-grass",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo"
+      },
+      "reference": {
+        "id": "archaludon",
+        "kind": "public_rule",
+        "path": "agents/public/archaludon",
+        "lineage": "masami_archaludon"
+      },
+      "series_count": 16
+    }
+  ]
+}

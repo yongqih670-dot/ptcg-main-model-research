@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-23T15:35:08.628567+00:00",
+  "server_replay_id": 125260903,
+  "observed_server_module_version": "1.32.7",
+  "local_module_version": "1.33.2",
+  "server_wheel_path": "research/environment/wheels/kaggle_environments-1.32.7-py3-none-any.whl",
+  "server_wheel_sha256": "2a1bb862ad2d6463080f80f6a766f46d94b53fd57168cfeddb9857fc3dbc4c8f",
+  "files": [
+    {
+      "path": "kaggle_environments/envs/cabt/cabt.json",
+      "wheel_sha256": "3b741a5b31426ca71422adc39afcbf709f6815ab0fda6ee9f17482895b68a015",
+      "installed_sha256": "b0760ba6c42d2c19be2bf3b96b49f296c7a4f0cdfb963709edebdd5afaf1778b",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cabt.py",
+      "wheel_sha256": "83966930d12da5d8f725ac70314bf1b58b842180277437dc4ea7dc6ceea0d176",
+      "installed_sha256": "9b626737aa18b14ffd6d496595243984b6adb94ff0429898edb5e5e340d60029",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/__init__.py",
+      "wheel_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "installed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "same": true
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/cg.dll",
+      "wheel_sha256": "eae88634e26dc31d94150a4d8202fc9d32596b8c688ef67e14cb4088cd4d5771",
+      "installed_sha256": "e084185a17fa1487ee5ffec5cff828d120278f03547838031e2d70bb2a8811fe",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/game.py",
+      "wheel_sha256": "c4699ecbe617013349895992ae493d17486de72fec85c798cdfabc06d7260e41",
+      "installed_sha256": "7aecf845ebebc73aa63f41a81837efcb9209ea39e913fbb2dcf3bbaf770fe437",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/libcg-arm64.so",
+      "wheel_sha256": "1670740b73fab46586fd25c0a1f96608ea75b1f39381d66a0b8d9486bea6d4a2",
+      "installed_sha256": "95628f0bd20ac5e6f1e142c88cd52c9dc7361f9c371b5599f63b27c110892545",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/libcg.so",
+      "wheel_sha256": "d16244a3157fc55c3314f08dcc7c5179168697d78c105b95c7debd556b764bb7",
+      "installed_sha256": "c699020e086eede189c445c7abf9d891a60005ceec6eb91dccd5bbdcd3c0de22",
+      "same": false
+    },
+    {
+      "path": "kaggle_environments/envs/cabt/cg/sim.py",
+      "wheel_sha256": "a5aee75dfe3d70a9622a5e8369ff01b79b22d4b7d026ca44027143ce4672b048",
+      "installed_sha256": "072543b46caacbea81ca3e4b54bf2926f6415d9e1339261887c8ca1c428a1bdf",
+      "same": false
+    }
+  ],
+  "all_compared_files_identical": false,
+  "scope": "CABT files in downloaded official 1.32.7 wheel versus installed runtime; server binary itself is not present in replay, so this is version/source compatibility evidence, not remote byte-level attestation.",
+  "local_resolved_spec_source": "runs/20261023T150149Z_tr02-ppo-screen_dd8756/episode-00000.json.gz",
+  "resolved_specification_identical": true,
+  "resolved_specification_differences": [],
+  "server_observed_configuration": {
+    "actTimeout": 0,
+    "bo": 3,
+    "episodeSteps": 10000000,
+    "runTimeout": 6000,
+    "seed": 425078374,
+    "version": 2
+  },
+  "local_observed_configuration": {
+    "version": 2,
+    "bo": 3,
+    "episodeSteps": 10000000,
+    "actTimeout": 0,
+    "runTimeout": 6000
+  },
+  "conclusion": "Server package version tag is 1.32.7 but its actual CABT spec/config contains v2 BO3 changes absent from stock 1.32.7 wheel. Runtime package version label alone cannot identify its CABT implementation. Do not downgrade or relabel experiments on that tag alone; retain official v2 engine lock and require Linux runtime validation."
+}

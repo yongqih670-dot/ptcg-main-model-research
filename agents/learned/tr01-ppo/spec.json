@@ -1,0 +1,13 @@
+{
+  "id": "tr01-ppo",
+  "kind": "transformer_rl",
+  "path": "agents/learned/tr01-ppo",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+  "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+  "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+  "feature_schema": "full-inherited-blind-conditional-v3"
+}

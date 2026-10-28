@@ -1,0 +1,12 @@
+{
+  "id": "lucario",
+  "source_url": "https://www.kaggle.com/code/cggonzalezsc/blast-radius-mega-lucario-agent",
+  "notebook_sha256": "53b772d00827fb8e308f321ca15a1dce46ead871b21f592b01f4251755600654",
+  "main_sha256": "aac62bdd810a75185a32e89b3640acb050231b63fb3f5951d2ab739469e48357",
+  "deck_sha256": "1a621abba45d309520861c58ae044e6faa720ce581068c3a43e1af92dc40fca1",
+  "extracted_at": "2026-10-23T10:47:30.112869+00:00",
+  "source_changes": "none; notebook magic excluded",
+  "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+  "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+  "validation": "pending"
+}

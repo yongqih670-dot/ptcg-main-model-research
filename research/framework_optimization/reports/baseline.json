@@ -1,0 +1,220 @@
+{
+  "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "complete": true,
+  "attempts": 1,
+  "job_wall_seconds": 10172.640999999989,
+  "collect_seconds_last_attempt": 969.876109943114,
+  "update_seconds_last_attempt": 46.01583665801445,
+  "residual_seconds": 9156.74905339886,
+  "residual_fraction": 0.9001348866433869,
+  "new_actual_unique_PPO_decisions": 16391,
+  "new_sampled_decisions": 19492,
+  "new_complete_BO3": 108,
+  "unique_optimized_decisions_per_job_second": 1.6112826551138508,
+  "job_seconds_per_10000_unique_optimized": 6206.235739125123,
+  "observed_stage_counts": {
+    "paused_for_resource": 3,
+    "resumed_after_resource_pause": 1,
+    "collecting": 3,
+    "series_committed": 3,
+    "optimizing": 2,
+    "consumed_archive_barrier_passed": 1
+  },
+  "point_observations_not_durations": [
+    {
+      "observed_at": "2026-10-27T16:10:06.207581+00:00",
+      "source_at": "2026-10-27T16:09:59.688995+00:00",
+      "stage": "paused_for_resource",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": null
+    },
+    {
+      "observed_at": "2026-10-27T16:13:31.010830+00:00",
+      "source_at": "2026-10-27T16:12:02.788132+00:00",
+      "stage": "resumed_after_resource_pause",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": null
+    },
+    {
+      "observed_at": "2026-10-27T16:16:02.429020+00:00",
+      "source_at": "2026-10-27T16:16:01.265917+00:00",
+      "stage": "collecting",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 0.0
+    },
+    {
+      "observed_at": "2026-10-27T16:26:18.249113+00:00",
+      "source_at": "2026-10-27T16:23:45.341180+00:00",
+      "stage": "series_committed",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 0.0
+    },
+    {
+      "observed_at": "2026-10-27T16:29:58.919157+00:00",
+      "source_at": "2026-10-27T16:29:34.513857+00:00",
+      "stage": "series_committed",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 164.60268875799375
+    },
+    {
+      "observed_at": "2026-10-27T16:34:24.180909+00:00",
+      "source_at": "2026-10-27T16:34:19.682692+00:00",
+      "stage": "paused_for_resource",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 214.12784870999167
+    },
+    {
+      "observed_at": "2026-10-27T16:38:40.711172+00:00",
+      "source_at": "2026-10-27T16:34:51.502459+00:00",
+      "stage": "optimizing",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 214.12784870999167
+    },
+    {
+      "observed_at": "2026-10-27T16:40:53.987966+00:00",
+      "source_at": "2026-10-27T16:34:51.502459+00:00",
+      "stage": "optimizing",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 214.12784870999167
+    },
+    {
+      "observed_at": "2026-10-27T16:44:35.734528+00:00",
+      "source_at": "2026-10-27T16:44:17.617402+00:00",
+      "stage": "consumed_archive_barrier_passed",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 327.51298710898845
+    },
+    {
+      "observed_at": "2026-10-27T16:58:18.419597+00:00",
+      "source_at": "2026-10-27T16:58:16.091373+00:00",
+      "stage": "collecting",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 185.4257707509969
+    },
+    {
+      "observed_at": "2026-10-27T17:00:57.364334+00:00",
+      "source_at": "2026-10-27T17:00:53.757515+00:00",
+      "stage": "collecting",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 185.4257707509969
+    },
+    {
+      "observed_at": "2026-10-27T17:02:28.419074+00:00",
+      "source_at": "2026-10-27T17:01:05.211936+00:00",
+      "stage": "series_committed",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 185.4257707509969
+    },
+    {
+      "observed_at": "2026-10-27T17:06:42.761552+00:00",
+      "source_at": "2026-10-27T17:06:30.858809+00:00",
+      "stage": "paused_for_resource",
+      "source_file": "progress.json",
+      "last_checkpoint_seconds": 214.3174018660211
+    }
+  ],
+  "barrier_records": null,
+  "partial_observed_barriers": [
+    {
+      "at": "2026-10-27T16:44:17.617402+00:00",
+      "cursor": {
+        "version": 6,
+        "trained_decisions": 43797,
+        "next_series_id": 270
+      },
+      "total_barrier_seconds": 327.55936051599565,
+      "ACK_wait_seconds": 0.0286778119916562,
+      "post_ACK_writer_rotations": 1,
+      "last_checkpoint_seconds": 327.51298710898845,
+      "consumed_files": 96,
+      "consumed_logical_bytes": 416144063
+    }
+  ],
+  "barrier_observations_are_partial_not_full_phase_totals": true,
+  "unknown_phases": [
+    "initialization_restore",
+    "environment_advance",
+    "feature_encoding",
+    "IPC",
+    "data_pack_H2D",
+    "PPO_forward_backward_step",
+    "checkpoint_serialization_write_hash",
+    "compression_transfer_ACK",
+    "shared_GPU_wait",
+    "backpressure",
+    "finalization"
+  ],
+  "limitations": [
+    "Collect includes environment, actor, opponent and control waits.",
+    "Update timer is not CUDA kernel time.",
+    "Sparse progress observations do not provide phase durations.",
+    "Missing barrier log is not zero barrier time.",
+    "No inference of GPU idle time or archive share from residual."
+  ],
+  "inputs": [
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/metrics.json",
+      "sha256": "b9125d34d964c4c38ad23b9aadf8609efa5fd5611381158de7c682a0a4c29e17"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/attempts.json",
+      "sha256": "f0fd29c345a338ca989cd064f25d49e4603d61c264e699116707960a2b25e0e1"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1607076429790000.json",
+      "sha256": "7a4a2b878e814365172009eef8613eabdf655de644eb6faa7a11aebecc6a49c1"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1610062075810000.json",
+      "sha256": "87f5c0cc40364af0ac6ee40715346a5d8774f6b9d21ef68964b2808ee52d64d8"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1613310108300000.json",
+      "sha256": "a156c43106f7d6d3b22af373837fa1f247b37d4901b437de056ef1042eb64850"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1616024290200000.json",
+      "sha256": "52b3fc42dd9af5ce384ea0c639085ace2c783b36b50969eb1611330facdac436"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1626182491130000.json",
+      "sha256": "712ac21d552f081c929278971fbe8af99a25dea4939ab894c3e9a54fde57d484"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1629589191570000.json",
+      "sha256": "c09ef9508557a414fa31bd84fc74a4848b7dbf16ada575aa24cff1bc8bb125bf"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1634241809090000.json",
+      "sha256": "e4d5f27843990038ead993c9f6d1430038784b056f6da72abbbde6e7b95da769"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1638407111720000.json",
+      "sha256": "37eca478c0de47955b1f61e4319b16ff9fa41cd7f5fff0dce22a228013cb6ba5"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1640539879660000.json",
+      "sha256": "fec347af6c8e1040f60c5a9b8cd8d63f3e2edbb89417d4adec8cbe784d6615ff"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1644357345280000.json",
+      "sha256": "9444d4412a6ddff5cddd3c820e2e781c61a0bb92affc5d549c9c7b3e80578155"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1658184195970000.json",
+      "sha256": "23064794d6c130c71002282b9eaf5b7f3a007c959f8b0a70dc250ec51957e95a"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1700573643340000.json",
+      "sha256": "5f7696589a28c82273b8841b0fc4f07731577e3d0cc7fef67c5b83f95315217b"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1702284190740000.json",
+      "sha256": "c9327f848045fe82d91eff73f1a9288ed0907404c92227457ce71992e4613168"
+    },
+    {
+      "path": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/remote-observations/2026-10-27T1706427615520000.json",
+      "sha256": "b679fedb6d6d45f9d5f5c471720979a52a19a5dc2d74e514abf8d819167b096c"
+    }
+  ]
+}

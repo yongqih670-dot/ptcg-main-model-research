@@ -1,0 +1,81 @@
+{
+  "job_kind": "train_ppo",
+  "project_path": "PROJECT_ROOT",
+  "bundle_path": "agents/frozen/ppo-zero-anchor",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "engine_manifest_sha256": "df02428ddcd5038d4c5b5761aee77f82dc15e21626a93bf691853a234a923b85",
+  "workers": 1,
+  "ppo": {
+    "terminal_reward": {
+      "win": 1,
+      "loss": -1,
+      "draw": 0
+    },
+    "gamma": 1.0,
+    "gae_lambda": 1.0,
+    "actor_learning_rate": 1e-05,
+    "value_head_learning_rate": 0.0001,
+    "shared_trunk_optimizer_group": "actor_only_no_duplicate_parameters",
+    "clip": 0.2,
+    "epochs": 2,
+    "entropy_coefficient": 0.01,
+    "value_loss_coefficient": 0.5,
+    "max_grad_norm": 0.5,
+    "target_kl": 0.02,
+    "rollout_complete_learner_decisions": 8192,
+    "minibatch_initial": 256,
+    "minibatch_memory_fallbacks": [
+      128,
+      64
+    ]
+  },
+  "league": {
+    "weights": {
+      "fixed_diverse": 1.0,
+      "historical_learner": 0.0,
+      "latest_frozen_learner": 0.0,
+      "weakness_training_opponents": 0.0
+    },
+    "fixed_opponents": [
+      {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    ]
+  },
+  "hypothesis_id": "TR11",
+  "seed": 230101,
+  "target_decisions": 49166,
+  "primary_change": "Continue one fully inherited parent on one frozen legal opponent to test policy learnability; optimizer/reward/architecture unchanged.",
+  "success_criteria": "New16384actualunique decisions, nonzero policy gradient and independent400BO3perarm terminal-parent gain CI95lower>0 and point>=0.05; diagnostic only, no champion promotion.",
+  "decision_milestones": [
+    40974,
+    49166
+  ]
+}

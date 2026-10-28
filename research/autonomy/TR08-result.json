@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-26T12:33:43.045920+00:00",
+  "hypothesis_id": "TR08",
+  "classification": "invalid",
+  "promotion_eligible": false,
+  "failure_analysis": {
+    "path": "runs/20261026T123134Z_tr08-full-cold-postmortem_ac7d6f/analysis.json",
+    "sha256": "da3e46802a8e5598e844266b95760feec9ab7c4051e23679055e3ad50aa7c84f"
+  },
+  "original_training_run_ids": [
+    "20261026T085757Z_tr08-actor-lr3e6-CPU-sampling_868ff0",
+    "20261026T111415Z_tr08-original-second-lr3e6-CPU32_8de8af"
+  ],
+  "original_attempts_consumed": 2,
+  "remaining_original_training_attempts": 0,
+  "original_total_seconds": 8083.313000000002,
+  "trained_decisions": 24837,
+  "target_decisions": 32768,
+  "committed_PPO_updates": 3,
+  "untrained_committed_decisions": 1706,
+  "orphan_complete_untrained_decisions": 176,
+  "all_original_bytes_models_optimizer_RNG_history_and_costs_preserved": true,
+  "valid_hypothesis_count_and_streak_not_incremented": true,
+  "strength_effect": null,
+  "no_third_renamed_fresh_or_partialweight_selection": true,
+  "reason": "Both original attempts failed and training target incomplete. First transportdeadline; second working-set admission while priorcheckpoint pinnedconsumedrollouts under ACKlag.",
+  "next": "Repairandactuallyaccept ACKlag two-point consumedreference rotation before any genuinelynew singlevariableH002 research. No TR08continuation."
+}

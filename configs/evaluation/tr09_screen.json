@@ -1,0 +1,212 @@
+{
+  "job_kind": "evaluation",
+  "hypothesis_id": "TR09",
+  "workers": 8,
+  "series_count": 240,
+  "policy_seed": 230202,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "PPO epochs2 to4 versus matchedTR02, originalfullH002. ActorLR1e-5/value0.5/entropy0.01/lambda0.95, deck/league/trainingseed/32768target and KL0.02 unchanged.",
+  "success_criteria": "Complete32768decisions and independent50BO3 reliability plus frozen240BO3 screen. Independent800BO3 confirmation onlyif original95%CI lower>0. Partialupdates/trainingreward cannot establish strength.",
+  "evaluation_stage": "screening",
+  "matchups": [
+    {
+      "cell_id": "candidate-vs-lucario",
+      "candidate": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-lucario",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "candidate-vs-alakazam",
+      "candidate": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-alakazam",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "candidate-vs-archaludon",
+      "candidate": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-archaludon",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "candidate-vs-ppo",
+      "candidate": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-ppo",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate_cell": "candidate-vs-lucario",
+      "anchor_cell": "anchor-vs-lucario",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "candidate-vs-alakazam",
+      "anchor_cell": "anchor-vs-alakazam",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "candidate-vs-archaludon",
+      "anchor_cell": "anchor-vs-archaludon",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "candidate-vs-ppo",
+      "anchor_cell": "anchor-vs-ppo",
+      "weight": 0.25
+    }
+  ],
+  "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+  "model_spec_sha256": "edc7f21308f7f90df0e2044a37e4f5e3099223bd268c9ac31566c83a18b98e6a"
+}

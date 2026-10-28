@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-25T21:26:58.968661+00:00",
+  "hypothesis_id": "TR07",
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "8856d149a843aa215b90533049f7390c9f88f613ff0fc81b07e52341ca40bd4c"
+  ],
+  "single_primary_change": "value_loss_coefficient0.5 ->0.1",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_attempts_max": 2,
+  "training_wall_seconds_max": 14400,
+  "training_attempt_seconds_max": 7200,
+  "hypothesis_compute_hours_max": 8,
+  "first_raw_training_run_attempts_max": 1,
+  "continuation_rule": "At most one exactderived originalsecondattempt with fullstate, subtract all time/attempts; never repeat freshinitializer or adopt closedhypothesis partialweights.",
+  "evaluation_template_path": "research/autonomy/preregistrations/TR07-screen-template.json",
+  "evaluation_template_sha256": "fe60e94f99697a76a278e55caa6abf1b02f6de88d63ad23a67680b4ed47cfbcb",
+  "config_binding_amendments": "Only frozencomplete trainedartifact paths/hashes.50BO3 reliability; unchanged240BO3 screen; independent800BO3 confirmation only if predeclared CI lower>0. No posthoc extension.",
+  "local_storage_plan_gib": {
+    "current": 58.03201034385711,
+    "regular_growth_forecast": 0.75,
+    "protected_future_margin": 1,
+    "hard_max": 60,
+    "forecast_basis": "Actual durable onlinearchives: firstTR05 58,010,371B for3215pending, secondTR05 105,884,969B for8283trained;4times latter plus evaluation/model/source margin <768MiB. This is a planning estimate, not a result or increased hardcap."
+  },
+  "proposal": {
+    "path": "research/proposals/transformer_rl_v3/TR07_VALUE_WEIGHT.json",
+    "sha256": "878dda71c72e0918da4e5a6b79b2d7529f9ba7c857568f1b1bfdc5d67560b4ae"
+  },
+  "no_final_pool_access_or_threshold_change": true,
+  "valid_hypothesis_requires_complete_training_and_planned_evaluation": true
+}

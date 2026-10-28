@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-26T13:13:58.208984+00:00",
+  "hypothesis_id": "TR09",
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "f06691943b1992f15bd9b8fee69fe3545a3805b6e8b4d0b3406b6f0dab2d00d1"
+  ],
+  "single_primary_change": "PPO epochs2 ->4",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_attempts_max": 2,
+  "training_wall_seconds_max": 14400,
+  "training_attempt_seconds_max": 7200,
+  "hypothesis_compute_hours_max": 8,
+  "first_raw_training_run_attempts_max": 1,
+  "continuation_rule": "At most one identity-bound originalsecondattempt with full model/optimizer/RNG/pending and spenttime; no repeatedfreshinitializer, thirdattempt or renamedcontinuation.",
+  "evaluation_template_path": "research/autonomy/preregistrations/TR09-screen-template.json",
+  "evaluation_template_sha256": "4611a405d76a40621ab16b744821a007930e064e9fb6763e897b9d61df5b2a97",
+  "config_binding_amendments": "Only frozencomplete artifact paths/hashes.50BO3 reliability; original240BO3 screen; independent800BO3 confirmation onlyif originalCI lower>0; no posthoc extension.",
+  "local_storage_plan_gib": {
+    "current": 58.50664962083101,
+    "regular_growth_forecast": 1.0,
+    "protected_future_margin": 0.25,
+    "hard_max": 60,
+    "limits": "Hardcounter/20GiBfree unchanged. Additional exactlossless storage verification required before final work; training does not grant finalpool access."
+  },
+  "proposal": {
+    "path": "research/proposals/transformer_rl_v3/TR09_PPO_EPOCHS.json",
+    "sha256": "6e9e7c4df730b070c027d970d285fd470504db0979be095af22a0b46a23e1dba"
+  },
+  "no_final_pool_access_or_threshold_change": true,
+  "valid_hypothesis_requires_complete_training_and_planned_evaluation": true
+}

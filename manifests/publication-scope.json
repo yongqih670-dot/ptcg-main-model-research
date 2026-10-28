@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "publication": "curated_code_configs_results_and_reproduction_materials",
+  "repository": "https://github.com/yongqih670-dot/ptcg-main-model-research",
+  "visibility": "public",
+  "updated_at": "2026-10-29",
+  "science_snapshot_cutoff_utc": "2026-10-28T13:58:27.203631+00:00",
+  "full_training_data_upload_cancelled": true,
+  "full_recovery_archive_upload_cancelled": true,
+  "automatic_upload_retries_disabled": true,
+  "removed_release_asset_count": 67,
+  "remaining_release_assets": 0,
+  "removed_release_id": 426803614,
+  "raw_data_or_model_payloads_in_curated_tree": false,
+  "original_local_and_server_data_deleted": false,
+  "training_processes_stopped_by_cleanup": false,
+  "public_history_replaced_by_curated_snapshot": true,
+  "original_full_publication_checkout_preserved_locally": true,
+  "source_file_hash_manifest": "manifests/curated-files.json",
+  "reproduction_limit": "Original training data, weights and full recovery state remain private; exact end-to-end numerical replay is not available from this public subset alone."
+}

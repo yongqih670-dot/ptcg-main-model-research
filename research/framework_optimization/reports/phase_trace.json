@@ -1,0 +1,91 @@
+{
+  "wall_seconds": 3.7529817999748047,
+  "union_covered_seconds": 0.5497084000089671,
+  "residual_seconds": 3.2032733999658376,
+  "phases_union_seconds": {
+    "PPO.evaluate": 0.4288188999926206,
+    "data.H2D": 0.00032640001154504716,
+    "policy.conditional_reduce": 0.0005466000002343208,
+    "policy.forward": 0.1200165000045672,
+    "policy.forward_submission": 0.3973327999992762
+  },
+  "phase_sums_are_not_additive": true,
+  "dropped_spans": 0,
+  "spans": [
+    {
+      "phase": "data.H2D",
+      "start": 0.13235049997456372,
+      "end": 0.13267689998610877,
+      "pid": 30808,
+      "thread": 42528,
+      "status": "complete",
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "policy.forward",
+      "start": 0.13269709999440238,
+      "end": 0.2527135999989696,
+      "pid": 30808,
+      "thread": 42528,
+      "status": "complete",
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "policy.conditional_reduce",
+      "start": 0.2527469999913592,
+      "end": 0.2532935999915935,
+      "pid": 30808,
+      "thread": 42528,
+      "status": "complete",
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "policy.forward_submission",
+      "start": 3.320658699987689,
+      "end": 3.452845799998613,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "PPO.evaluate",
+      "start": 3.320247900002869,
+      "end": 3.4622435999917798,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "policy.forward_submission",
+      "start": 3.462808899988886,
+      "end": 3.5872004999837372,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "PPO.evaluate",
+      "start": 3.462404999998398,
+      "end": 3.5958618999866303,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "policy.forward_submission",
+      "start": 3.5963696999824606,
+      "end": 3.7371237999759614,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    },
+    {
+      "phase": "PPO.evaluate",
+      "start": 3.5959912999824155,
+      "end": 3.749357599997893,
+      "thread": 42528,
+      "python_profile": true,
+      "cuda_synchronized": false
+    }
+  ]
+}

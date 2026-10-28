@@ -1,0 +1,264 @@
+{
+  "at": "2026-10-28T09:39:21.385799+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "classification": "TR12_interrupted_full_CPU_state_and_complete_tail_verified",
+  "source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+  "terminal_archive_run_id": "20261028T093017Z_tr12-terminal-missing-archive_8f7625",
+  "recovery_source_root": "runs/20261028T093904Z_tr12-full-state-tail_e16975/recovery-source/20261028T060043Z_tr12-volume-segment-001_a709d8",
+  "terminal_file_count": 951,
+  "terminal_original_bytes": 380708061,
+  "original_ACKs_reused": 298,
+  "new_ACKs": [
+    {
+      "sequence": 298,
+      "object": "checkpoint-commits/objects/cp-056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c.pt",
+      "sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+      "bytes": 46359925
+    },
+    {
+      "sequence": 299,
+      "object": "league/learner-0011.pt",
+      "sha256": "b8f05d4d6b67aa6e1095d3604ae33a36aca626b0a480ffa521e0ceff4fed78cc",
+      "bytes": 19529025
+    },
+    {
+      "sequence": 300,
+      "object": "rollouts/v0011-s000471.pt",
+      "sha256": "548f5b9374fbb1799d875160224835ecfb771beac537c5780423b215f6f48830",
+      "bytes": 5279265
+    },
+    {
+      "sequence": 301,
+      "object": "series/000471.json",
+      "sha256": "5f65a9c6de8ff9a0c1c8f901fa6150d1545dadc98803dcd5f7af27023518cdb0",
+      "bytes": 50915
+    }
+  ],
+  "total_complete_outbox_ACKs": 302,
+  "both_committed_recovery_points": [
+    {
+      "generation": 11,
+      "checkpoint": {
+        "path": "checkpoint-commits/objects/cp-46378a082b5413fa521e844f321c2aa80eade01f3c9b18383051bdffcaec8ab2.pt",
+        "sha256": "46378a082b5413fa521e844f321c2aa80eade01f3c9b18383051bdffcaec8ab2",
+        "bytes": 46359925
+      },
+      "cursor": {
+        "version": 11,
+        "trained_decisions": 79641,
+        "next_series_id": 471
+      },
+      "full_model_tensor_count": 127,
+      "optimizer_state_count": 97,
+      "CPU_restore_bitwise_equal": true,
+      "all_RNG_payloads_present": true,
+      "CPU_Python_NumPy_sampler_RNG_roundtrip_equal": true,
+      "CUDA_RNG_bytes": 16,
+      "pending_decisions_after_journal_recovery": 104,
+      "journal_next_series_id": 472
+    },
+    {
+      "generation": 12,
+      "checkpoint": {
+        "path": "checkpoint-commits/objects/cp-056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c.pt",
+        "sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+        "bytes": 46359925
+      },
+      "cursor": {
+        "version": 11,
+        "trained_decisions": 79641,
+        "next_series_id": 471
+      },
+      "full_model_tensor_count": 127,
+      "optimizer_state_count": 97,
+      "CPU_restore_bitwise_equal": true,
+      "all_RNG_payloads_present": true,
+      "CPU_Python_NumPy_sampler_RNG_roundtrip_equal": true,
+      "CUDA_RNG_bytes": 16,
+      "pending_decisions_after_journal_recovery": 104,
+      "journal_next_series_id": 472
+    }
+  ],
+  "source_point": {
+    "generation": 12,
+    "cursor": {
+      "version": 11,
+      "trained_decisions": 79641,
+      "next_series_id": 471
+    },
+    "checkpoint": {
+      "path": "checkpoint-commits/objects/cp-056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c.pt",
+      "sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+      "bytes": 46359925
+    },
+    "prefix": {
+      "path": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+      "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "bytes": 810
+    },
+    "pending": [],
+    "commit_id": "517e904aee453306e98218b137aba06854b050c76ef75fc3a8221a5a3e86236a"
+  },
+  "checkpoint_cursor": {
+    "version": 11,
+    "trained_decisions": 79641,
+    "next_series_id": 471
+  },
+  "complete_tail_series_id": 471,
+  "pending_decisions": 104,
+  "unfinished_BO3_preserved_and_excluded": {
+    "series_id": 472,
+    "policy_version": 11,
+    "learner_seat": 0,
+    "assignment": {
+      "bucket": "fixed_diverse",
+      "opponent_id": "ppo",
+      "fixed": true
+    },
+    "at": "2026-10-28T07:44:08.204456+00:00"
+  },
+  "next_series_id_after_interruption_exclusion": 473,
+  "RNG_source_for_continuation": "complete series471 rng_after and cpu_sampler_rng_after; checkpoint model/optimizer unchanged",
+  "all_12_frozen_league_hashes_verified": [
+    {
+      "id": "learner-0000",
+      "version": 0,
+      "path": "league/learner-0000.pt",
+      "sha256": "385359ca499c8838698604d97b9980302e3fae35865ccc48ffc3111a97dec0ac"
+    },
+    {
+      "id": "learner-0001",
+      "version": 1,
+      "path": "league/learner-0001.pt",
+      "sha256": "3526b9c69c642ca44bef11611d371465443402c80c1982e6fc547162b1f4719f"
+    },
+    {
+      "id": "learner-0002",
+      "version": 2,
+      "path": "league/learner-0002.pt",
+      "sha256": "2778855eca4767f7a53b52ce9741f2553169ccb940fb699b4862a8a77ad21834"
+    },
+    {
+      "id": "learner-0003",
+      "version": 3,
+      "path": "league/learner-0003.pt",
+      "sha256": "8b493cd6cee99942483e5451e5a5caf4b2c4c295bf29ea5952b0142cdd30ff31"
+    },
+    {
+      "id": "learner-0004",
+      "version": 4,
+      "path": "league/learner-0004.pt",
+      "sha256": "36cd344c87bbdc12a0963a9e5f9f30f15dbe4c5133f0a3b754a83ac54ea2cfc1"
+    },
+    {
+      "id": "learner-0005",
+      "version": 5,
+      "path": "league/learner-0005.pt",
+      "sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66"
+    },
+    {
+      "id": "learner-0006",
+      "version": 6,
+      "path": "league/learner-0006.pt",
+      "sha256": "faaaa88e81ad2476254835384c857e19dd5aaaf95820c3281a4c920a3620e4ce"
+    },
+    {
+      "id": "learner-0007",
+      "version": 7,
+      "path": "league/learner-0007.pt",
+      "sha256": "b7629d6e576d00bd55b73fe5679f979c977dcef5e5162b29e1c1355923bd9bd8"
+    },
+    {
+      "id": "learner-0008",
+      "version": 8,
+      "path": "league/learner-0008.pt",
+      "sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649"
+    },
+    {
+      "id": "learner-0009",
+      "version": 9,
+      "path": "league/learner-0009.pt",
+      "sha256": "6cc78389846d16ba3737315bdb7b242ab3d9794d41c85f8bc197c562e46e247f"
+    },
+    {
+      "id": "learner-0010",
+      "version": 10,
+      "path": "league/learner-0010.pt",
+      "sha256": "33ab33cc4bced25b4fd294d74e8d2d678a7e25ee2151792e7141970a1b178a93"
+    },
+    {
+      "id": "learner-0011",
+      "version": 11,
+      "path": "league/learner-0011.pt",
+      "sha256": "b8f05d4d6b67aa6e1095d3604ae33a36aca626b0a480ffa521e0ceff4fed78cc"
+    }
+  ],
+  "fixed_training_statistics": {
+    "lucario": {
+      "n": 35,
+      "losses": 4.0
+    },
+    "archaludon": {
+      "n": 24,
+      "losses": 1.0
+    },
+    "alakazam": {
+      "n": 31,
+      "losses": 1.0
+    },
+    "ppo": {
+      "n": 289,
+      "losses": 150.0
+    }
+  },
+  "pending_CPU_probability_value_parity": {
+    "conditional_logp_max_error": 1.285628959379892e-05,
+    "conditional_logp_tolerance": 0.0001,
+    "value_max_error": 7.748603820800781e-07,
+    "value_tolerance": 0.0002,
+    "real_current_policy_decisions": 48
+  },
+  "CUDA_RNG_bytes_preserved": true,
+  "new_GPU_runtime_restore_test_performed": false,
+  "new_complete_BO3": 142,
+  "new_complete_games": 361,
+  "new_sampled_decisions": 24831,
+  "unique_PPO_trained_decisions": 73900,
+  "TR12_new_unique_PPO_decisions": 24727,
+  "TR12_new_PPO_updates": 3,
+  "decision_accounting": "unique_successful_first_epoch_coverage_v1",
+  "new_update_coverage": [
+    {
+      "version": 9,
+      "consumed": 8207,
+      "actual_unique": 8207
+    },
+    {
+      "version": 10,
+      "consumed": 8263,
+      "actual_unique": 8263
+    },
+    {
+      "version": 11,
+      "consumed": 8257,
+      "actual_unique": 8257
+    }
+  ],
+  "inherited_8_updates_49173_decisions_unchanged": true,
+  "optimizer_steps_executed": 0,
+  "new_sampled_decisions_in_audit": 0,
+  "all_source_checkpoint_and_terminal_bytes_unchanged": true,
+  "remote_writes_or_evictions": false,
+  "numerical_reference": {
+    "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/current-endpoint-numeric-reference.pt",
+    "sha256": "0dd0faea7a4f911714cc1812b44ec75516e960eac768f157671bef9ed8e4a82f",
+    "bytes": 21955453
+  },
+  "original_deadline_unix": 1793196025.9536026,
+  "prior_failed_attempt_seconds": 28800,
+  "promotion_eligible": false,
+  "training_route_ready": false,
+  "remaining_training_gate": "Bind complete post-checkpoint tail and interrupted cursor in future segment handoff; current endpoint GPU zero-update difference acceptance required.",
+  "seconds": 13.873015400022268
+}

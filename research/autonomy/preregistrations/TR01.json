@@ -1,0 +1,42 @@
+{
+  "hypothesis_id": "TR01",
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "at": "2026-10-23T14:18:14.879876+00:00",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "hypothesis": "Short blind PPO with frozen league can improve fixed-deck H002 actor over the unchanged development panel.",
+  "single_primary_change": "online PPO training; complete model/deck/features initialized from H002 with audited full-option support",
+  "target_decisions": 32768,
+  "training_wall_seconds_max": 3600,
+  "hypothesis_hours_max": 8,
+  "config_hashes": [
+    "48e266bf6c3abf058c6906d45d96ea4cebffdc78bbfc73991da615fe34636e23",
+    "6f7b503fc63b95f91ac3d9ec6629615b20f12fdda05adf289ea02705a505a928"
+  ],
+  "evaluation_template_path": "research/autonomy/preregistrations/TR01-screen-template.json",
+  "evaluation_template_sha256": "25d9226bb9d94ae0d4dfec38a090a5531ab90aee98c9529d4796904ff8ca8e89",
+  "planned_jobs": [
+    "train_ppo",
+    "50 BO3 engineering reliability smoke",
+    "240 BO3 fixed independent screen",
+    "conditional 800 BO3 independent confirmation if screen gain CI lower >0 and reliability passes"
+  ],
+  "config_binding_amendments": "After training, only bind frozen model spec, training run and resulting hashes; after screen, only bind screening_run_id and raise every arm/opponent to 100 BO3 for predeclared confirmation. Preserve prior preregistration revisions. Do not tune based on smoke.",
+  "promotion": "Only unchanged validate_confirmation all checks passed; screen never promotes.",
+  "failure_rule": "Two same-failure local repairs then root-cause review; failure runs remain charged and consume raw research slots.",
+  "final_pool_access": false,
+  "statistical_unit": "complete BO3; unpaired engine RNG; independent opponent-stratified bootstrap",
+  "final_gates_unchanged": true,
+  "bindings": [
+    {
+      "at": "2026-10-23T14:33:34.268978+00:00",
+      "previous_preregistration_sha256": "906142ee22c987f850895b252ef1e20add92d1c238ff0ba5ffe8975dc92cebf2",
+      "config_path": "configs/evaluation/tr01_screen.json",
+      "config_sha256": "7250891f4059ae305472b62ef3b20473440b4f63906ee92295e8b407fb049c22",
+      "reason": "Resolve completed training artifact only into unchanged precommitted screen template"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "type": "local_CPU_real_fixture_forward_microbenchmark",
+  "threads": 2,
+  "fixture": {
+    "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/current-endpoint-numeric-reference.pt",
+    "sha256": "0dd0faea7a4f911714cc1812b44ec75516e960eac768f157671bef9ed8e4a82f",
+    "model_source_checkpoint_sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+    "model_source_path": "PROJECT_ROOT\\agents\\frozen\\ppo-zero-anchor\\ptcg\\rl\\model.py",
+    "model_source_sha256": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+    "decisions": 48
+  },
+  "parity": {
+    "passed": true,
+    "finite": true,
+    "logp_max_error": 0.0,
+    "value_max_error": 0.0,
+    "entropy_max_error": 0.0,
+    "logp_tolerance": 0.0001,
+    "value_tolerance": 0.0002
+  },
+  "one_time_pack_seconds": 0.0011675000132527202,
+  "timings": {
+    "baseline_full_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.13054789998568594,
+      "minimum_seconds": 0.1278333000082057,
+      "maximum_seconds": 0.1374208000197541,
+      "samples_seconds": [
+        0.1278333000082057,
+        0.12872839998453856,
+        0.1297117999929469,
+        0.13054789998568594,
+        0.13227969998843037,
+        0.1374208000197541,
+        0.13344159998814575
+      ]
+    },
+    "candidate_pack_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.12620800000149757,
+      "minimum_seconds": 0.12434580002445728,
+      "maximum_seconds": 0.13068100000964478,
+      "samples_seconds": [
+        0.12792119997902773,
+        0.12620800000149757,
+        0.12459240001044236,
+        0.12434580002445728,
+        0.12456699999165721,
+        0.12722100000246428,
+        0.13068100000964478
+      ],
+      "local_speedup_vs_baseline": 1.0343868850162976
+    },
+    "candidate_cached_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.12314929999411106,
+      "minimum_seconds": 0.12243029999081045,
+      "maximum_seconds": 0.13293160000466742,
+      "samples_seconds": [
+        0.12301300000399351,
+        0.12314929999411106,
+        0.12362490000668913,
+        0.12246909999521449,
+        0.12243029999081045,
+        0.12759650000953116,
+        0.13293160000466742
+      ],
+      "local_speedup_vs_baseline": 1.0600782951419836
+    }
+  },
+  "profiled_baseline": {
+    "n": 3,
+    "median_seconds": 0.1411103999998886,
+    "minimum_seconds": 0.13556789999711327,
+    "maximum_seconds": 0.2147555999981705,
+    "samples_seconds": [
+      0.1411103999998886,
+      0.13556789999711327,
+      0.2147555999981705
+    ]
+  },
+  "trace_path": "reports/phase_trace.json",
+  "new_scientific_decisions": 0,
+  "optimizer_steps": 0,
+  "end_to_end_speedup": null,
+  "limitations": [
+    "48 decisions, single real tail fixture; no full BO3 collection or archive measured.",
+    "CPU timing only; hardware GPU acceptance pending.",
+    "Profiler overhead estimate is noisy at this small sample size."
+  ]
+}

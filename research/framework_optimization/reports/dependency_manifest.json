@@ -1,0 +1,84 @@
+{
+  "read_only_inputs": [
+    {
+      "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/verified-recovery-report.json",
+      "sha256": "ad20fa09def13c439f764536d2c493f149e962f2b6edec4b1d566edaa8bb092f",
+      "bytes": 8908,
+      "read_only_reference": true
+    },
+    {
+      "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/current-endpoint-numeric-reference.pt",
+      "sha256": "0dd0faea7a4f911714cc1812b44ec75516e960eac768f157671bef9ed8e4a82f",
+      "bytes": 21955453,
+      "read_only_reference": true
+    },
+    {
+      "path": "agents/frozen/ppo-zero-anchor/ptcg/rl/model.py",
+      "sha256": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+      "bytes": 16616,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/ppo_accounting.py",
+      "sha256": "1bcae61c696b3f5f7574a966b5d1dcb16d13c82601f49ee0d2bfee31befa1823",
+      "bytes": 2460,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/archive_ack.py",
+      "sha256": "7a033ad33bfeec2644e93b41d34871f788bdd7d4c8a194d07f95ae6a5d92e2db",
+      "bytes": 5515,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/tensor_io.py",
+      "sha256": "85e7c4304647d4f6c4689b0e03e7d2d04dc68e42e4b15791ac5f0d18de286bc6",
+      "bytes": 1691,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/training_control.py",
+      "sha256": "9cafbd509dccb1993b850d621cec00c9d41a22dede1189a3b3d6cff797540cea",
+      "bytes": 5113,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/rl_league.py",
+      "sha256": "b34ec0c24d17c43b126dfb581a95ef60ba1b50a6f4b6a39e82877078f262fe4a",
+      "bytes": 6315,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/rl_engine_worker.py",
+      "sha256": "15ec0b6a94ba3becde2c6760a9fd408e5ac639e6d3a585e4b8f6ab7cd86d450d",
+      "bytes": 1366,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/public_agent.py",
+      "sha256": "802a03c0c286a45a4f88461adc0db7f1fc317a335e4aefa7c33967e7887cd541",
+      "bytes": 8161,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/token_features.py",
+      "sha256": "52f0a7a5b501e69f90f06d9663d1627a26fea4879d00a9ab5311765aa22bcc0b",
+      "bytes": 3847,
+      "read_only_reference": true
+    },
+    {
+      "path": "ptcg_lab/bounded_checkpoint_audit.py",
+      "sha256": "536a6d4a1e47f385d12f3e341f79fe6d03dc7fcbe67309a74ccedf7d9ffb2e2e",
+      "bytes": 8149,
+      "read_only_reference": true
+    }
+  ],
+  "versions": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "PROJECT_ROOT\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.5.4",
+    "cuda_available": false
+  }
+}

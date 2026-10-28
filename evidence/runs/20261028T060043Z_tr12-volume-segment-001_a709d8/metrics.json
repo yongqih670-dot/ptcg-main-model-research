@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-28T09:27:48.117648+00:00",
+  "complete": false,
+  "classification": "interrupted_positive_update_full_state_recovery_required",
+  "remote_terminal_verified": true,
+  "unique_PPO_trained_decisions_observed": 73900,
+  "new_decisions_observed": 24727,
+  "new_PPO_updates_observed": 3,
+  "full_recovery_audit_pending": true,
+  "promotion_eligible": false
+}

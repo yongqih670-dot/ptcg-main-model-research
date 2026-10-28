@@ -1,0 +1,12 @@
+{
+  "id": "alakazam",
+  "source_url": "https://www.kaggle.com/code/woominyo/ptcg-alakazam-dusknoir-ready-to-run-agent",
+  "notebook_sha256": "01b63f49cb467bef0ea4021c7aad9143d9f4905a33872e799b615e749f4974a7",
+  "main_sha256": "36d61afc0ea7b486ef03ce0c60df3aab8b624d9fbd435cb0355867a92d6c0eb9",
+  "deck_sha256": "61e29a499f3d7cc66b6778ff35c956bc536f4be9742cc4ddcaf4f899711e5238",
+  "extracted_at": "2026-10-23T10:47:30.160413+00:00",
+  "source_changes": "none; notebook magic excluded",
+  "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+  "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+  "validation": "pending"
+}

@@ -1,0 +1,122 @@
+{
+  "project_path": "PROJECT_ROOT",
+  "job_kind": "evaluation",
+  "hypothesis_id": "TR11",
+  "workers": 8,
+  "maximum_attempts": 1,
+  "series_count": 800,
+  "policy_seed": 231101,
+  "bootstrap_seed": 231102,
+  "bootstrap_samples": 20000,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "evaluation_stage": "basic_learning_diagnostic",
+  "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "endpoint_spec_sha256": "281b9560bb07ac29c8fe436c24a7eafc36cc6f245a30813491a3355152538633",
+  "parent_spec_sha256": "aa20472d1abd4e6b64f65487bd02697f93d9ddc1be9f1783b8595d5190f919eb",
+  "protocol": {
+    "path": "research/proposals/continuous_mainline_v1/ACTIVATED_PROTOCOL.json",
+    "sha256": "5e97238dbf9bdcab80b2188ab497e6a15fa77de078d2f9c33394454aeaa6fccc"
+  },
+  "primary_change": "Only the completed additional-PPO endpoint versus full inherited parent on the same frozen legal PPO opponent.",
+  "success_criteria": "Exactly400 fresh completeBO3 per arm,200/200seats each; gain>=0.05 andCI95lower>0. Diagnostic only, no champion promotion.",
+  "matchups": [
+    {
+      "cell_id": "parent-vs-ppo",
+      "series_count": 400,
+      "candidate": {
+        "id": "tr10-monte-carlo-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr10-monte-carlo-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+        "training_run_id": "20261027T094058Z_tr10-original-second-actual-counter_2063d8",
+        "training_config_sha256": "2663163eadf3f62391077675f751e21baf525d904ca6f35a8516c647e5886149",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_count": 400,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    }
+  ],
+  "promotion_eligible": false,
+  "native_seed_exposed": false,
+  "policy_seed_scope": "policy RNG only; fresh unpaired native completeBO3"
+}

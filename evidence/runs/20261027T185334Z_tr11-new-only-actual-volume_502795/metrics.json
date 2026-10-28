@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-27T18:53:37.759179+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "parent_decisions_excluded": 32782,
+  "new_actual_unique_PPO_decisions": 16391,
+  "new_PPO_updates": 3,
+  "successful_optimizer_steps": 110,
+  "new_update_gradients": [
+    {
+      "version": 6,
+      "policy_gradient_l2": 3.3464518428498606,
+      "passed": true
+    },
+    {
+      "version": 7,
+      "policy_gradient_l2": 4.284090436620211,
+      "passed": true
+    },
+    {
+      "version": 8,
+      "policy_gradient_l2": 3.438660359455168,
+      "passed": true
+    }
+  ],
+  "policy_gradient_health_passed": true,
+  "full_model_optimizer_global_CUDA_CPU_sampler_RNG_present": true,
+  "model_bitwise_matches_checkpoint": true,
+  "total_project_actual_unique_PPO_decisions": 687865,
+  "ledger_before": {
+    "path": "research/autonomy/CURRENT_VOLUME.json",
+    "sha256": "1a16a4bce8b8f27088c723b0de0244c60da4401ad08608367e798ce4108e14fa"
+  },
+  "proposal": {
+    "path": "runs/20261027T185334Z_tr11-new-only-actual-volume_502795/CURRENT_VOLUME.proposed.json",
+    "sha256": "359436d0ce32637e8f57d2422f73c45399f83bc471268b4996de24934f09f1e9"
+  },
+  "new_training_during_audit": false,
+  "promotion_eligible": false
+}

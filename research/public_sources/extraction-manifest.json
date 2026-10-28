@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lucario",
+    "source_url": "https://www.kaggle.com/code/cggonzalezsc/blast-radius-mega-lucario-agent",
+    "notebook_sha256": "53b772d00827fb8e308f321ca15a1dce46ead871b21f592b01f4251755600654",
+    "main_sha256": "aac62bdd810a75185a32e89b3640acb050231b63fb3f5951d2ab739469e48357",
+    "deck_sha256": "1a621abba45d309520861c58ae044e6faa720ce581068c3a43e1af92dc40fca1",
+    "extracted_at": "2026-10-23T10:47:30.112869+00:00",
+    "source_changes": "none; notebook magic excluded",
+    "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+    "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+    "validation": "pending"
+  },
+  {
+    "id": "alakazam",
+    "source_url": "https://www.kaggle.com/code/woominyo/ptcg-alakazam-dusknoir-ready-to-run-agent",
+    "notebook_sha256": "01b63f49cb467bef0ea4021c7aad9143d9f4905a33872e799b615e749f4974a7",
+    "main_sha256": "36d61afc0ea7b486ef03ce0c60df3aab8b624d9fbd435cb0355867a92d6c0eb9",
+    "deck_sha256": "61e29a499f3d7cc66b6778ff35c956bc536f4be9742cc4ddcaf4f899711e5238",
+    "extracted_at": "2026-10-23T10:47:30.160413+00:00",
+    "source_changes": "none; notebook magic excluded",
+    "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+    "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+    "validation": "pending"
+  },
+  {
+    "id": "archaludon",
+    "source_url": "https://www.kaggle.com/code/masamikobayashi/a-sample-archaludon-75-wr-vs-my-1300-starmie",
+    "notebook_sha256": "cc9db318aa4d60d832a5ea60bf432ef1b919d043aaa3359fa96dd0868493aad0",
+    "main_sha256": "a4c53101be301c181bd477204a72c0e5cba65fddd34d8cd0ec4d36e4b41c9518",
+    "deck_sha256": "42165967b565dd42ec426ecccfe79bfa7d72aa8306590e149dface0ee8bd530e",
+    "extracted_at": "2026-10-23T10:47:30.187196+00:00",
+    "source_changes": "none; notebook magic excluded",
+    "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+    "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+    "validation": "pending"
+  }
+]

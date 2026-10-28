@@ -1,0 +1,12 @@
+{
+  "id": "archaludon",
+  "source_url": "https://www.kaggle.com/code/masamikobayashi/a-sample-archaludon-75-wr-vs-my-1300-starmie",
+  "notebook_sha256": "cc9db318aa4d60d832a5ea60bf432ef1b919d043aaa3359fa96dd0868493aad0",
+  "main_sha256": "a4c53101be301c181bd477204a72c0e5cba65fddd34d8cd0ec4d36e4b41c9518",
+  "deck_sha256": "42165967b565dd42ec426ecccfe79bfa7d72aa8306590e149dface0ee8bd530e",
+  "extracted_at": "2026-10-23T10:47:30.187196+00:00",
+  "source_changes": "none; notebook magic excluded",
+  "runtime_adapter": "static card API; isolated module per seat; round reset; no native search",
+  "license_status": "Public notebook explicitly offers reuse; no explicit license in CLI metadata; verify before redistribution",
+  "validation": "pending"
+}

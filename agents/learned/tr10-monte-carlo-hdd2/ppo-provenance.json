@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-27T10:49:38.700864+00:00",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "training_run_id": "20261027T094058Z_tr10-original-second-actual-counter_2063d8",
+  "trained_decisions": 32782,
+  "unique_PPO_trained_decisions": 32782,
+  "legacy_consumed_decisions": 35422,
+  "decision_accounting": "unique_successful_first_epoch_coverage_v1",
+  "updates": 5,
+  "deck_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+  "model_sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+  "inference_adapter_sha256": "29b5c097e3a18d419a5ef6d726db6329fd4e1e010ce41d5254ebf9f3377dfc53",
+  "qualification": "unqualified candidate; independent BO3 evaluation still required"
+}

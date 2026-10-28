@@ -1,0 +1,70 @@
+{
+  "created_at": "2026-10-23T11:27:37.694013+00:00",
+  "role": "release_anchor_and_initial_champion",
+  "run_id": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "reason": "Strongest verified baseline among the four available families; independent feature confirmation and direct wins over all three rule baselines",
+  "spec": {
+    "id": "release-anchor-ppo-zero",
+    "kind": "public_rule",
+    "path": "agents/frozen/ppo-zero-anchor",
+    "lineage": "dipam_unown_gradiant_ppo",
+    "parameters": {
+      "_actor_seat_mode": "zero"
+    }
+  },
+  "files": {
+    "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+    "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+    "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+    "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+    "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+    "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+    "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+    "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+    "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+    "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+    "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+    "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+    "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+    "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+    "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+    "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+  },
+  "adapter_snapshot": "runs\\20261023T111657Z_h002-seat-confirmation_c49f14\\source\\ptcg_lab\\public_agent.py",
+  "adapter_sha256": "6e75adccdd4025ec0ee3beaf2f256c520f31f43a48bea1e8d512f54f184eb4d3",
+  "statistics": {
+    "gain": 0.135,
+    "ci95": [
+      0.07999999999999999,
+      0.19
+    ],
+    "bootstrap_samples": 20000,
+    "method": "opponent-stratified independent complete BO3 resampling",
+    "weights": [
+      {
+        "candidate_cell": "zero-vs-lucario",
+        "anchor_cell": "physical-vs-lucario",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-alakazam",
+        "anchor_cell": "physical-vs-alakazam",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-archaludon",
+        "anchor_cell": "physical-vs-archaludon",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-ppo",
+        "anchor_cell": "physical-vs-ppo",
+        "weight": 0.25
+      }
+    ]
+  },
+  "final_score_not_measured": true,
+  "training_seed_check": "Not applicable: no stochastic training; independent fresh BO3 batch used",
+  "limits": "Strongest among tested public baselines, not a claim about the Kaggle ladder. Final improvement must be measured against this corrected baseline, not the weaker physical-seat version."
+}

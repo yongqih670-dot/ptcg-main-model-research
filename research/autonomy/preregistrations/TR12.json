@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-28T05:24:01.844363+00:00",
+  "hypothesis_id": "TR12",
+  "research": true,
+  "final": false,
+  "diagnostic": true,
+  "max_raw_runs": 20,
+  "training_raw_runs_max": 16,
+  "evaluation_raw_runs_max": 4,
+  "maximum_attempts": 3,
+  "combined_compute_hours_max": 96,
+  "protocol": {
+    "path": "research/autonomy/activations/TR12-volume-320768-20261028/TR12_PROTOCOL.json",
+    "sha256": "ecb2ad886185614b56773c2f857b30e9180c9c722600bb9060ac8d8fc4f0023a"
+  },
+  "config_hashes": [
+    "503b864609dd8d223d83529db4de9eb19d9705f08de179a4a61f08193e59dab9",
+    "57205b5303ab20c2e1603aebd588d8869381f44b40f8a82915ba921ddbb32a00"
+  ],
+  "scientific_training_config": {
+    "path": "configs/training/tr12_volume_320768.json",
+    "sha256": "8aa187712cf2e2771ca26e6b85bf597f3239ef42a8b7f9db95b74f16e24c595f"
+  },
+  "evaluation_templates": [
+    {
+      "path": "configs/evaluation/tr12_primary_template.json",
+      "sha256": "76f17efc177faa6666460bee7a7504f9655273e54897b5e486fe8e5096e972ec"
+    },
+    {
+      "path": "configs/evaluation/tr12_development_template.json",
+      "sha256": "5aeb4d99bbe0b9164165cbbebd6e520ca9b8a34f88bc9e1a5eca2adc1ef9d9d2"
+    }
+  ],
+  "source_and_runtime_bindings_pending": false,
+  "closed_TR11_not_reopened": true,
+  "segment_bindings": [
+    {
+      "config": "configs/TR12/segment-001.json",
+      "source": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+      "full_source_audit": {
+        "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/metrics.json",
+        "sha256": "6a74ebc58b65419bd042c3628edd8fcc83e27e881adaef2b46264479dceb5148"
+      },
+      "at": "2026-10-28T06:00:32.079355+00:00"
+    },
+    {
+      "config": "configs/TR12/segment-002.json",
+      "source": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+      "full_source_audit": {
+        "path": "runs/20261028T104724Z_tr12-tail-handoff-storage-audit_e1b099/metrics.json",
+        "sha256": "9dcc3b8806cefbc630545af202be2c8b8df02b88d1a931ba7202ae144c61786e"
+      },
+      "at": "2026-10-28T11:57:51.896694+00:00"
+    }
+  ]
+}

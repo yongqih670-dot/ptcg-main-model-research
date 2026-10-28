@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "is_template": true,
+  "run_id": null,
+  "status": "not_executed",
+  "phase": null,
+  "kind": null,
+  "parent_run_id": null,
+  "hypothesis": null,
+  "supporting_evidence_paths": [],
+  "primary_change": null,
+  "controlled_factors": [],
+  "expected_mechanism": null,
+  "falsification_condition": null,
+  "success_metric_and_gate": null,
+  "budget": {
+    "job_wall_hours": null,
+    "gpu_job_wall_hours": null,
+    "cpu_job_wall_hours": null,
+    "learner_decisions": null,
+    "series_per_opponent": null
+  },
+  "identity": {
+    "code_snapshot_path": null,
+    "code_snapshot_hash": null,
+    "engine_hash": null,
+    "card_pool_hash": null,
+    "data_manifest_hash": null,
+    "config_hash": null,
+    "deck_hash": null,
+    "opponent_manifest_hash": null,
+    "policy_version": null,
+    "training_seed": null,
+    "engine_rng_control_verified": false
+  },
+  "command": null,
+  "artifacts": {
+    "progress": "progress.json",
+    "raw_series": "series.jsonl",
+    "metrics": "metrics.json",
+    "analysis": "analysis.md",
+    "checkpoint": null
+  },
+  "observed_results": null,
+  "decision": null,
+  "next_experiment_reason": null
+}

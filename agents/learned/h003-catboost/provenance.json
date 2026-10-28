@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-23T11:46:42.226746+00:00",
+  "training_run": "20261023T114414Z_h003-catboost-bc_2752a7",
+  "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+  "training_config_sha256": "036a7dac3054012e08d55659c1552b71372270b6b753b333ff527486560a59b3",
+  "feature_version": "candidate224-v1",
+  "data_manifest_sha256": "fa3933d4b21c72ab2d0ff353e01ec16351b6e39f595ce97920d249fae3c782ae",
+  "baseline_manifest_sha256": "e50ade72d159608b06745f65c3a9cf3bfbdc321de34654cda4010f48f2ccd2de",
+  "inference_rule": "Learned scoring only for mandatory nonforced single-choice contexts with >=1 retained training decision; otherwise frozen PPO. Gate uses training coverage only, no BO3 results.",
+  "test_scored": false,
+  "submitted": false
+}

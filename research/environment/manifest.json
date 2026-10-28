@@ -1,0 +1,136 @@
+{
+  "at": "2026-10-23T11:39:37.713119+00:00",
+  "python": "PROJECT_ROOT\\.venv\\Scripts\\python.exe",
+  "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26100-SP0",
+  "packages": {
+    "Jinja2": "3.1.6",
+    "MarkupSafe": "3.0.3",
+    "attrs": "26.1.0",
+    "catboost": "1.2.10",
+    "certifi": "2026.10.19",
+    "charset-normalizer": "3.5.2",
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "filelock": "3.32.3",
+    "fonttools": "4.67.0",
+    "fsspec": "2026.7.0",
+    "graphviz": "0.21",
+    "idna": "3.20",
+    "jsonschema": "4.26.0",
+    "jsonschema-specifications": "2025.9.1",
+    "kaggle-environments": "1.33.2",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "mpmath": "1.3.0",
+    "narwhals": "2.27.1",
+    "networkx": "3.6.1",
+    "numpy": "2.5.4",
+    "packaging": "26.3",
+    "pandas": "3.1.0",
+    "pillow": "13.0.0",
+    "pip": "24.2",
+    "plotly": "7.1.0",
+    "psutil": "7.2.2",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "3.0.0",
+    "referencing": "0.37.0",
+    "requests": "2.34.2",
+    "rpds-py": "2026.9.1",
+    "scipy": "1.18.1",
+    "setuptools": "78.1.0",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "torch": "2.11.0+cpu",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.5",
+    "urllib3": "2.8.0"
+  },
+  "files": {
+    "official_package_wrapper": {
+      "path": "PROJECT_ROOT\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\cabt\\cabt.py",
+      "sha256": "9b626737aa18b14ffd6d496595243984b6adb94ff0429898edb5e5e340d60029"
+    },
+    "official_package_spec": {
+      "path": "PROJECT_ROOT\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\cabt\\cabt.json",
+      "sha256": "b0760ba6c42d2c19be2bf3b96b49f296c7a4f0cdfb963709edebdd5afaf1778b"
+    },
+    "installed_windows_engine": {
+      "path": "PROJECT_ROOT\\.venv\\Lib\\site-packages\\kaggle_environments\\envs\\cabt\\cg\\cg.dll",
+      "sha256": "e084185a17fa1487ee5ffec5cff828d120278f03547838031e2d70bb2a8811fe"
+    },
+    "downloaded_windows_engine": {
+      "path": "PROJECT_ROOT\\data\\competition\\sample_submission\\sample_submission\\sample_submission\\cg\\cg.dll",
+      "sha256": "e084185a17fa1487ee5ffec5cff828d120278f03547838031e2d70bb2a8811fe"
+    },
+    "downloaded_linux_engine": {
+      "path": "PROJECT_ROOT\\data\\competition\\sample_submission\\sample_submission\\sample_submission\\cg\\libcg.so",
+      "sha256": "c699020e086eede189c445c7abf9d891a60005ceec6eb91dccd5bbdcd3c0de22"
+    },
+    "competition_card_table": {
+      "path": "PROJECT_ROOT\\data\\competition\\EN_Card_Data_R2_full.csv",
+      "sha256": "77f6f426ff7132e6fa7f1a05920312f15cfc8bde9fd94c4232da38bc7ed00cd2"
+    }
+  },
+  "engines_identical": true,
+  "cabt_specification": {
+    "name": "cabt",
+    "title": "Card Battle",
+    "description": "Limited Card Battle.",
+    "version": "1.0.0",
+    "agents": [
+      2
+    ],
+    "configuration": {
+      "episodeSteps": 10000000,
+      "actTimeout": 0,
+      "runTimeout": 6000,
+      "bo": {
+        "description": "The 'Best of' format (1 for BO1, 3 for BO3, etc.)",
+        "type": "integer",
+        "default": 3,
+        "minimum": 1
+      },
+      "version": {
+        "description": "Engine version. 1 is the legacy engine and always plays BO1.",
+        "type": "integer",
+        "default": 2,
+        "enum": [
+          1,
+          2
+        ]
+      }
+    },
+    "reward": {
+      "description": "Lost:-1, Won:1, Draw:0",
+      "enum": [
+        -1,
+        0,
+        1
+      ],
+      "default": 0
+    },
+    "observation": {
+      "remainingOverageTime": 600
+    },
+    "action": {
+      "description": "List of option index.",
+      "type": [
+        "array",
+        "object"
+      ],
+      "default": []
+    },
+    "status": {
+      "defaults": [
+        "INACTIVE",
+        "INACTIVE"
+      ]
+    }
+  },
+  "dependency_scope": "CABT-only minimal dependencies; unrelated optional game environments are intentionally absent",
+  "kaggle_auth_read_check": "2026-10-23 global CLI successfully listed target competition data; not proof of submission/rules acceptance",
+  "global_cuda_smoke": "2026-10-23 global torch 2.11.0+cu128 finite CUDA matmul on RTX 5070 Ti Laptop; isolated GPU runtime remains pending",
+  "isolated_torch_package": "2.11.0+cpu",
+  "linux_validation": "pending: WSL unavailable and Docker not found"
+}

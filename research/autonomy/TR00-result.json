@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-23T14:08:34.079935+00:00",
+  "phase": "TR00",
+  "classification": "engineering_correctness_passed_not_strength_evidence",
+  "successful_run_id": "20261023T140527Z_tr00-official-ipc-audit_72edcf",
+  "metrics_sha256": "befa540b770068128bd8e49bdc892a68b392c7c85b7ae4086e8d80c4d1ade164",
+  "checkpoint_sha256": "483d2cae5a0809763f367f55efb6a0c6d97a99211d5ce1e4a8352a5510e182cd",
+  "all_engineering_run_ids": [
+    "20261023T140032Z_tr00-full-actor-audit_5d81e9",
+    "20261023T140145Z_tr00-logp-diagnostic_19f937",
+    "20261023T140300Z_tr00-stable-logp-audit_a70722",
+    "20261023T140527Z_tr00-official-ipc-audit_72edcf"
+  ],
+  "total_charged_gpu_job_seconds": 142.0299999997951,
+  "raw_research_runs_added": 0,
+  "hard_timeout_and_exact_restart_verified": true,
+  "history_and_anchor_preservation_verified": true,
+  "live_official_bo3": 2,
+  "learner_decisions": 370,
+  "cpu_logit_parity_max_abs_diff": 0.0,
+  "full_actor_tensor_inheritance": 127,
+  "critic_reset": "only blind value output layer",
+  "failures": [
+    {
+      "run_id": "20261023T140032Z_tr00-full-actor-audit_5d81e9",
+      "reason": "Synthetic batched FP32 conditional logp discrepancy",
+      "classification": "invalid audit"
+    },
+    {
+      "run_id": "20261023T140145Z_tr00-logp-diagnostic_19f937",
+      "reason": "Measured exact sequential replay; batch error 3.0517578125e-05",
+      "classification": "root cause diagnosed"
+    },
+    {
+      "run_id": "20261023T140300Z_tr00-stable-logp-audit_a70722",
+      "reason": "Official runner captured IPC stdout; identity-verified controlled stop",
+      "classification": "invalid audit"
+    }
+  ],
+  "scope_limits": [
+    "No strength/promotion conclusion from 2 BO3",
+    "TR00 updated weights are engineering artifacts; TR01 must start again from complete original H002 actor",
+    "League scheduling, rollout accumulation, production trainer and release/export gates still to implement"
+  ],
+  "next_action": "Implement guarded completed-hypothesis accounting, immutable league snapshots, bounded PPO trainer with complete-round GAE and checkpoint recovery. Preregister TR01 short training plus fixed development screen; run only through supervisor."
+}

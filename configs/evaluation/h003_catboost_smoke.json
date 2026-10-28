@@ -1,0 +1,150 @@
+{
+  "workers": 8,
+  "series_count": 50,
+  "policy_seed": 2026102305,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "H003 trained CatBoost single-choice inference and declared PPO fallback integration",
+  "success_criteria": "50 complete BO3 across four fixed opponents and balanced seats; no errors, invalid actions, timeouts or internal random fallback; no promotion from smoke",
+  "matchups": [
+    {
+      "cell_id": "catboost-vs-lucario",
+      "candidate": {
+        "id": "h003-catboost",
+        "kind": "catboost_single",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h003-catboost/model.cbm",
+        "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+        "learned_contexts": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 14
+    },
+    {
+      "cell_id": "catboost-vs-alakazam",
+      "candidate": {
+        "id": "h003-catboost",
+        "kind": "catboost_single",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h003-catboost/model.cbm",
+        "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+        "learned_contexts": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "catboost-vs-archaludon",
+      "candidate": {
+        "id": "h003-catboost",
+        "kind": "catboost_single",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h003-catboost/model.cbm",
+        "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+        "learned_contexts": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "catboost-vs-ppo",
+      "candidate": {
+        "id": "h003-catboost",
+        "kind": "catboost_single",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h003-catboost/model.cbm",
+        "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+        "learned_contexts": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 12
+    }
+  ]
+}

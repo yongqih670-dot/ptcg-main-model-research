@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-25T17:45:38.911063+00:00",
+  "hypothesis_id": "TR05",
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "64cae298b1b20a12c5ac6d87c0db3dafb2d71f0fe86e32ced55ddd13efb93656"
+  ],
+  "hypothesis": "Fitting a newly initialized blind critic only through its independent head reduces interference with the strong inherited actor while preserving policy gradients and improves independent BO3 outcomes at matched32768sample budget.",
+  "single_primary_change": "critic_updates_shared_trunk: true -> false",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_attempts_max": 2,
+  "training_wall_seconds_max": 14400,
+  "training_attempt_seconds_max": 7200,
+  "hypothesis_compute_hours_max": 8,
+  "first_raw_training_run_attempts_max": 1,
+  "continuation_rule": "At most one separately bound derived continuation if first attempt is incomplete; preserve full state and subtract all previous time/attempts. Never repeat fresh initializer or restart TR04.",
+  "evaluation_template_path": "research/autonomy/preregistrations/TR05-screen-template.json",
+  "evaluation_template_sha256": "178abbc7b7a325fd8b0fe4bd24af06bcc1dade69b53fa2f48831678e388c7f9d",
+  "config_binding_amendments": "After complete training bind only frozen artifact paths/hashes; conditional independent800BO3 confirmation only when predeclared240BO3 screen CI lower>0. No posthoc extension.",
+  "planned_jobs": [
+    "one7200s first serverPPO attempt; optional original2ndwithinremaining14400s",
+    "50BO3 reliability engineering smoke",
+    "240BO3 fixed independent screen",
+    "conditional800BO3 independent confirmation"
+  ],
+  "promotion": "Only unchanged independent confirmation and all existing final gates; training and diagnostic gradients cannot promote",
+  "local_storage_plan_gib": {
+    "current": 56.44028077926487,
+    "regular_growth_forecast": 1.5,
+    "soft_final_margin": 2.0,
+    "hard_max": 60
+  },
+  "motivation": {
+    "path": "research/autonomy/engineering/post-tr04-gradient-result-20261026.json",
+    "sha256": "4e0709e877a38b8599b8fe4dce6a775e93e0e7551127a4f3ea4e2a6c3cfd49f3"
+  },
+  "proposal": {
+    "path": "research/proposals/transformer_rl_v3/TR05_VALUE_GRADIENT.proposed.json",
+    "sha256": "8caa9f8553e81865b19a6cb6ecdd720852e6cbea73dec92c238f8a6d4bb33192"
+  },
+  "shared_pause_and_exact_fresh_bootstrap_before_first_optimizer_step": true,
+  "TR04_remains_invalid_with_zero_attempts": true,
+  "release_anchor_and_final_pool_unchanged": true,
+  "causal_limits": "Two diagnostic BO3 do not prove interference or strength. Compare fresh candidate against frozen anchor on independent completeBO3; WindowsTR02 versus LinuxTR05 system differences are recorded, not claimed paired causal equivalence."
+}

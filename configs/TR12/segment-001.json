@@ -1,0 +1,576 @@
+{
+  "project_path": "PROJECT_ROOT",
+  "project_id": "PROJECT_ID",
+  "host": "TRAINING_HOST",
+  "port": 15134,
+  "user": "TRAINING_USER",
+  "identity_file": "SSH_IDENTITY_FILE",
+  "input_capsule": {
+    "manifest_sha256": "9f2fbadfd2e098043bbdb0368b6ad4bee325e144761433726a858f6a5a9443ee",
+    "run_id": "20261025T112415Z_server-basic-emptyfix_b4d517"
+  },
+  "audit_config_template": "runs/20261023T140527Z_tr00-official-ipc-audit_72edcf/config.json",
+  "audit_config_template_sha256": "7e0b1803558f7c3fc79a5e9aac86772b59c30bf12a06ebc86dfdc3ad73c22cb4",
+  "protected_actor_source_manifest_path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/source-manifest.json",
+  "protected_actor_source_manifest_sha256": "ef0886ee27c776110381953c97a73ccf97d7014510f5e5a72f447e1d9498db1f",
+  "server_project_root": "SERVER_PROJECT_ROOT",
+  "server_resource_profile": {
+    "schema": "per_GPU_CPU_RAM_share_v1",
+    "authorization_sha256": "fbe920d536b7f0a91bdf61cac1091ce5d545131fe871efd3da634d386d728009",
+    "machine_evidence_sha256": "b2b9d78e707a04e4f4e4f4c25d28c05d8e31c418ee465126effc6b9201ae9579",
+    "observed_machine": {
+      "logical_CPU": 32,
+      "GPU_count": 8,
+      "RAM_total_bytes": 540673888256
+    },
+    "cpu_quota_cores": 3,
+    "memory_max_bytes": 34359738368
+  },
+  "HDD2_migration_acceptance": {
+    "path": "research/autonomy/activations/hdd2-full-migration-20261027/receipt.json",
+    "sha256": "c0fa96e27ed15723dcd4ea88a1997253d75b144e58102e92f016d47fbb1ee798"
+  },
+  "CPU_sampler_acceptance": {
+    "path": "runs/20261025T233324Z_tr07-CPU-sampler-startup-repair_bb99ae/metrics.json",
+    "sha256": "47fa9cab5de207dd69814fcca9f8b5ba95bbc48b4b60b4f0ff5c507649395401"
+  },
+  "ACK_lag_barrier_acceptance": {
+    "path": "research/autonomy/engineering/hdd2-production-route-20261027/actual-acceptance.json",
+    "sha256": "c169fd91047a19614ba24f933fbdceb59fe1b4592334b071e5b6d255e5958d43"
+  },
+  "HDD2_production_archive_acceptance": {
+    "path": "research/autonomy/engineering/hdd2-production-route-20261027/actual-acceptance.json",
+    "sha256": "c169fd91047a19614ba24f933fbdceb59fe1b4592334b071e5b6d255e5958d43"
+  },
+  "matched_reference_path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/config.json",
+  "matched_reference_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+  "authorized_gpu_indices": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "gpu_selection_at_start": "one_idle_authorized_card_priority_6_7_4_5_then_fixed_for_attempt",
+  "gpu_index": 6,
+  "gpu_uuid": "AUTHORIZED_GPU_UUID",
+  "gpu_preflight_evidence": {
+    "path": "research/autonomy/engineering/gpu-probes/probe-20261028T0538375531510000.json",
+    "sha256": "cfdf70dcebe306b025ea1147aed27b3f6a9b16f84e6ff806315b94593d2bfe7b"
+  },
+  "job_kind": "remote_train_ppo",
+  "check_variant": "volume_extension",
+  "hypothesis_id": "TR12",
+  "budget_hypothesis_id": "TR12",
+  "forward_phase": "TR12",
+  "TR12_authorization": {
+    "path": "research/autonomy/authorizations/post-TR11-320768-completion-budget-20261028.json",
+    "sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4"
+  },
+  "workers": 1,
+  "maximum_attempts": 1,
+  "training_wall_seconds": 28800,
+  "engineering_only": false,
+  "model_selection_forbidden": true,
+  "parent_acceptance_only": false,
+  "sampling_device": "cpu",
+  "consumed_reference_barrier_required": true,
+  "actual_decision_accounting": "unique_successful_first_epoch_coverage_v1",
+  "training_config_template": "configs/training/tr12_volume_320768.json",
+  "training_config_template_sha256": "8aa187712cf2e2771ca26e6b85bf597f3239ef42a8b7f9db95b74f16e24c595f",
+  "storage_profile": {
+    "schema": "ptcg_HDD2_TR12_storage_v2",
+    "project_id": "PROJECT_ID",
+    "root": "SERVER_PROJECT_ROOT",
+    "hard_max_bytes": 85899345920,
+    "warning_bytes": 68719476736,
+    "free_reserve_bytes": 21474836480,
+    "retained_roots": [
+      "OLD_READONLY_ROOT/ptcg-hybrid-v3"
+    ],
+    "authority": {
+      "schema": "forward_user_authorization_owner_activation_required_v1",
+      "authorization_date_local": "2026-10-28",
+      "timezone": "Asia/Shanghai",
+      "status": "human_scope_authorized_numerical_allocation_prepared_not_activated",
+      "source": "Direct human instruction in side conversation; the numerical ceilings below are the assistant's bounded implementation of that broad authorization, not a verbatim numeric user quote.",
+      "source_thread_id": "01a17db8-51db-7473-81f9-d474ee6bf08f",
+      "authorized_execution_controller_thread_id": "01a17ce2-7684-7473-bcad-828961994ca4",
+      "user_target_text": "我想直接新增新增约 320,768 个实际决策",
+      "user_budget_authorization_text": "那就再加时间呗，确保能完成实验即可，别的预算也一并增加到可完成实验的额度",
+      "scope": "One new post-TR11 training-volume experiment, with complete full-state continuation, necessary bounded engineering repairs, complete local evidence archival and preregistered independent evaluation. This is additional prospective scope in the existing cycle, not reopening TR11 or resetting historical accounting.",
+      "activation": {
+        "live_policy_state_goal_or_preregistration_changed_by_this_file": false,
+        "training_or_remote_write_started_by_side_conversation": false,
+        "only_owner_controller_may_activate_and_execute": true,
+        "repeat_human_confirmation_for_the_listed_scope_required": false,
+        "required_owner_steps": [
+          "Read the current policy, state, continuation and actual terminal receipts; verify the sole-controller and no-active-heavy-job condition before any transaction.",
+          "Preserve the exact pre-amendment files and update policy, activation-receipt chain, CURRENT_GOAL, revision index, AGENTS and state consistently in an owner-controlled transaction. Do not alter old frozen run contracts or receipts.",
+          "Register exactly one new diagnostic hypothesis, provisionally TR12 if still unassigned, with the target and all phase/resource/run limits below. Bind exact current source, configuration, parent, opponent and evaluation hashes.",
+          "Implement and test the new runtime/storage route explicitly, including the server's actual ticket, service deadline and storage profile. Editing policy values alone is not sufficient. Reuse unchanged passed checks and perform only the relevant differential acceptance.",
+          "Use the registered full-state continuation path across planned segments and repairs. Persist work and charges after every segment and finish the preregistered evaluation after reaching the training target."
+        ],
+        "revalidate_current_balances_without_resetting_them": true,
+        "no_second_Goal_chat_controller_subagent_or_heartbeat": true,
+        "old_platform_Goal_remains_paused_and_incomplete": true
+      },
+      "experiment": {
+        "new_actual_unique_PPO_decisions_target": 320768,
+        "parent_hypothesis": "TR11",
+        "parent_training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "parent_full_checkpoint_sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+        "parent_count_in_existing_lineage": 49173,
+        "lineage_absolute_target_if_existing_counter_is_retained": 369941,
+        "project_actual_count_at_authorization_snapshot": 687865,
+        "project_actual_count_if_exact_target_completed_without_other_work": 1008633,
+        "counting": "Only successful first-epoch coverage of genuinely new unique decisions counts. Inherited decisions, replay copies, unused samples and repeated epochs add zero. Complete-BO3/minibatch overshoot must be reported honestly.",
+        "parent_restore": "Full actor, blind critic, optimizer, Python/NumPy/CPU/CUDA and sampling RNG, league, cursor and pending-data state; do not reset to the pre-TR11 parent.",
+        "primary_change": "Additional training volume from the complete TR11 endpoint; inherit TR11 scientific settings and its fixed-legal-opponent diagnostic distribution.",
+        "parameter_and_opponent_changes_require_a_separate_hypothesis_not_a_retry": true,
+        "intermediate_checkpoints": "Health and full-state recovery evidence only; freeze the single scientific endpoint before training, without selecting the highest-scoring intermediate checkpoint.",
+        "completion": "Reach the additional actual-decision target, verify complete archival/restoration and complete the frozen independent evaluation. An inconclusive or regressed evaluation is still an honestly completed experiment, not permission to train or sample until a positive result appears.",
+        "improvement_or_completion_despite_arbitrary_faults_is_not_guaranteed": true
+      },
+      "resolved_forward_limits": {
+        "project_total_GPU_job_hours_max": 120,
+        "project_total_CPU_job_hours_max": 60,
+        "new_phase_GPU_job_hours_max": 84,
+        "new_phase_CPU_job_hours_max": 12,
+        "new_hypothesis_combined_compute_hours_max": 96,
+        "all_new_phase_preparation_recovery_archival_and_evaluation_costs_count_toward_phase_limits": true,
+        "new_route_single_training_job_hours_max": 8,
+        "new_route_single_evaluation_job_hours_max": 6,
+        "scope_of_runtime_overrides": "Only the newly registered phase and its explicitly hash-bound jobs; not a global relaxation of old job deadlines.",
+        "new_phase_research_raw_runs_max": 20,
+        "new_phase_training_research_raw_runs_max": 16,
+        "new_phase_evaluation_research_raw_runs_max": 4,
+        "project_research_raw_runs_max": 64,
+        "existing_stage_baseline_raw_runs_unchanged": 10,
+        "existing_stage_new_raw_runs_max": 54,
+        "existing_stage_regular_raw_runs_max": 48,
+        "existing_stage_final_raw_runs_reserved": 6,
+        "additional_diagnostic_hypotheses_authorized": 1,
+        "diagnostic_hypotheses_total_max": 3,
+        "existing_stage_hypotheses_total_max_unchanged": 12,
+        "unused_extra_global_capacity_does_not_authorize_another_hypothesis": true,
+        "local_project_artifacts_GiB_max": 120,
+        "local_project_artifacts_warning_GiB": 100,
+        "local_disk_free_GiB_min_unchanged": 20,
+        "server_total_owned_project_GiB_max": 80,
+        "server_owned_project_warning_GiB": 64,
+        "server_write_filesystem_free_GiB_min_unchanged": 20,
+        "server_capacity_includes_retained_readonly_HDD1_copy": true,
+        "server_storage_override_requires_fresh_owner_realpath_mount_and_capacity_verification": true,
+        "final_reserves_unchanged": {
+          "research_raw_runs": 6,
+          "GPU_job_hours": 8,
+          "CPU_job_hours": 12
+        }
+      },
+      "execution_and_retry_contract": {
+        "planned_segments_are_one_continuous_scientific_experiment": true,
+        "new_raw_run_is_charged_when_existing_runner_semantics_assign_a_new_research_run_id": true,
+        "same_raw_job_total_attempts_max": 3,
+        "zero_update_startup_retries_per_registered_job_max": 2,
+        "zero_update_startup_total_starts_per_registered_job_max": 3,
+        "zero_update_startup_repair_seconds_per_registered_job_max": 1800,
+        "zero_update_startup_repair_seconds_total_new_phase_max": 10800,
+        "startup_repair_time_is_inside_phase_GPU_CPU_combined_caps": true,
+        "bounded_engineering_acceptance_seconds_per_registered_job_max": 1800,
+        "same_failure_after_two_repairs_requires_root_cause_review_before_another_start": true,
+        "no_parallel_jobs_or_unknown_state_relaunch": true,
+        "each_start_requires_verified_prior_job_terminal_identity_and_current_resource_admission": true,
+        "retry_and_segment_deadlines": "Never extend an already-issued absolute job deadline. After verified termination, issue a new preregistered continuation ticket only within the remaining forward phase/run budget. Carry all previous charges, successful updates, pending samples and RNG forward.",
+        "any_positive_update_requires_latest_complete_state_recovery": true,
+        "checkpoint_interval_seconds_max_unchanged": 600,
+        "reliable_recovery_points_min_unchanged": 2,
+        "archive_optimization": "Reuse complete hash-verified existing archives and immutable objects where the route permits. Verify relevant differential behavior before using a changed transfer/ACK/backpressure route. No repeated full migration solely to amend budgets.",
+        "eviction": "Only exact owned objects with complete verified local archive ACKs and no live recovery references may be retired. Never drop failed-game evidence or unarchived unique data.",
+        "limits_are_caps_not_required_spend": true,
+        "stop_on_target_and_finish_evaluation_without_spending_unused_budget": true
+      },
+      "evaluation_to_preregister_before_training": {
+        "primary_baseline": "Frozen complete TR11 endpoint, evaluated in fresh games alongside the new endpoint.",
+        "primary_opponent": "The identical frozen legal opponent used in the inherited TR11 diagnostic.",
+        "recommended_primary_complete_BO3_per_arm": 1600,
+        "primary_seats": "Equal seat allocation in each arm.",
+        "primary_learning_gate_unchanged": "Point gain>=0.05 and bootstrap95%CI lower>0.",
+        "secondary_development_panel": "Budget includes a separately frozen development panel with at least8 opponents,4 archetypes and3 independent public-policy sources. Use100 completeBO3 per opponent for each of the new endpoint,TR11 baseline and release_anchor; report all outcomes and training-overlap limitations.",
+        "planned_primary_and_secondary_BO3_total": 5600,
+        "reliability_smoke_BO3": 50,
+        "bootstrap_samples": 20000,
+        "fresh_policy_and_bootstrap_seeds_must_be_frozen_by_owner": true,
+        "native_game_seed_control_must_not_be_claimed": true,
+        "sample_size_thresholds_opponents_weights_and_endpoint_must_be_fixed_before_training": true,
+        "no_posthoc_resampling_or_endpoint_selection_until_significance": true,
+        "engineering_recovery_of_an_incomplete_evaluation_must_preserve_all_completed_results": true,
+        "final_holdout_not_opened_by_this_authorization": true,
+        "promotion_and_submission_require_all_existing_independent_gates": true
+      },
+      "unchanged_host_and_scientific_constraints": {
+        "maximum_concurrent_heavy_jobs": 1,
+        "maximum_concurrent_GPUs": 1,
+        "allowed_GPU_indices": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "preferred_GPU_indices": [
+          6,
+          7
+        ],
+        "fresh_idle_GPU_required_at_each_start": true,
+        "server_CPU_cores_initial": 3,
+        "server_memory_GiB_initial": 32,
+        "existing_measured_per_GPU_CPU_memory_upper_bounds_not_expanded": true,
+        "server_only_writable_root": "SERVER_PROJECT_ROOT",
+        "old_HDD1_root_readonly": true,
+        "no_sudo_system_shared_environment_or_other_user_job_changes": true,
+        "no_new_paid_cloud_or_paid_API_training": true,
+        "full_actor_blind_information_isolation_conditional_actions_and_per_batch_CPU_GPU_parity_preserved": true,
+        "all_TR04_through_TR11_closed_results_and_attempts_preserved": true,
+        "no_counter_cost_stagnation_or_original_deadline_reset": true
+      },
+      "sizing_evidence": {
+        "TR11_new_actual_decisions": 16391,
+        "TR11_successful_job_seconds": 10172.640999999989,
+        "TR11_recorded_sampling_seconds": 969.876109943114,
+        "TR11_recorded_optimization_seconds": 46.01583665801445,
+        "target_to_observed_increment_ratio": 19.56976389482033,
+        "linear_full_job_hours_estimate": 55.29893959910243,
+        "linear_component_only_hours_estimate": 5.522434871564862,
+        "new_phase_GPU_budget_to_linear_full_job_ratio_approx": 1.519,
+        "estimates_are_not_confidence_bounds_or_completion_guarantees": true,
+        "TR11_archived_original_GiB": 1.5996288610622287,
+        "TR11_archived_encoded_GiB": 0.6478927610442042,
+        "storage_linear_projection_must_not_replace_per_segment_capacity_checks": true,
+        "project_GPU_hours_used_snapshot": 23.02295702891669,
+        "project_CPU_hours_used_snapshot": 9.987923291916506,
+        "project_research_raw_used_snapshot": 35,
+        "project_local_artifacts_GiB_snapshot": 59.52138549275696,
+        "recent_local_disk_free_GiB_observation": 154.80070877075195,
+        "GPU_budget_check": "23.022957 observed used +84 phase +8 final reserve =115.022957 <120 total.",
+        "CPU_budget_check": "9.987923 observed used +12 phase +12 final reserve =33.987923 <60 total.",
+        "raw_budget_check": "35 observed used +20 phase +6 final reserve =61 <=64 total; baseline10 +stage54 =64; ordinary48 +final6 =54.",
+        "local_disk_check": "If other disk usage stays fixed, growing this project's59.521GiB workset to120GiB would leave about94.322GiB physical free, above20GiB. Recheck at execution."
+      },
+      "source_snapshots_sha256": {
+        "research/autonomy/policy.json": "956a511a435a6ad74baeeb4af8e765704e2d3db06454ffc6ddab5d9c31704b43",
+        "research/autonomy/state.json": "7029cfc13c384e27084d68a40b07bbd19d994c0aabc7536184a13ece585d6765",
+        "research/autonomy/latest-continuation.json": "c8720dfd9901c721641a1d1af72f29505ca4c63be4e5e4a1f45e9d8ac7e675f6",
+        "research/autonomy/CURRENT_GOAL.md": "e2570f2a958d02152b12a2ba992a52b2da33593d5474555f597e045c27fcab6c",
+        "research/autonomy/current-goal-revision.json": "07b991338a4d49358bf9b86be3a518d3ff28fac4db6f73ab525da3392ccde3a0",
+        "AGENTS.md": "63e32865ec5ce9bb0c9f42ad468cea99b2205cd3b5db387097d96bd472c95a31",
+        "research/autonomy/TR11-result.json": "738d848184773f5f9a44d9b9e4514513d8cf86e521d29ac52f8253ded04d13b5",
+        "research/autonomy/CURRENT_VOLUME.json": "e9c40a22ce1c472b2bda397f4533ea1f3fe347eeacabdfe5a0d52c5289abdf88",
+        "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/metrics.json": "b9125d34d964c4c38ad23b9aadf8609efa5fd5611381158de7c682a0a4c29e17",
+        "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/attempts.json": "f0fd29c345a338ca989cd064f25d49e4603d61c264e699116707960a2b25e0e1"
+      }
+    },
+    "authority_file_sha256": "971709f6510a8c83527dd42175a9459e12861c00544f489067765dc6d2412ff4",
+    "authority_canonical_sha256": "c28ba45a6e163ce620bc6399e833cd5bfc8165b211a5e359b8e16f054077d6eb"
+  },
+  "source_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "source_point": {
+    "generation": 11,
+    "cursor": {
+      "version": 8,
+      "trained_decisions": 54914,
+      "next_series_id": 330
+    },
+    "checkpoint": {
+      "path": "checkpoint-commits/objects/cp-4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40.pt",
+      "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+      "bytes": 46286389
+    },
+    "prefix": {
+      "path": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+      "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "bytes": 810
+    },
+    "pending": [],
+    "commit_id": "a97e09cf3e84e346637e11521abfd47b9c4df08abc2dddb9f51eb239c07fc7cf"
+  },
+  "source_state_audit": {
+    "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/metrics.json",
+    "sha256": "6a74ebc58b65419bd042c3628edd8fcc83e27e881adaef2b46264479dceb5148"
+  },
+  "numeric_reference": {
+    "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/current-model-numeric-reference.pt",
+    "sha256": "7fbfb0db84f844889b94c59af3fdfbcc774db792dc6f661f550f30b1d43d65d4",
+    "bytes": 21910909
+  },
+  "source_remote_evidence": {
+    "checkpoint-commits/index.json": "057671a54e2612cbd7c8b2f2e51fb5617788bbf1080b2f3c9aa27eb1b6a9a326",
+    "progress.json": "6b8db8e61d738f528b16c8fa9f52ae9f4b29534f71ea8d1239f4ec2414494111",
+    "league.json": "6d7371362598d9d1774b39f9331399b3f44fee3208dcb38e49f24e289f798709",
+    "payload-config.json": "8b0174b7c109fefec083051d5c317fe9b3ca2c3e8657f14d34ebc860aaea0a63",
+    "training-updates.json": "278940f4c26ea742c2c71982679ccbc78e3d9974e49e59abfced412b20e2028f"
+  },
+  "source_league_sha256": "6d7371362598d9d1774b39f9331399b3f44fee3208dcb38e49f24e289f798709",
+  "source_inflight": null,
+  "reserved_future_bytes": 1073741824,
+  "existing_restore_source": {
+    "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+    "manifest_sha256": "c3b9eba9d61478f0657df45b9f0884839440cb41bbe2a2850ae8261f1ea1bed5",
+    "identity": {
+      "unit": "ptcg-hybrid-trial-1eae55-63.service",
+      "invocation_id": "9cf081f6f39c440d8f379a45544385db",
+      "start_monotonic": "208488543054",
+      "host_boot_id": "050c3cd8-f271-4c99-882c-02fa296341c0"
+    },
+    "lease_epoch": 63,
+    "checkpoint_reference": {
+      "path": "checkpoint-commits/objects/cp-4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40.pt",
+      "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+      "bytes": 46286389
+    },
+    "cursor": {
+      "version": 8,
+      "trained_decisions": 54914,
+      "next_series_id": 330
+    }
+  },
+  "source_evidence": {
+    "metrics.json": "b9125d34d964c4c38ad23b9aadf8609efa5fd5611381158de7c682a0a4c29e17",
+    "remote-training-manifest.json": "c3b9eba9d61478f0657df45b9f0884839440cb41bbe2a2850ae8261f1ea1bed5",
+    "remote-job.json": "1a6305fdd8c89e1e41021a9b91a4ae3e13fe8df74df4cb21b48e0268fdd030a3",
+    "remote-terminal.json": "a68c02bb150a6691b16589c3898d642aafbf42ad826a9dda2d1d9894adaf8f46"
+  },
+  "primary_change": "Only additional successful unique PPO volume; inherit every full current state and retain fixed TR11 science.",
+  "success_criteria": "Fixed absolute actual unique endpoint369941, followed by frozen5650BO3 protocol; no intermediate selection.",
+  "local_archive_sources": [
+    {
+      "storage": "gzip_ack",
+      "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 236,
+        "object": "checkpoint-commits/objects/cp-4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40.pt",
+        "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+        "bytes": 46286389,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/checkpoint-commits/objects/cp-4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "ea02dac558d2d986c55eb5941addb72b86fd918ad85048599a347f3d267256bc",
+          "bytes": 40880268
+        },
+        "commit_id": "4a986b9ac072903c6c81fa735ab2bdbce58c8f3948719a1a3731bbfc042bc1f0"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 1,
+        "object": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+        "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+        "bytes": 810,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "74e143ea57f6766b56e986aed854f6d7863289dad194349fa58149f0a73eb77c",
+          "bytes": 459
+        },
+        "commit_id": "17be4f000c78cbe2ff4dd86829d3931d8bae467bdac6aa5c330f1f1b3a4d3bbd"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "385359ca499c8838698604d97b9980302e3fae35865ccc48ffc3111a97dec0ac",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 104,
+        "object": "league/learner-0000.pt",
+        "sha256": "385359ca499c8838698604d97b9980302e3fae35865ccc48ffc3111a97dec0ac",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0000.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "a182a4a2ae893708241856bbd3400d7fafd2ff03bb9506a29f7ed0b0aa41b873",
+          "bytes": 17786642
+        },
+        "commit_id": "0c59bfb967ccca76123bb649552ca62e4d04621255a006d4af1d2f8c27831a71"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "3526b9c69c642ca44bef11611d371465443402c80c1982e6fc547162b1f4719f",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 105,
+        "object": "league/learner-0001.pt",
+        "sha256": "3526b9c69c642ca44bef11611d371465443402c80c1982e6fc547162b1f4719f",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0001.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "a30d4b67d4a1099c20745db83c81fa7dcaac2bdc0795fb1d53d504346c0029c7",
+          "bytes": 17787281
+        },
+        "commit_id": "56081924ed2e7db45db91f815b560d79c9362bd06414a4c432e03dab27882921"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "2778855eca4767f7a53b52ce9741f2553169ccb940fb699b4862a8a77ad21834",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 106,
+        "object": "league/learner-0002.pt",
+        "sha256": "2778855eca4767f7a53b52ce9741f2553169ccb940fb699b4862a8a77ad21834",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0002.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "2e80dfe70213605163aaf56ec471dabb69935d24b200577186389c901982eaa9",
+          "bytes": 17786944
+        },
+        "commit_id": "b269a4e6ec331dffe39cb8190b26022aa8910f2c736a371e2452246692fcd923"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "8b493cd6cee99942483e5451e5a5caf4b2c4c295bf29ea5952b0142cdd30ff31",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 107,
+        "object": "league/learner-0003.pt",
+        "sha256": "8b493cd6cee99942483e5451e5a5caf4b2c4c295bf29ea5952b0142cdd30ff31",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0003.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "1d029307101d61d226d68107e881d85418100e8b6780798dedec800f1798483c",
+          "bytes": 17787429
+        },
+        "commit_id": "ed34c5a77addd773455588ba102682b7731a1b4a415158904e42ed42f25fb7d5"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "36cd344c87bbdc12a0963a9e5f9f30f15dbe4c5133f0a3b754a83ac54ea2cfc1",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 108,
+        "object": "league/learner-0004.pt",
+        "sha256": "36cd344c87bbdc12a0963a9e5f9f30f15dbe4c5133f0a3b754a83ac54ea2cfc1",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0004.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "76906d302fa542e9bafee3df429cf966e5477530d4f5b5fe61af8fac2469a350",
+          "bytes": 17787375
+        },
+        "commit_id": "9e4b48a185af0698a7849ad91142242938bc7db2129111c579332ae0c93967dd"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 2,
+        "object": "league/learner-0005.pt",
+        "sha256": "ad6a7a9f89f7df0c38e8dfd9b20062df487bb07bf25cf504c20c4b983c41db66",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0005.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "ebe6342d920c4c6a292623ec0e9153e36a7ac593b046efa2546b931d49d0f9c7",
+          "bytes": 17787151
+        },
+        "commit_id": "9cbcd7be7efe810808e2d81940439d5850b4037cdcc70f8fc0fbce2e5dd9d7fe"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "faaaa88e81ad2476254835384c857e19dd5aaaf95820c3281a4c920a3620e4ce",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 103,
+        "object": "league/learner-0006.pt",
+        "sha256": "faaaa88e81ad2476254835384c857e19dd5aaaf95820c3281a4c920a3620e4ce",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0006.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "84c92c00fead42cf355876c79e96bed1632e51cbc7f26ee857cd6ac78d35b361",
+          "bytes": 17787478
+        },
+        "commit_id": "06d67a20c9e42cad61e7b685b8c35ce7d5c9c89eb1a4c52f91a1492f4c01d38a"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "b7629d6e576d00bd55b73fe5679f979c977dcef5e5162b29e1c1355923bd9bd8",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 201,
+        "object": "league/learner-0007.pt",
+        "sha256": "b7629d6e576d00bd55b73fe5679f979c977dcef5e5162b29e1c1355923bd9bd8",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0007.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "82a3565e412f2db341ef63a621061d82405ce41e44552f28a131974e97da9eb5",
+          "bytes": 17786847
+        },
+        "commit_id": "d637a96d8d96d475f59c6c056ba3f09f40c932671adaa5ca6f7dffb7b447f650"
+      }
+    },
+    {
+      "storage": "gzip_ack",
+      "sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+      "archive_root": "runs/20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/online-archive",
+      "ack": {
+        "run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "lease_epoch": 63,
+        "sequence": 237,
+        "object": "league/learner-0008.pt",
+        "sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "bytes": 19529025,
+        "archive_relative": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55/objects/league/learner-0008.pt.gz",
+        "schema_version": 2,
+        "storage": {
+          "codec": "gzip",
+          "sha256": "fe9fbfd31336c373c3e8fc6c6b742050e70ca724281afb6490b3a49a03f680a8",
+          "bytes": 17787749
+        },
+        "commit_id": "489faf2f6d260aac73a48cea89e3750ff2203ddc83f7c6f9fd4e561cf1d7c224"
+      }
+    }
+  ]
+}

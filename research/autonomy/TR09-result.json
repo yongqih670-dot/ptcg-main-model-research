@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-27T06:40:38.807795+00:00",
+  "hypothesis": "TR09",
+  "classification": "inconclusive",
+  "promotion_eligible": false,
+  "candidate_score": 0.8708333333333333,
+  "anchor_score": 0.8333333333333334,
+  "gain": 0.03749999999999998,
+  "ci95": [
+    -0.037500000000000006,
+    0.11666666666666664
+  ],
+  "series_per_arm": 120,
+  "unit": "complete BO3",
+  "screen_run_id": "20261027T063431Z_tr09-independent-240BO3-screen_7c9226",
+  "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+  "training_completion_report": "research/autonomy/TR09-training-completion.json",
+  "planned_independent_confirmation": "Not triggered: original screen CI lower>0 condition not met. No posthoc extension or rerun.",
+  "reliability": "50smoke+240screen;zeroerrors/invalidactions/timeouts/randomfallback. Not final1000BO3 orLinuxqualification.",
+  "failure_review": {
+    "path": "runs/20261027T063431Z_tr09-independent-240BO3-screen_7c9226/failure-review.json",
+    "sha256": "31987e01c62ffa0441d96b62307557fdfd9dd648fbbb843d4f9fb8d15a51464c",
+    "reviewed_series": 16,
+    "observations": [
+      "Candidate-versus-PPO18/30 versusanchor15/30 accounts for2.5percentagepoints oftheoverall3.75pointgain; smallindependent samplesdo notproveimprovement.",
+      "Candidate series188lostbothgames withoneprizeremaining;series189round2endedturn14withoutacandidateattack. Bothprizeraceandsetupfailureexist.",
+      "Noillegalactions/timeouts/fallbackexplainlosses. Observedlossesalone donotidentifyacausalrepresentationorsearchdefect."
+    ]
+  },
+  "optimization_evidence": {
+    "full_family_unique_trained_decisions": 32799,
+    "updates": 4,
+    "non_skipped_optimizer_steps": 354,
+    "KL_early_stop_batches": 3,
+    "batches": 4,
+    "epochs_setting": 4,
+    "interpretation": "Moreepochs didnotproduce independentstatisticalevidence; unchangedKLlimit stopped3batches. Noextraepochs counted asnewdecisions."
+  },
+  "decision": "Retain candidate unpromoted; close originalTR09. Consecutivevalidnonpromotion reaches4, allow onlyup to2remainingpreregistereddiagnostic hypotheses, subject tooriginalraw/compute/finalreserves. Firstreview measuredcheckpoint/archiveoverhead anddefine a causal single-variable diagnostic, not anotheruncompletedparameter variant.",
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_used": false,
+  "raw_research_runs_used": 29,
+  "no_training_attempt_remaining": true
+}

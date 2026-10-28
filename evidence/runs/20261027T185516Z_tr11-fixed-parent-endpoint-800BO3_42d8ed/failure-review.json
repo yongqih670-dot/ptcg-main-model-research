@@ -1,0 +1,367 @@
+{
+  "at": "2026-10-27T19:09:20.310928+00:00",
+  "selection": "First four losses by series_id in each arm, or every loss when fewer than four.",
+  "source": "Public terminal round/result/prize-count summaries only; no hidden hand/deck contents.",
+  "reviewed_series": 8,
+  "cases": [
+    {
+      "cell_id": "parent-vs-ppo",
+      "series_id": 0,
+      "candidate_seat": 0,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            1
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 1,
+          "remaining_prizes": [
+            1,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 1,
+          "reason": 1,
+          "turn": 12,
+          "first_player": 0,
+          "remaining_prizes": [
+            3,
+            0
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "parent-vs-ppo",
+      "series_id": 1,
+      "candidate_seat": 1,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            2
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 0,
+          "reason": 1,
+          "turn": 12,
+          "first_player": 1,
+          "remaining_prizes": [
+            0,
+            1
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "parent-vs-ppo",
+      "series_id": 3,
+      "candidate_seat": 1,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            6
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 1,
+          "remaining_prizes": [
+            4,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 0,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            2
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "parent-vs-ppo",
+      "series_id": 7,
+      "candidate_seat": 1,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 13,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            6
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 1,
+          "remaining_prizes": [
+            4,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            4
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_id": 400,
+      "candidate_seat": 0,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 1,
+          "reason": 1,
+          "turn": 10,
+          "first_player": 0,
+          "remaining_prizes": [
+            2,
+            0
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 1,
+          "remaining_prizes": [
+            2,
+            0
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_id": 407,
+      "candidate_seat": 1,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            2
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 1,
+          "remaining_prizes": [
+            2,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            2
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_id": 408,
+      "candidate_seat": 0,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 13,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            5
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 1,
+          "remaining_prizes": [
+            4,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 1,
+          "reason": 1,
+          "turn": 14,
+          "first_player": 0,
+          "remaining_prizes": [
+            2,
+            0
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_id": 409,
+      "candidate_seat": 1,
+      "result": "loss",
+      "games": [
+        {
+          "round": 1,
+          "winner": 0,
+          "reason": 1,
+          "turn": 11,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            6
+          ]
+        },
+        {
+          "round": 2,
+          "winner": 1,
+          "reason": 1,
+          "turn": 7,
+          "first_player": 1,
+          "remaining_prizes": [
+            4,
+            0
+          ]
+        },
+        {
+          "round": 3,
+          "winner": 0,
+          "reason": 1,
+          "turn": 9,
+          "first_player": 0,
+          "remaining_prizes": [
+            0,
+            4
+          ]
+        }
+      ],
+      "statuses": [
+        "DONE",
+        "DONE"
+      ],
+      "policy_invalid_count": 0,
+      "internal_random_fallback_count": 0
+    }
+  ],
+  "interpretation": "End-of-game outcomes describe loss patterns; they do not isolate a causal model defect.",
+  "source_series": {
+    "path": "runs/20261027T185516Z_tr11-fixed-parent-endpoint-800BO3_42d8ed/series.jsonl",
+    "sha256": "97b1acccfc3d4e0a0dc28e60b595982917130b43cf46e4e71602f4f412c055cc"
+  }
+}

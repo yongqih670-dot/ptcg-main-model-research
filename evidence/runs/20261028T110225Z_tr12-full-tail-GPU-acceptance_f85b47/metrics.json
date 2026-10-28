@@ -1,0 +1,283 @@
+{
+  "at": "2026-10-28T11:22:59.116042+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "optimizer_steps_executed": 0,
+  "new_sampled_decisions": 0,
+  "unique_PPO_trained_decisions": 73900,
+  "new_unique_PPO_trained_decisions": 0,
+  "full_parent_archive_ACKs_verified": true,
+  "pending_decisions_preserved": 104,
+  "promotion_eligible": false,
+  "training_only": false,
+  "scientific_training": false,
+  "scientific_continuation": false,
+  "derived_inheritance": {
+    "at": "2026-10-28T11:07:32.673757+00:00",
+    "hypothesis_id": "TR12",
+    "source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+    "source_point": {
+      "generation": 12,
+      "cursor": {
+        "version": 11,
+        "trained_decisions": 79641,
+        "next_series_id": 471
+      },
+      "checkpoint": {
+        "path": "checkpoint-commits/objects/cp-056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c.pt",
+        "sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+        "bytes": 46359925
+      },
+      "prefix": {
+        "path": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+        "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+        "bytes": 810
+      },
+      "pending": [],
+      "commit_id": "517e904aee453306e98218b137aba06854b050c76ef75fc3a8221a5a3e86236a"
+    },
+    "actual_unique_at_segment_start": 73900,
+    "frozen_absolute_endpoint": 369941,
+    "all_model_optimizer_RNG_CPU_sampler_pending_and_league_inherited": true,
+    "no_value_or_optimizer_reset": true,
+    "all_prior_charges_preserved": true,
+    "old_absolute_deadlines_unchanged": true,
+    "interrupted_BO3_excluded": true
+  },
+  "derived_GPU_restore": {
+    "at": "2026-10-28T11:13:03.650818+00:00",
+    "complete": true,
+    "model_tensors": 127,
+    "optimizer_states": 97,
+    "conditional_logp_checks": 48,
+    "conditional_logp_max_error": 1.8453874790935743e-05,
+    "conditional_logp_tolerance": 0.0001,
+    "CPU_GPU_fixture_reference_used": true,
+    "CPU_GPU_value_max_error": 3.6209821701049805e-06,
+    "CPU_GPU_value_tolerance": 0.0002,
+    "cursor": {
+      "version": 11,
+      "trained_decisions": 79641,
+      "next_series_id": 471
+    },
+    "pending_decisions": 104,
+    "gpu_uuid": "AUTHORIZED_GPU_UUID",
+    "same_GPU_fresh_process_rng_and_outputs_exact": true,
+    "optimizer_steps_executed": 0,
+    "sampling_rng_restored_after_probe": true
+  },
+  "gpu_index": 6,
+  "gpu_uuid": "AUTHORIZED_GPU_UUID",
+  "actual_config": {
+    "job_kind": "train_ppo",
+    "project_path": "SERVER_PROJECT_ROOT",
+    "bundle_path": "agents/frozen/ppo-zero-anchor",
+    "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+    "engine_manifest_sha256": "6c692a86a8802f1b0cabcf066f868a039caf543fdfedf6fbca2d450270db2b83",
+    "workers": 1,
+    "ppo": {
+      "terminal_reward": {
+        "win": 1,
+        "loss": -1,
+        "draw": 0
+      },
+      "gamma": 1.0,
+      "gae_lambda": 1.0,
+      "actor_learning_rate": 1e-05,
+      "value_head_learning_rate": 0.0001,
+      "shared_trunk_optimizer_group": "actor_only_no_duplicate_parameters",
+      "clip": 0.2,
+      "epochs": 2,
+      "entropy_coefficient": 0.01,
+      "value_loss_coefficient": 0.5,
+      "max_grad_norm": 0.5,
+      "target_kl": 0.02,
+      "rollout_complete_learner_decisions": 8192,
+      "minibatch_initial": 256,
+      "minibatch_memory_fallbacks": [
+        128,
+        64
+      ]
+    },
+    "league": {
+      "weights": {
+        "fixed_diverse": 1.0,
+        "historical_learner": 0.0,
+        "latest_frozen_learner": 0.0,
+        "weakness_training_opponents": 0.0
+      },
+      "fixed_opponents": [
+        {
+          "kind": "public_rule",
+          "lineage": "dipam_unown_gradiant_ppo",
+          "archetype": "grass_acceleration",
+          "id": "ppo",
+          "path": "agents/public/ppo",
+          "weight": 0.25,
+          "files": {
+            "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+            "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+            "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+            "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+            "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+            "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+            "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+            "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+            "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+            "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+            "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+            "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+            "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+            "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+            "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+            "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+          },
+          "parameters": {
+            "_actor_seat_mode": "zero"
+          }
+        }
+      ]
+    },
+    "hypothesis_id": "TR12",
+    "seed": 230101,
+    "target_decisions": 369941,
+    "primary_change": "Only additional320768 actual unique PPO decisions from complete TR11 state; same optimizer, seed, reward and frozen legal opponent.",
+    "success_criteria": "Complete the fixed actual-decision endpoint and all preregistered independent BO3 evaluations; report positive, negative or inconclusive results without sample extension.",
+    "decision_milestones": [
+      369941
+    ],
+    "archive_restore": {
+      "prefix_path": "archive-prefix.json",
+      "prefix_sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "initial_checkpoint_sha256": "8a489571e01b8d06fa13ebd586184882856d31b3f603d0bcbe34c0fe580a3975"
+    },
+    "checkpoint_interval_seconds": 600,
+    "cooperative_resource_control": true,
+    "derived_resume_runtime_audit": true,
+    "online_archive": {
+      "maximum_pending_bytes": 536870912
+    },
+    "sampling_device": "cpu",
+    "checkpoint_transaction_hash_reuse": true,
+    "CPU_GPU_batch_parity_required": true,
+    "CPU_rollout_value_parity_required": true,
+    "CPU_backend_fixture": "SERVER_PROJECT_ROOT/jobs/20261028T110225Z_tr12-full-tail-GPU-acceptance_f85b47/stage/9b5b00eff2f80a794f7576c2e61078941130821ed793357ff3de3f161fb9cce6.blob",
+    "consumed_reference_barrier_required": true,
+    "actual_decision_accounting": "unique_successful_first_epoch_coverage_v1",
+    "continuous_parent_actual_decisions": 49173,
+    "continuous_parent_PPO_updates": 8,
+    "segment_start_actual_unique": 73900,
+    "segment_start_PPO_updates": 11,
+    "segment_source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+    "volume_parent_acceptance_only": true,
+    "phase_timing": {
+      "schema": 1,
+      "publish_interval_seconds": 60,
+      "clock": "monotonic",
+      "CUDA_synchronize": false,
+      "profiler": false
+    },
+    "complete_postcheckpoint_tail": {
+      "source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+      "checkpoint_sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+      "references": [
+        {
+          "path": "rollouts/v0011-s000471.pt",
+          "sha256": "548f5b9374fbb1799d875160224835ecfb771beac537c5780423b215f6f48830",
+          "bytes": 5279265
+        },
+        {
+          "path": "series/000471.json",
+          "sha256": "5f65a9c6de8ff9a0c1c8f901fa6150d1545dadc98803dcd5f7af27023518cdb0",
+          "bytes": 50915
+        }
+      ],
+      "series_ids": [
+        471
+      ],
+      "pending_decisions": 104,
+      "journal_next_series_id": 472,
+      "next_series_id_after_interruption_exclusion": 473,
+      "inflight_sha256": "c736672762543433eba12c7e88c482d5dcf654955688696d08fe85627d49c878",
+      "recovery_report": {
+        "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/verified-recovery-report.json",
+        "sha256": "ad20fa09def13c439f764536d2c493f149e962f2b6edec4b1d566edaa8bb092f"
+      }
+    }
+  },
+  "last_training_progress": {
+    "at": "2026-10-28T11:22:58.315982+00:00",
+    "stage": "parent_acceptance_complete",
+    "version": 11,
+    "trained_decisions": 79641,
+    "unique_PPO_trained_decisions": 73900,
+    "decision_accounting": "unique_successful_first_epoch_coverage_v1",
+    "pending_decisions": 104,
+    "next_series_id": 473,
+    "seconds_this_attempt": 593.2578406570246,
+    "remaining_job_seconds": 489.53110361099243,
+    "last_checkpoint_seconds": 111.83306608401472,
+    "sampling_device": "cpu",
+    "PPO_device": "cuda:0",
+    "cuda_peak_allocated_bytes": 112143872,
+    "cuda_peak_reserved_bytes": 136314880,
+    "recovery_generation": 2
+  },
+  "engine": {
+    "platform": "linux",
+    "files": {
+      "libcg.so": {
+        "path": "SERVER_PROJECT_ROOT/.venv/lib/python3.12/site-packages/kaggle_environments/envs/cabt/cg/libcg.so",
+        "sha256": "c699020e086eede189c445c7abf9d891a60005ceec6eb91dccd5bbdcd3c0de22"
+      },
+      "sim.py": {
+        "path": "SERVER_PROJECT_ROOT/.venv/lib/python3.12/site-packages/kaggle_environments/envs/cabt/cg/sim.py",
+        "sha256": "072543b46caacbea81ca3e4b54bf2926f6415d9e1339261887c8ca1c428a1bdf"
+      },
+      "game.py": {
+        "path": "SERVER_PROJECT_ROOT/.venv/lib/python3.12/site-packages/kaggle_environments/envs/cabt/cg/game.py",
+        "sha256": "7aecf845ebebc73aa63f41a81837efcb9209ea39e913fbb2dcf3bbaf770fe437"
+      }
+    }
+  },
+  "validation_required": "Local independent complete-BO3 screen and confirmation",
+  "parent_acceptance_passed": true,
+  "model_selection_forbidden": true,
+  "peak_workspace_bytes": 23962684336,
+  "minimum_free_bytes": 1249171714048,
+  "kernel_initial": {
+    "cpu.max": "300000 100000",
+    "cpu.stat": "usage_usec 96202\nuser_usec 79342\nsystem_usec 16860\ncore_sched.force_idle_usec 0\nnr_periods 1\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+    "memory.max": "34359738368",
+    "memory.current": "13402112",
+    "memory.peak": "13402112",
+    "memory.swap.max": "0",
+    "pids.max": "512",
+    "own_io_stat": null,
+    "host_io_background": "252:0 rbytes=733790208 wbytes=7037284352 rios=151037 wios=7838 dbytes=51212288 dios=29\n8:128 rbytes=724694016 wbytes=737280 rios=103881 wios=158 dbytes=0 dios=0\n9:0 rbytes=243487449088 wbytes=4773277282304 rios=11015043 wios=180344321 dbytes=0 dios=0\n8:112 rbytes=178408313856 wbytes=78813966336 rios=2810640 wios=134600 dbytes=0 dios=0\n8:96 rbytes=1408329728 wbytes=97622212608 rios=228246 wios=243383 dbytes=0 dios=0\n8:80 rbytes=633348096 wbytes=70139904 rios=135288 wios=972 dbytes=47017984 dios=27\n8:64 rbytes=56622090240 wbytes=28472586240 rios=459765 wios=688368 dbytes=0 dios=0\n8:48 rbytes=102252544 wbytes=6967144448 rios=2626 wios=13166 dbytes=4194304 dios=2\n8:32 rbytes=14357774336 wbytes=23566135296 rios=1217424 wios=2487913 dbytes=17629458432 dios=150807\n8:16 rbytes=2080584704 wbytes=4096 rios=346933 wios=77 dbytes=0 dios=0\n8:0 rbytes=14609482752 wbytes=178807459840 rios=537181 wios=1239427 dbytes=0 dios=0\n259:7 rbytes=61268303872 wbytes=1200809635840 rios=2653844 wios=32935314 dbytes=80337682432 dios=86747\n259:6 rbytes=62480068608 wbytes=1207824596992 rios=2686704 wios=33381271 dbytes=77625274368 dios=72675\n259:5 rbytes=58877767680 wbytes=1177142919168 rios=2644977 wios=33329887 dbytes=85786521600 dios=131732\n259:4 rbytes=60862951424 wbytes=1187500130304 rios=2637566 wios=32807268 dbytes=79974379520 dios=83423\n259:3 rbytes=2954321920 wbytes=687026176 rios=207269 wios=49332 dbytes=946966528 dios=6760\n259:0 rbytes=5376631808 wbytes=45789889536 rios=71963 wios=2249153 dbytes=647301345280 dios=944816\n7:7 \n7:6 \n7:5 \n7:4 \n7:3 \n7:2 \n7:1 \n7:0"
+  },
+  "kernel_final": {
+    "cpu.max": "300000 100000",
+    "cpu.stat": "usage_usec 194404840\nuser_usec 120819245\nsystem_usec 73585595\ncore_sched.force_idle_usec 0\nnr_periods 10297\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0",
+    "memory.max": "34359738368",
+    "memory.current": "521269248",
+    "memory.peak": "1662050304",
+    "memory.swap.max": "0",
+    "pids.max": "512",
+    "own_io_stat": null,
+    "host_io_background": "252:0 rbytes=733790208 wbytes=7037284352 rios=151037 wios=7838 dbytes=51212288 dios=29\n8:128 rbytes=724694016 wbytes=737280 rios=103881 wios=159 dbytes=0 dios=0\n9:0 rbytes=243490357248 wbytes=4810859851776 rios=11015690 wios=181928152 dbytes=0 dios=0\n8:112 rbytes=178408313856 wbytes=78813966336 rios=2810640 wios=134601 dbytes=0 dios=0\n8:96 rbytes=1408419840 wbytes=100051345408 rios=228268 wios=248159 dbytes=0 dios=0\n8:80 rbytes=633348096 wbytes=70139904 rios=135288 wios=972 dbytes=47017984 dios=27\n8:64 rbytes=56622123008 wbytes=29392404480 rios=459773 wios=702397 dbytes=0 dios=0\n8:48 rbytes=102252544 wbytes=6967144448 rios=2626 wios=13166 dbytes=4194304 dios=2\n8:32 rbytes=14363672576 wbytes=23725191168 rios=1217466 wios=2492800 dbytes=17743429632 dios=152420\n8:16 rbytes=2080584704 wbytes=4096 rios=346933 wios=78 dbytes=0 dios=0\n8:0 rbytes=14610949120 wbytes=179740889088 rios=537195 wios=1242409 dbytes=0 dios=0\n259:7 rbytes=61268328448 wbytes=1210271428608 rios=2653850 wios=33217321 dbytes=80337682432 dios=86747\n259:6 rbytes=62482395136 wbytes=1217301106688 rios=2687272 wios=33658699 dbytes=77625274368 dios=72675\n259:5 rbytes=58878066688 wbytes=1186410139648 rios=2645018 wios=33640419 dbytes=85786521600 dios=131732\n259:4 rbytes=60863209472 wbytes=1196877176832 rios=2637598 wios=33104506 dbytes=79974379520 dios=83423\n259:3 rbytes=2955862016 wbytes=689459200 rios=207305 wios=49522 dbytes=951844864 dios=6781\n259:0 rbytes=5376648192 wbytes=45985850368 rios=71964 wios=2258924 dbytes=647497273344 dios=947956\n7:7 \n7:6 \n7:5 \n7:4 \n7:3 \n7:2 \n7:1 \n7:0"
+  },
+  "cgroup_memory_peak_bytes": 1662050304,
+  "own_service_gpu_memory_peak_mib": 548,
+  "project_growth_bytes": 422650077,
+  "resource_samples": 82,
+  "remote_manifest_sha256": "4d50e47efadcfad5f6afae92d90f7c637eeadec483df902ccd71085232f63bf2",
+  "final_service_identity": {
+    "unit": "ptcg-hybrid-trial-f85b47-66.service",
+    "invocation_id": "5ad334f55d9c440fbc14eb3c93b041af",
+    "start_monotonic": "276788647060",
+    "host_boot_id": "050c3cd8-f271-4c99-882c-02fa296341c0"
+  },
+  "controlled_outcome": "complete"
+}

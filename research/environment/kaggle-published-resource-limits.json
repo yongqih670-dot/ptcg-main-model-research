@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-23T16:08:32.835410+00:00",
+  "source": "https://www.kaggle.com/competitions/the-pokemon-company-ptcg-ai-battle-challenge-playground/overview/description",
+  "source_type": "official competition page rendered in web search index",
+  "reported_crawl_age": "3 weeks",
+  "direct_open_result": "Current direct fetch returned no page text; do not label search cache as a live authenticated resource response",
+  "published_limits": {
+    "vcpus": 2,
+    "ram_gib": 12.2,
+    "hdd_gib": 11.8,
+    "submission_archive_mib": 197.7
+  },
+  "api_template_placeholders_remain": true,
+  "use": "Conservative deployment planning limits; bind fresh official limit evidence before final upload",
+  "live_current_quota_verified": false,
+  "final_submission_qualified": false
+}

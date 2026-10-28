@@ -1,0 +1,21 @@
+{
+  "hypothesis_id": "TR00",
+  "research": false,
+  "final": false,
+  "diagnostic": false,
+  "allowed_job_kinds": [
+    "tr00_audit"
+  ],
+  "max_raw_runs": 6,
+  "config_hashes": [
+    "492ad90ab30447012258aa19f99b9dc4ba8d9f8cc5f882adcd33c399cb22b8b3"
+  ],
+  "at": "2026-10-23T14:00:02.635359+00:00",
+  "purpose": "engineering audit of full inherited actor and blind PPO implementation",
+  "success_criteria": "All inheritance, blind, conditional, trajectory, gradients and exact restart checks pass; no strength claim",
+  "max_gpu_hours": 1,
+  "max_cpu_hours": 2,
+  "repair_rule": "Two same-failure local repairs then root-cause review; never strength comparison under engineering label",
+  "resume_test": "checkpoint then supervisor 1 second hard stop then exact next update comparison",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14"
+}

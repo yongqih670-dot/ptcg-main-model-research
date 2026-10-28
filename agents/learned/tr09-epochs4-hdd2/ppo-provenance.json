@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-27T06:30:49.572048+00:00",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+  "trained_decisions": 32799,
+  "updates": 4,
+  "deck_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+  "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+  "inference_adapter_sha256": "29b5c097e3a18d419a5ef6d726db6329fd4e1e010ce41d5254ebf9f3377dfc53",
+  "qualification": "unqualified candidate; independent BO3 evaluation still required"
+}

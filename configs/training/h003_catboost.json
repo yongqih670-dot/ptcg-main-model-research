@@ -1,0 +1,14 @@
+{
+  "job_kind": "train_catboost",
+  "workers": 8,
+  "dataset_run": "PROJECT_ROOT\\runs\\20261023T113946Z_bc-data-checkpoint_1c573c",
+  "dataset_manifest_sha256": "fa3933d4b21c72ab2d0ff353e01ec16351b6e39f595ce97920d249fae3c782ae",
+  "iterations": 500,
+  "depth": 6,
+  "learning_rate": 0.08,
+  "early_stopping_rounds": 50,
+  "training_seed": 2026102305,
+  "evaluate_test": false,
+  "primary_change": "Fit CatBoost scoring of all legal candidates in nonforced mandatory single-choice contexts; frozen PPO for remaining contexts; unchanged deck and teacher corpus",
+  "success_criteria": "Finite saved model and held-out-by-BO3 validation diagnostics; candidate must pass 50 BO3 smoke and fixed 240 BO3 screening before any promotion consideration"
+}

@@ -1,0 +1,358 @@
+{
+  "run_id": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "screening_run_id": "20261023T111251Z_h002-ppo-seat-input_cd1c7b",
+  "checks": {
+    "explicit_confirmation": true,
+    "fresh_job": true,
+    "same_strategies_and_weights": true,
+    "same_agent_and_runner_code": true,
+    "same_engine_and_dependencies": true,
+    "fixed_sample_complete": true,
+    "unique_series_ids": true,
+    "balanced_seats": true,
+    "reliability": true,
+    "gain_ci_pass": true,
+    "slower_practical_gain_pass": true
+  },
+  "development_confirmation_passed": true,
+  "classification": "improved",
+  "contrast": {
+    "gain": 0.135,
+    "ci95": [
+      0.07999999999999999,
+      0.19
+    ],
+    "bootstrap_samples": 20000,
+    "method": "opponent-stratified independent complete BO3 resampling",
+    "weights": [
+      {
+        "candidate_cell": "zero-vs-lucario",
+        "anchor_cell": "physical-vs-lucario",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-alakazam",
+        "anchor_cell": "physical-vs-alakazam",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-archaludon",
+        "anchor_cell": "physical-vs-archaludon",
+        "weight": 0.25
+      },
+      {
+        "candidate_cell": "zero-vs-ppo",
+        "anchor_cell": "physical-vs-ppo",
+        "weight": 0.25
+      }
+    ]
+  },
+  "diagnostics": {
+    "physical-vs-alakazam": {
+      "series_by_seat": {
+        "0": {
+          "win": 50
+        },
+        "1": {
+          "loss": 8,
+          "win": 42
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 90,
+          "loss": 10
+        },
+        "2": {
+          "win": 53,
+          "loss": 47
+        },
+        "3": {
+          "loss": 5,
+          "win": 46
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 61,
+          "loss": 48
+        },
+        "second": {
+          "win": 128,
+          "loss": 14
+        }
+      },
+      "candidate_max_call_seconds": 0.28564570005983114,
+      "candidate_mean_series_policy_seconds": 1.612008340950124,
+      "candidate_max_round_policy_seconds": 1.219297596719116
+    },
+    "physical-vs-archaludon": {
+      "series_by_seat": {
+        "1": {
+          "loss": 45,
+          "win": 5
+        },
+        "0": {
+          "win": 50
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "loss": 45,
+          "win": 55
+        },
+        "2": {
+          "loss": 44,
+          "win": 56
+        },
+        "3": {
+          "win": 9,
+          "loss": 10
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "loss": 99,
+          "win": 120
+        }
+      },
+      "candidate_max_call_seconds": 0.26836440013721585,
+      "candidate_mean_series_policy_seconds": 1.242357288026251,
+      "candidate_max_round_policy_seconds": 1.0322999986819923
+    },
+    "physical-vs-lucario": {
+      "series_by_seat": {
+        "0": {
+          "win": 42,
+          "loss": 8
+        },
+        "1": {
+          "win": 31,
+          "loss": 19
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 80,
+          "loss": 20
+        },
+        "2": {
+          "loss": 68,
+          "win": 32
+        },
+        "3": {
+          "win": 48,
+          "loss": 14
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 73,
+          "loss": 56
+        },
+        "second": {
+          "loss": 46,
+          "win": 87
+        }
+      },
+      "candidate_max_call_seconds": 0.28378230007365346,
+      "candidate_mean_series_policy_seconds": 1.56850436209701,
+      "candidate_max_round_policy_seconds": 1.2362026986666024
+    },
+    "physical-vs-ppo": {
+      "series_by_seat": {
+        "1": {
+          "loss": 44,
+          "win": 6
+        },
+        "0": {
+          "win": 39,
+          "loss": 11
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "loss": 59,
+          "win": 41
+        },
+        "2": {
+          "loss": 50,
+          "win": 50
+        },
+        "3": {
+          "loss": 22,
+          "win": 21
+        }
+      },
+      "games_by_turn_order": {
+        "second": {
+          "loss": 46,
+          "win": 72
+        },
+        "first": {
+          "loss": 85,
+          "win": 40
+        }
+      },
+      "candidate_max_call_seconds": 0.2727191001176834,
+      "candidate_mean_series_policy_seconds": 1.5759661059221253,
+      "candidate_max_round_policy_seconds": 1.0395674989558756
+    },
+    "zero-vs-alakazam": {
+      "series_by_seat": {
+        "0": {
+          "win": 48,
+          "loss": 2
+        },
+        "1": {
+          "win": 45,
+          "loss": 5
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 87,
+          "loss": 13
+        },
+        "2": {
+          "win": 90,
+          "loss": 10
+        },
+        "3": {
+          "win": 14,
+          "loss": 5
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 101,
+          "loss": 7
+        },
+        "second": {
+          "win": 90,
+          "loss": 21
+        }
+      },
+      "candidate_max_call_seconds": 0.296545899938792,
+      "candidate_mean_series_policy_seconds": 1.395067516034469,
+      "candidate_max_round_policy_seconds": 0.9606836996972561
+    },
+    "zero-vs-archaludon": {
+      "series_by_seat": {
+        "0": {
+          "win": 50
+        },
+        "1": {
+          "win": 49,
+          "loss": 1
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 89,
+          "loss": 11
+        },
+        "2": {
+          "win": 88,
+          "loss": 12
+        },
+        "3": {
+          "win": 22,
+          "loss": 1
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 199,
+          "loss": 24
+        }
+      },
+      "candidate_max_call_seconds": 0.27203209977597,
+      "candidate_mean_series_policy_seconds": 1.3987956500565633,
+      "candidate_max_round_policy_seconds": 1.0997676006518304
+    },
+    "zero-vs-lucario": {
+      "series_by_seat": {
+        "0": {
+          "win": 42,
+          "loss": 8
+        },
+        "1": {
+          "win": 33,
+          "loss": 17
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 69,
+          "loss": 31
+        },
+        "2": {
+          "win": 67,
+          "loss": 33
+        },
+        "3": {
+          "win": 31,
+          "loss": 17
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 101,
+          "loss": 20
+        },
+        "second": {
+          "win": 66,
+          "loss": 61
+        }
+      },
+      "candidate_max_call_seconds": 1.9773196000605822,
+      "candidate_mean_series_policy_seconds": 1.6058826661622152,
+      "candidate_max_round_policy_seconds": 1.9773196000605822
+    },
+    "zero-vs-ppo": {
+      "series_by_seat": {
+        "0": {
+          "win": 35,
+          "loss": 15
+        },
+        "1": {
+          "loss": 33,
+          "win": 17
+        }
+      },
+      "games_by_round": {
+        "1": {
+          "win": 28,
+          "loss": 72
+        },
+        "2": {
+          "win": 88,
+          "loss": 12
+        },
+        "3": {
+          "loss": 38,
+          "win": 26
+        }
+      },
+      "games_by_turn_order": {
+        "first": {
+          "win": 78,
+          "loss": 53
+        },
+        "second": {
+          "win": 64,
+          "loss": 69
+        }
+      },
+      "candidate_max_call_seconds": 0.29896079981699586,
+      "candidate_mean_series_policy_seconds": 1.9153504777373747,
+      "candidate_max_round_policy_seconds": 1.1414946005679667
+    }
+  },
+  "candidate_seconds_per_series": 1.5787740774976555,
+  "anchor_seconds_per_series": 1.4997090242488775,
+  "candidate_slower": true,
+  "submission_qualified": false,
+  "scope": "Independent development confirmation only; strongest baseline selection and all final gates remain separate"
+}

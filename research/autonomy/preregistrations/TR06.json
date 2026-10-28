@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-25T20:54:11.660856+00:00",
+  "hypothesis_id": "TR06",
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "fd7c6ce6222ba1f925326a5e41f8012234f8885e0068724c2eee9cb57ba79e56"
+  ],
+  "single_primary_change": "entropy_coefficient0.01 ->0.001",
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 32768,
+  "training_attempts_max": 2,
+  "training_wall_seconds_max": 14400,
+  "training_attempt_seconds_max": 7200,
+  "hypothesis_compute_hours_max": 8,
+  "first_raw_training_run_attempts_max": 1,
+  "continuation_rule": "At most one exact derived originalsecond attempt, subtract all first time/attempts; never repeat fresh initializer or adopt partialTR04/TR05 weights.",
+  "evaluation_template_path": "research/autonomy/preregistrations/TR06-screen-template.json",
+  "evaluation_template_sha256": "ac8a2d35a3aa1bbd550acadb4a418ebbb57704238e7df4405f3828a4b5b1fe4c",
+  "config_binding_amendments": "Only frozen trainedartifact paths/hashes after complete training. 50BO3 reliability; unchanged240BO3 screen; independent800BO3 confirmation only if predeclared CI lower>0.",
+  "local_storage_plan_gib": {
+    "current": 56.92984000407159,
+    "regular_growth_forecast": 1.5,
+    "protected_future_margin": 1,
+    "hard_max": 60
+  },
+  "proposal": {
+    "path": "research/proposals/transformer_rl_v3/TR06_ENTROPY.json",
+    "sha256": "a322991123bbb92840a8f090731b001ed03f9db5db54d93ad45a426f8bdb3467"
+  },
+  "no_final_pool_access_or_threshold_change": true,
+  "valid_hypothesis_requires_complete_training_and_planned_evaluation": true,
+  "TR04_TR05_remain_invalid": true
+}

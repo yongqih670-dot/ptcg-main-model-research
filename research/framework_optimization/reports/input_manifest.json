@@ -1,0 +1,85 @@
+{
+  "created_unix": 1793181244.970952,
+  "source_files": [
+    {
+      "path": "ptcg_lab/rl_core.py",
+      "sha256": "b062f42f3040a8f870ead2c8e2a099d4e3ef4190718fea00abc7925eac5952dd",
+      "bytes": 10459
+    },
+    {
+      "path": "ptcg_lab/train_ppo.py",
+      "sha256": "5bc6d793e0481aba5d623adf6865fdbdc2c7dcbd7c0c2dbd53aedf97c8cfeaf3",
+      "bytes": 22626
+    },
+    {
+      "path": "ptcg_lab/rl_collector.py",
+      "sha256": "3821bcbd8b4dc69468f0766b284f4ad30c57a5cc4fbf7bf35886f24e89a52547",
+      "bytes": 5449
+    },
+    {
+      "path": "ptcg_lab/archive_barrier.py",
+      "sha256": "0b1f18e362f52baf9c7e6277d338c02529d8b6b87e2b4c8c8c8cf3db8d00d9a1",
+      "bytes": 4189
+    },
+    {
+      "path": "ptcg_lab/rl_sampling.py",
+      "sha256": "c315109d45071a421b5ee26a8ab761e5e248104b57b26ddd6d214617529d25aa",
+      "bytes": 2241
+    },
+    {
+      "path": "ptcg_lab/sampling_parity.py",
+      "sha256": "2bd68380e80ca0531a930ea0384e645978a5100d8584859533958e07f9b59620",
+      "bytes": 2548
+    },
+    {
+      "path": "research/prototypes/batched_actor_v1/conditional_batch.py",
+      "sha256": "98057ebe7e78f0cc4ebfda1b5e633e6d32c93dd53cb10827520c9f08434b52cd",
+      "bytes": 5809
+    },
+    {
+      "path": "research/autonomy/policy.json",
+      "sha256": "3f1af6abf58bd15e2f1a98e0dad40776d6be6a59f15735b27b594290b98520c0",
+      "bytes": 20692,
+      "reference_only": true
+    },
+    {
+      "path": "research/autonomy/state.json",
+      "sha256": "5b41e87b133527e9d672f7f6f1b8ac2bdf6281e378d8d4c17401ae5de90ddf7e",
+      "bytes": 223500,
+      "reference_only": true
+    },
+    {
+      "path": "research/autonomy/latest-continuation.json",
+      "sha256": "4aa42f12453e90915c1a68d7fdac38d17279c4a4008486fae51cd2a22a377fb5",
+      "bytes": 5540,
+      "reference_only": true
+    },
+    {
+      "path": "research/framework_optimization/PLAN_20261028.md",
+      "sha256": "aca9700e57a0971636188d430206a71c5ceccd6e5219faeef026ea05af88aae1",
+      "bytes": 11743,
+      "reference_only": true
+    },
+    {
+      "path": "ptcg_lab/checkpoint_refs.py",
+      "sha256": "b76213dfd17598e66dd807165cf13fc1473858d9c2d18a0b31a7fdaaba3ec264",
+      "bytes": 9777
+    },
+    {
+      "path": "ptcg_lab/training_checkpoint.py",
+      "sha256": "1fba2c67dd6885ca42c49d124c933770dec67cf440ce63289a789c40aa3ae1fe",
+      "bytes": 4858
+    }
+  ],
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "PROJECT_ROOT\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.5.4",
+    "cuda_available": false
+  },
+  "scope": "isolated engineering; no scientific run; no remote launch",
+  "local_process_identity_check": "CIM denied; no inference of idle status",
+  "original_controller_thread": "01a17ce2-7684-7473-bcad-828961994ca4"
+}

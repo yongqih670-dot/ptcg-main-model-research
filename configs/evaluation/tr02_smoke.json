@@ -1,0 +1,111 @@
+{
+  "job_kind": "evaluation",
+  "hypothesis_id": "TR02_SMOKE",
+  "workers": 8,
+  "series_count": 50,
+  "policy_seed": 230201,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Actor/shared-trunk learning rate 1e-5 instead of TR01 3e-5; all other learning settings, original H002 initialization, fixed deck and league unchanged",
+  "success_criteria": "50 complete official BO3; zero errors, invalid actions, timeouts or internal fallback. No strength selection.",
+  "evaluation_stage": "engineering_smoke",
+  "matchups": [
+    {
+      "cell_id": "candidate-vs-lucario",
+      "candidate": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 14
+    },
+    {
+      "cell_id": "candidate-vs-alakazam",
+      "candidate": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "candidate-vs-archaludon",
+      "candidate": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "candidate-vs-ppo",
+      "candidate": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 12
+    }
+  ],
+  "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+  "model_spec_sha256": "58497f4a27b8da94707017be073927054527a423eeb0cd02869f43dc7f21ee27"
+}

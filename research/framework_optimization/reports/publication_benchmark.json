@@ -1,0 +1,44 @@
+{
+  "type": "local_file_publication_microbenchmark",
+  "bytes": 8388608,
+  "input_sha256": "7d212b9c884f5c77896de960ae17cc341cda43b14d6a971f34ca29ebd4badf7f",
+  "timings": {
+    "False": {
+      "n": 7,
+      "median_seconds": 0.0407095999980811,
+      "min_seconds": 0.0398228999983985,
+      "max_seconds": 0.04863609999301843,
+      "samples_seconds": [
+        0.04863609999301843,
+        0.04189409999526106,
+        0.0398228999983985,
+        0.03983439999865368,
+        0.040950900001917034,
+        0.04051179997622967,
+        0.0407095999980811
+      ]
+    },
+    "True": {
+      "n": 7,
+      "median_seconds": 0.028037500014761463,
+      "min_seconds": 0.027447500004200265,
+      "max_seconds": 0.030084900005022064,
+      "samples_seconds": [
+        0.029388399998424575,
+        0.02750170000945218,
+        0.030084900005022064,
+        0.027447500004200265,
+        0.028037500014761463,
+        0.027489100000821054,
+        0.028119899972807616
+      ]
+    }
+  },
+  "end_to_end_speedup": null,
+  "application_IO_context_active": false,
+  "limitations": [
+    "Windows local filesystem, 8 MiB synthetic file; production full hashes retained.",
+    "No serialization, remote transfer, bandwidth limiter, or complete training measured.",
+    "Candidate requires atomic-replace-only writer and same filesystem; otherwise copy fallback."
+  ]
+}

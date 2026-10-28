@@ -1,0 +1,98 @@
+{
+  "series_count": 120,
+  "policy_seed": 2026102302,
+  "save_all_replays": true,
+  "primary_change": "Lucario _Q_ON only: embedded learned promotion override enabled versus disabled; all other code/deck unchanged",
+  "success_criteria": "Screen 30 complete BO3 per arm per opponent; investigate if macro score gain positive, retain as provisional only if 95% stratified CI lower > 0; any invalid/error makes experiment invalid",
+  "hypothesis": "Public learned promotion override improves BO3 score over the same Lucario rule policy without it",
+  "matchups": [
+    {
+      "cell_id": "lucario-q-on-vs-alakazam",
+      "candidate": {
+        "id": "lucario-q-on",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario",
+        "parameters": {
+          "_Q_ON": true
+        }
+      },
+      "reference": {
+        "id": "alakazam",
+        "kind": "public_rule",
+        "path": "agents/public/alakazam",
+        "lineage": "woominyo_alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "lucario-q-off-vs-alakazam",
+      "candidate": {
+        "id": "lucario-q-off",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario",
+        "parameters": {
+          "_Q_ON": false
+        }
+      },
+      "reference": {
+        "id": "alakazam",
+        "kind": "public_rule",
+        "path": "agents/public/alakazam",
+        "lineage": "woominyo_alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "lucario-q-on-vs-archaludon",
+      "candidate": {
+        "id": "lucario-q-on",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario",
+        "parameters": {
+          "_Q_ON": true
+        }
+      },
+      "reference": {
+        "id": "archaludon",
+        "kind": "public_rule",
+        "path": "agents/public/archaludon",
+        "lineage": "masami_archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "lucario-q-off-vs-archaludon",
+      "candidate": {
+        "id": "lucario-q-off",
+        "kind": "public_rule",
+        "path": "agents/public/lucario",
+        "lineage": "cggonzalezsc_lucario",
+        "parameters": {
+          "_Q_ON": false
+        }
+      },
+      "reference": {
+        "id": "archaludon",
+        "kind": "public_rule",
+        "path": "agents/public/archaludon",
+        "lineage": "masami_archaludon"
+      },
+      "series_count": 30
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate_cell": "lucario-q-on-vs-alakazam",
+      "anchor_cell": "lucario-q-off-vs-alakazam",
+      "weight": 0.5
+    },
+    {
+      "candidate_cell": "lucario-q-on-vs-archaludon",
+      "anchor_cell": "lucario-q-off-vs-archaludon",
+      "weight": 0.5
+    }
+  ]
+}

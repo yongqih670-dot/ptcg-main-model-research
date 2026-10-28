@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-28T05:39:35.848494+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "source_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "source_point": {
+    "generation": 11,
+    "cursor": {
+      "version": 8,
+      "trained_decisions": 54914,
+      "next_series_id": 330
+    },
+    "checkpoint": {
+      "path": "checkpoint-commits/objects/cp-4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40.pt",
+      "sha256": "4da07a52c3ef931f9dcea5413a4ad8c884e8e8a908ce3a7c7894dd6871a8bd40",
+      "bytes": 46286389
+    },
+    "prefix": {
+      "path": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+      "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "bytes": 810
+    },
+    "pending": [],
+    "commit_id": "a97e09cf3e84e346637e11521abfd47b9c4df08abc2dddb9f51eb239c07fc7cf"
+  },
+  "source_remote_evidence": {
+    "checkpoint-commits/index.json": "057671a54e2612cbd7c8b2f2e51fb5617788bbf1080b2f3c9aa27eb1b6a9a326",
+    "progress.json": "6b8db8e61d738f528b16c8fa9f52ae9f4b29534f71ea8d1239f4ec2414494111",
+    "league.json": "6d7371362598d9d1774b39f9331399b3f44fee3208dcb38e49f24e289f798709",
+    "payload-config.json": "8b0174b7c109fefec083051d5c317fe9b3ca2c3e8657f14d34ebc860aaea0a63",
+    "training-updates.json": "278940f4c26ea742c2c71982679ccbc78e3d9974e49e59abfced412b20e2028f"
+  },
+  "source_league_sha256": "6d7371362598d9d1774b39f9331399b3f44fee3208dcb38e49f24e289f798709",
+  "source_inflight": null,
+  "actual_unique_PPO_decisions": 49173,
+  "PPO_updates": 8,
+  "pending_decisions": 0,
+  "all_full_state_and_pending_archives_verified": true,
+  "reference_fixture_never_enters_training": true,
+  "optimizer_steps_executed": 0,
+  "new_sampled_decisions": 0,
+  "new_unique_training_decisions": 0,
+  "numeric_reference": {
+    "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/current-model-numeric-reference.pt",
+    "sha256": "7fbfb0db84f844889b94c59af3fdfbcc774db792dc6f661f550f30b1d43d65d4",
+    "bytes": 21910909
+  },
+  "archive_inventory": {
+    "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/verified-archive-inventory.json",
+    "sha256": "8efc57b8609ca68772597339a13d25f9ba600c8dd4aed0728030cde431488a67"
+  },
+  "boundary_receipt": {
+    "path": "runs/20261028T053921Z_tr12-parent-full-state-storage-difference_be4087/boundary-and-source-receipt.json",
+    "sha256": "408e8bd5497d444fd56eaf0750b56251024a3d5bb9f9043e3d8cca724d34da93"
+  },
+  "previous_updates_and_actual_volume_not_recounted": true
+}

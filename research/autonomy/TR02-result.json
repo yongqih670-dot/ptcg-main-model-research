@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-23T15:06:24.019193+00:00",
+  "hypothesis": "TR02",
+  "classification": "inconclusive",
+  "promotion_eligible": false,
+  "candidate_score": 0.8583333333333333,
+  "anchor_score": 0.8333333333333334,
+  "gain": 0.024999999999999994,
+  "ci95": [
+    -0.06666666666666665,
+    0.11666666666666667
+  ],
+  "series_per_arm": 120,
+  "unit": "complete BO3",
+  "screen_run_id": "20261023T150149Z_tr02-ppo-screen_dd8756",
+  "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+  "planned_independent_confirmation": "not triggered: preregistered screen CI lower >0 condition not met",
+  "reliability": "50 smoke plus 240 screen BO3, zero errors/invalid actions/timeouts/random fallback; not final qualification",
+  "failure_review": {
+    "reviewed_series": 16,
+    "path": "runs/20261023T150149Z_tr02-ppo-screen_dd8756/failure-review.json",
+    "observations": [
+      "Candidate versus frozen PPO 22/30 and anchor 21/30; TR01 separate screen was 15/30 for both. These independent engine samples cannot be treated as a paired learning-rate gain.",
+      "Candidate series 144 against Archaludon lost round 1 at turn 6 without any candidate attack; another loss reached turn 12 with four prizes remaining. Early setup and prize tempo remain possible diagnostic categories.",
+      "Candidate mirror series 184 had two losing games ending with two prizes remaining. No execution faults explain these losses."
+    ],
+    "causal_limit": "Public outcome/attack summaries alone do not justify a representation, predictor or search change."
+  },
+  "optimization_evidence": {
+    "path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/optimization-summary.json",
+    "optimizer_steps": 262,
+    "sample_presentations": 65650,
+    "kl_early_stop_count": 0,
+    "comparison_TR01_steps": 64,
+    "comparison_TR01_presentations": 16183,
+    "conclusion": "Mechanism supported descriptively: lower LR uses the full planned epochs. Competitive strength remains inconclusive after four rollouts."
+  },
+  "decision": "Retain unpromoted candidate. Validate production recovery, then preregister larger training sample count only at the same 1e-5 LR, original full H002 actor and fixed league; no heldout access.",
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_used": false
+}

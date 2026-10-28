@@ -1,0 +1,111 @@
+{
+  "job_kind": "evaluation",
+  "hypothesis_id": "TR01_SMOKE",
+  "workers": 8,
+  "series_count": 50,
+  "policy_seed": 230101,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Short online blind PPO from complete frozen H002 Transformer with fixed deck and predeclared immutable league mixture",
+  "success_criteria": "50 complete official BO3; zero errors, invalid actions, timeouts or internal fallback. No strength selection.",
+  "evaluation_stage": "engineering_smoke",
+  "matchups": [
+    {
+      "cell_id": "candidate-vs-lucario",
+      "candidate": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 14
+    },
+    {
+      "cell_id": "candidate-vs-alakazam",
+      "candidate": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "candidate-vs-archaludon",
+      "candidate": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 12
+    },
+    {
+      "cell_id": "candidate-vs-ppo",
+      "candidate": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 12
+    }
+  ],
+  "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+  "model_spec_sha256": "b3a233ef2235f85ce6a1b1aa277ee411090d8f7e8a0be5c619889030b4a2400b"
+}

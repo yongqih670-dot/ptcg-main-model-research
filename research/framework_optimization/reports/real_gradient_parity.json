@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "finite": true,
+  "logp_max_error": 0.0,
+  "value_max_error": 0.0,
+  "entropy_max_error": 0.0,
+  "logp_tolerance": 0.0001,
+  "value_tolerance": 0.0002,
+  "gradient_max_error": 5.960464477539063e-08,
+  "gradient_atol": 2e-06,
+  "gradient_rtol": 1e-05,
+  "optimizer_steps": 0,
+  "new_scientific_decisions": 0
+}

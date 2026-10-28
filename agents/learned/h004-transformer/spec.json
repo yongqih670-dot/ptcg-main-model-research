@@ -1,0 +1,34 @@
+{
+  "id": "h004-transformer",
+  "kind": "transformer_bc",
+  "path": "agents/frozen/ppo-zero-anchor",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_path": "agents/learned/h004-transformer/model.pt",
+  "model_sha256": "7c24f4c6b997512012d14c5c6d2387d21ce2933171b818e1f4f34f16d1d381ff",
+  "architecture": {
+    "d": 128,
+    "layers": 4,
+    "heads": 4,
+    "ffn": 512,
+    "d_c": 128,
+    "d_a": 64
+  },
+  "learned_contexts": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    7,
+    8,
+    15,
+    21,
+    22,
+    30,
+    38,
+    43
+  ]
+}

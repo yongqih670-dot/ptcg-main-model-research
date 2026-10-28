@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-27T12:39:03.292765+00:00",
+  "hypothesis_id": "TR11",
+  "research": true,
+  "final": false,
+  "diagnostic": true,
+  "max_raw_runs": 4,
+  "allowed_job_kinds": [
+    "remote_train_ppo",
+    "evaluation"
+  ],
+  "config_hashes": [
+    "f802b8075c75e059ad239a5fc1b429253784aa8d0a0a47e5e8b66294b95eb3b9",
+    "8ffd6866c79f2ddd12ad8b580fbfca49dd5fd0c78fc75f1f7f6ecddbc3c9a449",
+    "d71d3e39afb7e5cc6be5b23e065720f0b7b5664ef74d6aca55d21eb5d3b98bcc"
+  ],
+  "protocol": {
+    "path": "research/proposals/continuous_mainline_v1/ACTIVATED_PROTOCOL.json",
+    "sha256": "5e97238dbf9bdcab80b2188ab497e6a15fa77de078d2f9c33394454aeaa6fccc"
+  },
+  "training_attempts_max": 3,
+  "training_wall_seconds_max": 30000,
+  "success_criteria": "New16384actualunique decisions, nonzero policy gradient and independent400BO3perarm terminal-parent gain CI95lower>0 and point>=0.05; diagnostic only, no champion promotion.",
+  "config_binding_amendments": "Latest explicit human authorization prospectively changes CPU quota and training runtime ceiling before any TR11 scientific launch. All prior scientific target/settings/evaluation/attempts and cumulative/final reserves remain frozen.",
+  "actual_server_parent_acceptance": {
+    "path": "runs/20261027T144059Z_parent-archive-reuse-CPU-acceptance_b539b2/metrics.json",
+    "sha256": "945a423507ec99f431eb093dc9de56756f67534dbd659a5ce4f2826459667314"
+  },
+  "updated_at": "2026-10-27T15:50:46.316155+00:00",
+  "runtime_resource_amendment": {
+    "authorization": {
+      "path": "research/autonomy/authorizations/TR03-fifth256-TR11-3CPU-500min-20261027.json",
+      "sha256": "0093aea648ea8654102da2faebcd0b72013d3f751654bfeb9c36ed3a37029ffb"
+    },
+    "prior_preregistration": {
+      "path": "research/autonomy/preregistrations/TR11.before-3CPU-500min-authorization.json",
+      "sha256": "2972b24cbeca1c18cb34da388c36a155163b00fe47c3c700bb62268c01a8be5c"
+    },
+    "prior_config": {
+      "path": "configs/tr11-continuous-basic-learning.json",
+      "sha256": "e44b898d8f7f6813ec6aa5c7fb7502160447861fa8afd44a1ace61b0bd9e6a79"
+    },
+    "CPU_quota_cores": 3,
+    "requested_job_seconds_max": 30000,
+    "unchanged_hypothesis_cumulative_seconds_max": 28800,
+    "no_scientific_parameter_target_seed_sample_size_or_attempt_change": true
+  },
+  "explicit_attempt_raw_amendment": {
+    "authority": {
+      "path": "research/autonomy/authorizations/TR11-attempt3-raw4-project42-20261027.json",
+      "sha256": "bd0e53fda1a16de3f1049d301fb8d6589f9a698f3876886ddf0a163f70713acf"
+    },
+    "previous_preregistration": {
+      "path": "research/autonomy/activations/TR11-attempt3-raw42-20261027/2-TR11.json",
+      "sha256": "31dfeb8cc05c395505989640df0c01ccc47e4a3e0272c848598c68565d7df769"
+    },
+    "first_failed_training_run": "20261027T151831Z_tr11-fixed-opponent-3CPU-basic-learning_a4c4b7",
+    "remaining_training_attempts": 2,
+    "all_scientific_settings_targets_samples_and_seeds_unchanged": true,
+    "deadline_and_cumulative_costs_not_reset": true
+  },
+  "allowed_future_bindings": "Exact prospective attempt2/3 source/recovery/config hashes and completed endpoint evaluation binding within current explicit authority; no fresh parent restart after positive updates.",
+  "bindings": [
+    {
+      "at": "2026-10-27T16:02:02.047565+00:00",
+      "config_path": "configs/tr11-authorized-attempt2.json",
+      "config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+      "training_attempt_index": 2,
+      "prior_attempts": [
+        "20261027T151831Z_tr11-fixed-opponent-3CPU-basic-learning_a4c4b7"
+      ],
+      "prior_charged_seconds": 415.9850000000006,
+      "authority": {
+        "path": "research/autonomy/authorizations/TR11-attempt3-raw4-project42-20261027.json",
+        "sha256": "bd0e53fda1a16de3f1049d301fb8d6589f9a698f3876886ddf0a163f70713acf"
+      }
+    },
+    {
+      "at": "2026-10-27T18:53:47.907496+00:00",
+      "previous_preregistration_sha256": "441419be36320c87fe5cbf3cc729d102dcd1a6ec0d9969bbf1c41d86dce8acec",
+      "config_path": "configs/evaluation/tr11_basic_learning_diagnostic.json",
+      "config_sha256": "126ce532e6f3beaf2197c4c6179756992ca734a2c56dc1b697810976a8a91432",
+      "reason": "Resolve only completed endpoint into exact predeclared400+400BO3; unchanged opponent, counts, bootstrap, seeds and no extension."
+    }
+  ]
+}

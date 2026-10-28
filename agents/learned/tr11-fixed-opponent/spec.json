@@ -1,0 +1,13 @@
+{
+  "id": "tr11-fixed-opponent",
+  "kind": "transformer_rl",
+  "path": "agents/learned/tr11-fixed-opponent",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+  "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+  "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+  "feature_schema": "full-inherited-blind-conditional-v3"
+}

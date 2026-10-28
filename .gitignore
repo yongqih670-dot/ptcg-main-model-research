@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+downloads/
+objects/
+runs/
+!evidence/runs/
+*.pt
+*.pth
+*.gz
+*.tar
+*.zip
+*.bundle

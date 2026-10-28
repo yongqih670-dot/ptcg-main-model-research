@@ -1,0 +1,24 @@
+{
+  "id": "h003-catboost",
+  "kind": "catboost_single",
+  "path": "agents/frozen/ppo-zero-anchor",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_path": "agents/learned/h003-catboost/model.cbm",
+  "model_sha256": "41a490e0f32cd9bb868d756c431f01fd7e5eb7261014b0a8cea4750263b577f5",
+  "learned_contexts": [
+    0,
+    1,
+    3,
+    4,
+    7,
+    15,
+    21,
+    22,
+    30,
+    38,
+    43
+  ]
+}

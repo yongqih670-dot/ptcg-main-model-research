@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-28T10:47:32.415852+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+  "source_point": {
+    "generation": 12,
+    "cursor": {
+      "version": 11,
+      "trained_decisions": 79641,
+      "next_series_id": 471
+    },
+    "checkpoint": {
+      "path": "checkpoint-commits/objects/cp-056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c.pt",
+      "sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+      "bytes": 46359925
+    },
+    "prefix": {
+      "path": "checkpoint-commits/objects/prefix-1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858.json",
+      "sha256": "1f142213a38af1e92ebe0d6122fa2936d09326d68f3f30c7ca59f8bfe27a4858",
+      "bytes": 810
+    },
+    "pending": [],
+    "commit_id": "517e904aee453306e98218b137aba06854b050c76ef75fc3a8221a5a3e86236a"
+  },
+  "source_remote_evidence": {
+    "checkpoint-commits/index.json": "13b8f215c51524f4a2b6d5398c09d28f64f9db5ba0b80ceb170f79cf681c3a82",
+    "progress.json": "b26ac38191f71fa3a976a0db8b59cb9d2bd88a621bf87007bc74da8db9d0b226",
+    "league.json": "e4f71d9150267d395c67ab76893721b363741d892c7cda47a85ddbf6f37a3741",
+    "payload-config.json": "490f65e24e22639b36ba5c63b1b7109015b797f629688009b594f70beb8652cb",
+    "training-updates.json": "be2361016dc234f4ead283481ead126ae5fa04da73aced76cb2a7a3008b95df6",
+    "inflight.json": "c736672762543433eba12c7e88c482d5dcf654955688696d08fe85627d49c878"
+  },
+  "source_league_sha256": "e4f71d9150267d395c67ab76893721b363741d892c7cda47a85ddbf6f37a3741",
+  "source_inflight": {
+    "sha256": "c736672762543433eba12c7e88c482d5dcf654955688696d08fe85627d49c878",
+    "bytes": 210
+  },
+  "actual_unique_PPO_decisions": 73900,
+  "PPO_updates": 11,
+  "pending_decisions": 104,
+  "complete_postcheckpoint_tail": {
+    "source_run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+    "checkpoint_sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+    "references": [
+      {
+        "path": "rollouts/v0011-s000471.pt",
+        "sha256": "548f5b9374fbb1799d875160224835ecfb771beac537c5780423b215f6f48830",
+        "bytes": 5279265
+      },
+      {
+        "path": "series/000471.json",
+        "sha256": "5f65a9c6de8ff9a0c1c8f901fa6150d1545dadc98803dcd5f7af27023518cdb0",
+        "bytes": 50915
+      }
+    ],
+    "series_ids": [
+      471
+    ],
+    "pending_decisions": 104,
+    "journal_next_series_id": 472,
+    "next_series_id_after_interruption_exclusion": 473,
+    "inflight_sha256": "c736672762543433eba12c7e88c482d5dcf654955688696d08fe85627d49c878",
+    "recovery_report": {
+      "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/verified-recovery-report.json",
+      "sha256": "ad20fa09def13c439f764536d2c493f149e962f2b6edec4b1d566edaa8bb092f"
+    }
+  },
+  "all_full_state_and_pending_archives_verified": true,
+  "reference_fixture_never_enters_training": true,
+  "optimizer_steps_executed": 0,
+  "new_sampled_decisions": 0,
+  "new_unique_training_decisions": 0,
+  "numeric_reference": {
+    "path": "runs/20261028T104724Z_tr12-tail-handoff-storage-audit_e1b099/current-model-numeric-reference.pt",
+    "sha256": "9b5b00eff2f80a794f7576c2e61078941130821ed793357ff3de3f161fb9cce6",
+    "bytes": 21910909
+  },
+  "archive_inventory": {
+    "path": "runs/20261028T104724Z_tr12-tail-handoff-storage-audit_e1b099/verified-archive-inventory.json",
+    "sha256": "d1ae7d19d5c571887ad5ae8306141d2499ed78e2184860dc62a47dabe1c0a3b4"
+  },
+  "boundary_receipt": {
+    "path": "runs/20261028T104724Z_tr12-tail-handoff-storage-audit_e1b099/boundary-and-source-receipt.json",
+    "sha256": "109c8187a25bd9e6d233e1aaf94c90a1cd018e254d8964c030829cbe6d36097d"
+  },
+  "previous_updates_and_actual_volume_not_recounted": true
+}

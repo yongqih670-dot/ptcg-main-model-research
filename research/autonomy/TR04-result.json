@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-25T16:44:38.170924+00:00",
+  "hypothesis": "TR04",
+  "classification": "invalid",
+  "promotion_eligible": false,
+  "reason": "Original training target incomplete and both original training attempts consumed; second attempt terminated on supervisor NVML query timeout after shared-GPU freezes.",
+  "training_target": 262144,
+  "trained_decisions": 248128,
+  "new_second_attempt_complete_BO3": 9,
+  "new_second_attempt_decisions": 1279,
+  "recoverable_pending_decisions": 6709,
+  "original_checkpoint_sha256": "34f2a4db2602ccf041ba274c44c286af689aff362bfb79780709af1acddef1f4",
+  "training_attempts": {
+    "original": [
+      {
+        "attempt": 1,
+        "at": "2026-10-23T20:26:22.223934+00:00",
+        "seconds": 7160.51500000013,
+        "exit_code": 0,
+        "status": "checkpointed",
+        "compute_kind": "gpu"
+      }
+    ],
+    "derived_original_second": [
+      {
+        "attempt": 1,
+        "at": "2026-10-25T16:13:18.140268+00:00",
+        "seconds": 2162.969000000041,
+        "exit_code": 1,
+        "status": "failed",
+        "compute_kind": "gpu"
+      }
+    ],
+    "total_seconds": 9323.484000000171,
+    "attempt_count": 2,
+    "further_TR04_attempts_allowed": 0,
+    "unused_wall_time_not_a_new_attempt_allowance": true
+  },
+  "forensic_evidence": {
+    "path": "runs/20261025T164055Z_tr04-failure-analysis_c7f812/analysis.json",
+    "sha256": "aee0d995d49ba11d8b0562e617cb126fc9059597ca507682dad103d0daddb9c7"
+  },
+  "full_failure_archive": "runs/20261025T162703Z_tr04-failure-archive_c35193",
+  "causal_limit": "Observed supervisor nvidia-smi8s TimeoutExpired on thaw. Whole-cgroup freeze can expire subprocess monotonic deadlines; exact query launch timestamp was not recorded, so this is a supported timing-risk explanation, not proof of GPU/driver failure.",
+  "lambda_competitive_effect": null,
+  "next_action": "Fix future cooperative resource pause and repeated archive IO overhead. Collect small server-only gradient diagnostics from already available complete training BO3 if needed, then preregister a genuinely distinct single-variable hypothesis from full H002; never restart/relabel TR04 to restore its attempts.",
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_holdout_used": false,
+  "valid_hypothesis_count_unchanged": 3,
+  "valid_no_promotion_streak_unchanged": 3
+}

@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-28T11:53:17.420851+00:00",
+  "complete": true,
+  "engineering_only": true,
+  "actual_notify_extension_and_expiry_passed": true,
+  "actual_service_elapsed_seconds": 19.022893,
+  "initial_RuntimeMaxUSec": "10s",
+  "active_execution_seconds_observed": 10.51159009319963,
+  "verified_test_wait_seconds": 8.019041599996854,
+  "expected_terminal_result": "timeout",
+  "no_GPU_or_model_execution": true,
+  "new_scientific_samples": 0,
+  "optimizer_steps_executed": 0,
+  "sources": {
+    "path": "runs/20261028T115249Z_tr12-active-clock-CPU-acceptance_18dbb6/active-clock-tested-sources.json",
+    "sha256": "81344ec0c050a6142dfd0670381af79c26921d9b37c202690393ccca238029fc"
+  }
+}

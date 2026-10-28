@@ -1,0 +1,105 @@
+{
+  "type": "local_CPU_real_fixture_forward_microbenchmark",
+  "threads": 2,
+  "fixture": {
+    "path": "runs/20261028T093904Z_tr12-full-state-tail_e16975/current-endpoint-numeric-reference.pt",
+    "sha256": "0dd0faea7a4f911714cc1812b44ec75516e960eac768f157671bef9ed8e4a82f",
+    "model_source_checkpoint_sha256": "056f566a42ae5e84c123d57e4e54ca45ad1f86b16e318458785c1e5c910a278c",
+    "model_source_path": "PROJECT_ROOT\\agents\\frozen\\ppo-zero-anchor\\ptcg\\rl\\model.py",
+    "model_source_sha256": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+    "decisions": 48
+  },
+  "parity": {
+    "passed": true,
+    "finite": true,
+    "logp_max_error": 0.0,
+    "value_max_error": 0.0,
+    "entropy_max_error": 0.0,
+    "logp_tolerance": 0.0001,
+    "value_tolerance": 0.0002
+  },
+  "one_time_pack_seconds": 0.0009634000016376376,
+  "timings": {
+    "baseline_full_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.13035150000359863,
+      "minimum_seconds": 0.12804729997878894,
+      "maximum_seconds": 0.1385123000072781,
+      "samples_seconds": [
+        0.13035150000359863,
+        0.12804729997878894,
+        0.12846340000396594,
+        0.12842220001039095,
+        0.13539979999768548,
+        0.1385123000072781,
+        0.13725180001347326
+      ]
+    },
+    "candidate_pack_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.12379490002058446,
+      "minimum_seconds": 0.12282259998028167,
+      "maximum_seconds": 0.13325789998634718,
+      "samples_seconds": [
+        0.1232851000095252,
+        0.12379490002058446,
+        0.1228259000054095,
+        0.12282259998028167,
+        0.12480589997721836,
+        0.1320902000006754,
+        0.13325789998634718
+      ],
+      "local_speedup_vs_baseline": 1.0529634094936378
+    },
+    "candidate_cached_forward_reduce": {
+      "n": 7,
+      "median_seconds": 0.12388909998117015,
+      "minimum_seconds": 0.12208539998391643,
+      "maximum_seconds": 0.13213420001557097,
+      "samples_seconds": [
+        0.12388909998117015,
+        0.12359030000516213,
+        0.12257140001747757,
+        0.12208539998391643,
+        0.12717970000812784,
+        0.13108560000546277,
+        0.13213420001557097
+      ],
+      "local_speedup_vs_baseline": 1.0521627812568717
+    }
+  },
+  "profiled_baseline": {
+    "n": 3,
+    "median_seconds": 0.14215780000085942,
+    "minimum_seconds": 0.13358570000855252,
+    "maximum_seconds": 0.1535120999906212,
+    "samples_seconds": [
+      0.14215780000085942,
+      0.13358570000855252,
+      0.1535120999906212
+    ]
+  },
+  "trace_path": "reports/phase_trace.json",
+  "new_scientific_decisions": 0,
+  "optimizer_steps": 0,
+  "end_to_end_speedup": null,
+  "limitations": [
+    "48 decisions, single real tail fixture; no full BO3 collection or archive measured.",
+    "CPU timing only; hardware GPU acceptance pending.",
+    "Profiler overhead estimate is noisy at this small sample size."
+  ],
+  "source_sha256": {
+    "archive_queue.py": "d899b28edabf32f07925bfb7a3dd749887297700c95d4bc21987f0f8fd680c6c",
+    "backend.py": "e900fbf3f9418bf2dd744b2784b37f6e5bf8685528ce751fe370cef31bdd0b44",
+    "checkpoint_refs.py": "d8a09b94396273c6be57830b1bf67df26451f4cdfb9b1c4765e2e65a7a620b30",
+    "conditional_batch.py": "98057ebe7e78f0cc4ebfda1b5e633e6d32c93dd53cb10827520c9f08434b52cd",
+    "coordinator.py": "61e3bca3fe3951cf370861d8b84be3b7517d7fa4ed587ac2728ffb418606c44d",
+    "immutable_link.py": "e8546f68afdab56934c64b89fbf9d831dc4eba99f870c4348fc40f3d26a02dbc",
+    "packed.py": "f8049d41b53663639854cceb9e8ce7b55b22d88bd94d6c827cf371b70d890016",
+    "ppo.py": "ae9ebfa8bfcb023e40fa3363a29064deae193956b93bfef965e72c270920729d",
+    "precision.py": "551a6d028a69d5320a581871fca287f918e91c3f28753cfe08b8334c5a2a2796",
+    "profile_window.py": "9765952fae1b75d55361b79ba89bb8d3e9c689ca6479171939d52ba93c7c10aa",
+    "timing.py": "678af922529e4cefe581dc7c82193ee353933e1593b3d077173696c9bcaf5b5c",
+    "__init__.py": "e6d4db47a6787beda1e4d01a6498c84adc0db9337a2525e90d8a9a38240d1c19"
+  }
+}

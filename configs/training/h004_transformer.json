@@ -1,0 +1,23 @@
+{
+  "job_kind": "train_transformer",
+  "workers": 4,
+  "feature_bundle": "agents/frozen/ppo-zero-anchor",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "dataset_run": "PROJECT_ROOT\\runs\\20261023T120840Z_full-token-data_74677e",
+  "dataset_manifest_sha256": "562ef8688b36e3d5f1042fb003a9f4bf64dbc4b268140b6151775569a9cdd1af",
+  "architecture": {
+    "d": 128,
+    "layers": 4,
+    "heads": 4,
+    "ffn": 512,
+    "d_c": 128,
+    "d_a": 64
+  },
+  "training_seed": 2026102306,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.01,
+  "batch_size": 64,
+  "epochs": 3,
+  "primary_change": "Full-token conditional small Transformer BC versus frozen PPO teacher; representation/model baseline comparison, same deck and teacher corpus",
+  "success_criteria": "Finite resumable CUDA optimization; full BO3 splits; validation selection only; CPU export equivalence; BO3 strength deferred"
+}

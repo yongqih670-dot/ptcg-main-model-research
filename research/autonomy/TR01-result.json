@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-23T14:43:28.456408+00:00",
+  "hypothesis": "TR01",
+  "classification": "inconclusive",
+  "promotion_eligible": false,
+  "candidate_score": 0.8416666666666667,
+  "anchor_score": 0.8083333333333333,
+  "gain": 0.033333333333333326,
+  "ci95": [
+    -0.04999999999999999,
+    0.11666666666666665
+  ],
+  "series_per_arm": 120,
+  "unit": "complete BO3",
+  "screen_run_id": "20261023T143603Z_tr01-ppo-screen_18f757",
+  "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+  "planned_independent_confirmation": "not triggered: preregistered screen CI lower >0 condition not met",
+  "reliability": "50 smoke plus 240 screen BO3; zero observed execution errors, invalid actions, timeouts or fallback; not final reliability qualification",
+  "failure_review": {
+    "reviewed_series": 16,
+    "path": "runs/20261023T143603Z_tr01-ppo-screen_18f757/failure-review.json",
+    "observations": [
+      "Candidate and anchor each scored 15/30 against frozen PPO. Most candidate losses remained in the mirror matchup.",
+      "Candidate series 184 round 2 used Applin attack four times and ended with two prizes remaining; the opponent used Hydrapple twice. This suggests setup/tempo as a future diagnostic, not a demonstrated causal defect.",
+      "Candidate series 15 round 3 ended at turn 3 before any candidate attack, while later Lucario losses also show prize-race deficits. No oracle information was used for training."
+    ],
+    "causal_limit": "Loss samples alone do not establish an actor bug or justify an opponent predictor/search stage."
+  },
+  "optimization_evidence": {
+    "path": "runs/20261023T141824Z_tr01-blind-ppo-32k_25713f/training-analysis.json",
+    "kl_early_stop_all_four_rollouts": true,
+    "decision": "Preserve TR01 as an unpromoted candidate. Next hypothesis lowers actor learning rate only to use more on-policy samples before the unchanged KL limit."
+  },
+  "champion_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_used": false
+}

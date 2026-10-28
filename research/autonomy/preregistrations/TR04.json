@@ -1,0 +1,43 @@
+{
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 262144,
+  "training_wall_seconds_max": 10800,
+  "hypothesis_hours_max": 8,
+  "planned_jobs": [
+    "train_ppo, same frozen run resumable once: first cap 7200s, second cap 3600s",
+    "50 BO3 engineering reliability smoke",
+    "240 BO3 fixed independent screen",
+    "conditional 800 BO3 independent confirmation if screen gain CI lower >0 and reliability passes"
+  ],
+  "config_binding_amendments": "After training, only bind frozen model spec, training run and resulting hashes; after screen, only bind screening_run_id and raise every arm/opponent to 100 BO3 for predeclared confirmation. Preserve prior preregistration revisions. Do not tune based on smoke.",
+  "promotion": "Only unchanged validate_confirmation all checks passed; screen never promotes.",
+  "failure_rule": "Two same-failure local repairs then root-cause review; failure runs remain charged and consume raw research slots.",
+  "final_pool_access": false,
+  "statistical_unit": "complete BO3; unpaired engine RNG; independent opponent-stratified bootstrap",
+  "final_gates_unchanged": true,
+  "training_attempt_seconds_max": 7200,
+  "max_training_attempts": 2,
+  "hypothesis_id": "TR04",
+  "at": "2026-10-23T18:25:07.415247+00:00",
+  "hypothesis": "Increasing GAE lambda from0.95 to0.99 improves credit assignment across long learner-decision sequences and independent BO3 results at the same PPO sample budget",
+  "single_primary_change": "GAE lambda0.99 instead of0.95; same original H002 full actor,262144 decision target,1e-5 actor LR,terminal rewards,deck and frozen league",
+  "motivation_report": "research/autonomy/TR03-result.json",
+  "diagnostic_evidence": "research/autonomy/engineering/tr03-credit-conclusion.json",
+  "comparison_to": "TR03",
+  "config_hashes": [
+    "edd1a881947d33a6debe6d03764910fe433f08e3f297c61d3104b54b3bf10d76"
+  ],
+  "evaluation_template_path": "research/autonomy/preregistrations/TR04-screen-template.json",
+  "evaluation_template_sha256": "957b5594e7cf0b36fac461b3e6288c6ee21b0898013fa48f1ce02b9cd79addb3",
+  "implementation_note": "No training algorithm code or actor representation change. Only configured GAE lambda changes; input observation and terminal-only reward contract unchanged.",
+  "estimated_gpu_job_hours": 2.5,
+  "estimated_additional_rollout_gib": 12.1,
+  "engineering_precondition": "PACKAGE_ENTRY engineering check completed or its concrete deployment limitation recorded before launch",
+  "causal_limits": "Changing lambda changes bootstrap bias/variance; trajectory distances motivate the comparison but do not establish a proved bottleneck. Results are independently evaluated against fixed H002; no posthoc TR03 confirmation.",
+  "starting_from": "Original H002 full actor, not the unpromoted TR03 trained weights"
+}

@@ -1,0 +1,25 @@
+{
+  "job_kind": "tr00_audit",
+  "hypothesis_id": "TR00",
+  "project_path": "PROJECT_ROOT",
+  "bundle_path": "agents/frozen/ppo-zero-anchor",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "seed": 230031,
+  "series_count": 2,
+  "parity_decisions": 48,
+  "workers": 1,
+  "replay_path": "runs/20261023T111657Z_h002-seat-confirmation_c49f14/episode-00000.json.gz",
+  "opponent": {
+    "id": "release-anchor-ppo-zero",
+    "kind": "public_rule",
+    "path": "agents/frozen/ppo-zero-anchor",
+    "lineage": "dipam_unown_gradiant_ppo",
+    "parameters": {
+      "_actor_seat_mode": "zero"
+    }
+  },
+  "primary_change": "engineering audit of full inherited actor and blind PPO implementation",
+  "success_criteria": "All inheritance, blind, conditional, trajectory, gradients and exact restart checks pass; no strength claim",
+  "engine_manifest_sha256": "df02428ddcd5038d4c5b5761aee77f82dc15e21626a93bf691853a234a923b85",
+  "replay_sha256": "c1da8646428868e7b6791bba589bb03447038a96105e9e3f3e104a21e04daf27"
+}

@@ -1,0 +1,50 @@
+{
+  "research": true,
+  "final": false,
+  "diagnostic": false,
+  "max_raw_runs": 5,
+  "parent_run": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "parent_model_sha256": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+  "target_decisions": 262144,
+  "training_wall_seconds_max": 10800,
+  "hypothesis_hours_max": 8,
+  "planned_jobs": [
+    "train_ppo, same frozen run resumable once: first cap 7200s, second cap 3600s",
+    "50 BO3 engineering reliability smoke",
+    "240 BO3 fixed independent screen",
+    "conditional 800 BO3 independent confirmation if screen gain CI lower >0 and reliability passes"
+  ],
+  "config_binding_amendments": "After training, only bind frozen model spec, training run and resulting hashes; after screen, only bind screening_run_id and raise every arm/opponent to 100 BO3 for predeclared confirmation. Preserve prior preregistration revisions. Do not tune based on smoke.",
+  "promotion": "Only unchanged validate_confirmation all checks passed; screen never promotes.",
+  "failure_rule": "Two same-failure local repairs then root-cause review; failure runs remain charged and consume raw research slots.",
+  "final_pool_access": false,
+  "statistical_unit": "complete BO3; unpaired engine RNG; independent opponent-stratified bootstrap",
+  "final_gates_unchanged": true,
+  "hypothesis_id": "TR03",
+  "at": "2026-10-23T15:07:41.350263+00:00",
+  "hypothesis": "At stable 1e-5 actor LR, four PPO rollout updates undertrain the inherited Transformer; increasing decision count eightfold improves independent BO3 outcomes.",
+  "single_primary_change": "Training decision budget 262144 instead of 32768; same original H002 full actor initialization, actor LR 1e-5, value LR 1e-4, fixed deck and league",
+  "motivation_report": "research/autonomy/TR02-result.json",
+  "comparison_to": "TR02",
+  "config_hashes": [
+    "cf2acf44c809ebdaa7ea21669ddc101969e84255f69acb80a4b5913a7bf61086",
+    "6e3f29f2a184dd4ebcc318466b4966b64bbf34e6c2490770f174aa0431f4cd40"
+  ],
+  "evaluation_template_path": "research/autonomy/preregistrations/TR03-screen-template.json",
+  "evaluation_template_sha256": "ec4d77199a4af5dc2b496ad24351f58dbb351c695c9b7652ad7e52e0328d913c",
+  "training_attempt_seconds_max": 7200,
+  "max_training_attempts": 2,
+  "engineering_precondition": "PPO_RECOVERY complete and validated before any TR03 launch",
+  "implementation_note": "Journal recovery bookkeeping fix applies only on resumption; actor/critic/optimizer/league selection algorithm and inference path unchanged. Document interruption and resume evidence.",
+  "estimated_gpu_job_hours": 2.14,
+  "estimated_additional_rollout_gib": 12.1,
+  "bindings": [
+    {
+      "at": "2026-10-23T18:15:43.235649+00:00",
+      "previous_preregistration_sha256": "6e84d192e96023f415e8ad31bcc80531a07809e05c21c516c608d37238e74928",
+      "config_path": "configs/evaluation/tr03_screen.json",
+      "config_sha256": "497382926bb7bb88c295328b89c1e14fd81308552949e62e648de5ca677b06c9",
+      "reason": "Resolve completed training artifact only into unchanged precommitted screen template"
+    }
+  ]
+}

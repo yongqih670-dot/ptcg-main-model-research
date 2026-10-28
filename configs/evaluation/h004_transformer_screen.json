@@ -1,0 +1,294 @@
+{
+  "workers": 8,
+  "series_count": 240,
+  "policy_seed": 2026102317,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Full-token conditional Transformer BC versus frozen PPO anchor; same deck, fixed development_v2 opponents and weights",
+  "success_criteria": "Fixed 240 BO3 screen, 30 per arm per opponent; stratified BO3 gain CI; no errors/fallback; screening can reject but never promote",
+  "matchups": [
+    {
+      "cell_id": "transformer-vs-lucario",
+      "candidate": {
+        "id": "h004-transformer",
+        "kind": "transformer_bc",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h004-transformer/model.pt",
+        "model_sha256": "7c24f4c6b997512012d14c5c6d2387d21ce2933171b818e1f4f34f16d1d381ff",
+        "architecture": {
+          "d": 128,
+          "layers": 4,
+          "heads": 4,
+          "ffn": 512,
+          "d_c": 128,
+          "d_a": 64
+        },
+        "learned_contexts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-lucario",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "transformer-vs-alakazam",
+      "candidate": {
+        "id": "h004-transformer",
+        "kind": "transformer_bc",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h004-transformer/model.pt",
+        "model_sha256": "7c24f4c6b997512012d14c5c6d2387d21ce2933171b818e1f4f34f16d1d381ff",
+        "architecture": {
+          "d": 128,
+          "layers": 4,
+          "heads": 4,
+          "ffn": 512,
+          "d_c": 128,
+          "d_a": 64
+        },
+        "learned_contexts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-alakazam",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "transformer-vs-archaludon",
+      "candidate": {
+        "id": "h004-transformer",
+        "kind": "transformer_bc",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h004-transformer/model.pt",
+        "model_sha256": "7c24f4c6b997512012d14c5c6d2387d21ce2933171b818e1f4f34f16d1d381ff",
+        "architecture": {
+          "d": 128,
+          "layers": 4,
+          "heads": 4,
+          "ffn": 512,
+          "d_c": 128,
+          "d_a": 64
+        },
+        "learned_contexts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-archaludon",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "transformer-vs-ppo",
+      "candidate": {
+        "id": "h004-transformer",
+        "kind": "transformer_bc",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_path": "agents/learned/h004-transformer/model.pt",
+        "model_sha256": "7c24f4c6b997512012d14c5c6d2387d21ce2933171b818e1f4f34f16d1d381ff",
+        "architecture": {
+          "d": 128,
+          "layers": 4,
+          "heads": 4,
+          "ffn": 512,
+          "d_c": 128,
+          "d_a": 64
+        },
+        "learned_contexts": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          15,
+          21,
+          22,
+          30,
+          38,
+          43
+        ]
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "anchor-vs-ppo",
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "series_count": 30
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate_cell": "transformer-vs-lucario",
+      "anchor_cell": "anchor-vs-lucario",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "transformer-vs-alakazam",
+      "anchor_cell": "anchor-vs-alakazam",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "transformer-vs-archaludon",
+      "anchor_cell": "anchor-vs-archaludon",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "transformer-vs-ppo",
+      "anchor_cell": "anchor-vs-ppo",
+      "weight": 0.25
+    }
+  ],
+  "training_run_id": "20261023T121453Z_h004-transformer-bc_b12e35",
+  "evaluation_stage": "screening",
+  "model_spec_sha256": "bce31d4e456a438af79815162c4f37b7f310cc656a9f38c0a6272111c26fd9d0"
+}

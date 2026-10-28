@@ -1,0 +1,185 @@
+{
+  "series_count": 240,
+  "policy_seed": 2026102304,
+  "workers": 8,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "primary_change": "Only the ACTOR_SEAT input column: original physical value versus zero before model core",
+  "success_criteria": "All 240 complete BO3; no errors/fallback; gain CI lower >0 merits independent confirmation, not promotion; seat disparity is diagnostic secondary evidence",
+  "matchups": [
+    {
+      "cell_id": "zero-vs-lucario",
+      "candidate": {
+        "id": "ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "physical-vs-lucario",
+      "candidate": {
+        "id": "ppo-physical",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "physical"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "id": "lucario",
+        "path": "agents/public/lucario"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "zero-vs-alakazam",
+      "candidate": {
+        "id": "ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "physical-vs-alakazam",
+      "candidate": {
+        "id": "ppo-physical",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "physical"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "id": "alakazam",
+        "path": "agents/public/alakazam"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "zero-vs-archaludon",
+      "candidate": {
+        "id": "ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "physical-vs-archaludon",
+      "candidate": {
+        "id": "ppo-physical",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "physical"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "id": "archaludon",
+        "path": "agents/public/archaludon"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "zero-vs-ppo",
+      "candidate": {
+        "id": "ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo"
+      },
+      "series_count": 30
+    },
+    {
+      "cell_id": "physical-vs-ppo",
+      "candidate": {
+        "id": "ppo-physical",
+        "kind": "public_rule",
+        "path": "agents/public/ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "physical"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "id": "ppo",
+        "path": "agents/public/ppo"
+      },
+      "series_count": 30
+    }
+  ],
+  "contrasts": [
+    {
+      "candidate_cell": "zero-vs-lucario",
+      "anchor_cell": "physical-vs-lucario",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "zero-vs-alakazam",
+      "anchor_cell": "physical-vs-alakazam",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "zero-vs-archaludon",
+      "anchor_cell": "physical-vs-archaludon",
+      "weight": 0.25
+    },
+    {
+      "candidate_cell": "zero-vs-ppo",
+      "anchor_cell": "physical-vs-ppo",
+      "weight": 0.25
+    }
+  ]
+}

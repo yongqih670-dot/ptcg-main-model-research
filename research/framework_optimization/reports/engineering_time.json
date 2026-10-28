@@ -1,0 +1,13 @@
+{
+  "started_unix": 1793181244.970952,
+  "delivered_unix": 1793183013.9491384,
+  "elapsed_engineering_session_wall_seconds": 1768.9781863689423,
+  "not_CPU_compute_or_GPU_job_hours": true,
+  "remote_jobs_started": 0,
+  "scientific_PPO_updates": 0,
+  "scientific_decisions": 0,
+  "latest_verification_wall_seconds": 6.83247184753418,
+  "full_local_CPU_resource_time": "not instrumented; unknown",
+  "authoritative_research_ledger_modified": false,
+  "note": "Development session wall includes reading/coding/tool waits; must not substitute for billed CPU job wall time. Toy optimizer steps are engineering unit tests only."
+}

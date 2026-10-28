@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-26T02:13:49.927713+00:00",
+  "hypothesis_id": "TR07",
+  "classification": "invalid",
+  "promotion_eligible": false,
+  "reason": "Originaltwoattempts consumed: first disk reserve forecast failure after two fullPPO publications; second local Windows atomicstate publication failure. Target32768 incomplete. No third or renamedcontinuation.",
+  "trained_decisions": 16646,
+  "committed_PPO_updates": 2,
+  "new_complete_CPU_sampled_BO3": 51,
+  "new_untrained_complete_decisions": 8322,
+  "inherited_complete_BO3_history": 0,
+  "full_analysis": {
+    "path": "runs/20261026T021233Z_tr07-full-terminal-forensics_b7fdaf/analysis.json",
+    "sha256": "4b1e8bcba2317c196abea56164ad1410e5c165e9988c066a9ce57c403e61c3e4"
+  },
+  "all_costs_attempts_raw_data_and_stops_retained": true,
+  "attempts_remaining": 0,
+  "total_accounted_seconds": 13758.046999999788,
+  "second_charged_full7200_conservative_cap": true,
+  "strength_effect": null,
+  "valid_hypotheses_and_no_promotion_streak_remain": 3,
+  "champion_and_release_anchor_unchanged": "20261023T111657Z_h002-seat-confirmation_c49f14",
+  "final_pool_accessed": false
+}
