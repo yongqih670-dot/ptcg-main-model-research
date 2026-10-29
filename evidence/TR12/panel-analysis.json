@@ -1,0 +1,165 @@
+{
+  "at": "2026-10-29T05:41:03.160254+00:00",
+  "complete": true,
+  "classification": "inconclusive",
+  "primary_classification": "inconclusive",
+  "promotion_eligible": false,
+  "primary": {
+    "gain": 0.040625,
+    "ci95": [
+      0.006249999999999978,
+      0.07562499999999994
+    ],
+    "scores": {
+      "TR11-vs-ppo": 0.50625,
+      "endpoint-vs-ppo": 0.546875
+    },
+    "learning_signal_passed": false,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026102801,
+    "method": "independent completeBO3 resampling"
+  },
+  "secondary": {
+    "panels": {
+      "full_eight": {
+        "weights": {
+          "lucario": 0.125,
+          "alakazam": 0.125,
+          "archaludon": 0.125,
+          "ppo": 0.125,
+          "tr01-ppo": 0.125,
+          "tr02-ppo": 0.125,
+          "tr03-ppo": 0.125,
+          "tr09-epochs4-hdd2": 0.125
+        },
+        "contrasts": {
+          "endpoint-minus-TR11": {
+            "gain": 0.0,
+            "ci95": [
+              -0.04249999999999999,
+              0.04249999999999999
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "endpoint-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.033749999999999995,
+              0.049999999999999996
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "TR11-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.033749999999999995,
+              0.049999999999999975
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          }
+        },
+        "scores": {
+          "endpoint": 0.6712499999999999,
+          "TR11": 0.67125,
+          "anchor": 0.66375
+        }
+      },
+      "original_four": {
+        "weights": {
+          "lucario": 0.25,
+          "alakazam": 0.25,
+          "archaludon": 0.25,
+          "ppo": 0.25
+        },
+        "contrasts": {
+          "endpoint-minus-TR11": {
+            "gain": 0.012500000000000011,
+            "ci95": [
+              -0.03499999999999996,
+              0.05999999999999997
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "endpoint-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.03750000000000002,
+              0.05250000000000003
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "TR11-minus-anchor": {
+            "gain": -0.0050000000000000044,
+            "ci95": [
+              -0.05249999999999999,
+              0.04249999999999998
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          }
+        },
+        "scores": {
+          "endpoint": 0.835,
+          "TR11": 0.8225,
+          "anchor": 0.8274999999999999
+        }
+      }
+    },
+    "cells": {
+      "endpoint-vs-lucario": 0.9,
+      "TR11-vs-lucario": 0.87,
+      "anchor-vs-lucario": 0.86,
+      "endpoint-vs-alakazam": 0.95,
+      "TR11-vs-alakazam": 0.94,
+      "anchor-vs-alakazam": 0.96,
+      "endpoint-vs-archaludon": 0.95,
+      "TR11-vs-archaludon": 0.96,
+      "anchor-vs-archaludon": 0.96,
+      "endpoint-vs-ppo": 0.54,
+      "TR11-vs-ppo": 0.52,
+      "anchor-vs-ppo": 0.53,
+      "endpoint-vs-tr01-ppo": 0.51,
+      "TR11-vs-tr01-ppo": 0.59,
+      "anchor-vs-tr01-ppo": 0.48,
+      "endpoint-vs-tr02-ppo": 0.6,
+      "TR11-vs-tr02-ppo": 0.53,
+      "anchor-vs-tr02-ppo": 0.59,
+      "endpoint-vs-tr03-ppo": 0.43,
+      "TR11-vs-tr03-ppo": 0.41,
+      "anchor-vs-tr03-ppo": 0.43,
+      "endpoint-vs-tr09-epochs4-hdd2": 0.49,
+      "TR11-vs-tr09-epochs4-hdd2": 0.55,
+      "anchor-vs-tr09-epochs4-hdd2": 0.5
+    },
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026102802,
+    "method": "independent completeBO3 resampling within each frozen opponent and strategy cell",
+    "no_automatic_promotion": true
+  },
+  "no_automatic_promotion": true,
+  "original_volume_goal_complete": false,
+  "user_early_stop_protocol": {
+    "path": "research/autonomy/TR12_EARLY_STOP_PROTOCOL.json",
+    "sha256": "c3b53725d0335bbbf6b00f483b4d2bb020e113deb5286cd76b813eddb0c075f2",
+    "original_source_sha256": "5013be9f0a82e1678b2baf663d2b93ca0d626c5cb618d3e3f67155384586d574"
+  },
+  "primary_config": {
+    "path": "configs/TR12/early-stop-primary.json",
+    "sha256": "61c9bb2425a3b06f283e064627c3b0bc0e3d7314ef628995b5fbc9e0778ec545",
+    "original_source_sha256": "8e4fd4efb14b447e875dd62321d6d79c18c86e9dd2404dcf19fbcc705011a197"
+  },
+  "primary_series": {
+    "path": "evidence/TR12/primary-outcomes.jsonl",
+    "sha256": "0afa0497594db903ae6c1397309f8d11bc9a969dfa1a1631b9254d62063c4dca",
+    "original_source_sha256": "465fa0be2ff308815262972a1a19c3008453e61d6b54919c52d672c7e65e4738"
+  },
+  "secondary_config": {
+    "path": "configs/TR12/early-stop-development.json",
+    "sha256": "e4d76aad4224d2b6fe19ee341612d7a8bd6dc61e23b117e8d14bc4754f1667b8",
+    "original_source_sha256": "c5f5c0838bd3702d7dbec9e687d3c736b08b7cccf36a2aa68da80499b160727d"
+  },
+  "secondary_series": {
+    "path": "evidence/TR12/development-outcomes.jsonl",
+    "sha256": "c06d59ec3ece48bb3ea12156cdbdd4531203d9a12c4f72a042ea82d27aa494b0",
+    "original_source_sha256": "33c5be66a57ce7c31c93a83c1e258bd56251b7da98e9fcf50ff9243c276e3970"
+  }
+}

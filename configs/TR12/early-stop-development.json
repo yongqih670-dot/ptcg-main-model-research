@@ -1,0 +1,1051 @@
+{
+  "job_kind": "evaluation",
+  "hypothesis_id": "TR12",
+  "workers": 8,
+  "save_all_replays": true,
+  "stop_on_internal_fallback": true,
+  "bootstrap_samples": 20000,
+  "native_environment_seed_not_exposed": true,
+  "no_posthoc_extension": true,
+  "endpoint_selection": "Last committed version15 at user early stop, selected before independent evaluation; original369941target incomplete.",
+  "evaluation_stage": "TR12_secondary_development",
+  "series_count": 2400,
+  "policy_seed": 2026202800,
+  "bootstrap_seed": 2026102802,
+  "opponent_manifest": {
+    "path": "research/opponents/development_TR12_frozen.json",
+    "sha256": "3b04490b3da83a77d27689c23942e0029eb11e48061fcaa14be789b4e73fe9bb",
+    "original_source_sha256": "3b04490b3da83a77d27689c23942e0029eb11e48061fcaa14be789b4e73fe9bb"
+  },
+  "matchups": [
+    {
+      "cell_id": "endpoint-vs-lucario",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "archetype": "fighting_mega",
+        "id": "lucario",
+        "path": "agents/public/lucario",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "1a621abba45d309520861c58ae044e6faa720ce581068c3a43e1af92dc40fca1",
+          "main.py": "aac62bdd810a75185a32e89b3640acb050231b63fb3f5951d2ab739469e48357",
+          "provenance.json": "2e7f541cd2b4ea803677b311d661dd5ebfb28e70296658ea3f7ef004768abb8b"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-lucario",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "archetype": "fighting_mega",
+        "id": "lucario",
+        "path": "agents/public/lucario",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "1a621abba45d309520861c58ae044e6faa720ce581068c3a43e1af92dc40fca1",
+          "main.py": "aac62bdd810a75185a32e89b3640acb050231b63fb3f5951d2ab739469e48357",
+          "provenance.json": "2e7f541cd2b4ea803677b311d661dd5ebfb28e70296658ea3f7ef004768abb8b"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-lucario",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "cggonzalezsc_lucario",
+        "archetype": "fighting_mega",
+        "id": "lucario",
+        "path": "agents/public/lucario",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "1a621abba45d309520861c58ae044e6faa720ce581068c3a43e1af92dc40fca1",
+          "main.py": "aac62bdd810a75185a32e89b3640acb050231b63fb3f5951d2ab739469e48357",
+          "provenance.json": "2e7f541cd2b4ea803677b311d661dd5ebfb28e70296658ea3f7ef004768abb8b"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-alakazam",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "archetype": "psychic_counters",
+        "id": "alakazam",
+        "path": "agents/public/alakazam",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "61e29a499f3d7cc66b6778ff35c956bc536f4be9742cc4ddcaf4f899711e5238",
+          "main.py": "36d61afc0ea7b486ef03ce0c60df3aab8b624d9fbd435cb0355867a92d6c0eb9",
+          "provenance.json": "ce400ce73ef57a8e8cb633d749f1526d6edd5055dea1f2557b919e5ae28abeb3"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-alakazam",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "archetype": "psychic_counters",
+        "id": "alakazam",
+        "path": "agents/public/alakazam",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "61e29a499f3d7cc66b6778ff35c956bc536f4be9742cc4ddcaf4f899711e5238",
+          "main.py": "36d61afc0ea7b486ef03ce0c60df3aab8b624d9fbd435cb0355867a92d6c0eb9",
+          "provenance.json": "ce400ce73ef57a8e8cb633d749f1526d6edd5055dea1f2557b919e5ae28abeb3"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-alakazam",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "woominyo_alakazam",
+        "archetype": "psychic_counters",
+        "id": "alakazam",
+        "path": "agents/public/alakazam",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "61e29a499f3d7cc66b6778ff35c956bc536f4be9742cc4ddcaf4f899711e5238",
+          "main.py": "36d61afc0ea7b486ef03ce0c60df3aab8b624d9fbd435cb0355867a92d6c0eb9",
+          "provenance.json": "ce400ce73ef57a8e8cb633d749f1526d6edd5055dea1f2557b919e5ae28abeb3"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-archaludon",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "archetype": "metal_tank",
+        "id": "archaludon",
+        "path": "agents/public/archaludon",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "42165967b565dd42ec426ecccfe79bfa7d72aa8306590e149dface0ee8bd530e",
+          "main.py": "a4c53101be301c181bd477204a72c0e5cba65fddd34d8cd0ec4d36e4b41c9518",
+          "provenance.json": "905885302744bc9bf4af5c59d25f4b531827f411c3134f0ab3e7c36d7bebecf2"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-archaludon",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "archetype": "metal_tank",
+        "id": "archaludon",
+        "path": "agents/public/archaludon",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "42165967b565dd42ec426ecccfe79bfa7d72aa8306590e149dface0ee8bd530e",
+          "main.py": "a4c53101be301c181bd477204a72c0e5cba65fddd34d8cd0ec4d36e4b41c9518",
+          "provenance.json": "905885302744bc9bf4af5c59d25f4b531827f411c3134f0ab3e7c36d7bebecf2"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-archaludon",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "masami_archaludon",
+        "archetype": "metal_tank",
+        "id": "archaludon",
+        "path": "agents/public/archaludon",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "42165967b565dd42ec426ecccfe79bfa7d72aa8306590e149dface0ee8bd530e",
+          "main.py": "a4c53101be301c181bd477204a72c0e5cba65fddd34d8cd0ec4d36e4b41c9518",
+          "provenance.json": "905885302744bc9bf4af5c59d25f4b531827f411c3134f0ab3e7c36d7bebecf2"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-tr01-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+          "ppo-provenance.json": "9b6aad8c5a23ef9324a36515f428ab217ccd85266f2c44cdce4ab807d55be259",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "b3a233ef2235f85ce6a1b1aa277ee411090d8f7e8a0be5c619889030b4a2400b"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-tr01-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+          "ppo-provenance.json": "9b6aad8c5a23ef9324a36515f428ab217ccd85266f2c44cdce4ab807d55be259",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "b3a233ef2235f85ce6a1b1aa277ee411090d8f7e8a0be5c619889030b4a2400b"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-tr01-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "id": "tr01-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr01-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+        "training_run_id": "20261023T141824Z_tr01-blind-ppo-32k_25713f",
+        "training_config_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "17a439c0d815d8a54c240ca5cb5e3bf8612d85f3379e3020d07c6f9db72e6921",
+          "ppo-provenance.json": "9b6aad8c5a23ef9324a36515f428ab217ccd85266f2c44cdce4ab807d55be259",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "b3a233ef2235f85ce6a1b1aa277ee411090d8f7e8a0be5c619889030b4a2400b"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-tr02-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+          "ppo-provenance.json": "2d5e62237bbc3721ec8fdf9610bed896591743e9ca91886ba5ce5ee65a0546e7",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "58497f4a27b8da94707017be073927054527a423eeb0cd02869f43dc7f21ee27"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-tr02-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+          "ppo-provenance.json": "2d5e62237bbc3721ec8fdf9610bed896591743e9ca91886ba5ce5ee65a0546e7",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "58497f4a27b8da94707017be073927054527a423eeb0cd02869f43dc7f21ee27"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-tr02-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "id": "tr02-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr02-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+        "training_run_id": "20261023T144339Z_tr02-ppo-lr1e5_9a0e14",
+        "training_config_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "b62c5b47707e69da145a8187668b6228e6d7855dc259dd9e91bdceccf4799fb1",
+          "ppo-provenance.json": "2d5e62237bbc3721ec8fdf9610bed896591743e9ca91886ba5ce5ee65a0546e7",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "58497f4a27b8da94707017be073927054527a423eeb0cd02869f43dc7f21ee27"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-tr03-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr03-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr03-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+        "training_run_id": "20261023T151043Z_tr03-ppo-262k_a347a7",
+        "training_config_sha256": "970d023178e55b570c3d55e797da5b3b0092433dbcd082dd4dce7f164c496753",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+          "ppo-provenance.json": "595499172131d32ab9b6b0cb553855ffd3d0522f38634d15ce089380af677b90",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "66954e0260e82bcc322a1ebf87dc0a829889eb3cf0c1a9aed1535719d6a31f53"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-tr03-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr03-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr03-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+        "training_run_id": "20261023T151043Z_tr03-ppo-262k_a347a7",
+        "training_config_sha256": "970d023178e55b570c3d55e797da5b3b0092433dbcd082dd4dce7f164c496753",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+          "ppo-provenance.json": "595499172131d32ab9b6b0cb553855ffd3d0522f38634d15ce089380af677b90",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "66954e0260e82bcc322a1ebf87dc0a829889eb3cf0c1a9aed1535719d6a31f53"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-tr03-ppo",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "id": "tr03-ppo",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr03-ppo",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+        "training_run_id": "20261023T151043Z_tr03-ppo-262k_a347a7",
+        "training_config_sha256": "970d023178e55b570c3d55e797da5b3b0092433dbcd082dd4dce7f164c496753",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "bad4f34c5d1c44d3de282f6e82b96f0b1b58090f6660459605848df97a9f3f0b",
+          "ppo-provenance.json": "595499172131d32ab9b6b0cb553855ffd3d0522f38634d15ce089380af677b90",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "66954e0260e82bcc322a1ebf87dc0a829889eb3cf0c1a9aed1535719d6a31f53"
+        }
+      }
+    },
+    {
+      "cell_id": "endpoint-vs-tr09-epochs4-hdd2",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr12-early-stop-v15",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr12-early-stop-v15",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+        "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+        "training_config_sha256": "1be3708fd8e330903152340e4159a5dc4289329ceb2746119900dd2990344053",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+          "ppo-provenance.json": "5fb0389cafd90db7545f23421f952b48aa3c4ae1e296bd9a9ed1dac444ced31f",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "edc7f21308f7f90df0e2044a37e4f5e3099223bd268c9ac31566c83a18b98e6a"
+        }
+      }
+    },
+    {
+      "cell_id": "TR11-vs-tr09-epochs4-hdd2",
+      "series_count": 100,
+      "candidate": {
+        "id": "tr11-fixed-opponent",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr11-fixed-opponent",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "6dcec814cda9303f706c398ecbcc27a260791d0d8e42482df47688f818147649",
+        "training_run_id": "20261027T160313Z_tr11-authorized-second-posix-fixed_1eae55",
+        "training_config_sha256": "2fa44aae4f9dd24ddc2085a097ffa019badfa007d74ecb1879370164ab11b470",
+        "feature_schema": "full-inherited-blind-conditional-v3"
+      },
+      "reference": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+          "ppo-provenance.json": "5fb0389cafd90db7545f23421f952b48aa3c4ae1e296bd9a9ed1dac444ced31f",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "edc7f21308f7f90df0e2044a37e4f5e3099223bd268c9ac31566c83a18b98e6a"
+        }
+      }
+    },
+    {
+      "cell_id": "anchor-vs-tr09-epochs4-hdd2",
+      "series_count": 100,
+      "candidate": {
+        "id": "release-anchor-ppo-zero",
+        "kind": "public_rule",
+        "path": "agents/frozen/ppo-zero-anchor",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "reference": {
+        "id": "tr09-epochs4-hdd2",
+        "kind": "transformer_rl",
+        "path": "agents/learned/tr09-epochs4-hdd2",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        },
+        "model_sha256": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+        "training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
+        "training_config_sha256": "e9729238fd069e57db8d9d78f0bc5e3706aa36b1ca60c82cc4361e1a9503323f",
+        "feature_schema": "full-inherited-blind-conditional-v3",
+        "archetype": "grass_acceleration",
+        "files": {
+          "data/embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data/lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "cb4918ae4f875ad84dac4ed6aba2db70230af9e632392361b2cf6bd98af19d8b",
+          "ppo-provenance.json": "5fb0389cafd90db7545f23421f952b48aa3c4ae1e296bd9a9ed1dac444ced31f",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "ptcg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg/effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg/rl/__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751",
+          "ptcg/rl/buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg/rl/cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg/rl/encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg/rl/model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg/rl/search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg/tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "spec.json": "edc7f21308f7f90df0e2044a37e4f5e3099223bd268c9ac31566c83a18b98e6a"
+        }
+      }
+    }
+  ],
+  "balanced_seats_per_cell": [
+    50,
+    50
+  ],
+  "weights": [
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125
+  ],
+  "reported_contrasts": [
+    "endpoint-minus-TR11",
+    "endpoint-minus-anchor",
+    "TR11-minus-anchor"
+  ],
+  "original_four_subpanel_also_reported": true,
+  "secondary_claims_descriptive_without_multiplicity_adjustment": true,
+  "promotion_requires_all_existing_independent_gates": true,
+  "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "reference_only": true,
+  "execution_authorized": false,
+  "source_config_sha256": "c5f5c0838bd3702d7dbec9e687d3c736b08b7cccf36a2aa68da80499b160727d"
+}

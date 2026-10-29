@@ -1,0 +1,150 @@
+{
+  "at": "2026-10-29T03:59:27.174911+00:00",
+  "unique_new_complete_BO3": 366,
+  "policy_versions": [
+    {
+      "policy_version_during_collection": 8,
+      "BO3": 45,
+      "games": 119,
+      "sampled_decisions": 8207,
+      "wins": 27,
+      "draws": 0,
+      "losses": 18,
+      "descriptive_BO3_score": 0.6,
+      "learner_seat_counts": {
+        "0": 23,
+        "1": 22
+      },
+      "opponents": {
+        "ppo": 45
+      }
+    },
+    {
+      "policy_version_during_collection": 9,
+      "BO3": 48,
+      "games": 120,
+      "sampled_decisions": 8263,
+      "wins": 21,
+      "draws": 0,
+      "losses": 27,
+      "descriptive_BO3_score": 0.4375,
+      "learner_seat_counts": {
+        "1": 24,
+        "0": 24
+      },
+      "opponents": {
+        "ppo": 48
+      }
+    },
+    {
+      "policy_version_during_collection": 10,
+      "BO3": 48,
+      "games": 120,
+      "sampled_decisions": 8257,
+      "wins": 27,
+      "draws": 0,
+      "losses": 21,
+      "descriptive_BO3_score": 0.5625,
+      "learner_seat_counts": {
+        "1": 24,
+        "0": 24
+      },
+      "opponents": {
+        "ppo": 48
+      }
+    },
+    {
+      "policy_version_during_collection": 11,
+      "BO3": 48,
+      "games": 120,
+      "sampled_decisions": 8203,
+      "wins": 17,
+      "draws": 0,
+      "losses": 31,
+      "descriptive_BO3_score": 0.3541666666666667,
+      "learner_seat_counts": {
+        "1": 25,
+        "0": 23
+      },
+      "opponents": {
+        "ppo": 48
+      }
+    },
+    {
+      "policy_version_during_collection": 12,
+      "BO3": 48,
+      "games": 125,
+      "sampled_decisions": 8396,
+      "wins": 25,
+      "draws": 0,
+      "losses": 23,
+      "descriptive_BO3_score": 0.5208333333333334,
+      "learner_seat_counts": {
+        "0": 24,
+        "1": 24
+      },
+      "opponents": {
+        "ppo": 48
+      }
+    },
+    {
+      "policy_version_during_collection": 13,
+      "BO3": 46,
+      "games": 125,
+      "sampled_decisions": 8244,
+      "wins": 22,
+      "draws": 0,
+      "losses": 24,
+      "descriptive_BO3_score": 0.4782608695652174,
+      "learner_seat_counts": {
+        "0": 23,
+        "1": 23
+      },
+      "opponents": {
+        "ppo": 46
+      }
+    },
+    {
+      "policy_version_during_collection": 14,
+      "BO3": 46,
+      "games": 119,
+      "sampled_decisions": 8245,
+      "wins": 25,
+      "draws": 0,
+      "losses": 21,
+      "descriptive_BO3_score": 0.5434782608695652,
+      "learner_seat_counts": {
+        "0": 23,
+        "1": 23
+      },
+      "opponents": {
+        "ppo": 46
+      }
+    },
+    {
+      "policy_version_during_collection": 15,
+      "BO3": 37,
+      "games": 96,
+      "sampled_decisions": 6807,
+      "wins": 20,
+      "draws": 0,
+      "losses": 17,
+      "descriptive_BO3_score": 0.5405405405405406,
+      "learner_seat_counts": {
+        "0": 19,
+        "1": 18
+      },
+      "opponents": {
+        "ppo": 37
+      }
+    }
+  ],
+  "independent_evaluation": false,
+  "strength_or_checkpoint_selection_claim": false,
+  "limitations": [
+    "The same fixed opponent provided training feedback. These varying small batches are on-policy training observations.",
+    "Version15 outcomes come from37 pending BO3 whose6807 decisions were not optimized.",
+    "Do not treat changing batch win rates as independent gain or select among checkpoints."
+  ],
+  "CPU_seconds": 1.0460000000020955
+}

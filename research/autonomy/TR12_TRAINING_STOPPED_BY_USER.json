@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-29T03:11:07.751315+00:00",
+  "training_stopped_by_user": true,
+  "scientific_training_and_retries_forbidden": true,
+  "source_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "endpoint_selection": "last committed update; never selected by win rate",
+  "original_volume_goal_complete": false,
+  "full_dataset_GitHub_upload_remains_cancelled": true,
+  "preserve_all_originals_and_recovery_references": true
+}

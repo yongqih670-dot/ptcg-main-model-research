@@ -1,0 +1,115 @@
+{
+  "at": "2026-10-29T03:51:41.945411+00:00",
+  "source_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "gaps": [
+    {
+      "from_sequence": 0,
+      "to_sequence": 77,
+      "file_mtime_gap_seconds": 986.094528074
+    },
+    {
+      "from_sequence": 77,
+      "to_sequence": 100,
+      "file_mtime_gap_seconds": 359.402150468
+    },
+    {
+      "from_sequence": 100,
+      "to_sequence": 101,
+      "file_mtime_gap_seconds": 239.117055467
+    },
+    {
+      "from_sequence": 101,
+      "to_sequence": 102,
+      "file_mtime_gap_seconds": 210.938586338
+    },
+    {
+      "from_sequence": 102,
+      "to_sequence": 164,
+      "file_mtime_gap_seconds": 901.61706124
+    },
+    {
+      "from_sequence": 164,
+      "to_sequence": 201,
+      "file_mtime_gap_seconds": 542.061086182
+    },
+    {
+      "from_sequence": 201,
+      "to_sequence": 202,
+      "file_mtime_gap_seconds": 243.774883623
+    },
+    {
+      "from_sequence": 202,
+      "to_sequence": 203,
+      "file_mtime_gap_seconds": 213.279190108
+    },
+    {
+      "from_sequence": 203,
+      "to_sequence": 277,
+      "file_mtime_gap_seconds": 919.544686463
+    },
+    {
+      "from_sequence": 277,
+      "to_sequence": 298,
+      "file_mtime_gap_seconds": 396.163801408
+    },
+    {
+      "from_sequence": 298,
+      "to_sequence": 299,
+      "file_mtime_gap_seconds": 242.991732585
+    },
+    {
+      "from_sequence": 299,
+      "to_sequence": 300,
+      "file_mtime_gap_seconds": 384.718721278
+    },
+    {
+      "from_sequence": 300,
+      "to_sequence": 301,
+      "file_mtime_gap_seconds": 211.921777823
+    },
+    {
+      "from_sequence": 301,
+      "to_sequence": 375,
+      "file_mtime_gap_seconds": 922.087593575
+    },
+    {
+      "from_sequence": 375,
+      "to_sequence": 396,
+      "file_mtime_gap_seconds": 412.426796442
+    },
+    {
+      "from_sequence": 396,
+      "to_sequence": 397,
+      "file_mtime_gap_seconds": 221.392040815
+    },
+    {
+      "from_sequence": 397,
+      "to_sequence": 398,
+      "file_mtime_gap_seconds": 2051.619608071
+    },
+    {
+      "from_sequence": 398,
+      "to_sequence": 399,
+      "file_mtime_gap_seconds": 225.078888139
+    },
+    {
+      "from_sequence": 399,
+      "to_sequence": 469,
+      "file_mtime_gap_seconds": 899.031133092
+    },
+    {
+      "from_sequence": 469,
+      "to_sequence": 476,
+      "file_mtime_gap_seconds": 253.01166497
+    }
+  ],
+  "configured_trigger_seconds": 600,
+  "maximum_file_mtime_gap_seconds": 2051.619608071,
+  "file_mtime_gaps_over600": 6,
+  "strict600_second_durable_publication_compliance_certified": false,
+  "evidence_limit": "File mtimes are wall-clock proxies for immutable-object writes, not exact monotonic commit completion times. They do not certify600s durable publication.",
+  "source_code_mechanism": "The trigger is checked after complete BO3 work; last_cp is reset after save finishes. Save/hash/I/O and archive barriers add elapsed time. Configuration600 alone is not a hard durable-publication guarantee.",
+  "current_two_point_byte_recovery_passed": true,
+  "full_unattended_route_certified": false,
+  "training_restarted_or_changed": false
+}

@@ -1,0 +1,356 @@
+{
+  "at": "2026-10-29T05:42:23.702859+00:00",
+  "project_budget_snapshot": {
+    "gpu_job_wall_hours": 35.826413809964784,
+    "cpu_job_wall_hours": 11.913194973333143,
+    "executed_research_experiments": 39,
+    "raw_replay_download_gib": 0.05754692666232586,
+    "new_workspace_artifacts_gib": 92.15907117445022,
+    "scope": "new_autonomous_research_cycle_only_existing_research_not_counted"
+  },
+  "TR12_phase_GPU_hours": 12.803456781048094,
+  "TR12_phase_CPU_hours": 1.9252716814166373,
+  "all_original_attempts_failed_runs_and_fees_preserved": true,
+  "all_phase_attempt_receipts": [
+    {
+      "role": "training_run_ids",
+      "run_id": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+      "attempt_receipt": {
+        "private_source_sha256": "d9eb0910354e2f2f185a3fe65fc739bdbf3a91cefa9a3e1fefc903793d7a25b6",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T09:27:48.111391+00:00",
+          "seconds": 28800.0,
+          "exit_code": 1,
+          "status": "failed",
+          "compute_kind": "gpu",
+          "seconds_basis": "conservative_full_authorized_cap_after_unrecorded_controller_exit",
+          "last_recorded_actual_seconds": 6206.437000000005,
+          "original_deadline_unix": 1793196025.9536026
+        }
+      ]
+    },
+    {
+      "role": "training_run_ids",
+      "run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+      "attempt_receipt": {
+        "private_source_sha256": "5cbb9b3e4340256abb8a470cb11dc0cd5341c3a8b721145a170d1b1c2ed968d4",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T16:02:10.138032+00:00",
+          "seconds": 13939.75,
+          "exit_code": 1,
+          "status": "failed",
+          "compute_kind": "gpu",
+          "counted_execution_seconds": 13939.75,
+          "verified_shared_wait_seconds": 0.0,
+          "time_basis": "execution_excluding_proven_shared_wait",
+          "fixed_hard_safety_window_seconds": 86400
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T053921Z_tr12-parent-full-state-storage-difference_be4087",
+      "attempt_receipt": {
+        "private_source_sha256": "aad25a8ee269e89d2dd76200dbed8209cbb2d36b2c5426b280ffc378a716c57e",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T05:39:36.199610+00:00",
+          "seconds": 12.26600000000326,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T054800Z_tr12-parent-zero-update-GPU-archive_bd0406",
+      "attempt_receipt": {
+        "private_source_sha256": "b5039b309d051646ec8d674a8981dc638b9cc2fbbbdcd9ca7c69a1bbf42e00c5",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T05:56:58.036493+00:00",
+          "seconds": 535.5310000000172,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "gpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T093017Z_tr12-terminal-missing-archive_8f7625",
+      "attempt_receipt": {
+        "private_source_sha256": "68445a44ef575ccf64149d3d1066dd65c22c153cc85ddfb6e00267250a63712d",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T09:38:30.659266+00:00",
+          "seconds": 491.90600000001723,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T093904Z_tr12-full-state-tail_e16975",
+      "attempt_receipt": {
+        "private_source_sha256": "541a7a5b24f27ca4fc61b2707489cddd01413398f59755b2aafbbf99fc99d0fe",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T09:39:21.861774+00:00",
+          "seconds": 15.828000000008615,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T104724Z_tr12-tail-handoff-storage-audit_e1b099",
+      "attempt_receipt": {
+        "private_source_sha256": "d4840f92a48c2dea70d8278f00e5f5c82fca6f680541c9f2d4318848adbab554",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T10:47:32.810492+00:00",
+          "seconds": 6.921999999991385,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T110225Z_tr12-full-tail-GPU-acceptance_f85b47",
+      "attempt_receipt": {
+        "private_source_sha256": "65574a4ed5b1c5618b9c34c5dd2ac9009d3d3c7a66c382a5639610fed8f3fac6",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T11:23:14.084948+00:00",
+          "seconds": 1246.2339999999967,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "gpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261028T115249Z_tr12-active-clock-CPU-acceptance_18dbb6",
+      "attempt_receipt": {
+        "private_source_sha256": "da73d3566ae977ea7bf6037b1bc7d4c2e8805b8372300585550e12427b4d04fa",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-28T11:53:17.623313+00:00",
+          "seconds": 26.32799999997951,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T031334Z_tr12-early-stop-terminal-missing-archive_eef8c5",
+      "attempt_receipt": {
+        "private_source_sha256": "c6fbfea03ad0bf2a800813e9dc1ad453c931aee2f33b03b96ec5fc87b093bab1",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T03:23:03.223429+00:00",
+          "seconds": 565.7809999999881,
+          "exit_code": 1,
+          "status": "failed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T032455Z_tr12-early-stop-full-cold-recovery_e518e1",
+      "attempt_receipt": {
+        "private_source_sha256": "c8e0e0bf4f320caf21c519998690f40a9bb51d8879e5d39bfa3d0b9f2c62be70",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T03:25:47.784638+00:00",
+          "seconds": 50.890999999974156,
+          "exit_code": 1,
+          "status": "failed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T032736Z_tr12-early-stop-cold-recovery-repair_ce2ddf",
+      "attempt_receipt": {
+        "private_source_sha256": "e29ff51b3c8f47b0c3db5320da3aa92be331b03ad15f6b131a41a8fc821c2766",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T03:28:37.292071+00:00",
+          "seconds": 59.71899999998277,
+          "exit_code": 1,
+          "status": "failed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T033029Z_tr12-early-stop-cold-recovery-repair2_93c518",
+      "attempt_receipt": {
+        "private_source_sha256": "22d20c9b14bb67adc7ef57b9d5ad3e1e871a894705d90b39e762e021f4b35cf9",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T03:31:43.999286+00:00",
+          "seconds": 73.35999999998603,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T033514Z_tr12-early-stop-zero-update-GPU_f6e903",
+      "attempt_receipt": {
+        "private_source_sha256": "7644fd2872b5af0a5e7aaadfe8e8a173ed9010814809b74cb399d44753de7ea6",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T04:08:10.148568+00:00",
+          "seconds": 1973.1720000000205,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "gpu",
+          "counted_execution_seconds": 1721.2373839661013,
+          "verified_shared_wait_seconds": 251.93461603391916,
+          "time_basis": "execution_excluding_proven_shared_wait",
+          "fixed_hard_safety_window_seconds": 86400
+        }
+      ]
+    },
+    {
+      "role": "engineering_run_ids",
+      "run_id": "20261029T041100Z_tr12-early-stop-smoke_2ca37f",
+      "attempt_receipt": {
+        "private_source_sha256": "33734963bf449a1aaaaa27e7bfea99c08db22d700d8d232c81e48a43a5f9b671",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T04:12:15.353605+00:00",
+          "seconds": 72.86000000001513,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "evaluation_run_ids",
+      "run_id": "20261029T041238Z_tr12-early-stop-primary_306458",
+      "attempt_receipt": {
+        "private_source_sha256": "59f9d0da2ecc7be0d7c2f8687fe3258e2cd321d772e878d55a6a391fb1cf0abb",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T05:10:26.052389+00:00",
+          "seconds": 3464.25,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    },
+    {
+      "role": "evaluation_run_ids",
+      "run_id": "20261029T051052Z_tr12-early-stop-development_277b56",
+      "attempt_receipt": {
+        "private_source_sha256": "d09658a2bf85dd0c005f7a008c626aa9ac3b3e5961a00385bc73cb8c3cf9ef0d",
+        "published_payload": false
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "at": "2026-10-29T05:40:50.570524+00:00",
+          "seconds": 1795.4219999999623,
+          "exit_code": 0,
+          "status": "completed",
+          "compute_kind": "cpu"
+        }
+      ]
+    }
+  ],
+  "evaluation_outer_preparation_and_control_seconds": [
+    {
+      "role": "smoke",
+      "controller_measured_role_wall_seconds": 98.375,
+      "canonical_attempt_seconds_already_charged": 72.86000000001513,
+      "additional_CPU_preparation_and_control_seconds": 25.514999999984866
+    },
+    {
+      "role": "primary",
+      "controller_measured_role_wall_seconds": 3491.6089999999967,
+      "canonical_attempt_seconds_already_charged": 3464.25,
+      "additional_CPU_preparation_and_control_seconds": 27.35899999999674
+    },
+    {
+      "role": "development",
+      "controller_measured_role_wall_seconds": 1822.6719999999914,
+      "canonical_attempt_seconds_already_charged": 1795.4219999999623,
+      "additional_CPU_preparation_and_control_seconds": 27.250000000029104
+    }
+  ],
+  "shared_wait_exclusion": "Only identity-bound verified shared-resource idle is excluded; preparation, archive I/O, recovery and unverified durations count.",
+  "first_segment_conservative_full8h_charge_retained": true,
+  "light_unmeasured_control_helpers_conservatively_charged60_seconds_not_exact_phase_measurement": true
+}

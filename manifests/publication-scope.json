@@ -4,7 +4,7 @@
   "repository": "https://github.com/yongqih670-dot/ptcg-main-model-research",
   "visibility": "public",
   "updated_at": "2026-10-29",
-  "science_snapshot_cutoff_utc": "2026-10-28T13:58:27.203631+00:00",
+  "science_snapshot_cutoff_utc": "2026-10-29T05:41:03.194189+00:00",
   "full_training_data_upload_cancelled": true,
   "full_recovery_archive_upload_cancelled": true,
   "automatic_upload_retries_disabled": true,
@@ -17,5 +17,15 @@
   "public_history_replaced_by_curated_snapshot": true,
   "original_full_publication_checkout_preserved_locally": true,
   "source_file_hash_manifest": "manifests/curated-files.json",
-  "reproduction_limit": "Original training data, weights and full recovery state remain private; exact end-to-end numerical replay is not available from this public subset alone."
+  "reproduction_limit": "Original training data, weights and full recovery state remain private; exact end-to-end numerical replay is not available from this public subset alone.",
+  "base_code_snapshot_cutoff_utc": "2026-10-28T13:58:27.203631+00:00",
+  "TR12_final_evaluation_published": true,
+  "TR12_training_stopped_by_user": true,
+  "TR12_original_volume_goal_complete": false,
+  "compact_evaluation_outcomes_published": 5650,
+  "raw_training_or_replay_payloads_published": false,
+  "recovery_payloads_published": false,
+  "source_code_snapshot_updated": false,
+  "latest_result_report": "docs/TR12_FINAL_REPORT.md",
+  "statistics_verifier": "tools/verify_tr12_results.py"
 }

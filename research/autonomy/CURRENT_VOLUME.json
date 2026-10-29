@@ -1,9 +1,9 @@
 {
-  "at": "2026-10-27T19:09:20.331314+00:00",
-  "scope": "Canonical actual committed unique PPO decisions throughTR11; only the new successful first-epoch coverage is added.",
+  "at": "2026-10-29T05:41:03.202905+00:00",
+  "scope": "Through user-stopped TR12: unique successful first-epoch coverage only; no inherited history, repeated epochs or pending tail counted.",
   "goal_unique_actual_PPO_training_decisions": 10000000,
-  "actual_unique_training_decisions": 687865,
-  "remaining_unique_training_decisions": 9312135,
+  "actual_unique_training_decisions": 745627,
+  "remaining_unique_training_decisions": 9254373,
   "families": [
     {
       "hypothesis_id": "TR01",
@@ -14,24 +14,20 @@
       "scientific_status": "completed",
       "evidence": [
         {
-          "path": "runs/20261023T141824Z_tr01-blind-ppo-32k_25713f/metrics.json",
-          "sha256": "4584ada9e98774dd9c60a27ed57bd5fbdd8a83d540ab520d6b0d7d686fb3db24"
+          "private_source_sha256": "4584ada9e98774dd9c60a27ed57bd5fbdd8a83d540ab520d6b0d7d686fb3db24",
+          "published_payload": false
         },
         {
-          "path": "runs/20261023T141824Z_tr01-blind-ppo-32k_25713f/config.json",
-          "sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce"
+          "private_source_sha256": "6a58668fd09a024271c81592c6b26c8c9d7a0c8f5cb3aec5cacb850e0a6f30ce",
+          "published_payload": false
         }
       ],
       "legacy_consumed_decisions": 32855,
       "unused_by_optimizer_decisions": 16928,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR01",
-        "expected_consumed_decisions": 32855,
-        "expected_updates": 4,
-        "kind": "trace",
-        "path": "runs/20261023T141824Z_tr01-blind-ppo-32k_25713f/training-updates.json",
-        "sha256": "94daac1d61523715a4ec28b14210e1818ad8da867682d08b827d2abe125682cc"
+        "private_source_sha256": "94daac1d61523715a4ec28b14210e1818ad8da867682d08b827d2abe125682cc",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -44,24 +40,20 @@
       "scientific_status": "completed",
       "evidence": [
         {
-          "path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/metrics.json",
-          "sha256": "0835ddd5bc0dae8e27fd21fdc7a971d33d871400edf55be4f2db52b202259f53"
+          "private_source_sha256": "0835ddd5bc0dae8e27fd21fdc7a971d33d871400edf55be4f2db52b202259f53",
+          "published_payload": false
         },
         {
-          "path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/config.json",
-          "sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265"
+          "private_source_sha256": "16b380ad55fa750e33f95a3d7defab005167efc4e76c6cffc7e001bf701e5265",
+          "published_payload": false
         }
       ],
       "legacy_consumed_decisions": 32825,
       "unused_by_optimizer_decisions": 0,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR02",
-        "expected_consumed_decisions": 32825,
-        "expected_updates": 4,
-        "kind": "trace",
-        "path": "runs/20261023T144339Z_tr02-ppo-lr1e5_9a0e14/training-updates.json",
-        "sha256": "47ba558c6b173382ae1260c7ac0f2127e6c2bc2be2a5bc44defde5637e301612"
+        "private_source_sha256": "47ba558c6b173382ae1260c7ac0f2127e6c2bc2be2a5bc44defde5637e301612",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -74,24 +66,20 @@
       "scientific_status": "completed",
       "evidence": [
         {
-          "path": "runs/20261023T151043Z_tr03-ppo-262k_a347a7/metrics.json",
-          "sha256": "3c0a2b69ddae30a681e191bd5a15e8fe098e6b97c22ce1becc0f1a8361fd95d8"
+          "private_source_sha256": "3c0a2b69ddae30a681e191bd5a15e8fe098e6b97c22ce1becc0f1a8361fd95d8",
+          "published_payload": false
         },
         {
-          "path": "runs/20261023T151043Z_tr03-ppo-262k_a347a7/config.json",
-          "sha256": "970d023178e55b570c3d55e797da5b3b0092433dbcd082dd4dce7f164c496753"
+          "private_source_sha256": "970d023178e55b570c3d55e797da5b3b0092433dbcd082dd4dce7f164c496753",
+          "published_payload": false
         }
       ],
       "legacy_consumed_decisions": 262165,
       "unused_by_optimizer_decisions": 1334,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR03",
-        "expected_consumed_decisions": 262165,
-        "expected_updates": 32,
-        "kind": "trace",
-        "path": "runs/20261023T151043Z_tr03-ppo-262k_a347a7/training-updates.json",
-        "sha256": "80c466e2068e331ec24df711c74ed88658139aa441f047d8dd7ea458f10a7e4d"
+        "private_source_sha256": "80c466e2068e331ec24df711c74ed88658139aa441f047d8dd7ea458f10a7e4d",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -105,11 +93,12 @@
       "evidence": [
         {
           "path": "research/autonomy/TR04-result.json",
-          "sha256": "3077d66d6ac3cf15a134420e894fa081505163bbc49112ce8b147d18e1cbd747"
+          "sha256": "3077d66d6ac3cf15a134420e894fa081505163bbc49112ce8b147d18e1cbd747",
+          "original_source_sha256": "3077d66d6ac3cf15a134420e894fa081505163bbc49112ce8b147d18e1cbd747"
         },
         {
-          "path": "runs/20261024T112017Z_hybrid-compact-restore_451ff1/archive-prefix.json",
-          "sha256": "3bc8bc91d607bd2bd4bf729c36132e91e29497b088fc1e506eb3411adf7d7755"
+          "private_source_sha256": "3bc8bc91d607bd2bd4bf729c36132e91e29497b088fc1e506eb3411adf7d7755",
+          "published_payload": false
         }
       ],
       "invalid_does_not_erase_actual_updates_or_qualify_model": true,
@@ -118,12 +107,8 @@
       "unused_by_optimizer_decisions": 1584,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR04",
-        "expected_consumed_decisions": 248128,
-        "expected_updates": 30,
-        "kind": "trace",
-        "path": "runs/20261023T182702Z_tr04-ppo-lambda99_f9bdaf/training-updates.json",
-        "sha256": "db0cca5247a116c9198c06904da220fd82369f9dfeaa1cb4a1253a7c29fb02eb"
+        "private_source_sha256": "db0cca5247a116c9198c06904da220fd82369f9dfeaa1cb4a1253a7c29fb02eb",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -137,7 +122,8 @@
       "evidence": [
         {
           "path": "research/autonomy/TR05-result.json",
-          "sha256": "e656f351adfd157527269437744371f3f1cba54defbbe40b1304ccae4bf6eee6"
+          "sha256": "e656f351adfd157527269437744371f3f1cba54defbbe40b1304ccae4bf6eee6",
+          "original_source_sha256": "e656f351adfd157527269437744371f3f1cba54defbbe40b1304ccae4bf6eee6"
         }
       ],
       "invalid_does_not_erase_actual_updates_or_qualify_model": true,
@@ -146,12 +132,8 @@
       "unused_by_optimizer_decisions": 0,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR05",
-        "expected_consumed_decisions": 8283,
-        "expected_updates": 1,
-        "kind": "file_checkpoint",
-        "path": "runs/20261025T192352Z_tr05-failure-archive_c69021/archive/checkpoint-commits/objects/cp-a0dac7d377a901816fbd315ab0ebc5942eb3097957b8cbad8de68023e47bfe7a.pt",
-        "sha256": "a0dac7d377a901816fbd315ab0ebc5942eb3097957b8cbad8de68023e47bfe7a"
+        "private_source_sha256": "a0dac7d377a901816fbd315ab0ebc5942eb3097957b8cbad8de68023e47bfe7a",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -165,7 +147,8 @@
       "evidence": [
         {
           "path": "research/autonomy/TR06-result.json",
-          "sha256": "91f0a66644e1490213318f2b1209f98025a514389cccac0bedc0e517bd38f9f6"
+          "sha256": "91f0a66644e1490213318f2b1209f98025a514389cccac0bedc0e517bd38f9f6",
+          "original_source_sha256": "91f0a66644e1490213318f2b1209f98025a514389cccac0bedc0e517bd38f9f6"
         }
       ],
       "invalid_does_not_erase_actual_updates_or_qualify_model": true,
@@ -191,7 +174,8 @@
       "evidence": [
         {
           "path": "research/autonomy/TR07-result.json",
-          "sha256": "d862bee0f5f2e196f2364f5245b53cb5aea68fcdd4f80d4b66badd9f9aab1c85"
+          "sha256": "d862bee0f5f2e196f2364f5245b53cb5aea68fcdd4f80d4b66badd9f9aab1c85",
+          "original_source_sha256": "d862bee0f5f2e196f2364f5245b53cb5aea68fcdd4f80d4b66badd9f9aab1c85"
         }
       ],
       "invalid_does_not_erase_actual_updates_or_qualify_model": true,
@@ -200,12 +184,8 @@
       "unused_by_optimizer_decisions": 0,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR07",
-        "expected_consumed_decisions": 16646,
-        "expected_updates": 2,
-        "kind": "file_checkpoint",
-        "path": "runs/20261026T015921Z_tr07-archive-bounded-connect_4cb622/archive/checkpoint-commits/objects/cp-c218a4378f123803fed9bede72b46b9c5812e08b865300b41639f2311b0c135c.pt",
-        "sha256": "c218a4378f123803fed9bede72b46b9c5812e08b865300b41639f2311b0c135c"
+        "private_source_sha256": "c218a4378f123803fed9bede72b46b9c5812e08b865300b41639f2311b0c135c",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -219,7 +199,8 @@
       "evidence": [
         {
           "path": "research/autonomy/TR08-result.json",
-          "sha256": "99879c0d302a368a186566cc110f78c4edd25d1600f7a61a155dc8b5b44af54c"
+          "sha256": "99879c0d302a368a186566cc110f78c4edd25d1600f7a61a155dc8b5b44af54c",
+          "original_source_sha256": "99879c0d302a368a186566cc110f78c4edd25d1600f7a61a155dc8b5b44af54c"
         }
       ],
       "invalid_does_not_erase_actual_updates_or_qualify_model": true,
@@ -228,12 +209,8 @@
       "unused_by_optimizer_decisions": 0,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR08",
-        "expected_consumed_decisions": 24837,
-        "expected_updates": 3,
-        "kind": "file_checkpoint",
-        "path": "runs/20261026T121813Z_tr08-second-full-cold-archive_8e1e0a/archive/checkpoint-commits/objects/cp-96ed7dc85372e84ea1e9f970bd9921421c327113303cbae008157f6e7a900353.pt",
-        "sha256": "96ed7dc85372e84ea1e9f970bd9921421c327113303cbae008157f6e7a900353"
+        "private_source_sha256": "96ed7dc85372e84ea1e9f970bd9921421c327113303cbae008157f6e7a900353",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -250,28 +227,29 @@
       "training_target_completed": true,
       "evidence": [
         {
-          "path": "runs/20261026T184809Z_hdd2-verified-recovery-report_5eac7a/analysis.json",
-          "sha256": "ea1b4f5e927ca19d97b39d18e570ac2ce5d20d9392890e8765d21ec0d84dc5d0"
+          "private_source_sha256": "ea1b4f5e927ca19d97b39d18e570ac2ce5d20d9392890e8765d21ec0d84dc5d0",
+          "published_payload": false
         },
         {
-          "path": "runs/20261027T043431Z_tr09-hdd2-original-second_dd63bc/metrics.json",
-          "sha256": "0f47fce6640f7e1dd0c7f1e31bb3b81ba2cfa83de2368c05c4d031da5be09b27"
+          "private_source_sha256": "0f47fce6640f7e1dd0c7f1e31bb3b81ba2cfa83de2368c05c4d031da5be09b27",
+          "published_payload": false
         },
         {
-          "path": "runs/20261027T043431Z_tr09-hdd2-original-second_dd63bc/hybrid-materialization.json",
-          "sha256": "d43c9083a2493da5b6b8919f6f983a0a439ed4e121160ef6226159afc94758a3"
+          "private_source_sha256": "d43c9083a2493da5b6b8919f6f983a0a439ed4e121160ef6226159afc94758a3",
+          "published_payload": false
         },
         {
-          "path": "runs/20261027T043431Z_tr09-hdd2-original-second_dd63bc/remote-terminal.json",
-          "sha256": "c52ece9e57e0c5ded72733ca58b5dd9c50ef32d9c84fe0183eeca38f06bd02dc"
+          "private_source_sha256": "c52ece9e57e0c5ded72733ca58b5dd9c50ef32d9c84fe0183eeca38f06bd02dc",
+          "published_payload": false
         },
         {
-          "path": "runs/20261027T043431Z_tr09-hdd2-original-second_dd63bc/attempts.json",
-          "sha256": "f94a87338eeae3031a7803a5a3e75d79501a2735db7d14fcf92811288b5cd6bd"
+          "private_source_sha256": "f94a87338eeae3031a7803a5a3e75d79501a2735db7d14fcf92811288b5cd6bd",
+          "published_payload": false
         },
         {
           "path": "research/autonomy/TR09-result.json",
-          "sha256": "6023dbaa8e3e17ed4a4fd5f528c9eec73a3dd40324d7586b6262ded8ca7d11e1"
+          "sha256": "6023dbaa8e3e17ed4a4fd5f528c9eec73a3dd40324d7586b6262ded8ca7d11e1",
+          "original_source_sha256": "6023dbaa8e3e17ed4a4fd5f528c9eec73a3dd40324d7586b6262ded8ca7d11e1"
         }
       ],
       "completed_training_run_id": "20261027T043431Z_tr09-hdd2-original-second_dd63bc",
@@ -280,12 +258,8 @@
       "unused_by_optimizer_decisions": 0,
       "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
       "actual_counter_source": {
-        "hypothesis_id": "TR09",
-        "expected_consumed_decisions": 32799,
-        "expected_updates": 4,
-        "kind": "trace",
-        "path": "runs/20261027T043431Z_tr09-hdd2-original-second_dd63bc/remote-results/training-updates.json",
-        "sha256": "e18e445a14868c543dd59c5f29913d54f4b5f253c13d60a02256a612b956bb04"
+        "private_source_sha256": "e18e445a14868c543dd59c5f29913d54f4b5f253c13d60a02256a612b956bb04",
+        "published_payload": false
       },
       "training_target_completed_scope": "Preserved historical original declaration; not corrected actual-count coverage or permission to reopen."
     },
@@ -303,8 +277,8 @@
         "hypothesis_id": "TR10",
         "sha256": "2372c57102a4ab701b096a8ad38a5b734b475619ed51a5684462f4da9bbb5e53",
         "ACK": {
-          "path": "runs/20261027T094058Z_tr10-original-second-actual-counter_2063d8/online-archive/20261027T094058Z_tr10-original-second-actual-counter_2063d8/acks/00000138.json",
-          "sha256": "6943e6e2d6ccff6f6ffa910c280f2a4ebe59f32d2ff9d0e95bb0b11e9e9de374"
+          "private_source_sha256": "6943e6e2d6ccff6f6ffa910c280f2a4ebe59f32d2ff9d0e95bb0b11e9e9de374",
+          "published_payload": false
         },
         "archive_root": "runs/20261027T094058Z_tr10-original-second-actual-counter_2063d8/online-archive",
         "expected_consumed_decisions": 35422,
@@ -316,7 +290,8 @@
       "promotion_eligible": false,
       "result": {
         "path": "research/autonomy/TR10-result.json",
-        "sha256": "bbcfae28a9606aa4100b4e868ee63c4d6844127f2d13668e23af9ff8f97adc2f"
+        "sha256": "bbcfae28a9606aa4100b4e868ee63c4d6844127f2d13668e23af9ff8f97adc2f",
+        "original_source_sha256": "bbcfae28a9606aa4100b4e868ee63c4d6844127f2d13668e23af9ff8f97adc2f"
       }
     },
     {
@@ -345,36 +320,77 @@
       "learning_signal_passed": false,
       "result": {
         "path": "research/autonomy/TR11-result.json",
-        "sha256": "738d848184773f5f9a44d9b9e4514513d8cf86e521d29ac52f8253ded04d13b5"
+        "sha256": "738d848184773f5f9a44d9b9e4514513d8cf86e521d29ac52f8253ded04d13b5",
+        "original_source_sha256": "738d848184773f5f9a44d9b9e4514513d8cf86e521d29ac52f8253ded04d13b5"
+      }
+    },
+    {
+      "hypothesis_id": "TR12",
+      "canonical_training_family": "20261028T060043Z_tr12-volume-segment-001_a709d8",
+      "training_family_members": [
+        "20261028T060043Z_tr12-volume-segment-001_a709d8",
+        "20261028T120947Z_tr12-volume-segment-002-timed_f86562"
+      ],
+      "scientific_status": "inconclusive",
+      "trained_unique_decisions": 57762,
+      "PPO_updates": 7,
+      "inherited_parent_decisions_not_counted_again": 49173,
+      "actual_counter_accounting": "unique_successful_first_epoch_coverage_v1",
+      "source_run": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+      "endpoint_checkpoint_sha256": "97e4b9a11386a187849f5d68237bffda52099aee7a7ddd21032f8e22fafefaaf",
+      "promotion_eligible": false,
+      "new_complete_BO3": 366,
+      "new_complete_games": 944,
+      "new_sampled_decisions": 64622,
+      "unoptimized_tail_decisions": 6807,
+      "original_training_target_complete": false,
+      "audit": {
+        "private_source_sha256": "424df50dff9293e753ff1fe1ff630872295a898ff9b2c0ae9574e7984318ae4f",
+        "published_payload": false
+      },
+      "primary_learning_classification": "inconclusive",
+      "training_stopped_by_user": true,
+      "result": {
+        "path": "research/autonomy/TR12-result.json",
+        "sha256": "52a885bfc813ad1f144ae463d9bbd7ebcabdde041012ed8478b084ce9b83d9f8",
+        "original_source_sha256": "123cc66863965056d01de972bdcfe3d66e505e3d6593834d4d51bf3c2698e155"
       }
     }
   ],
   "excluded": "Engineering trials/342newCPUprobe samples, all pending/untrained data, model copies, restored prefixes counted again, repeated PPO epochs, external H002 pretraining with no local count.",
   "historical_total_games_and_sampled_decisions_not_filled_from_estimates": true,
-  "known_PPO_updates_lower_bound": 88,
+  "known_PPO_updates_lower_bound": 95,
   "training_volume_is_not_model_strength_or_research_success": true,
   "promotion_eligible": false,
   "parent_volume_ledger": {
-    "path": "runs/20261027T063431Z_tr09-independent-240BO3-screen_7c9226/volume-before-TR09-closure.json",
-    "sha256": "978ecea4a559e18073e4cb22db3e35480ad681623cc20049d199060063294547"
+    "private_source_sha256": "978ecea4a559e18073e4cb22db3e35480ad681623cc20049d199060063294547",
+    "published_payload": false
   },
-  "total_committed_PPO_updates": 88,
+  "total_committed_PPO_updates": 95,
   "forward_supplement": "TR10 completed32782 actual unique decisions and5PPOupdates; original independent480BO3 evaluation inconclusive; no promotion. Old scientific decisions/costs/attempts unchanged.",
   "PPO_update_accounting_complete": true,
   "decision_accounting": "unique_successful_first_epoch_coverage_v1",
   "legacy_ledger_preserved_reference": {
-    "path": "research/autonomy/volume-revisions/actual-coverage-20261027/CURRENT_VOLUME.original.json",
-    "sha256": "17c37dcbbebef8207731c19b217a27e564d2d76cd8324c43a4431b02fd515e7a"
+    "private_source_sha256": "17c37dcbbebef8207731c19b217a27e564d2d76cd8324c43a4431b02fd515e7a",
+    "published_payload": false
   },
   "old_scientific_results_attempts_costs_valid_counts_stops_and_champion_unchanged": true,
   "old_training_target_completed_declarations_are_historical_not_actual_coverage_proof": true,
   "training_amount_is_not_strength_evidence": true,
   "TR11_incremental_audit": {
-    "path": "runs/20261027T185334Z_tr11-new-only-actual-volume_502795/metrics.json",
-    "sha256": "546e9e66239e3e97fcab5ab994b58009d26181c36ce7db0e764bb3f1ef334ac0"
+    "private_source_sha256": "546e9e66239e3e97fcab5ab994b58009d26181c36ce7db0e764bb3f1ef334ac0",
+    "published_payload": false
   },
   "pre_TR11_ledger_preserved": {
-    "path": "research/autonomy/volume-revisions/TR11-new-actual-coverage-20261027/CURRENT_VOLUME.before-TR11.json",
-    "sha256": "1a16a4bce8b8f27088c723b0de0244c60da4401ad08608367e798ce4108e14fa"
+    "private_source_sha256": "1a16a4bce8b8f27088c723b0de0244c60da4401ad08608367e798ce4108e14fa",
+    "published_payload": false
+  },
+  "TR12_incremental_audit": {
+    "private_source_sha256": "424df50dff9293e753ff1fe1ff630872295a898ff9b2c0ae9574e7984318ae4f",
+    "published_payload": false
+  },
+  "pre_TR12_ledger_preserved": {
+    "private_source_sha256": "e9c40a22ce1c472b2bda397f4533ea1f3fe347eeacabdfe5a0d52c5289abdf88",
+    "published_payload": false
   }
 }

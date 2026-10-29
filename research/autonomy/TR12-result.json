@@ -1,0 +1,242 @@
+{
+  "at": "2026-10-29T05:41:03.194189+00:00",
+  "hypothesis": "TR12",
+  "current_diagnostic_complete": true,
+  "classification": "inconclusive",
+  "primary_learning_classification": "inconclusive",
+  "training_status": "stopped_by_user",
+  "original_training_target_complete": false,
+  "actual_additional_unique_decisions": 57762,
+  "original_additional_target": 320768,
+  "training_target_fraction": 0.18007407222665603,
+  "training_target_shortfall": 263006,
+  "lineage_unique_decisions": 106935,
+  "new_PPO_updates": 7,
+  "unoptimized_tail_decisions": 6807,
+  "new_complete_BO3": 366,
+  "new_complete_games": 944,
+  "new_sampled_decisions": 64622,
+  "actual_project_unique_decisions": 745627,
+  "actual_project_PPO_updates": 95,
+  "full_recovery_acceptance": {
+    "path": "research/autonomy/engineering/TR12-early-stop-full-recovery-accepted.json",
+    "sha256": "ed1cf332730633dd9478976c5ea684798611cba005ab1bcbb23c41074341a6b3",
+    "original_source_sha256": "f911af4c44f46ecd5bca10ee9e40e97dda7d78e2cb94315e06d3f173a33daa61"
+  },
+  "original_protocol": {
+    "path": "research/autonomy/activations/TR12-volume-320768-20261028/TR12_PROTOCOL.json",
+    "sha256": "ecb2ad886185614b56773c2f857b30e9180c9c722600bb9060ac8d8fc4f0023a",
+    "original_source_sha256": "ecb2ad886185614b56773c2f857b30e9180c9c722600bb9060ac8d8fc4f0023a"
+  },
+  "early_stop_protocol": {
+    "path": "research/autonomy/TR12_EARLY_STOP_PROTOCOL.json",
+    "sha256": "c3b53725d0335bbbf6b00f483b4d2bb020e113deb5286cd76b813eddb0c075f2",
+    "original_source_sha256": "5013be9f0a82e1678b2baf663d2b93ca0d626c5cb618d3e3f67155384586d574"
+  },
+  "primary": {
+    "gain": 0.040625,
+    "ci95": [
+      0.006249999999999978,
+      0.07562499999999994
+    ],
+    "scores": {
+      "TR11-vs-ppo": 0.50625,
+      "endpoint-vs-ppo": 0.546875
+    },
+    "learning_signal_passed": false,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026102801,
+    "method": "independent completeBO3 resampling"
+  },
+  "secondary": {
+    "panels": {
+      "full_eight": {
+        "weights": {
+          "lucario": 0.125,
+          "alakazam": 0.125,
+          "archaludon": 0.125,
+          "ppo": 0.125,
+          "tr01-ppo": 0.125,
+          "tr02-ppo": 0.125,
+          "tr03-ppo": 0.125,
+          "tr09-epochs4-hdd2": 0.125
+        },
+        "contrasts": {
+          "endpoint-minus-TR11": {
+            "gain": 0.0,
+            "ci95": [
+              -0.04249999999999999,
+              0.04249999999999999
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "endpoint-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.033749999999999995,
+              0.049999999999999996
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "TR11-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.033749999999999995,
+              0.049999999999999975
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          }
+        },
+        "scores": {
+          "endpoint": 0.6712499999999999,
+          "TR11": 0.67125,
+          "anchor": 0.66375
+        }
+      },
+      "original_four": {
+        "weights": {
+          "lucario": 0.25,
+          "alakazam": 0.25,
+          "archaludon": 0.25,
+          "ppo": 0.25
+        },
+        "contrasts": {
+          "endpoint-minus-TR11": {
+            "gain": 0.012500000000000011,
+            "ci95": [
+              -0.03499999999999996,
+              0.05999999999999997
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "endpoint-minus-anchor": {
+            "gain": 0.007500000000000007,
+            "ci95": [
+              -0.03750000000000002,
+              0.05250000000000003
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          },
+          "TR11-minus-anchor": {
+            "gain": -0.0050000000000000044,
+            "ci95": [
+              -0.05249999999999999,
+              0.04249999999999998
+            ],
+            "descriptive_only_unadjusted_multiple_contrasts": true
+          }
+        },
+        "scores": {
+          "endpoint": 0.835,
+          "TR11": 0.8225,
+          "anchor": 0.8274999999999999
+        }
+      }
+    },
+    "cells": {
+      "endpoint-vs-lucario": 0.9,
+      "TR11-vs-lucario": 0.87,
+      "anchor-vs-lucario": 0.86,
+      "endpoint-vs-alakazam": 0.95,
+      "TR11-vs-alakazam": 0.94,
+      "anchor-vs-alakazam": 0.96,
+      "endpoint-vs-archaludon": 0.95,
+      "TR11-vs-archaludon": 0.96,
+      "anchor-vs-archaludon": 0.96,
+      "endpoint-vs-ppo": 0.54,
+      "TR11-vs-ppo": 0.52,
+      "anchor-vs-ppo": 0.53,
+      "endpoint-vs-tr01-ppo": 0.51,
+      "TR11-vs-tr01-ppo": 0.59,
+      "anchor-vs-tr01-ppo": 0.48,
+      "endpoint-vs-tr02-ppo": 0.6,
+      "TR11-vs-tr02-ppo": 0.53,
+      "anchor-vs-tr02-ppo": 0.59,
+      "endpoint-vs-tr03-ppo": 0.43,
+      "TR11-vs-tr03-ppo": 0.41,
+      "anchor-vs-tr03-ppo": 0.43,
+      "endpoint-vs-tr09-epochs4-hdd2": 0.49,
+      "TR11-vs-tr09-epochs4-hdd2": 0.55,
+      "anchor-vs-tr09-epochs4-hdd2": 0.5
+    },
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026102802,
+    "method": "independent completeBO3 resampling within each frozen opponent and strategy cell",
+    "no_automatic_promotion": true
+  },
+  "all_evaluation_result_counts": {
+    "primary": {
+      "win": 1685,
+      "draw": 0,
+      "loss": 1515
+    },
+    "development": {
+      "win": 1605,
+      "draw": 0,
+      "loss": 795
+    },
+    "smoke": {
+      "win": 25,
+      "draw": 0,
+      "loss": 25
+    }
+  },
+  "completed_independent_BO3": 5650,
+  "completed_strength_BO3": 5600,
+  "reliability_BO3": 50,
+  "reliability_errors_invalid_timeouts_fallbacks": 0,
+  "raw_used_in_TR12": 4,
+  "training_family_members": [
+    "20261028T060043Z_tr12-volume-segment-001_a709d8",
+    "20261028T120947Z_tr12-volume-segment-002-timed_f86562"
+  ],
+  "evaluation_runs": [
+    "20261029T041238Z_tr12-early-stop-primary_306458",
+    "20261029T051052Z_tr12-early-stop-development_277b56"
+  ],
+  "training_process_analysis": {
+    "path": "research/autonomy/TR12-process-analysis.json",
+    "sha256": "152c74848f8ef1069a7452955ccae90e89547c37280c52dd7c0d13564f8f75b1",
+    "original_source_sha256": "2d410675e74ed1c6bb40c7b7af705bdd777a8d6dd65a2ec55d8427af2dbde019"
+  },
+  "historical_checkpoint_cadence": {
+    "path": "research/autonomy/TR12-checkpoint-cadence-audit.json",
+    "sha256": "8722de8fb6250e1f1c43ca59dcab9f2e47fea8add9a8cbac2c23ff92371fe5b9",
+    "original_source_sha256": "f2ba9b7b9086656e908fc0679bdf9d413785fb35fd0fc2dbc52ca7403a98d6e1"
+  },
+  "strict600s_durable_publication_compliance_certified": false,
+  "full_unattended_training_route_certified": false,
+  "panel": {
+    "path": "evidence/TR12/panel-analysis.json",
+    "sha256": "eba72ae73c043a00af6c5fe4f56ae4136c61125ef7ff8ef7b7152ea37f355140",
+    "original_source_sha256": "b319f3e8a1ecd060e41f1f69511dfaa763ad2f9d5ad28cddd59fb38b33ef0748"
+  },
+  "failure_review": {
+    "private_source_sha256": "124c9bcd92f0d235960c6ecf0d7981ab9c5726fe14eb3a87d66feca4f237cf70",
+    "published_payload": false
+  },
+  "training_overlap_report": [
+    "ppo",
+    "shared_ppo_lineage_variants"
+  ],
+  "native_seed_unexposed_no_paired_reproduction_claim": true,
+  "no_sample_extension_or_final_pool_access": true,
+  "learning_signal_passed": false,
+  "promotion_eligible": false,
+  "overall_research_success": false,
+  "second_seed_final_pool_deployment_submission_not_satisfied": true,
+  "no_further_training_or_hypothesis_authorized": true,
+  "conclusions_supported": [
+    "Full state and unoptimized tail recover exactly at the last committed update.",
+    "Actual unique training volume and original cost/failure evidence are preserved.",
+    "Fixed completeBO3 primary contrast and descriptive frozen development contrasts are evaluated at the amended endpoint."
+  ],
+  "conclusions_not_supported": [
+    "Original320768 additional-decision target completion.",
+    "Training-health metrics alone prove playing strength.",
+    "Training-overlap opponents prove unseen-opponent generalization.",
+    "Concurrent GitHub upload caused the archive slowdown.",
+    "Automatic champion promotion or successful Kaggle submission."
+  ],
+  "publication_note": "Selected report; unavailable local evidence references are represented by source hashes, not downloadable recovery archives."
+}

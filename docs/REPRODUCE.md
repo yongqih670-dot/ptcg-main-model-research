@@ -24,6 +24,21 @@ py -3.12 -m venv .venv
 
 ## 结果及边界
 
-TR11 未通过预注册提升门槛，TR12 没有最终结果。固定 TR12 终点评测协议见 `research/autonomy/activations/TR12-volume-320768-20261028/TR12_PROTOCOL.json`；native 引擎未暴露 seed，不宣称配对复现。不能追加样本、修改对手权重或选择中间 checkpoint 来改变结论。
+TR11 未通过预注册提升门槛。TR12 已主动提前停止训练并完成冻结评测：固定对手有小幅正向信号但未达 +5 点门槛，八对手平均持平，整体证据不足，不晋级。详见 [最终报告](TR12_FINAL_REPORT.md)。原训练量目标未完成。固定 TR12 终点评测协议见 `research/autonomy/activations/TR12-volume-320768-20261028/TR12_PROTOCOL.json`；native 引擎未暴露 seed，不宣称配对复现。不能追加样本、修改对手权重或选择中间 checkpoint 来改变结论。
 
 历史统计摘要位于 `evidence/runs/`，结论在 `docs/RESULTS.md`。这只包含选定的统计报告，没有原始对局、训练轨迹或隐藏真值。完整输入由所有者本地及服务器保留，未提供公开下载。
+
+## TR12 统计复现（不启动训练或对战）
+
+提前停止的最后提交终点在独立评测前冻结，见 `research/autonomy/TR12_EARLY_STOP_PROTOCOL.json`。`configs/TR12/early-stop-*.json` 仅为冻结科学输入的参考投影，不是活动运行票据。
+
+公开的 `evidence/TR12/*-outcomes.jsonl` 保留全体 5,650 个评测 BO3 的精简结局，原始回放、训练轨迹和模型权重不在其中。安装原依赖锁中对应的 NumPy 后，可执行：
+
+```powershell
+python -B tools/verify_curated.py
+python -B tools/verify_tr12_results.py
+```
+
+第二条命令检查数量、系列身份、席位和运行标志，并使用公开的 `ptcg_lab/volume_statistics.py` 重算固定的 20,000 次独立完整 BO3 bootstrap，核对主比较和全部开发面板结果。它不访问网络、不加载模型，也不调用训练或对战入口。统计可由公开结局表重算，不等于仅凭公开子集重放 native 对局或恢复训练。
+
+完整训练数据及恢复归档继续保留在所有者本地和服务器，上传与重试已取消；TR12 不再续训。

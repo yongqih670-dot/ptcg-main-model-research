@@ -1,0 +1,632 @@
+{
+  "at": "2026-10-29T03:39:09.523968+00:00",
+  "source_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "CPU_full_recovery_evidence": {
+    "private_source_sha256": "424df50dff9293e753ff1fe1ff630872295a898ff9b2c0ae9574e7984318ae4f",
+    "published_payload": false
+  },
+  "training_stopped_by_user": true,
+  "original_additional_target": 320768,
+  "actual_TR12_new_unique_decisions": 57762,
+  "original_target_completion_fraction": 0.18007407222665603,
+  "original_target_shortfall": 263006,
+  "parent_unique_not_counted_again": 49173,
+  "lineage_actual_unique": 106935,
+  "TR12_PPO_updates": 7,
+  "new_complete_BO3": 366,
+  "new_complete_games": 944,
+  "new_sampled_decisions": 64622,
+  "new_rollout_decisions_consumed": 57815,
+  "unoptimized_tail": 6807,
+  "consumed_but_not_successful_first_epoch_covered": 53,
+  "segment002_new_unique_decisions": 33035,
+  "segment002_new_complete_BO3": 224,
+  "segment002_new_complete_games": 583,
+  "segment002_new_sampled_decisions_excluding_carried104": 39791,
+  "carried_pending_from_segment001": 104,
+  "interrupted_BO3_472_preserved_excluded": true,
+  "pending_series_660_through696_preserved_not_optimized": true,
+  "per_update_training_health": [
+    {
+      "version": 9,
+      "consumed_rollout_decisions": 8207,
+      "unique_successful_first_epoch_decisions": 8207,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 66,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 16414,
+      "KL_skipped_minibatches": 0,
+      "KL_skip_evidence": [],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.20777595110529543,
+        "policy_loss": -0.0021401031001715746,
+        "value_loss": 0.42735830108068074,
+        "entropy": 0.37630963348733787,
+        "approx_kl": 0.0047662483308083215,
+        "clip_fraction": 0.04118435482541173,
+        "grad_norm": 3.0084275512874266
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.0633987001829768,
+          0.354749135757989
+        ],
+        "policy_loss": [
+          -0.14748844397874744,
+          0.24592863312832378
+        ],
+        "value_loss": [
+          0.15995293855667114,
+          0.5657350420951843
+        ],
+        "entropy": [
+          0.30253698297566395,
+          0.4568821815494972
+        ],
+        "approx_kl": [
+          1.5637816996177945e-11,
+          0.014206081403911249
+        ],
+        "clip_fraction": [
+          0.0,
+          0.13333334028720856
+        ],
+        "grad_norm": [
+          1.5891563892364502,
+          8.634468078613281
+        ]
+      },
+      "first_policy_gradient_l2": 5.0707450619702445,
+      "first_weighted_value_shared_gradient_l2": 0.5996725627807599,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 10,
+      "consumed_rollout_decisions": 8263,
+      "unique_successful_first_epoch_decisions": 8263,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 66,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 16526,
+      "KL_skipped_minibatches": 0,
+      "KL_skip_evidence": [],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.2018289363881942,
+        "policy_loss": -0.0022229112689514693,
+        "value_loss": 0.4159244373341558,
+        "entropy": 0.3910371009932192,
+        "approx_kl": 0.004392582795396245,
+        "clip_fraction": 0.03957400460354781,
+        "grad_norm": 3.275244806431172
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          -0.039369677943104996,
+          0.4068773502667159
+        ],
+        "policy_loss": [
+          -0.19318971465096396,
+          0.18256641843131927
+        ],
+        "value_loss": [
+          0.2791045010089874,
+          0.5447036027908325
+        ],
+        "entropy": [
+          0.32961466937208656,
+          0.4563234220344279
+        ],
+        "approx_kl": [
+          1.9758698149852094e-11,
+          0.018744924776375977
+        ],
+        "clip_fraction": [
+          0.0,
+          0.09859155118465424
+        ],
+        "grad_norm": [
+          1.9431387186050415,
+          5.665226459503174
+        ]
+      },
+      "first_policy_gradient_l2": 3.0384178111258087,
+      "first_weighted_value_shared_gradient_l2": 1.6709215669361734,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 11,
+      "consumed_rollout_decisions": 8257,
+      "unique_successful_first_epoch_decisions": 8257,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 36,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 9025,
+      "KL_skipped_minibatches": 1,
+      "KL_skip_evidence": [
+        {
+          "epoch": 1,
+          "offset": 768,
+          "batch": 256,
+          "skipped_for_kl": true,
+          "approx_kl": 0.035023865960102464,
+          "entropy": 0.33552591242379204
+        }
+      ],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.27656881975460884,
+        "policy_loss": 0.003647486327370699,
+        "value_loss": 0.5533065783449157,
+        "entropy": 0.37319557452197205,
+        "approx_kl": 0.0016746755057461197,
+        "clip_fraction": 0.017063711918374507,
+        "grad_norm": 3.5533349036113706
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.1372474014997359,
+          0.4408018816544411
+        ],
+        "policy_loss": [
+          -0.135849587691802,
+          0.16519299059292897
+        ],
+        "value_loss": [
+          0.3749372661113739,
+          0.6592855453491211
+        ],
+        "entropy": [
+          0.3205804836037689,
+          0.45301876212806635
+        ],
+        "approx_kl": [
+          8.260249255431784e-12,
+          0.004628209852324379
+        ],
+        "clip_fraction": [
+          0.0,
+          0.046875
+        ],
+        "grad_norm": [
+          2.1488049030303955,
+          7.0071916580200195
+        ]
+      },
+      "first_policy_gradient_l2": 3.1361296217167856,
+      "first_weighted_value_shared_gradient_l2": 1.0631649685784754,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 12,
+      "consumed_rollout_decisions": 8203,
+      "unique_successful_first_epoch_decisions": 8203,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 66,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 16406,
+      "KL_skipped_minibatches": 0,
+      "KL_skip_evidence": [],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.24842181532173171,
+        "policy_loss": -0.0025834032153206825,
+        "value_loss": 0.509881434327042,
+        "entropy": 0.39354986264686326,
+        "approx_kl": 0.004521663824805586,
+        "clip_fraction": 0.03876630501217861,
+        "grad_norm": 3.0856588402419907
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.10657164638307025,
+          0.40748961640148446
+        ],
+        "policy_loss": [
+          -0.14233119743786027,
+          0.2370981359899485
+        ],
+        "value_loss": [
+          0.2886835038661957,
+          0.636584997177124
+        ],
+        "entropy": [
+          0.3145978624815274,
+          0.5957010640253932
+        ],
+        "approx_kl": [
+          1.8513827190064225e-11,
+          0.01274538624788245
+        ],
+        "clip_fraction": [
+          0.0,
+          0.09090909361839294
+        ],
+        "grad_norm": [
+          1.8935152292251587,
+          20.11315155029297
+        ]
+      },
+      "first_policy_gradient_l2": 3.5736496096727968,
+      "first_weighted_value_shared_gradient_l2": 1.2221219930194576,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 13,
+      "consumed_rollout_decisions": 8396,
+      "unique_successful_first_epoch_decisions": 8396,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 66,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 16792,
+      "KL_skipped_minibatches": 0,
+      "KL_skip_evidence": [],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.1916212726021485,
+        "policy_loss": -0.0017925869482906557,
+        "value_loss": 0.3943464784124682,
+        "entropy": 0.3759379655794977,
+        "approx_kl": 0.00406767283883832,
+        "clip_fraction": 0.03233682707869663,
+        "grad_norm": 3.2284394265811405
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.02050632847694311,
+          0.36782287788631235
+        ],
+        "policy_loss": [
+          -0.18565608741785772,
+          0.16003139734201943
+        ],
+        "value_loss": [
+          0.29868587851524353,
+          0.5209844708442688
+        ],
+        "entropy": [
+          0.29573239914341143,
+          0.44651064442421423
+        ],
+        "approx_kl": [
+          1.6147879040862012e-11,
+          0.012367417235516622
+        ],
+        "clip_fraction": [
+          0.0,
+          0.0703125
+        ],
+        "grad_norm": [
+          1.71354341506958,
+          6.526217937469482
+        ]
+      },
+      "first_policy_gradient_l2": 3.8728043618519057,
+      "first_weighted_value_shared_gradient_l2": 0.8244595524497749,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 14,
+      "consumed_rollout_decisions": 8244,
+      "unique_successful_first_epoch_decisions": 8244,
+      "unique_coverage_fraction": 1.0,
+      "successful_minibatches": 66,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 16488,
+      "KL_skipped_minibatches": 0,
+      "KL_skip_evidence": [],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.18941892319796477,
+        "policy_loss": -0.003186897532178801,
+        "value_loss": 0.3928900157390203,
+        "entropy": 0.38391871393665733,
+        "approx_kl": 0.0036734262964698635,
+        "clip_fraction": 0.033660844258045844,
+        "grad_norm": 3.0908618324997934
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.07253446374237046,
+          0.3404892990089811
+        ],
+        "policy_loss": [
+          -0.1148358246054107,
+          0.12742125534422208
+        ],
+        "value_loss": [
+          0.3097913861274719,
+          0.47517281770706177
+        ],
+        "entropy": [
+          0.3026571329735802,
+          0.46009849266453595
+        ],
+        "approx_kl": [
+          1.6055905736889198e-11,
+          0.012604220946123294
+        ],
+        "clip_fraction": [
+          0.0,
+          0.09615384787321091
+        ],
+        "grad_norm": [
+          1.6912813186645508,
+          7.840493202209473
+        ]
+      },
+      "first_policy_gradient_l2": 2.953645213621417,
+      "first_weighted_value_shared_gradient_l2": 0.5644563591614402,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    },
+    {
+      "version": 15,
+      "consumed_rollout_decisions": 8245,
+      "unique_successful_first_epoch_decisions": 8192,
+      "unique_coverage_fraction": 0.9935718617343845,
+      "successful_minibatches": 32,
+      "optimizer_examples_with_repeated_epochs_NOT_unique": 8192,
+      "KL_skipped_minibatches": 1,
+      "KL_skip_evidence": [
+        {
+          "epoch": 0,
+          "offset": 8192,
+          "batch": 53,
+          "skipped_for_kl": true,
+          "approx_kl": 0.032141338626094536,
+          "entropy": 0.35445107130328146
+        }
+      ],
+      "weighted_successful_minibatch_means": {
+        "loss": 0.2558270601754155,
+        "policy_loss": -0.00018563048087773991,
+        "value_loss": 0.5195581624284387,
+        "entropy": 0.3766390557926082,
+        "approx_kl": 0.002762527041506497,
+        "clip_fraction": 0.0269775390625,
+        "grad_norm": 3.530875902622938
+      },
+      "successful_minibatch_ranges": {
+        "loss": [
+          0.11989706943101619,
+          0.432790045568456
+        ],
+        "policy_loss": [
+          -0.1014665313027091,
+          0.16878532716183897
+        ],
+        "value_loss": [
+          0.3820624351501465,
+          0.6142442226409912
+        ],
+        "entropy": [
+          0.2953164610836107,
+          0.4565910965063987
+        ],
+        "approx_kl": [
+          1.3972176714227569e-11,
+          0.011307962781522896
+        ],
+        "clip_fraction": [
+          0.0,
+          0.06640625
+        ],
+        "grad_norm": [
+          1.9203490018844604,
+          6.483654975891113
+        ]
+      },
+      "first_policy_gradient_l2": 3.728654129987021,
+      "first_weighted_value_shared_gradient_l2": 0.9279124927094242,
+      "grad_norm_is_before_configured_0_5_clipping": true
+    }
+  ],
+  "policy_gradient_health_passed": true,
+  "training_health_interpretation": [
+    "Finite model/optimizer and nonzero policy gradients prove updates executed, not improved playing strength.",
+    "Loss/entropy/KL and gradient means are conditional on different on-policy batches and cannot establish a learning curve in win rate.",
+    "Version15 consumed8245 but its last53 first-epoch examples were stopped for KL; only8192 count.",
+    "All6807 pending decisions remain unoptimized; copied states, additional epochs and recovery probes add no unique volume."
+  ],
+  "segment002_cost": {
+    "original_attempt": [
+      {
+        "attempt": 1,
+        "at": "2026-10-28T16:02:10.138032+00:00",
+        "seconds": 13939.75,
+        "exit_code": 1,
+        "status": "failed",
+        "compute_kind": "gpu",
+        "counted_execution_seconds": 13939.75,
+        "verified_shared_wait_seconds": 0.0,
+        "time_basis": "execution_excluding_proven_shared_wait",
+        "fixed_hard_safety_window_seconds": 86400
+      }
+    ],
+    "charged_execution_seconds": 13939.75,
+    "verified_shared_wait_seconds": 0.0,
+    "raw_wall_seconds": 13939.75,
+    "GPU_job_hours": 3.872152777777778,
+    "remote_service_monotonic_seconds": 11015.166921,
+    "training_instrumented_seconds": 10764.749147760042,
+    "local_controller_instrumented_seconds": 13932.844000000012,
+    "unique_decisions_per_charged_second": 2.3698416399146325,
+    "charged_seconds_per10000_unique": 4219.691236567277,
+    "failed_local_status_preserved": true,
+    "preparation_restore_archival_unknown_and_IO_wait_counted": true
+  },
+  "training_process_exclusive_phases": {
+    "checkpoint_full_hash": {
+      "seconds": 2735.765218885499,
+      "percent_of_instrumented_training_process": 25.41411027171743
+    },
+    "archive_ACK_wait": {
+      "seconds": 1709.339176946436,
+      "percent_of_instrumented_training_process": 15.879043287340513
+    },
+    "driver_control_and_journal": {
+      "seconds": 1046.2249226759886,
+      "percent_of_instrumented_training_process": 9.718990273857798
+    },
+    "storage_pacing_wait": {
+      "seconds": 939.3040561901871,
+      "percent_of_instrumented_training_process": 8.725740314957921
+    },
+    "checkpoint_save_total": {
+      "seconds": 883.0558280244586,
+      "percent_of_instrumented_training_process": 8.203217891131326
+    },
+    "storage_capacity_admission": {
+      "seconds": 860.7785576651804,
+      "percent_of_instrumented_training_process": 7.996271402611305
+    },
+    "opponent_features_and_inference": {
+      "seconds": 807.4809957667603,
+      "percent_of_instrumented_training_process": 7.501159429570016
+    },
+    "learner_features_and_inference": {
+      "seconds": 516.6277085269103,
+      "percent_of_instrumented_training_process": 4.799254505939059
+    },
+    "environment_IPC_read_wait": {
+      "seconds": 443.06539392709965,
+      "percent_of_instrumented_training_process": 4.115891488463472
+    },
+    "storage_atomic_publication": {
+      "seconds": 248.6814432834508,
+      "percent_of_instrumented_training_process": 2.31014619913551
+    },
+    "initialization_restore": {
+      "seconds": 99.67250856308965,
+      "percent_of_instrumented_training_process": 0.9259157570228171
+    },
+    "storage_flush_fsync": {
+      "seconds": 97.00099001277704,
+      "percent_of_instrumented_training_process": 0.9010984713281616
+    },
+    "PPO_forward_backward_step_host_elapsed": {
+      "seconds": 89.91014386800816,
+      "percent_of_instrumented_training_process": 0.8352274877368314
+    },
+    "storage_identity_and_reserve_checks": {
+      "seconds": 78.06669113523094,
+      "percent_of_instrumented_training_process": 0.7252067843259986
+    },
+    "shared_resource_gate": {
+      "seconds": 58.39678663027007,
+      "percent_of_instrumented_training_process": 0.5424816298893638
+    },
+    "timing_publication": {
+      "seconds": 47.77850598376244,
+      "percent_of_instrumented_training_process": 0.4438422607711609
+    },
+    "consumed_archive_barrier": {
+      "seconds": 36.031772068468854,
+      "percent_of_instrumented_training_process": 0.33472003456733074
+    },
+    "checkpoint_journal_validation": {
+      "seconds": 23.357017925241962,
+      "percent_of_instrumented_training_process": 0.21697689007553098
+    },
+    "tensor_loading": {
+      "seconds": 22.685668457997963,
+      "percent_of_instrumented_training_process": 0.21074033539108022
+    },
+    "environment_IPC_send": {
+      "seconds": 6.277364921057597,
+      "percent_of_instrumented_training_process": 0.05831408456335286
+    },
+    "storage_write": {
+      "seconds": 5.766861825075466,
+      "percent_of_instrumented_training_process": 0.05357172513653465
+    },
+    "complete_BO3_collection": {
+      "seconds": 4.641586492245551,
+      "percent_of_instrumented_training_process": 0.04311838974168186
+    },
+    "feature_tracking": {
+      "seconds": 2.2255706526339054,
+      "percent_of_instrumented_training_process": 0.020674616956559626
+    },
+    "checkpoint_reference_validation": {
+      "seconds": 2.1217849974054843,
+      "percent_of_instrumented_training_process": 0.019710491793921564
+    },
+    "checkpoint_commit": {
+      "seconds": 0.4634009600849822,
+      "percent_of_instrumented_training_process": 0.004304800360177534
+    },
+    "advantage_and_return_preparation": {
+      "seconds": 0.017279903986491263,
+      "percent_of_instrumented_training_process": 0.0001605230530623829
+    },
+    "tensor_serialization_and_publication": {
+      "seconds": 0.00638477475149557,
+      "percent_of_instrumented_training_process": 5.931187679207677e-05
+    },
+    "checkpoint_immutable_copy": {
+      "seconds": 0.005526695982553065,
+      "percent_of_instrumented_training_process": 5.1340685293192134e-05
+    }
+  },
+  "training_inclusive_phases_NONADDITIVE": {
+    "shared_resource_gate": 58.39678663027007,
+    "tensor_loading": 22.685668457997963,
+    "checkpoint_full_hash": 2735.765218885499,
+    "checkpoint_reference_validation": 2737.8870038829045,
+    "storage_capacity_admission": 860.7785576651804,
+    "storage_identity_and_reserve_checks": 78.06669113523094,
+    "storage_pacing_wait": 939.3040561901871,
+    "storage_write": 5.766861825075466,
+    "storage_flush_fsync": 97.00099001277704,
+    "storage_atomic_publication": 2229.5986001119018,
+    "environment_IPC_read_wait": 443.06539392709965,
+    "environment_IPC_send": 6.277364921057597,
+    "opponent_features_and_inference": 807.4809957667603,
+    "feature_tracking": 2.2255706526339054,
+    "learner_features_and_inference": 516.6277085269103,
+    "complete_BO3_collection": 2051.2072263113805,
+    "tensor_serialization_and_publication": 890.6601587596815,
+    "checkpoint_journal_validation": 1852.1971757889842,
+    "checkpoint_immutable_copy": 515.4363948688842,
+    "checkpoint_commit": 1727.178038830927,
+    "checkpoint_save_total": 4573.182095546101,
+    "advantage_and_return_preparation": 0.017279903986491263,
+    "PPO_forward_backward_step_host_elapsed": 89.91014386800816,
+    "consumed_archive_barrier": 3754.525184230064,
+    "archive_ACK_wait": 1709.339176946436
+  },
+  "controller_exclusive_seconds_NONADDITIVE_WITH_TRAIN": {
+    "initialization_restore": 0.0,
+    "remote_job_control_and_wait": 2558.8929999998363,
+    "timing_publication": 0.9090000000433065,
+    "archive_receive_compress_and_verify": 11373.042000000132
+  },
+  "timing_limits": [
+    "Only exclusive spans within one process add to its wall; train/controller overlap and cannot be summed.",
+    "PPO timing is host elapsed, not CUDA kernel execution or GPU utilization.",
+    "Archive receive/compress/verify combines transport, local compression and hashes; no independent network-causality measurement.",
+    "Shared-resource gate overhead and storage/ACK pacing are not verified shared-resource idle time; credited wait remains0.",
+    "The first segment retains its conservative full8h charge; it must not be replaced with this segment throughput."
+  ],
+  "stop_root_cause": {
+    "proven_server_stop": "checkpointed_archive_backpressure at version15 with542972266 pending bytes/79 objects, above512MiB bound",
+    "proven_local_failure": "trial_outcome recognized a narrower set of checkpointed phases and rejected checkpointed_archive_backpressure despite exact clean server terminal identity",
+    "data_loss_observed": false,
+    "backlog_eventual_archive_ACK_count": 477,
+    "underlying_slowdown_evidence": "Checkpoint full hashes, storage admission/pacing and archive ACK waits are measured; transport internals are not isolated.",
+    "network_bottleneck_proven": false,
+    "concurrent_GitHub_upload_causal_effect_proven": false,
+    "no_training_route_optimization_or_training_restart_performed": true
+  },
+  "resource_peak": {
+    "service_memory_bytes": 4359643136,
+    "own_GPU_memory_MiB": 3454,
+    "GPU_peak_allocated_bytes": 1918788096,
+    "GPU_peak_reserved_bytes": 3172990976
+  },
+  "independent_strength_conclusion": "Final frozen evaluation is complete and inconclusive; see TR12-result.json. The original process-analysis snapshot preceded evaluation.",
+  "scientific_training_restarted": false,
+  "full_dataset_GitHub_upload_restarted": false,
+  "analysis_CPU_seconds": 0.0,
+  "historical_checkpoint_cadence": {
+    "path": "research/autonomy/TR12-checkpoint-cadence-audit.json",
+    "sha256": "8722de8fb6250e1f1c43ca59dcab9f2e47fea8add9a8cbac2c23ff92371fe5b9",
+    "original_source_sha256": "f2ba9b7b9086656e908fc0679bdf9d413785fb35fd0fc2dbc52ca7403a98d6e1"
+  },
+  "descriptive_training_outcomes": {
+    "path": "research/autonomy/TR12-training-outcomes-descriptive.json",
+    "sha256": "53a001ba2482422848423893cfc3f68f9cef7f7176dc330562506b931dd951d9",
+    "original_source_sha256": "105b7ed86143fe56de8e2f5e437233cba31b3193799beec324aa39f75480d8e6"
+  },
+  "original_pre_evaluation_interpretation": "pending frozen5650BO3 independent evaluation; training health and recovery do not establish strength gain"
+}

@@ -1,0 +1,38 @@
+{
+  "at": "2026-10-29T04:08:54.435402+00:00",
+  "complete": true,
+  "source_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "scope": "full_current_state_byte_recovery_only",
+  "historical_checkpoint_cadence": {
+    "path": "research/autonomy/TR12-checkpoint-cadence-audit.json",
+    "sha256": "8722de8fb6250e1f1c43ca59dcab9f2e47fea8add9a8cbac2c23ff92371fe5b9",
+    "original_source_sha256": "f2ba9b7b9086656e908fc0679bdf9d413785fb35fd0fc2dbc52ca7403a98d6e1"
+  },
+  "strict600s_durable_publication_compliance_certified": false,
+  "full_unattended_training_route_certified": false,
+  "retained_source_generations": [
+    19,
+    20
+  ],
+  "all_local_GPU_ACKs_verified": 92,
+  "full_model_optimizer_all_RNG_updates_archive_state_equal": true,
+  "pending_decisions": 6807,
+  "optimizer_steps_executed": 0,
+  "new_sampled_decisions": 0,
+  "new_unique_PPO_decisions": 0,
+  "original_target_complete": false,
+  "future_training_forbidden": true,
+  "source_outbox_ACKs_verified": 477,
+  "model_tensors": 127,
+  "optimizer_states": 97,
+  "GPU_numeric_checks": {
+    "conditional_logp_checks": 48,
+    "conditional_logp_max_error": 1.57775693132578e-05,
+    "conditional_logp_tolerance": 0.0001,
+    "CPU_GPU_value_max_error": 3.0994415283203125e-06,
+    "CPU_GPU_value_tolerance": 0.0002,
+    "same_GPU_fresh_process_rng_and_outputs_exact": true,
+    "sampling_rng_restored_after_probe": true
+  },
+  "publication_scope": "Selected recovery verification summary only. No checkpoint/optimizer/RNG/league/cursor/pending payloads are published."
+}

@@ -1,0 +1,113 @@
+{
+  "at": "2026-10-29T03:24:29.190824+00:00",
+  "amendment_type": "prospective_user_training_termination_before_independent_evaluation",
+  "original_protocol": {
+    "path": "research/autonomy/activations/TR12-volume-320768-20261028/TR12_PROTOCOL.json",
+    "sha256": "ecb2ad886185614b56773c2f857b30e9180c9c722600bb9060ac8d8fc4f0023a",
+    "original_source_sha256": "ecb2ad886185614b56773c2f857b30e9180c9c722600bb9060ac8d8fc4f0023a"
+  },
+  "endpoint_selection": "last committed update version15; no strength result inspected",
+  "original_training_target_complete": false,
+  "original_absolute_target": 369941,
+  "original_additional_target": 320768,
+  "pending6807_decisions_not_optimized_or_counted": true,
+  "unchanged_inputs": {
+    "training": {
+      "path": "configs/training/tr12_volume_320768.json",
+      "sha256": "6cb6465b1976671666b6d9835aef4b3f3b384af71fdade1df47fe6b283565078",
+      "original_source_sha256": "8aa187712cf2e2771ca26e6b85bf597f3239ef42a8b7f9db95b74f16e24c595f"
+    },
+    "primary_evaluation": {
+      "path": "configs/evaluation/tr12_primary_template.json",
+      "sha256": "3491f5416bd749b2b98c26dfbad7cacc295085ea0942c2ee1a0e5db1cea7be71",
+      "original_source_sha256": "76f17efc177faa6666460bee7a7504f9655273e54897b5e486fe8e5096e972ec"
+    },
+    "secondary_evaluation": {
+      "path": "configs/evaluation/tr12_development_template.json",
+      "sha256": "7bfe5e88c340c16e8c083b6dbb73bc4b952d5e3557c324ff4c4b47bcc67e63ca",
+      "original_source_sha256": "5aeb4d99bbe0b9164165cbbebd6e520ca9b8a34f88bc9e1a5eca2adc1ef9d9d2"
+    },
+    "fixed_parent_spec": {
+      "path": "agents/learned/tr11-fixed-opponent/spec.json",
+      "sha256": "281b9560bb07ac29c8fe436c24a7eafc36cc6f245a30813491a3355152538633",
+      "original_source_sha256": "281b9560bb07ac29c8fe436c24a7eafc36cc6f245a30813491a3355152538633"
+    },
+    "release_anchor": {
+      "path": "research/opponents/release_anchor.json",
+      "sha256": "e50ade72d159608b06745f65c3a9cf3bfbdc321de34654cda4010f48f2ccd2de",
+      "original_source_sha256": "e50ade72d159608b06745f65c3a9cf3bfbdc321de34654cda4010f48f2ccd2de"
+    },
+    "opponent_manifest": {
+      "path": "research/opponents/development_TR12_frozen.json",
+      "sha256": "3b04490b3da83a77d27689c23942e0029eb11e48061fcaa14be789b4e73fe9bb",
+      "original_source_sha256": "3b04490b3da83a77d27689c23942e0029eb11e48061fcaa14be789b4e73fe9bb"
+    },
+    "smoke": {
+      "series_count": 50,
+      "candidate": "completed_TR12_endpoint",
+      "reference": {
+        "kind": "public_rule",
+        "lineage": "dipam_unown_gradiant_ppo",
+        "archetype": "grass_acceleration",
+        "id": "ppo",
+        "path": "agents/public/ppo",
+        "weight": 0.25,
+        "files": {
+          "deck.csv": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+          "LICENSE": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+          "main.py": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+          "model.pt": "959b220daf6777f45ad5d6aa14c35d3274bf3958ed502c7551679453e5f4aaea",
+          "provenance.json": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+          "README.md": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+          "data\\embed_pca.npz": "6fe05f194e2bd862efc58b74d507010d5af50cabbbc3330c9585642f67848404",
+          "data\\lingering_effects.json": "34072c1bf2f25691d7dd6c5e6295f3ef2a90e2fadde0b9b09cec0b1d36038505",
+          "ptcg\\effects.py": "10c22a5ee9d33a3683a92b534090e5a3e70217d1af01bfeec8c82cef004165d2",
+          "ptcg\\tracker.py": "f6f54c358fe234cae1b89eeb118beec870a6f728918bf0238179fdfd2ac587d5",
+          "ptcg\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "ptcg\\rl\\buffers.py": "6f8400fd5fb757c34c28648a2abb4b91b3ab2e50d07d7496a34e921dcd4b9d52",
+          "ptcg\\rl\\cards.py": "b20df99ca6e92a5c2e0595019eeb892b66d66c9cfcde3683441b9350fddf26b1",
+          "ptcg\\rl\\encoder.py": "d33ed403389ebc53ba792ca0797c0043d5619a4b42d77d736275d29ecabef136",
+          "ptcg\\rl\\model.py": "5ee2d02fa4ac987339456026d356823b614f34da8f1159a1e1f1e7f454b973ee",
+          "ptcg\\rl\\search_agent.py": "bc9a0948f1d3afd18ef2c3a74ebfbe608c650868871b3cffbed9e6ea86d27b30",
+          "ptcg\\rl\\__init__.py": "ce66e62d444e948142c42bb0885fdb92175710265599f735c935dea0973bf751"
+        },
+        "parameters": {
+          "_actor_seat_mode": "zero"
+        }
+      },
+      "seats": [
+        25,
+        25
+      ],
+      "policy_seed": 2026302800,
+      "purpose": "Reliability only; no score-based selection"
+    }
+  },
+  "evaluation_samples": {
+    "smoke": 50,
+    "TR11_parent": 1600,
+    "early_stop_candidate": 1600,
+    "development_panel": 2400,
+    "total": 5650
+  },
+  "threshold": {
+    "minimum_gain": 0.05,
+    "CI95_lower_bound_strictly_greater_than": 0,
+    "bootstrap_complete_BO3_replicates": 20000
+  },
+  "native_engine_seed_unexposed": true,
+  "paired_game_reproduction_not_claimed": true,
+  "all_original_budgets_and_raw_counts_unchanged": true,
+  "no_final_pool_access": true,
+  "no_sample_extension_or_intermediate_checkpoint_selection": true,
+  "no_automatic_promotion_or_submission": true,
+  "last_committed_endpoint": {
+    "source_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+    "version": 15,
+    "actual_unique_lineage": 106935,
+    "checkpoint_sha256": "97e4b9a11386a187849f5d68237bffda52099aee7a7ddd21032f8e22fafefaaf",
+    "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+    "unoptimized_pending_decisions": 6807,
+    "recovery_reference_list_published": false
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "schema": 1,
+  "published_at_utc": "2026-10-29T06:09:32Z",
+  "scope": "Selected TR12 final reports, frozen evaluation configurations, compact BO3 outcomes and statistical verification only",
+  "source_evidence": {
+    "runs/20261029T041100Z_tr12-early-stop-smoke_2ca37f/config.json": {
+      "source_sha256": "c8293575cc435697a0b8cd261846eb2525abed5c5d060d7421323cb4c6391efd",
+      "source_bytes": 4817,
+      "public_files": [
+        "configs/TR12/early-stop-smoke.json"
+      ]
+    },
+    "runs/20261029T041100Z_tr12-early-stop-smoke_2ca37f/metrics.json": {
+      "source_sha256": "5ac83f0c36dd245b528a03be2ae42fad423e8334bc70ab70d78b06d0f4055fb4",
+      "source_bytes": 504,
+      "public_files": [
+        "evidence/runs/20261029T041100Z_tr12-early-stop-smoke_2ca37f/metrics.json"
+      ]
+    },
+    "runs/20261029T041100Z_tr12-early-stop-smoke_2ca37f/series.jsonl": {
+      "source_sha256": "464205282a8a3a2f245655f0280918fd05af2b98c2424576b5f269bc64fd4ba5",
+      "source_bytes": 173077,
+      "public_files": [
+        "evidence/TR12/smoke-outcomes.jsonl"
+      ]
+    },
+    "runs/20261029T041238Z_tr12-early-stop-primary_306458/config.json": {
+      "source_sha256": "8e4fd4efb14b447e875dd62321d6d79c18c86e9dd2404dcf19fbcc705011a197",
+      "source_bytes": 7339,
+      "public_files": [
+        "configs/TR12/early-stop-primary.json"
+      ]
+    },
+    "runs/20261029T041238Z_tr12-early-stop-primary_306458/metrics.json": {
+      "source_sha256": "56f1779074e90ba1c872e4bf21678209a9902397dbba0de4b3111323d1078d21",
+      "source_bytes": 525,
+      "public_files": [
+        "evidence/runs/20261029T041238Z_tr12-early-stop-primary_306458/metrics.json"
+      ]
+    },
+    "runs/20261029T041238Z_tr12-early-stop-primary_306458/series.jsonl": {
+      "source_sha256": "465fa0be2ff308815262972a1a19c3008453e61d6b54919c52d672c7e65e4738",
+      "source_bytes": 11161785,
+      "public_files": [
+        "evidence/TR12/primary-outcomes.jsonl"
+      ]
+    },
+    "runs/20261029T051052Z_tr12-early-stop-development_277b56/config.json": {
+      "source_sha256": "c5f5c0838bd3702d7dbec9e687d3c736b08b7cccf36a2aa68da80499b160727d",
+      "source_bytes": 58127,
+      "public_files": [
+        "configs/TR12/early-stop-development.json"
+      ]
+    },
+    "runs/20261029T051052Z_tr12-early-stop-development_277b56/metrics.json": {
+      "source_sha256": "1bdc03f0a2432b6304a9acf14cdf6e15543068d4990a304534b94d65821747ce",
+      "source_bytes": 521,
+      "public_files": [
+        "evidence/runs/20261029T051052Z_tr12-early-stop-development_277b56/metrics.json"
+      ]
+    },
+    "runs/20261029T051052Z_tr12-early-stop-development_277b56/series.jsonl": {
+      "source_sha256": "33c5be66a57ce7c31c93a83c1e258bd56251b7da98e9fcf50ff9243c276e3970",
+      "source_bytes": 8361488,
+      "public_files": [
+        "evidence/TR12/development-outcomes.jsonl"
+      ]
+    },
+    "agents/learned/tr12-early-stop-v15/spec.json": {
+      "source_sha256": "74b383235fa4e084b34f4299eb126ab68a881cf64b0db5a5022ba92c1fca8cd3",
+      "source_bytes": 537,
+      "public_files": [
+        "agents/learned/tr12-early-stop-v15/spec.json"
+      ]
+    },
+    "research/autonomy/TR12-training-outcomes-descriptive.json": {
+      "source_sha256": "105b7ed86143fe56de8e2f5e437233cba31b3193799beec324aa39f75480d8e6",
+      "source_bytes": 3518,
+      "public_files": [
+        "research/autonomy/TR12-training-outcomes-descriptive.json"
+      ]
+    },
+    "research/autonomy/TR12-checkpoint-cadence-audit.json": {
+      "source_sha256": "f2ba9b7b9086656e908fc0679bdf9d413785fb35fd0fc2dbc52ca7403a98d6e1",
+      "source_bytes": 15843,
+      "public_files": [
+        "research/autonomy/TR12-checkpoint-cadence-audit.json"
+      ]
+    },
+    "research/autonomy/TR12-final-cost-reconciliation.json": {
+      "source_sha256": "91b1c1af8bf56da4c8922853ddb0b380172cc65571707e62cce195fafd6a6a3e",
+      "source_bytes": 12787,
+      "public_files": [
+        "research/autonomy/TR12-final-cost-reconciliation.json"
+      ]
+    },
+    "research/autonomy/engineering/TR12-early-stop-full-recovery-accepted.json": {
+      "source_sha256": "f911af4c44f46ecd5bca10ee9e40e97dda7d78e2cb94315e06d3f173a33daa61",
+      "source_bytes": 1511,
+      "public_files": [
+        "research/autonomy/engineering/TR12-early-stop-full-recovery-accepted.json"
+      ]
+    },
+    "runs/20261029T033514Z_tr12-early-stop-zero-update-GPU_f6e903/metrics.json": {
+      "source_sha256": "e0f2f92671dfe37eef2eaa9be73a1132fa8621757ecb11a3489c081f455c1048",
+      "source_bytes": 28013
+    },
+    "research/autonomy/TR12_EARLY_STOP_PROTOCOL.json": {
+      "source_sha256": "5013be9f0a82e1678b2baf663d2b93ca0d626c5cb618d3e3f67155384586d574",
+      "source_bytes": 19376,
+      "public_files": [
+        "research/autonomy/TR12_EARLY_STOP_PROTOCOL.json"
+      ]
+    },
+    "research/autonomy/TR12_TRAINING_STOPPED_BY_USER.json": {
+      "source_sha256": "c88b3c309fa2e41fa382fe6e9fd7b087ad1d04216bdb271628c301bce3b6b778",
+      "source_bytes": 3627,
+      "public_files": [
+        "research/autonomy/TR12_TRAINING_STOPPED_BY_USER.json"
+      ]
+    },
+    "research/autonomy/TR12-process-analysis.json": {
+      "source_sha256": "2d410675e74ed1c6bb40c7b7af705bdd777a8d6dd65a2ec55d8427af2dbde019",
+      "source_bytes": 23017,
+      "public_files": [
+        "research/autonomy/TR12-process-analysis.json"
+      ]
+    },
+    "runs/20261029T041238Z_tr12-early-stop-primary_306458/panel-analysis.json": {
+      "source_sha256": "b319f3e8a1ecd060e41f1f69511dfaa763ad2f9d5ad28cddd59fb38b33ef0748",
+      "source_bytes": 5173,
+      "public_files": [
+        "evidence/TR12/panel-analysis.json"
+      ]
+    },
+    "research/autonomy/TR12-result.json": {
+      "source_sha256": "123cc66863965056d01de972bdcfe3d66e505e3d6593834d4d51bf3c2698e155",
+      "source_bytes": 8093,
+      "public_files": [
+        "research/autonomy/TR12-result.json"
+      ]
+    },
+    "research/autonomy/CURRENT_VOLUME.json": {
+      "source_sha256": "b34f7e556aa8f36b4e9cbb387dfaad344bd875f3830c88f7e9b63a0e1e582bbd",
+      "source_bytes": 20475,
+      "public_files": [
+        "research/autonomy/CURRENT_VOLUME.json"
+      ]
+    }
+  },
+  "evaluation": {
+    "smoke": {
+      "run_id": "20261029T041100Z_tr12-early-stop-smoke_2ca37f",
+      "series_count": 50,
+      "config": "configs/TR12/early-stop-smoke.json",
+      "outcomes": "evidence/TR12/smoke-outcomes.jsonl",
+      "metrics": "evidence/runs/20261029T041100Z_tr12-early-stop-smoke_2ca37f/metrics.json"
+    },
+    "primary": {
+      "run_id": "20261029T041238Z_tr12-early-stop-primary_306458",
+      "series_count": 3200,
+      "config": "configs/TR12/early-stop-primary.json",
+      "outcomes": "evidence/TR12/primary-outcomes.jsonl",
+      "metrics": "evidence/runs/20261029T041238Z_tr12-early-stop-primary_306458/metrics.json"
+    },
+    "development": {
+      "run_id": "20261029T051052Z_tr12-early-stop-development_277b56",
+      "series_count": 2400,
+      "config": "configs/TR12/early-stop-development.json",
+      "outcomes": "evidence/TR12/development-outcomes.jsonl",
+      "metrics": "evidence/runs/20261029T051052Z_tr12-early-stop-development_277b56/metrics.json"
+    }
+  },
+  "original_scientific_sources_modified": false,
+  "sanitization": "Absolute private paths and runtime details are excluded; full recovery reference lists and payloads are not published. Source SHA256 and public-file SHA256 are distinct.",
+  "training_stopped_by_user": true,
+  "original_training_target_complete": false,
+  "full_data_upload_cancelled": true,
+  "original_local_and_server_recovery_data_retained": true,
+  "no_new_training_evaluation_or_optimization": true
+}
