@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-31T04:09:49.780139+00:00",
+  "competition": "the-pokemon-company-ptcg-ai-battle-challenge-playground",
+  "model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b",
+  "archive_sha256": "20752e097d54be4dabef77576f21395065b7c598d0f12eade04c0ce668a2b2c7",
+  "marker": "TR13-v28-206957-20752e097d54",
+  "status": "upload_response_received",
+  "trial_only": true,
+  "scientific_promotion": false,
+  "one_upload_only": true,
+  "response": {
+    "message": "Successfully submitted to The Pokémon Company - PTCG AI Battle Challenge Playground",
+    "ref": 57825976
+  },
+  "response_at": "2026-10-31T04:09:57.526799+00:00",
+  "platform_validation_status": "pending",
+  "normal_rated_episodes_observed": 0,
+  "public_data_scope": "Inference archive sent to Kaggle only; no training or recovery data uploaded."
+}

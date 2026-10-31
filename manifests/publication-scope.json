@@ -31,5 +31,8 @@
   "TR13_final_evaluation_published": true,
   "TR13_training_stopped": true,
   "TR13_new_endpoint_BO3": 2450,
-  "TR13_reused_parent_BO3": 2400
+  "TR13_reused_parent_BO3": 2400,
+  "TR13_trial_submission_id": 57825976,
+  "TR13_trial_submission_separate_from_promotion": true,
+  "TR13_platform_validation_pending": true
 }
