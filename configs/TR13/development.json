@@ -1,0 +1,59 @@
+{
+  "reference_only": true,
+  "execution_authorized": false,
+  "source_config_sha256": "78dc36cd03cfbab6b11253f7764e2706edd0bfbcb3fa388ccb3e9b5741b925b5",
+  "series_count": 800,
+  "policy_seed": 2026103000,
+  "bootstrap_seed": 2026103001,
+  "bootstrap_samples": 20000,
+  "cells": [
+    {
+      "cell_id": "endpoint-vs-lucario",
+      "series_count": 100,
+      "reference_id": "lucario",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-alakazam",
+      "series_count": 100,
+      "reference_id": "alakazam",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-archaludon",
+      "series_count": 100,
+      "reference_id": "archaludon",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_count": 100,
+      "reference_id": "ppo",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-tr01-ppo",
+      "series_count": 100,
+      "reference_id": "tr01-ppo",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-tr02-ppo",
+      "series_count": 100,
+      "reference_id": "tr02-ppo",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-tr03-ppo",
+      "series_count": 100,
+      "reference_id": "tr03-ppo",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    },
+    {
+      "cell_id": "endpoint-vs-tr09-epochs4-hdd2",
+      "series_count": 100,
+      "reference_id": "tr09-epochs4-hdd2",
+      "candidate_model_sha256": "c30773b4c390ffa17719e99002aac81449b21368a3b0d84839d2107b782a238b"
+    }
+  ]
+}

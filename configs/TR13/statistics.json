@@ -1,0 +1,19 @@
+{
+  "bootstrap_seed": 2026103001,
+  "bootstrap_samples": 20000,
+  "primary_samples_per_strategy": 1600,
+  "development_samples_per_cell": 100,
+  "opponent_cells": [
+    "endpoint-vs-lucario",
+    "endpoint-vs-alakazam",
+    "endpoint-vs-archaludon",
+    "endpoint-vs-ppo",
+    "endpoint-vs-tr01-ppo",
+    "endpoint-vs-tr02-ppo",
+    "endpoint-vs-tr03-ppo",
+    "endpoint-vs-tr09-epochs4-hdd2"
+  ],
+  "weights": "equal 1/8",
+  "method": "independent unpaired complete BO3, development stratified by opponent",
+  "execution_authorized": false
+}

@@ -3,8 +3,8 @@
   "publication": "curated_code_configs_results_and_reproduction_materials",
   "repository": "https://github.com/yongqih670-dot/ptcg-main-model-research",
   "visibility": "public",
-  "updated_at": "2026-10-29",
-  "science_snapshot_cutoff_utc": "2026-10-29T05:41:03.194189+00:00",
+  "updated_at": "2026-10-31",
+  "science_snapshot_cutoff_utc": "2026-10-30T19:25:32.323947+00:00",
   "full_training_data_upload_cancelled": true,
   "full_recovery_archive_upload_cancelled": true,
   "automatic_upload_retries_disabled": true,
@@ -26,6 +26,10 @@
   "raw_training_or_replay_payloads_published": false,
   "recovery_payloads_published": false,
   "source_code_snapshot_updated": false,
-  "latest_result_report": "docs/TR12_FINAL_REPORT.md",
-  "statistics_verifier": "tools/verify_tr12_results.py"
+  "latest_result_report": "docs/TR13_FINAL_REPORT.md",
+  "statistics_verifier": "tools/verify_tr13_results.py",
+  "TR13_final_evaluation_published": true,
+  "TR13_training_stopped": true,
+  "TR13_new_endpoint_BO3": 2450,
+  "TR13_reused_parent_BO3": 2400
 }

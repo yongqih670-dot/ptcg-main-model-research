@@ -30,3 +30,6 @@ TR12 终点为最后提交的 version15，继承后累计 106,935 条 / 15 更�
 ## 未部署的优化候选
 
 `research/framework_optimization/` 仍为独立候选，未接入 TR12。多环境、FP16/BF16、GradScaler 与向量化不能视为本次训练设置或全链路已验证收益。历史局部微基准也不替代模型强度证据。
+
+
+最新：TR13完成且学习信号通过；详见[TR13最终报告](TR13_FINAL_REPORT.md)。

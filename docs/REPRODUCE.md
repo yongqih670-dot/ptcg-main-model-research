@@ -42,3 +42,6 @@ python -B tools/verify_tr12_results.py
 第二条命令检查数量、系列身份、席位和运行标志，并使用公开的 `ptcg_lab/volume_statistics.py` 重算固定的 20,000 次独立完整 BO3 bootstrap，核对主比较和全部开发面板结果。它不访问网络、不加载模型，也不调用训练或对战入口。统计可由公开结局表重算，不等于仅凭公开子集重放 native 对局或恢复训练。
 
 完整训练数据及恢复归档继续保留在所有者本地和服务器，上传与重试已取消；TR12 不再续训。
+
+
+TR13离线统计重算：`python -B tools/verify_tr13_results.py`。依赖NumPy，输入仅公开精简BO3结局。

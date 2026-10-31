@@ -1,0 +1,93 @@
+{
+  "at": "2026-10-30T19:25:32.323947+00:00",
+  "phase": "TR13",
+  "complete": true,
+  "classification": "improved_learning_signal",
+  "actual_additional_unique_decisions": 100022,
+  "actual_lineage_unique_decisions": 206957,
+  "target_overshoot": 22,
+  "new_PPO_updates": 13,
+  "inherited_pending_first_epoch_coverage": 6807,
+  "new_sampling_first_epoch_coverage": 93215,
+  "primary": {
+    "parent_score": 0.546875,
+    "endpoint_score": 0.605,
+    "gain": 0.058125,
+    "ci95": [
+      0.02375000000000005,
+      0.0931249999999999
+    ],
+    "BO3_per_strategy": 1600,
+    "seats_per_strategy": [
+      800,
+      800
+    ],
+    "learning_signal_passed": true,
+    "required_gain": 0.05,
+    "required_CI_lower_above": 0,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026103001
+  },
+  "development": {
+    "parent_score": 0.67125,
+    "endpoint_score": 0.7225,
+    "gain": 0.05125000000000002,
+    "ci95": [
+      0.011249999999999975,
+      0.09125000000000003
+    ],
+    "BO3_per_strategy": 800,
+    "weights": {
+      "endpoint-vs-lucario": 0.125,
+      "endpoint-vs-alakazam": 0.125,
+      "endpoint-vs-archaludon": 0.125,
+      "endpoint-vs-ppo": 0.125,
+      "endpoint-vs-tr01-ppo": 0.125,
+      "endpoint-vs-tr02-ppo": 0.125,
+      "endpoint-vs-tr03-ppo": 0.125,
+      "endpoint-vs-tr09-epochs4-hdd2": 0.125
+    },
+    "cell_scores": {
+      "parent|endpoint-vs-lucario": 0.9,
+      "endpoint|endpoint-vs-lucario": 0.91,
+      "parent|endpoint-vs-alakazam": 0.95,
+      "endpoint|endpoint-vs-alakazam": 0.96,
+      "parent|endpoint-vs-archaludon": 0.95,
+      "endpoint|endpoint-vs-archaludon": 0.96,
+      "parent|endpoint-vs-ppo": 0.54,
+      "endpoint|endpoint-vs-ppo": 0.61,
+      "parent|endpoint-vs-tr01-ppo": 0.51,
+      "endpoint|endpoint-vs-tr01-ppo": 0.58,
+      "parent|endpoint-vs-tr02-ppo": 0.6,
+      "endpoint|endpoint-vs-tr02-ppo": 0.68,
+      "parent|endpoint-vs-tr03-ppo": 0.43,
+      "endpoint|endpoint-vs-tr03-ppo": 0.54,
+      "parent|endpoint-vs-tr09-epochs4-hdd2": 0.49,
+      "endpoint|endpoint-vs-tr09-epochs4-hdd2": 0.54
+    },
+    "descriptive_unadjusted_multiple_comparisons": true
+  },
+  "reliability": {
+    "complete_BO3": 50,
+    "errors": 0,
+    "invalid_actions": 0,
+    "internal_fallbacks": 0
+  },
+  "evaluation_runs": {
+    "reliability": "20261030T181003Z_tr13-reliability_ee9eba",
+    "primary": "20261030T181315Z_tr13-primary_b9a7f3",
+    "development": "20261030T190741Z_tr13-development_eaf94f"
+  },
+  "new_endpoint_BO3": 2450,
+  "parent_BO3_reused": 2400,
+  "limitations": [
+    "Primary opponent is also the unchanged training opponent; no general-strength claim.",
+    "Native environment seed is not exposed; independent unpaired complete-BO3 bootstrap, no paired reproducibility claim.",
+    "Eight-opponent development results are descriptive; final pool was not accessed."
+  ],
+  "promotion_eligible": false,
+  "champion_changed": false,
+  "submission_made": false,
+  "no_further_training": true,
+  "full_training_and_recovery_data_retained_local_server_only": true
+}

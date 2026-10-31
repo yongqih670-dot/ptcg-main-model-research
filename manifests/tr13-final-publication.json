@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "research/autonomy/TR13-result.json": "c35e065727960cf870b7da878dfd338cfe6f8f446f54a92dc9c7c0fb283aacf9",
+    "runs/20261030T181003Z_tr13-reliability_ee9eba/series.jsonl": "f7724db2f342316adcd8dab0d7f4f1f893281e12289214993eeb4620e034e68e",
+    "runs/20261030T181315Z_tr13-primary_b9a7f3/series.jsonl": "63227724150c1601cfced1cc90fb42b15353f33cbc401d91ddf51770da52b667",
+    "runs/20261030T190741Z_tr13-development_eaf94f/series.jsonl": "af6f1ac717fb73938f1f452c72ac39df59a9e7354a9fb8b6d524d830952abf5c",
+    "runs/20261029T041238Z_tr12-early-stop-primary_306458/series.jsonl": "465fa0be2ff308815262972a1a19c3008453e61d6b54919c52d672c7e65e4738",
+    "runs/20261029T051052Z_tr12-early-stop-development_277b56/series.jsonl": "33c5be66a57ce7c31c93a83c1e258bd56251b7da98e9fcf50ff9243c276e3970"
+  },
+  "scope": "Compact evaluation outcomes and reports only; no observations, actions, replay, training data, weights or recovery payloads",
+  "base_code_snapshot_unchanged": true,
+  "scientific_result_sealed_at": "2026-10-30T19:25:32.323947+00:00"
+}
