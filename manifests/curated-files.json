@@ -11,8 +11,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 3222,
-    "sha256": "a390eb7b9a97ed6cb769a7f83e1bbc8c45ec72616922e295b5a79dc75d764e81"
+    "bytes": 3275,
+    "sha256": "01908f558509012b5643d7a20846b2930e5ca9cda0d94c91c8e1ee34439f6e64"
   },
   {
     "path": "agents/candidates/h007-prime-catcher/LICENSE",
@@ -1151,8 +1151,8 @@
   },
   {
     "path": "docs/TR13_KAGGLE_TRIAL.md",
-    "bytes": 1802,
-    "sha256": "764f1fb3850916140553f7a6b17abc8658efed323fedd9b1b6eb5d772bb2a7d6"
+    "bytes": 1943,
+    "sha256": "51ca0e7397543a0a70c8963da0a959bb1d008eb4561a132ef033efe975639800"
   },
   {
     "path": "evidence/TR12/development-outcomes.jsonl",
@@ -1186,8 +1186,8 @@
   },
   {
     "path": "evidence/TR13/kaggle-trial-receipt.json",
-    "bytes": 865,
-    "sha256": "98963cdf45c3ac0409f3d728cdc5ce7426bb9bace354d001244962f364adb4bf"
+    "bytes": 1017,
+    "sha256": "85ef5abf8e857a2f45277c3730719c626d75a0eb734c11c20b670e1d58b46c5c"
   },
   {
     "path": "evidence/TR13/linux-deployment-probe.json",
@@ -1341,8 +1341,8 @@
   },
   {
     "path": "manifests/publication-scope.json",
-    "bytes": 1883,
-    "sha256": "3d06857b0476eb99c7eca84d7391eb3ce8e69424170c7cd712354a371c1fdc48"
+    "bytes": 1969,
+    "sha256": "57a7f09a2018a9b2d492b124534c29f193861edc76f96c1eee7596984fe53c3e"
   },
   {
     "path": "manifests/tr12-final-publication.json",

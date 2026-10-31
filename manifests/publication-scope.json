@@ -34,5 +34,7 @@
   "TR13_reused_parent_BO3": 2400,
   "TR13_trial_submission_id": 57825976,
   "TR13_trial_submission_separate_from_promotion": true,
-  "TR13_platform_validation_pending": true
+  "TR13_platform_validation_pending": false,
+  "TR13_platform_validation_passed": true,
+  "TR13_initial_platform_score": 600.0
 }
