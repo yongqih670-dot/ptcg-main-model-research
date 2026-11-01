@@ -13,6 +13,19 @@
 
 主对手与训练对手重叠，开发面板不是最终池；不能据此宣称泛化达标。用户另行授权的一次Kaggle试提交已被接收（**57825976**），平台自测已通过（COMPLETE），初始评分600，正式对局反馈待积累，见[提交状态](docs/TR13_KAGGLE_TRIAL.md)；不等同研究晋级。TR12历史结论仍为证据不足。
 
+## 最新框架 v3（2026-11-01）
+
+[源码、测试与验收说明](research/framework_optimization/v3_tr13/README.md) · [完整工程报告](research/framework_optimization/v3_tr13/REPORT.md)。
+
+相同48完整BO3／8203决策的四例本地CPU固定回放中，包含运行、两点冷恢复和无损归档的中位耗时5350.954 → 3794.181秒，减少29.09%，通过原15%门槛及资源子门槛。首epoch覆盖100%，8个冷恢复点严格匹配；源码和冻结协议哈希随包发布。
+
+本次仅同步独立工程候选与精选证据，默认开关仍关闭；容量事务优化未纳入本地通过配置。未启用服务器v3或科学训练，不将此结果等同GPU训练提速或棋力提升。原始训练数据、权重和完整恢复归档继续保留本地／服务器。
+
+```powershell
+python -B tools/verify_framework_v3.py
+python -B tools/test_framework_v3_public.py
+```
+
 ## 报告与下载
 
 - **[TR13 最终报告](docs/TR13_FINAL_REPORT.md)**、[机器可读结果](research/autonomy/TR13-result.json)、[精简结局](evidence/TR13/)与[统计重算工具](tools/verify_tr13_results.py)。

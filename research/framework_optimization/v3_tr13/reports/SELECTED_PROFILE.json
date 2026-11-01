@@ -1,0 +1,28 @@
+{
+  "at": 1793435186.2005134,
+  "switches": {
+    "control_cache": true,
+    "journal_cache": true,
+    "outbox_cache": true,
+    "capacity_transaction": false,
+    "progress_coalescing": true,
+    "exit_evidence": true
+  },
+  "CPU_deterministic_algorithms": true,
+  "rule_sha256": "64e5c10850c4963aea9398e524f7d85592a283f625e62542e102e6afd77ea0da",
+  "own_fresh_cold_cost_evidence": {
+    "baseline_seconds": 276.3279999999795,
+    "candidate_seconds": 303.88999999995576,
+    "maximum_candidate_seconds": 308.9607999999775
+  },
+  "qualification_sha256": "ba32e068f7748198e0f15432f703c5358f0517ecd6918ee11d5c35372511de25",
+  "science_credit": 0,
+  "no_server_or_scientific_adoption": true,
+  "storage_safety_override": {
+    "at": 1793436814.156696,
+    "before_any_D_result": true,
+    "reason": "Measured retained qualification artifacts1.893GiB and forecast full48BO3 case peak require original forced-scan capacity fallback within unchanged120GiB; new shared admission prototype remains independently tested and gated for registered server",
+    "original_guard_retained": true,
+    "case_local_gzip_originals_losslessly_stored_once": true
+  }
+}

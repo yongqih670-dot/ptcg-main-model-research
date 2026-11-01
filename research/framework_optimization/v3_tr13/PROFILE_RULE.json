@@ -1,0 +1,8 @@
+{
+  "defined_before_D_performance_results": true,
+  "defined_before_candidate_qualification_cold_results": true,
+  "scope": "Local Windows CPU fixed replay only; no scientific or server adoption",
+  "rule": "Retain capacity_transaction in D only if candidate qualification cold seconds <= baseline qualification cold seconds * 1.10 + 5; otherwise disable this independent switch for local D, preserving all original forced full reconciliations. Other proven cache/progress switches remain enabled. Freeze selected exact flags before any D result.",
+  "reason": "Large local whole-project scans may add a substantive fresh-restore cost; correctness and recovery take precedence over speed. Linux/native/GPU remain separate registered gates.",
+  "no_post_D_profile_changes_or_extra_samples": true
+}

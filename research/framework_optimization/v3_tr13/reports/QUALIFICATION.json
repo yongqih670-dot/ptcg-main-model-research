@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "baseline_label": "B4-reference",
+  "candidate_label": "B4-native2",
+  "whole_logical_state": {
+    "torch_tensors": 421,
+    "numpy_arrays": 3,
+    "scalar_leaves": 12385,
+    "tensor_bytes": 45986272,
+    "distinct_nonempty_tensor_storages": 421
+  },
+  "restored_next_optimizer_step": {
+    "torch_tensors": 420,
+    "numpy_arrays": 4,
+    "scalar_leaves": 884,
+    "tensor_bytes": 45981216,
+    "distinct_nonempty_tensor_storages": 420
+  },
+  "BO3": 2,
+  "decisions": 319,
+  "first_epoch_credit": 319,
+  "scientific_credit": 0,
+  "fresh_process_resume": true,
+  "CPU_deterministic_algorithms": true,
+  "full_input": "same actual producer-bound committed revision1 partial PPO; direct continuation vs fresh Native.restore; all scientific counters deferred until commit",
+  "prior_nondeterminism_observations_preserved": true
+}

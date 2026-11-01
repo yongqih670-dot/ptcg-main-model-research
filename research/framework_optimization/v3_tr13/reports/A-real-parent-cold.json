@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "fresh_process": true,
+  "points": [
+    {
+      "generation": 1,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 1,
+        "scalar_leaves": 12319,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "c4a3a2afb8688c97412bda80147bbbccf7770c5dba1ad0d6274351e31d25ddfb"
+    },
+    {
+      "generation": 2,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 1,
+        "scalar_leaves": 12319,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "c4a3a2afb8688c97412bda80147bbbccf7770c5dba1ad0d6274351e31d25ddfb"
+    }
+  ],
+  "full_RNG_optimizer_league_cursor_pending": true,
+  "scientific_decisions": 0,
+  "mode": "cold",
+  "label": "A-real-parent",
+  "variant": "candidate",
+  "seconds": 208.875
+}

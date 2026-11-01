@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "fresh_process": true,
+  "points": [
+    {
+      "generation": 2,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 3,
+        "scalar_leaves": 12385,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "42dbd10cfa7c24c8c080ea4d1ad4f3e23d431aafd60fb4873029633fc6e0e5c3",
+      "model_optimizer_RNG_sha256": "997e03087e7b57f679f5431927f8977103fdcf8c8f19c1c8a75e6e41d915baad"
+    },
+    {
+      "generation": 3,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 3,
+        "scalar_leaves": 12385,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "42dbd10cfa7c24c8c080ea4d1ad4f3e23d431aafd60fb4873029633fc6e0e5c3",
+      "model_optimizer_RNG_sha256": "997e03087e7b57f679f5431927f8977103fdcf8c8f19c1c8a75e6e41d915baad"
+    }
+  ],
+  "full_RNG_optimizer_league_cursor_pending": true,
+  "scientific_decisions": 0,
+  "mode": "replay-cold",
+  "label": "B4-native2",
+  "variant": "candidate",
+  "seconds": 343.98499999998603
+}

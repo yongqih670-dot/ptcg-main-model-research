@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "kind": "read_only_initialization",
+      "wall_seconds": 47.28100000001723,
+      "own_CPU_seconds": 46.3125,
+      "GPU_seconds": 0
+    }
+  ],
+  "historical_ledgers_modified": false,
+  "finished_at": 1793533785.697752,
+  "finite_job_seconds": 30820.109617454425,
+  "conservative_charged_CPU_job_seconds": 41896.99888968468,
+  "charge_method": "Prior closed upper bound plus conservative preflight and this active resume window through finalization, plus a60s closing upper bound for delivery inventory and post-check. Closed intermission excluded because no job/controller ran. All job/preparation/wait/failed costs retained; constituent jobs not added twice.",
+  "local_cap_seconds": 43200,
+  "cap_satisfied": true,
+  "GPU_seconds": 0,
+  "closure": "identity-bound external STOP; no further heavy work",
+  "post_controller_finalization_allowance_seconds": 60,
+  "resume_evidence": "resumptions\\20261101T080300Z"
+}

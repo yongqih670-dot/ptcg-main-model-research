@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "events": [
+    {
+      "reliable_commit_gap_seconds": null,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": null,
+      "within_600_seconds": null,
+      "initial_reliable_commit": true,
+      "at": "2026-11-01T10:28:09.330145+00:00",
+      "generation": 0,
+      "model_revision": 0,
+      "commit_seconds": 348.84400000000096
+    },
+    {
+      "reliable_commit_gap_seconds": 565.3909999999996,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T10:37:34.714976+00:00",
+      "generation": 1,
+      "model_revision": 0,
+      "commit_seconds": 65.90699999999924
+    },
+    {
+      "reliable_commit_gap_seconds": 231.9369999999999,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T10:41:26.654520+00:00",
+      "generation": 2,
+      "model_revision": 0,
+      "commit_seconds": 79.65599999999904
+    },
+    {
+      "reliable_commit_gap_seconds": 370.15600000000086,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T10:47:36.809527+00:00",
+      "generation": 3,
+      "model_revision": 0,
+      "commit_seconds": 94.07800000000134
+    },
+    {
+      "reliable_commit_gap_seconds": 477.5,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T10:55:34.322559+00:00",
+      "generation": 4,
+      "model_revision": 0,
+      "commit_seconds": 100.78100000000086
+    },
+    {
+      "reliable_commit_gap_seconds": 492.04699999999866,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:03:46.367377+00:00",
+      "generation": 5,
+      "model_revision": 0,
+      "commit_seconds": 92.09399999999914
+    },
+    {
+      "reliable_commit_gap_seconds": 547.6720000000005,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:12:54.027027+00:00",
+      "generation": 6,
+      "model_revision": 0,
+      "commit_seconds": 90.5619999999999
+    },
+    {
+      "reliable_commit_gap_seconds": 600.2659999999996,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": false,
+      "at": "2026-11-01T11:22:54.304401+00:00",
+      "generation": 7,
+      "model_revision": 0,
+      "commit_seconds": 85.53199999999924
+    },
+    {
+      "reliable_commit_gap_seconds": 166.14000000000124,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:25:40.447387+00:00",
+      "generation": 8,
+      "model_revision": 0,
+      "commit_seconds": 44.07800000000134
+    },
+    {
+      "reliable_commit_gap_seconds": 108.04699999999866,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:27:28.483345+00:00",
+      "generation": 9,
+      "model_revision": 1,
+      "commit_seconds": 70.8119999999999
+    },
+    {
+      "reliable_commit_gap_seconds": 364.46900000000096,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:33:32.950654+00:00",
+      "generation": 10,
+      "model_revision": 66,
+      "commit_seconds": 82.4380000000001
+    },
+    {
+      "reliable_commit_gap_seconds": 180.95299999999952,
+      "maximum_reliable_commit_gap_seconds": 800,
+      "within_maximum_gap": true,
+      "within_600_seconds": true,
+      "at": "2026-11-01T11:36:33.908718+00:00",
+      "generation": 11,
+      "model_revision": 66,
+      "commit_seconds": 41.40599999999904
+    }
+  ],
+  "maximum_seconds": 800,
+  "expected_commits": 12
+}

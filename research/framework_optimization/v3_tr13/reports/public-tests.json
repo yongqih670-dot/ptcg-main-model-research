@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests_run": 38,
+  "passed_tests": 37,
+  "skipped": 1,
+  "skip_reasons": [
+    "Original full actor/optimizer fixture needs private weights; no private data is loaded"
+  ],
+  "errors": 0,
+  "failures": 0,
+  "wall_seconds": 12.281999999999243,
+  "scope": "Public synthetic unit fixtures; separate from original38-test private acceptance",
+  "scientific_decisions": 0,
+  "GPU_seconds": 0
+}

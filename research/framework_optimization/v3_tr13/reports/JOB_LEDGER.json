@@ -1,0 +1,233 @@
+{
+  "rows": [
+    {
+      "path": "reports\\A-real-parent-zero-process.json",
+      "CPU_job_seconds": 435.76600000000326,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\A-real-parent-cold-process.json",
+      "CPU_job_seconds": 210.8279999999795,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B-baseline-qual-process.json",
+      "CPU_job_seconds": 153.71799999999348,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B2-baseline-qual-process.json",
+      "CPU_job_seconds": 169.93700000003446,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-baseline-qual-process.json",
+      "CPU_job_seconds": 622.5630000000237,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-baseline-recover-qual-process.json",
+      "CPU_job_seconds": 1031.625,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-baseline-replay-cold-process.json",
+      "CPU_job_seconds": 232.34399999998277,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-baseline-replay-cold-repair-process.json",
+      "CPU_job_seconds": 134.03099999995902,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-baseline-replay-cold-repair-attempt2-process.json",
+      "CPU_job_seconds": 279.7970000000205,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-candidate-interrupt-process.json",
+      "CPU_job_seconds": 1442.7189999999828,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-candidate-resume-process.json",
+      "CPU_job_seconds": 620.3429999999935,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B3-candidate-replay-cold-process.json",
+      "CPU_job_seconds": 306.93699999997625,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B4-reference-det-reference-process.json",
+      "CPU_job_seconds": 67.71900000004098,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B4-native-det-native-process.json",
+      "CPU_job_seconds": 5.139999999955762,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B4-native2-det-native-process.json",
+      "CPU_job_seconds": 664.5160000000033,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\B4-native2-replay-cold-process.json",
+      "CPU_job_seconds": 347.26600000000326,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\D-baseline-0-perf-process.json",
+      "CPU_job_seconds": 1605.1560000000172,
+      "returncode": 1,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\D-baseline-0-seal-failed-process.json",
+      "CPU_job_seconds": 443.6719999999623,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\D-baseline-0-replay-cold-process.json",
+      "CPU_job_seconds": 296.3280000000377,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "retained/D-baseline-0.json",
+      "CPU_job_seconds": 281.21899999998277,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\D-baseline-0-r2-perf-process.json",
+      "CPU_job_seconds": 4648.061999999976,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "reports\\D-baseline-0-r2-replay-cold-process.json",
+      "CPU_job_seconds": 250.56300000002375,
+      "returncode": 0,
+      "GPU_seconds": 0
+    },
+    {
+      "path": "resumptions\\20261101T002650Z\\jobs\\D-baseline-0-r2-resume-integrity-process.json",
+      "CPU_job_seconds": 250.03099999995902,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": true
+    },
+    {
+      "path": "resumptions\\20261101T002650Z\\jobs\\D-baseline-0-r2-retention-process.json",
+      "CPU_job_seconds": 413.10999999998603,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "resumptions\\20261101T080300Z\\jobs\\D-candidate-0-r2-interruption-proof-process.json",
+      "CPU_job_seconds": 415.45399999999995,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "resumptions\\20261101T080300Z\\interrupted\\D-candidate-0-r2-perf-process.json",
+      "CPU_job_seconds": 2508.777617454529,
+      "returncode": null,
+      "GPU_seconds": 0,
+      "exitcode_source": null,
+      "terminal_evidence": "Verified host shutdown and new boot, no Popen.wait receipt exists",
+      "performance_sample_valid": false,
+      "closure": "resumptions\\20261101T080300Z\\INTERRUPTION_CLOSURE.json"
+    },
+    {
+      "path": "reports\\D-candidate-0-r2-perf-process.json",
+      "CPU_job_seconds": 3167.344,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "reports\\D-candidate-0-r2-replay-cold-process.json",
+      "CPU_job_seconds": 251.64100000000053,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "resumptions\\20261101T080300Z\\jobs\\D-candidate-0-r2-retention-process.json",
+      "CPU_job_seconds": 410.25,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "reports\\D-candidate-1-r2-perf-process.json",
+      "CPU_job_seconds": 3078.0,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "reports\\D-candidate-1-r2-replay-cold-process.json",
+      "CPU_job_seconds": 260.40699999999924,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "resumptions\\20261101T080300Z\\jobs\\D-candidate-1-r2-retention-process.json",
+      "CPU_job_seconds": 422.42199999999866,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "reports\\D-baseline-1-r2-perf-process.json",
+      "CPU_job_seconds": 4727.063,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "reports\\D-baseline-1-r2-replay-cold-process.json",
+      "CPU_job_seconds": 251.82899999999972,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    },
+    {
+      "path": "resumptions\\20261101T080300Z\\jobs\\D-baseline-1-r2-retention-process.json",
+      "CPU_job_seconds": 413.53199999999924,
+      "returncode": 0,
+      "GPU_seconds": 0,
+      "one_time_preparation": false
+    }
+  ],
+  "CPU_job_seconds": 30820.109617454425,
+  "cap_seconds": 43200,
+  "historical_ledgers_modified": false
+}

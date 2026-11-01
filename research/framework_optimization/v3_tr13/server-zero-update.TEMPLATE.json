@@ -1,0 +1,29 @@
+{
+  "template_only_not_a_ticket": true,
+  "engineering_only": true,
+  "new_scientific_training": false,
+  "scientific_credit": 0,
+  "mode": "framework_v3_zero_update",
+  "torch_threads": 2,
+  "framework_v3_manifest_sha256": null,
+  "correlation": null,
+  "parent_input": {"path": null, "sha256": null},
+  "archive": {"prefix_path": null, "prefix_sha256": null},
+  "project_hard_bytes": 85899345920,
+  "readonly_retained_bytes": null,
+  "checkpoint_profile": {
+    "schema": "framework_v2_reliable_checkpoint_v1",
+    "maximum_reliable_commit_gap_seconds": 800,
+    "commit_reserve_seconds": 60,
+    "trigger_after_seconds": 740,
+    "semantics": "completed_commit_to_completed_commit"
+  },
+  "framework_v3_optimizations": {
+    "control_cache": true,
+    "journal_cache": true,
+    "outbox_cache": true,
+    "capacity_transaction": true,
+    "progress_coalescing": true,
+    "exit_evidence": true
+  }
+}

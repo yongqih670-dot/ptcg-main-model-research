@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "fresh_process": true,
+  "points": [
+    {
+      "generation": 10,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 1,
+        "scalar_leaves": 13630,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "5f28476c1b09870f78c3853c24685aedef3ab5322ee49bdf9a7e61ccc8152302",
+      "model_optimizer_RNG_sha256": "709fcf28570246dabc200d2e9cb763b975ccf3c91c342f59b9f44d8e291fc106"
+    },
+    {
+      "generation": 11,
+      "counts": {
+        "torch_tensors": 421,
+        "numpy_arrays": 1,
+        "scalar_leaves": 13630,
+        "tensor_bytes": 45986272,
+        "distinct_nonempty_tensor_storages": 421
+      },
+      "semantic_sha256": "2c4b2527e447a451300216dafc82bc3d2f1c678e13dd384f30b0875841c1a879",
+      "model_optimizer_RNG_sha256": "709fcf28570246dabc200d2e9cb763b975ccf3c91c342f59b9f44d8e291fc106"
+    }
+  ],
+  "full_RNG_optimizer_league_cursor_pending": true,
+  "scientific_decisions": 0,
+  "mode": "replay-cold",
+  "label": "D-baseline-1-r2",
+  "variant": "baseline",
+  "seconds": 249.03100000000086
+}
