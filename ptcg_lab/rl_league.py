@@ -44,6 +44,12 @@ class League:
         if self.history_window is not None and (type(self.history_window) is not int or self.history_window<1):
             raise ValueError('History window must be positive')
         self.manifest=self.output/'league.json'
+        self.sampling={'history_window':self.history_window,'history_startup':config.get('history_startup','fixed_diverse')}
+        if self.manifest.exists():
+            previous=read_json(self.manifest)
+            old_sampling=previous.get('sampling',{'history_window':None,'history_startup':'fixed_diverse'})
+            if previous['weights']!=config['weights'] or old_sampling!=self.sampling:
+                raise ValueError('Resume cannot change the league sampling distribution')
         self.policy_schema=learner.metadata() if hasattr(learner,'options') else None
         if self.manifest.exists() and read_json(self.manifest).get('policy_schema')!=self.policy_schema:
             raise ValueError('League model semantics changed; start a new league')
@@ -67,6 +73,7 @@ class League:
     def save(self):
         atomic_json(self.manifest,{'role':'training_only','weights':self.config['weights'],'snapshots':self.entries,
             'fixed_training_results':self.stats,'no_final_holdout':True,
+            **({'sampling':self.sampling} if self.history_window is not None or self.sampling['history_startup']!='fixed_diverse' else {}),
             **({'policy_schema':self.policy_schema} if self.policy_schema else {})})
     def member_path(self,entry):
         if self.retained and entry['path'] in self.retained['members']:

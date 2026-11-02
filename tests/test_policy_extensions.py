@@ -66,7 +66,7 @@ class EngineFixture:
             'select':{'option':[0,1,2],'minCount':1,'maxCount':2}}}
 
 
-class PolicyExtensionTests(unittest.TestCase):
+class PolicyExtensionFixture:
     @classmethod
     def setUpClass(cls):
         torch.set_num_threads(1)
@@ -98,6 +98,9 @@ class PolicyExtensionTests(unittest.TestCase):
             d.update(series_id=0,round=1,learner_seat=0,policy_version='0',terminal=j==1,reward=float(j==1))
             result.append(d)
         return result
+
+
+class PolicyExtensionTests(PolicyExtensionFixture,unittest.TestCase):
     def test_initial_logits_and_values_exactly_preserve_parent(self):
         rows=torch.from_numpy(self.rows())
         expected=self.base.forward_eval(rows)
@@ -255,7 +258,20 @@ class PolicyExtensionTests(unittest.TestCase):
             script.ROOT=project
             with patch.object(sys,'argv',['package','--spec',str(path),'--name','synthetic']):script.main()
             stage=project/'releases/validation/synthetic/contents'
-            code="import main; from ptcg_lab.rl_core import load_full_actor; load_full_actor('bundle',main._SPEC['model_sha256'],reset_value=False,model_extensions=main._SPEC['model_extensions']); print('extended-load-ok')"
+            from tests.test_policy_extension_review import encoded_observation
+            (stage/'synthetic-observation.json').write_text(json.dumps(encoded_observation(65)),encoding='utf-8')
+            code="""import main,json
+obs=json.load(open('synthetic-observation.json'))
+assert len(main.agent({'select':None}))==60
+for i in range(2):
+    action=main.agent(obs)
+    assert 1<=len(action)<=2 and len(set(action))==len(action)
+assert main._POLICY.tracker._policy_sequence_index==2
+obs['current']['round']=2
+main.agent(obs)
+assert main._POLICY.tracker._policy_sequence_index==1
+print('extended-load-ok')
+"""
             result=subprocess.run([sys.executable,'-B','-c',code],cwd=stage,capture_output=True,text=True,timeout=45)
             self.assertEqual(result.returncode,0,result.stderr)
             self.assertIn('extended-load-ok',result.stdout)

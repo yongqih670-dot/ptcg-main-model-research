@@ -27,6 +27,8 @@ def atomic_torch(path,value):
 def run(config,output,bootstrap_only=False):
     if config.get('configuration_overlay_only'):
         raise ValueError('Materialize and freeze a full runner configuration before training')
+    if config.get('model_extensions') and config.get('derived_resume_runtime_audit'):
+        raise ValueError('Legacy TR07/TR12 resume fixtures cannot qualify a new model architecture')
     output=Path(output);source=Path(__file__).resolve().parents[1];project=Path(config['project_path'])
     if os.environ.get('PTCG_JOB_RUN_ID')!=output.name:raise RuntimeError('Training requires controlled runner')
     deadline=float(os.environ['PTCG_JOB_DEADLINE_UNIX'])

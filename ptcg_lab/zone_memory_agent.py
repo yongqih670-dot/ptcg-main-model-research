@@ -17,7 +17,7 @@ class ZoneMemoryAgent(ProtocolAgent):
         self.spec=spec;self.name=spec['id'];self.model=None
         self.tracker=None;self.round=None;self.forced=0;self.diagnostics=[]
         self.identity={'id':self.name,'model_sha256':spec['model_sha256'],
-                       'model_extensions':spec['model_extensions'],'adapter':'zone-gru-v1'}
+                       'model_extensions':spec['model_extensions'],'adapter':'zone-gru-v2'}
 
     def choose(self,obs):
         if obs.get('select') is None:

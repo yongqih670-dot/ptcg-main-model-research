@@ -98,9 +98,12 @@ def choose_decision(model,features,obs,tracker,forced_run,greedy=False):
             if int(target) in picked:raise ValueError('Duplicate pick')
             picked.append(int(target))
     if not sel['minCount']<=len(picked)<=sel['maxCount']:raise ValueError('Invalid sequence')
-    if recurrent:tracker._policy_memory=memory.detach()
+    sequence_index=getattr(tracker,'_policy_sequence_index',0) if recurrent else None
+    if recurrent:
+        tracker._policy_memory=memory.detach()
+        tracker._policy_sequence_index=sequence_index+1
     return picked,{'steps':steps,'old_logp':logp,'old_value':value,'reward':0.,'terminal':False,
-                   **({'sequence_start':sequence_start} if recurrent else {})}
+                   **({'sequence_start':sequence_start,'sequence_index':sequence_index} if recurrent else {})}
 
 
 def evaluate_decisions(model,decisions,stop):
@@ -142,8 +145,10 @@ def evaluate_sequences(model,decisions,stop,verify_tolerance=None):
             entropy.append(distribution.entropy())
             if j==0:
                 vs.append(values[0,0])
-                if verify_tolerance is not None and abs(float(values[0,0])-d['old_value'])>verify_tolerance:
-                    raise ValueError('Recurrent rollout value mismatch')
+                if verify_tolerance is not None:
+                    expected=values.new_tensor(d['old_value'])
+                    if not torch.isfinite(expected) or not torch.isfinite(values[0,0]) or (values[0,0]-expected).abs()>verify_tolerance:
+                        raise ValueError('Recurrent rollout value mismatch')
         logps.append(torch.stack(terms).sum());entropies.append(torch.stack(entropy).sum())
         if d['terminal']:memory=None
     return torch.stack(logps),torch.stack(vs),torch.stack(entropies)
@@ -155,7 +160,7 @@ def audit_recurrent_rollout(model,decisions,stop,tolerance=1e-4):
     with torch.no_grad():
         logp,_,_=evaluate_sequences(model,decisions,stop,verify_tolerance=tolerance)
         old=logp.new_tensor([d['old_logp'] for d in decisions])
-        if not torch.isfinite(logp).all() or (logp-old).abs().max()>tolerance:
+        if not torch.isfinite(logp).all() or not torch.isfinite(old).all() or (logp-old).abs().max()>tolerance:
             raise ValueError('Recurrent rollout selected probability mismatch')
     return {'decisions':len(decisions),'tolerance':tolerance,'scope':'full-distribution-value-complete-game-replay'}
 

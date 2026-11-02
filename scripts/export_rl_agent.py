@@ -49,7 +49,7 @@ def main():
         'model_sha256':sha256(dest/'model.pt'),'training_run_id':run.name,
         'training_config_sha256':sha256(run/'config.json'),'feature_schema':'full-inherited-blind-conditional-v3'}
     if cfg.get('model_extensions'):
-        spec.update(kind='zone_memory_rl',model_extensions=cfg['model_extensions'],feature_schema='zone-gru-v1')
+        spec.update(kind='zone_memory_rl',model_extensions=cfg['model_extensions'],feature_schema='zone-gru-v2')
     atomic_json(dest/'spec.json',spec)
     atomic_json(dest/'ppo-provenance.json',{'at':utcnow(),'parent_model_sha256':cfg['parent_model_sha256'],
         'training_run_id':run.name,

@@ -47,7 +47,7 @@ def main():
     shutil.copytree(ROOT/'ptcg_lab/public_cg',stage/'ptcg_lab/public_cg',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     packaged=dict(spec,path='bundle');atomic_json(stage/'agent-spec.json',packaged)
     hashes={p.relative_to(stage).as_posix():sha256(p) for p in sorted(stage.rglob('*')) if p.is_file()}
-    atomic_json(stage/'package-manifest.json',{'format':'ptcg-transformer-v3','model_sha256':spec['model_sha256'],
+    atomic_json(stage/'package-manifest.json',{'format':'ptcg-zone-gru-v2' if spec['kind']=='zone_memory_rl' else 'ptcg-transformer-v3','model_sha256':spec['model_sha256'],
         'source_spec_sha256':sha256(a.spec),'files':hashes,'requires':['numpy','torch'],'actor_runtime':'blind public metadata only',
         'scope':'Deployment validation artifact; no submission authorization implied by packaging'})
     archive=destination/'submission.tar.gz'
