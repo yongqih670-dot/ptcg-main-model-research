@@ -1,0 +1,21 @@
+{
+  "configuration_overlay_only": true,
+  "description": "Apply one ablation to a newly frozen full training config. No runtime/budget/parent credentials are supplied here.",
+  "ablations": {
+    "history_only": {},
+    "history_zone": {"zone_readout": true, "memory_size": 0, "heads": 4},
+    "history_zone_gru": {"zone_readout": true, "memory_size": 128, "heads": 4}
+  },
+  "model_extensions": {"zone_readout": true, "memory_size": 128, "heads": 4},
+  "league": {
+    "weights": {
+      "fixed_diverse": 0.0,
+      "historical_learner": 0.2,
+      "latest_frozen_learner": 0.8,
+      "weakness_training_opponents": 0.0
+    },
+    "history_window": 8,
+    "history_startup": "latest_frozen_learner"
+  },
+  "ppo": {"recurrent_replay_tolerance": 0.0001}
+}

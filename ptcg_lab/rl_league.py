@@ -24,11 +24,14 @@ class FrozenOpponent:
     def close(self):pass
 
 
-def choose_bucket(rng,history_available,weights):
+def choose_bucket(rng,history_available,weights,history_startup='fixed_diverse'):
     weights=dict(weights)
+    allowed={'fixed_diverse','historical_learner','latest_frozen_learner','weakness_training_opponents'}
+    if (set(weights)!=allowed or any(type(w) not in (int,float) or not 0<=w<=1 for w in weights.values())
+            or abs(sum(weights.values())-1)>1e-9 or history_startup not in ('fixed_diverse','latest_frozen_learner')):
+        raise ValueError('Invalid league mixture')
     if not history_available:
-        weights['fixed_diverse']+=weights['historical_learner'];weights['historical_learner']=0.
-    assert abs(sum(weights.values())-1)<1e-9
+        weights[history_startup]+=weights['historical_learner'];weights['historical_learner']=0.
     return rng.choices(list(weights),weights=list(weights.values()))[0]
 
 
@@ -37,7 +40,13 @@ class League:
         self.source=Path(source);self.output=Path(output);self.config=config
         self.features=features;self.deck=deck;self.learner=learner;self.cache=None;self.cache_id=None
         self.opponent_template=opponent_template
+        self.history_window=config.get('history_window')
+        if self.history_window is not None and (type(self.history_window) is not int or self.history_window<1):
+            raise ValueError('History window must be positive')
         self.manifest=self.output/'league.json'
+        self.policy_schema=learner.metadata() if hasattr(learner,'options') else None
+        if self.manifest.exists() and read_json(self.manifest).get('policy_schema')!=self.policy_schema:
+            raise ValueError('League model semantics changed; start a new league')
         self.entries=read_json(self.manifest)['snapshots'] if self.manifest.exists() else []
         self.stats=read_json(self.manifest).get('fixed_training_results',{}) if self.manifest.exists() else {}
         self.retained=config.get('retained_history')
@@ -57,7 +66,8 @@ class League:
                 if sha256(self.source/spec['path']/name)!=digest:raise ValueError('Fixed training opponent changed')
     def save(self):
         atomic_json(self.manifest,{'role':'training_only','weights':self.config['weights'],'snapshots':self.entries,
-            'fixed_training_results':self.stats,'no_final_holdout':True})
+            'fixed_training_results':self.stats,'no_final_holdout':True,
+            **({'policy_schema':self.policy_schema} if self.policy_schema else {})})
     def member_path(self,entry):
         if self.retained and entry['path'] in self.retained['members']:
             from .server_workspace import inside
@@ -78,7 +88,7 @@ class League:
         self.entries.append({'id':f'learner-{version:04d}','version':version,'path':name,'sha256':sha256(path)})
         self.save()
     def select(self,seat,seed):
-        bucket=choose_bucket(random,len(self.entries)>1,self.config['weights'])
+        bucket=choose_bucket(random,len(self.entries)>1,self.config['weights'],self.config.get('history_startup','fixed_diverse'))
         if bucket in ('fixed_diverse','weakness_training_opponents'):
             pool=self.config['fixed_opponents']
             if bucket=='weakness_training_opponents':
@@ -89,7 +99,9 @@ class League:
             opponent=PublicRuleAgent(spec,seat,seed)
             opponent.identity.update(model_sha256=spec.get('files',{}).get('model.pt'),lineage=spec['lineage'])
             return opponent,{'bucket':bucket,'opponent_id':spec['id'],'fixed':True}
-        entry=self.entries[-1] if bucket=='latest_frozen_learner' else random.choice(self.entries[:-1])
+        history=self.entries[:-1]
+        if self.history_window:history=history[-self.history_window:]
+        entry=self.entries[-1] if bucket=='latest_frozen_learner' else random.choice(history)
         path=self.member_path(entry)
         if sha256(path)!=entry['sha256']:raise ValueError('League member changed before BO3')
         if self.cache_id!=entry['id']:

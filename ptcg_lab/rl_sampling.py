@@ -29,7 +29,11 @@ def cpu_replica(learner):
     # clone the learner on the GPU. Parameter initialization cannot advance
     # the CPU sampling stream; CUDA RNG is never queried or changed here.
     with torch.random.fork_rng(devices=[]),torch.device('cpu'):
-        replica=PTCGTransformer(**arch_from_state_dict(state,heads=8),critic='blind')
+        if hasattr(learner,'options'):
+            from .policy_extensions import ZoneMemoryPolicy
+            base_state={k.removeprefix('base.'):v for k,v in state.items() if k.startswith('base.')}
+            replica=ZoneMemoryPolicy(PTCGTransformer(**arch_from_state_dict(base_state,heads=8),critic='blind'),learner.b,learner.options)
+        else:replica=PTCGTransformer(**arch_from_state_dict(state,heads=8),critic='blind')
         replica.load_state_dict(state,strict=True)
     replica.eval()
     for parameter in replica.parameters():parameter.requires_grad_(False)

@@ -28,7 +28,11 @@ def before_optimizer(model,decisions,stop,output,version):
     if len(fixture)!=48 or any(int(d['policy_version'])!=version for d in fixture):
         raise ValueError('Mixed or missing current policy decisions')
     previous=rng_state()
-    with torch.no_grad():logp,values,_=evaluate_decisions(model,fixture,stop)
+    # A recurrent prefix cannot be cut at an arbitrary decision. Reconstruct
+    # all complete games first, then compare the same 48 diagnostic rows.
+    with torch.no_grad():
+        logp,values,_=evaluate_decisions(model,decisions if getattr(model,'recurrent',False) else fixture,stop)
+        logp,values=logp[:48],values[:48]
     result=validate_outputs(fixture,logp,values)
     current=rng_state()
     if (previous['python']!=current['python'] or previous['numpy'][0]!=current['numpy'][0]

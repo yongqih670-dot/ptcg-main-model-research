@@ -25,6 +25,8 @@ def atomic_torch(path,value):
 
 
 def run(config,output,bootstrap_only=False):
+    if config.get('configuration_overlay_only'):
+        raise ValueError('Materialize and freeze a full runner configuration before training')
     output=Path(output);source=Path(__file__).resolve().parents[1];project=Path(config['project_path'])
     if os.environ.get('PTCG_JOB_RUN_ID')!=output.name:raise RuntimeError('Training requires controlled runner')
     deadline=float(os.environ['PTCG_JOB_DEADLINE_UNIX'])
@@ -36,7 +38,8 @@ def run(config,output,bootstrap_only=False):
     torch.set_num_threads(2);torch.manual_seed(config['seed']);np.random.seed(config['seed']);random.seed(config['seed'])
     torch.backends.cuda.matmul.allow_tf32=False
     model,features,inheritance=load_full_actor(source/config['bundle_path'],config['parent_model_sha256'],'cuda',
-        device_guard=(lambda:control.wait(90)) if control else None)
+        device_guard=(lambda:control.wait(90)) if control else None,
+        reset_value=not bool(config.get('model_extensions')),model_extensions=config.get('model_extensions'))
     settings=config['ppo'];optimizer=optimizer_for(model,settings['actor_learning_rate'],settings['value_head_learning_rate'])
     sampling_device=config.get('sampling_device','cuda')
     if sampling_device not in ('cpu','cuda'):raise ValueError('Unreviewed sampling device')
@@ -57,6 +60,8 @@ def run(config,output,bootstrap_only=False):
     if type(checkpoint_interval) not in (int,float) or not 0<checkpoint_interval<=600:raise ValueError('Checkpoint interval exceeds policy')
     loaded=load_training_checkpoint(output,archive_spec,lease_epoch);saved=loaded['saved'];archive_spec=loaded['archive_spec']
     if saved is not None:
+        if saved.get('model_extensions')!=config.get('model_extensions'):
+            raise ValueError('Resume cannot change policy extensions; initialize a new branch instead')
         model.load_state_dict(saved['model']);optimizer.load_state_dict(saved['optimizer']);restore_rng(saved['rng'])
         version=saved['version'];trained=saved['trained_decisions'];series_id=saved['next_series_id'];updates=saved['updates']
         unique_trained=checkpoint_decisions(saved)
@@ -143,7 +148,8 @@ def run(config,output,bootstrap_only=False):
             extra.update(archive_state=candidate,archive_origin_prefix_sha256=archive_spec['prefix_sha256'])
         value={'model':model.state_dict(),'optimizer':optimizer.state_dict(),'rng':rng_state(),
                'unique_PPO_trained_decisions':unique_trained,'decision_accounting':ACCOUNTING,
-               'version':version,'trained_decisions':trained,'next_series_id':series_id,'updates':updates,**extra}
+               'version':version,'trained_decisions':trained,'next_series_id':series_id,'updates':updates,
+               **({'model_extensions':config['model_extensions']} if config.get('model_extensions') else {}),**extra}
         result=publish_training_checkpoint(output,value,archive_spec,lease_epoch,_verified=verified);recovery=result['recovery']
         if archive_spec:archive_state=candidate
         if outbox:
@@ -232,6 +238,10 @@ def run(config,output,bootstrap_only=False):
             save()
             if time.time()>deadline-checkpoint_reserve():progress('checkpointed_before_update_at_soft_deadline');return
             consumed_for_barrier=list(recovery['pending']) if outbox and config.get('consumed_reference_barrier_required') else None
+            if getattr(model,'recurrent',False):
+                from .rl_core import audit_recurrent_rollout
+                audit=audit_recurrent_rollout(model,decisions,features.b.STOP,settings.get('recurrent_replay_tolerance',1e-4))
+                atomic_json(output/f'recurrent-replay-v{version:04d}.json',audit)
             if config.get('CPU_GPU_batch_parity_required'):
                 if sampling_device!='cpu':raise ValueError('CPU/GPU parity requires CPU sampling')
                 if control:control.wait(checkpoint_reserve())
@@ -242,14 +252,19 @@ def run(config,output,bootstrap_only=False):
             advantages=(advantages-advantages.mean())/(advantages.std()+1e-8)
             minibatch=settings['minibatch_initial'];logs=[];stop=False
             for epoch in range(settings['epochs']):
-                indices=np.random.permutation(len(decisions))
+                if getattr(model,'recurrent',False):
+                    from .policy_extensions import sequence_order,sequence_batch_size
+                    indices=np.asarray(sequence_order(decisions,np.random))
+                else:indices=np.random.permutation(len(decisions))
                 offset=0
                 while offset<len(indices):
                     if control:control.wait(checkpoint_reserve())
                     if time.time()>deadline-30:
                         # Roll back partial uncommitted update; saved optimizer/RNG replay it.
                         progress('partial_update_abandoned_at_deadline');return
-                    chosen=indices[offset:offset+minibatch]
+                    batch_size=(sequence_batch_size(decisions,indices[offset:],minibatch)
+                                if getattr(model,'recurrent',False) else minibatch)
+                    chosen=indices[offset:offset+batch_size]
                     try:
                         metrics=ppo_step(model,optimizer,[decisions[i] for i in chosen],advantages[chosen],returns[chosen],features.b.STOP,
                             clip=settings['clip'],entropy_coef=settings['entropy_coefficient'],value_coef=settings['value_loss_coefficient'],
@@ -302,6 +317,7 @@ def run(config,output,bootstrap_only=False):
             'updates':version,'completed_series':len(list((output/'series').glob('[0-9][0-9][0-9][0-9][0-9][0-9].json'))),
             'collect_seconds_this_attempt':collect_seconds,'update_seconds_this_attempt':update_seconds,
             'peak_vram_gib':torch.cuda.max_memory_allocated()/2**30,'inheritance':inheritance,
+            'model_extensions':config.get('model_extensions'),
             'league_snapshots':league.entries,'promotion_eligible':False,'validation_required':'independent fixed BO3 development comparison'}
         if config.get('continuous_parent_actual_decisions') is not None:
             metrics.update(inherited_actual_unique_PPO_decisions=config['continuous_parent_actual_decisions'],

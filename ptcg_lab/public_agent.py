@@ -165,6 +165,9 @@ def create_agent(spec, fallback_deck, seat, seed):
         return ProtocolAgent(spec, fallback_deck, seat, seed)
     if spec['kind'] == 'public_rule':
         return PublicRuleAgent(spec, seat, seed)
+    if spec['kind'] == 'zone_memory_rl':
+        from .zone_memory_agent import ZoneMemoryAgent
+        return ZoneMemoryAgent(spec,seat,seed)
     if spec['kind'] == 'catboost_single':
         from .bc_agent import BCSingleAgent
         return BCSingleAgent(spec,seat,seed)

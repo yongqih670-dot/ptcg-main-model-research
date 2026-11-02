@@ -21,10 +21,10 @@ except NameError:
 if not (ROOT/'agent-spec.json').exists():
     ROOT=Path.cwd()
 sys.path.insert(0,str(ROOT))
-from ptcg_lab.rl_agent import TransformerRLAgent
+from ptcg_lab.public_agent import create_agent
 with (ROOT/'agent-spec.json').open(encoding='utf-8') as f:
     _SPEC=json.load(f)
-_POLICY=TransformerRLAgent(_SPEC,0,0)
+_POLICY=create_agent(_SPEC,None,0,0)
 def agent(observation):
     return _POLICY.choose(observation)
 '''
@@ -34,13 +34,15 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--spec',type=Path,required=True);p.add_argument('--name',required=True);a=p.parse_args()
     if not all(c.isalnum() or c=='-' for c in a.name):raise ValueError('Unsafe package name')
     spec=read_json(a.spec);folder=ROOT/spec['path']
-    if spec['kind']!='transformer_rl' or sha256(folder/'model.pt')!=spec['model_sha256']:raise ValueError('Candidate mismatch')
+    if spec['kind'] not in ('transformer_rl','zone_memory_rl') or sha256(folder/'model.pt')!=spec['model_sha256']:raise ValueError('Candidate mismatch')
     destination=ROOT/'releases/validation'/a.name
     destination.mkdir(parents=True,exist_ok=False);stage=destination/'contents';stage.mkdir()
     shutil.copytree(folder,stage/'bundle',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     (stage/'main.py').write_text(ENTRY,encoding='utf-8')
     shutil.copy2(folder/'deck.csv',stage/'deck.csv')
-    for name in ('__init__.py','agents.py','public_agent.py','rl_agent.py','rl_core.py','token_features.py','bc_features.py','replay_data.py','io.py'):
+    for name in ('__init__.py','agents.py','public_agent.py','rl_agent.py','rl_core.py','token_features.py','bc_features.py','replay_data.py','io.py',
+                 'policy_extensions.py','zone_memory_agent.py','phase_timing.py','tensor_io.py',
+                 'bounded_io.py','bounded_read.py','io_pacing.py','server_workspace.py'):
         dest=stage/'ptcg_lab'/name;dest.parent.mkdir(exist_ok=True);shutil.copy2(ROOT/'ptcg_lab'/name,dest)
     shutil.copytree(ROOT/'ptcg_lab/public_cg',stage/'ptcg_lab/public_cg',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     packaged=dict(spec,path='bundle');atomic_json(stage/'agent-spec.json',packaged)

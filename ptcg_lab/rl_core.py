@@ -29,27 +29,35 @@ class RLFeatures(TokenFeatures):
         return row[None],mapping[None]
 
 
-def load_full_actor(bundle,parent_hash,device='cpu',reset_value=True,device_guard=None):
+def load_full_actor(bundle,parent_hash,device='cpu',reset_value=True,device_guard=None,model_extensions=None):
     features=RLFeatures(bundle)
     from ptcg.rl.model import PTCGTransformer,arch_from_state_dict
     path=Path(bundle)/'model.pt'
     if sha256(path)!=parent_hash:raise ValueError('Frozen parent hash mismatch')
     state={k.removeprefix('module.'):v for k,v in load_torch(path,map_location='cpu',weights_only=True).items()}
-    arch=arch_from_state_dict(state,heads=8)
+    extended=any(k.startswith('base.') for k in state)
+    if extended and not model_extensions:raise ValueError('Extended weights require their model options')
+    base_state={k.removeprefix('base.'):v for k,v in state.items() if k.startswith('base.')} if extended else state
+    arch=arch_from_state_dict(base_state,heads=8)
     model=PTCGTransformer(**arch,critic='blind')
-    model.load_state_dict(state,strict=True)
+    model.load_state_dict(base_state,strict=True)
     if reset_value:
         torch.nn.init.zeros_(model.value_mlp[-1].weight)
         torch.nn.init.zeros_(model.value_mlp[-1].bias)
     for name,p in model.named_parameters():
         if name.startswith(UNUSED):p.requires_grad_(False)
-    mismatches=[k for k,v in model.state_dict().items() if not k.startswith('value_mlp.2.') and not torch.equal(v,state[k])]
+    mismatches=[k for k,v in model.state_dict().items() if not k.startswith('value_mlp.2.') and not torch.equal(v,base_state[k])]
     if mismatches:raise ValueError('Incomplete actor inheritance: '+str(mismatches))
+    if model_extensions:
+        from .policy_extensions import ZoneMemoryPolicy
+        model=ZoneMemoryPolicy(model,features.b,model_extensions)
+        if extended:model.load_state_dict(state,strict=True)
     if device_guard:device_guard()
     model.to(device);model.eval()
     return model,features,{'parent_sha256':parent_hash,'architecture':arch,'all_inherited_tensor_count':len(state),
         'non_value_output_tensor_mismatches':mismatches,'reset_keys':['value_mlp.2.weight','value_mlp.2.bias'] if reset_value else [],
         'parameters':sum(p.numel() for p in model.parameters()),'critic':'blind','learner_table_cache':False,
+        'model_extensions':model.metadata() if model_extensions else None,
         'mask_contract':'Parent class mask for <=63 options; complete raw-index global support for overflow, one STOP'}
 
 
@@ -67,27 +75,37 @@ def choose_decision(model,features,obs,tracker,forced_run,greedy=False):
     if forced_selection(sel):
         return list(range(n)) if sel['maxCount'] else [],None
     picked=[];steps=[];value=None;logp=0.
+    recurrent=getattr(model,'recurrent',False)
+    memory=getattr(tracker,'_policy_memory',None) if recurrent else None
+    sequence_start=memory is None
     with torch.no_grad():
         while len(picked)<sel['maxCount']:
             rows,mapping=features.make(obs,tracker,forced_run,picked)
             tensor=torch.from_numpy(rows).to(next(model.parameters()).device)
-            scores,values=model.forward_eval(tensor)
+            if recurrent:
+                scores,values,memory=model.forward_step(tensor,memory,advance=not steps)
+            else:scores,values=model.forward_eval(tensor)
             logits=merged_scores(scores,mapping,n,features.b.STOP)
             dist=torch.distributions.Categorical(logits=logits.double())
             target=logits.argmax() if greedy else dist.sample()
             prob=dist.log_prob(target)
             if not torch.isfinite(prob):raise ValueError('Nonfinite conditional probability')
             if value is None:value=float(values[0,0])
-            steps.append({'rows':rows,'mapping':mapping,'n':n,'target':int(target)})
+            steps.append({'rows':rows,'mapping':mapping,'n':n,'target':int(target),
+                          **({'old_full_logp':dist.logits.cpu().numpy()} if recurrent else {})})
             logp+=float(prob)
             if int(target)==n:break
             if int(target) in picked:raise ValueError('Duplicate pick')
             picked.append(int(target))
     if not sel['minCount']<=len(picked)<=sel['maxCount']:raise ValueError('Invalid sequence')
-    return picked,{'steps':steps,'old_logp':logp,'old_value':value,'reward':0.,'terminal':False}
+    if recurrent:tracker._policy_memory=memory.detach()
+    return picked,{'steps':steps,'old_logp':logp,'old_value':value,'reward':0.,'terminal':False,
+                   **({'sequence_start':sequence_start} if recurrent else {})}
 
 
 def evaluate_decisions(model,decisions,stop):
+    if getattr(model,'recurrent',False):
+        return evaluate_sequences(model,decisions,stop)
     rows=np.concatenate([s['rows'] for d in decisions for s in d['steps']])
     scores,values=model.forward_eval(torch.from_numpy(rows).to(next(model.parameters()).device))
     offset=0;logps=[];entropies=[];vs=[]
@@ -102,6 +120,46 @@ def evaluate_decisions(model,decisions,stop):
     return torch.stack(logps),torch.stack(vs),torch.stack(entropies)
 
 
+def evaluate_sequences(model,decisions,stop,verify_tolerance=None):
+    from .policy_extensions import complete_sequences
+    complete_sequences(decisions)
+    memory=None;logps=[];vs=[];entropies=[]
+    for d in decisions:
+        if d['sequence_start']:memory=None
+        terms=[];entropy=[]
+        for j,s in enumerate(d['steps']):
+            rows=torch.from_numpy(s['rows']).to(next(model.parameters()).device)
+            scores,values,memory=model.forward_step(rows,memory,advance=j==0)
+            logits=merged_scores(scores,s['mapping'],s['n'],stop)
+            distribution=torch.distributions.Categorical(logits=logits.double())
+            if verify_tolerance is not None:
+                old=torch.as_tensor(s['old_full_logp'],device=logits.device)
+                if old.shape!=distribution.logits.shape or not torch.isfinite(old).all():
+                    raise ValueError('Missing or malformed recurrent rollout distribution')
+                if (distribution.logits-old).abs().max()>verify_tolerance:
+                    raise ValueError('Recurrent rollout full distribution mismatch')
+            terms.append(distribution.log_prob(torch.as_tensor(s['target'],device=scores.device)))
+            entropy.append(distribution.entropy())
+            if j==0:
+                vs.append(values[0,0])
+                if verify_tolerance is not None and abs(float(values[0,0])-d['old_value'])>verify_tolerance:
+                    raise ValueError('Recurrent rollout value mismatch')
+        logps.append(torch.stack(terms).sum());entropies.append(torch.stack(entropy).sum())
+        if d['terminal']:memory=None
+    return torch.stack(logps),torch.stack(vs),torch.stack(entropies)
+
+
+def audit_recurrent_rollout(model,decisions,stop,tolerance=1e-4):
+    if type(tolerance) not in (int,float) or not 0<tolerance<=1e-3:
+        raise ValueError('Invalid recurrent replay tolerance')
+    with torch.no_grad():
+        logp,_,_=evaluate_sequences(model,decisions,stop,verify_tolerance=tolerance)
+        old=logp.new_tensor([d['old_logp'] for d in decisions])
+        if not torch.isfinite(logp).all() or (logp-old).abs().max()>tolerance:
+            raise ValueError('Recurrent rollout selected probability mismatch')
+    return {'decisions':len(decisions),'tolerance':tolerance,'scope':'full-distribution-value-complete-game-replay'}
+
+
 @timed('advantage_and_return_preparation')
 def gae(decisions,gamma=1.,lam=.95,bootstrap=0.):
     advantages=np.zeros(len(decisions),np.float32);last=0.;next_value=bootstrap
@@ -114,9 +172,10 @@ def gae(decisions,gamma=1.,lam=.95,bootstrap=0.):
 
 
 def optimizer_for(model,actor_lr=3e-5,value_lr=1e-4):
+    from .policy_extensions import value_parameter
     actor=[];value=[]
     for name,p in model.named_parameters():
-        if p.requires_grad:(value if name.startswith('value_mlp.') else actor).append(p)
+        if p.requires_grad:(value if value_parameter(name) else actor).append(p)
     assert len({id(p) for p in actor+value})==len(actor+value)
     return torch.optim.Adam([{'params':actor,'lr':actor_lr},{'params':value,'lr':value_lr}],eps=1e-5)
 
@@ -125,6 +184,7 @@ def optimizer_for(model,actor_lr=3e-5,value_lr=1e-4):
 def ppo_step(model,optimizer,decisions,advantages,returns,stop,clip=.2,entropy_coef=.01,value_coef=.5,
              max_grad_norm=.5,target_kl=None,normalize_advantages=True,critic_updates_shared_trunk=True,
              record_gradient_components=False):
+    from .policy_extensions import value_parameter
     if getattr(model,'_frozen_tables',None) is not None:raise ValueError('Learner has stale frozen tables')
     device=next(model.parameters()).device
     old=torch.tensor([d['old_logp'] for d in decisions],device=device,dtype=torch.float64)
@@ -142,7 +202,7 @@ def ppo_step(model,optimizer,decisions,advantages,returns,stop,clip=.2,entropy_c
     optimizer.zero_grad(set_to_none=True)
     diagnostics={}
     if record_gradient_components:
-        shared=[p for name,p in model.named_parameters() if p.requires_grad and not name.startswith('value_mlp.')]
+        shared=[p for name,p in model.named_parameters() if p.requires_grad and not value_parameter(name)]
         for name,component in [('policy_gradient_l2',policy_loss),('weighted_value_shared_gradient_l2',value_coef*value_loss)]:
             gradients=torch.autograd.grad(component,shared,retain_graph=True,allow_unused=True)
             squared=sum(g.detach().double().square().sum() for g in gradients if g is not None)
@@ -152,14 +212,14 @@ def ppo_step(model,optimizer,decisions,advantages,returns,stop,clip=.2,entropy_c
         # Equivalent value-feature stop-gradient: preserve identical forward
         # values and fit the full blind head, while policy/entropy alone update
         # the shared Transformer. No value gradient is routed into the actor.
-        head=[p for name,p in model.named_parameters() if p.requires_grad and name.startswith('value_mlp.')]
+        head=[p for name,p in model.named_parameters() if p.requires_grad and value_parameter(name)]
         if not head:raise ValueError('Blind value head is missing')
         head_gradients=torch.autograd.grad(value_coef*value_loss,head,retain_graph=True,allow_unused=True)
         (policy_loss-entropy_coef*entropy.mean()).backward()
         for parameter,gradient in zip(head,head_gradients):
             if parameter.grad is not None and torch.count_nonzero(parameter.grad):raise ValueError('Policy unexpectedly depends on value head')
             parameter.grad=gradient.detach() if gradient is not None else None
-    if any(p.grad is not None for n,p in model.named_parameters() if n.startswith(UNUSED)):
+    if any(p.grad is not None for n,p in model.named_parameters() if n.removeprefix('base.').startswith(UNUSED)):
         raise ValueError('Hidden/auxiliary branch received gradient')
     norm=torch.nn.utils.clip_grad_norm_([p for p in model.parameters() if p.requires_grad],max_grad_norm,error_if_nonfinite=True)
     optimizer.step()

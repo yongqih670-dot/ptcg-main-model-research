@@ -36,7 +36,10 @@ def main():
     parent=run/'source'/cfg['bundle_path'];dest=ROOT/'agents/learned'/args.name
     if dest.exists():raise ValueError('Never overwrite an existing candidate')
     frozen=read_json(run/'source-manifest.json')
-    for name in ('ptcg_lab/rl_core.py','ptcg_lab/token_features.py','ptcg_lab/rl_agent.py','ptcg_lab/replay_data.py'):
+    inference_sources=['ptcg_lab/rl_core.py','ptcg_lab/token_features.py','ptcg_lab/rl_agent.py','ptcg_lab/replay_data.py']
+    if cfg.get('model_extensions'):
+        inference_sources+=['ptcg_lab/policy_extensions.py','ptcg_lab/zone_memory_agent.py']
+    for name in inference_sources:
         expected=frozen.get(name,frozen.get(name.replace('/','\\')))
         if sha256(ROOT/name)!=expected:raise ValueError('Inference code changed since training: '+name)
     shutil.copytree(parent,dest,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
@@ -45,6 +48,8 @@ def main():
         'lineage':'dipam_unown_gradiant_ppo','parameters':{'_actor_seat_mode':'zero'},
         'model_sha256':sha256(dest/'model.pt'),'training_run_id':run.name,
         'training_config_sha256':sha256(run/'config.json'),'feature_schema':'full-inherited-blind-conditional-v3'}
+    if cfg.get('model_extensions'):
+        spec.update(kind='zone_memory_rl',model_extensions=cfg['model_extensions'],feature_schema='zone-gru-v1')
     atomic_json(dest/'spec.json',spec)
     atomic_json(dest/'ppo-provenance.json',{'at':utcnow(),'parent_model_sha256':cfg['parent_model_sha256'],
         'training_run_id':run.name,
@@ -53,7 +58,8 @@ def main():
         'decision_accounting':metrics.get('decision_accounting','legacy_consumed_count_actual_unique_unspecified'),
         'updates':metrics['updates'],
         'deck_sha256':sha256(dest/'deck.csv'),'model_sha256':spec['model_sha256'],
-        'inference_adapter_sha256':sha256(ROOT/'ptcg_lab/rl_agent.py'),
+        'inference_adapter_sha256':sha256(ROOT/('ptcg_lab/zone_memory_agent.py' if cfg.get('model_extensions') else 'ptcg_lab/rl_agent.py')),
+        'model_extensions':cfg.get('model_extensions'),
         'qualification':'unqualified candidate; independent BO3 evaluation still required'})
     print(str(dest/'spec.json'))
 
