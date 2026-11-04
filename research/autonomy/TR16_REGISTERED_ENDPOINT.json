@@ -1,0 +1,16 @@
+{
+  "version": 107,
+  "source_run_id": "20261103T214510Z_tr16-s007_11b9d8",
+  "actual_unique": 839120,
+  "new_unique": 431968,
+  "new_PPO_updates": 53,
+  "pending_unoptimized": 4174,
+  "model_sha256": "0ada280a371f7e59d948890016adf9f1e6bf05ebbc4e3bffc03f733947586707",
+  "training_stopped": true,
+  "original_additional_target": 600000,
+  "original_target_complete": false,
+  "original_target_shortfall": 168032,
+  "endpoint_selected_before_strength_evaluation": true,
+  "pending_included_in_effective_training_count": false,
+  "full_recovery_payload_published": false
+}

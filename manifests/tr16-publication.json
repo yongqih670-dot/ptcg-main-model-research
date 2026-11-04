@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "publication_date": "2026-11-04",
+  "previous_commit": "c40e0db8def726ee9ce7b883711bcf94ab6bd1e1",
+  "scientific_cutoff_utc": "2026-11-04T08:25:04.540985+00:00",
+  "result": "research/autonomy/TR16-result.json",
+  "report": "docs/TR16_FINAL_REPORT.md",
+  "source_files": {
+    "research/autonomy/TR16-result.json": {
+      "source_sha256": "9d578a8d1948bc90cefcaac71f0a27df16a2d28e68fbaaea2e063da47dc61151",
+      "source_bytes": 4099,
+      "public_path": "research/autonomy/TR16-result.json",
+      "public_sha256": "9d578a8d1948bc90cefcaac71f0a27df16a2d28e68fbaaea2e063da47dc61151",
+      "transformation": "byte-identical"
+    },
+    "research/autonomy/activations/TR16-volume-600000-20261102/v107-endpoint-evaluation-20261104/REGISTERED_ENDPOINT.json": {
+      "source_sha256": "40f0488c84268b4e00a9cc796618556becc79e9638f110b633c405a4b62ee9eb",
+      "source_bytes": 899,
+      "public_path": "research/autonomy/TR16_REGISTERED_ENDPOINT.json",
+      "public_sha256": "4cafef3a57ac4909bcd1a1af47f8d2dc31f2d6489d28c74c50af06eca7f03afa",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    },
+    "runs/20261104T072949Z_tr16-v107-reliability_969278/series.jsonl": {
+      "source_sha256": "52894a409f53bd4203963795cb04823f929c7ca74224f355bb4591d90be16721",
+      "source_bytes": 175300,
+      "public_path": "evidence/TR16/reliability-outcomes.jsonl",
+      "public_sha256": "cba779d616461e53f7ff468d949ce9e454a143ff16a3a3a032689028abae90aa",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    },
+    "runs/20261104T072949Z_tr16-v107-reliability_969278/metrics.json": {
+      "source_sha256": "70e600644ce0c45e66939c2846237e8ae8f8d79972f4203c412c18dfd17a0fee",
+      "source_bytes": 506,
+      "public_path": "evidence/TR16/reliability-metrics.json",
+      "public_sha256": "70e600644ce0c45e66939c2846237e8ae8f8d79972f4203c412c18dfd17a0fee",
+      "transformation": "byte-identical"
+    },
+    "runs/20261104T073151Z_tr16-v107-primary_1b1046/series.jsonl": {
+      "source_sha256": "3445de881814854f0922cf6c6890d28b7f8a0a803a32c93fac7bfb1967d796c6",
+      "source_bytes": 5545135,
+      "public_path": "evidence/TR16/primary-outcomes.jsonl",
+      "public_sha256": "840e91222d8662e3e60b13632afec5416c7fe0f975955865a9bbed136d7d495b",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    },
+    "runs/20261104T073151Z_tr16-v107-primary_1b1046/metrics.json": {
+      "source_sha256": "e84b957dc093bd586fc7965718dcb1b263120bfd77364a543aedf259c02cbb44",
+      "source_bytes": 517,
+      "public_path": "evidence/TR16/primary-metrics.json",
+      "public_sha256": "e84b957dc093bd586fc7965718dcb1b263120bfd77364a543aedf259c02cbb44",
+      "transformation": "byte-identical"
+    },
+    "runs/20261104T080609Z_tr16-v107-development_74ec78/series.jsonl": {
+      "source_sha256": "14167ca9bc407bc56cbe68753cd73e2062c604bd5da15be9a29454ad72def474",
+      "source_bytes": 2816216,
+      "public_path": "evidence/TR16/development-outcomes.jsonl",
+      "public_sha256": "fce94cef2d8321aefcf1f8df15a4db128a83221861b70ba066192a84acfc78cf",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    },
+    "runs/20261104T080609Z_tr16-v107-development_74ec78/metrics.json": {
+      "source_sha256": "7cad72b98468959f8ce478de260da06363a87bf38237a0c2bc4e59a0f2efb341",
+      "source_bytes": 512,
+      "public_path": "evidence/TR16/development-metrics.json",
+      "public_sha256": "7cad72b98468959f8ce478de260da06363a87bf38237a0c2bc4e59a0f2efb341",
+      "transformation": "byte-identical"
+    },
+    "research/autonomy/TR16_EVALUATION_FROZEN.json": {
+      "source_sha256": "188624be2f443603ba3250d312057a964543deca75b46cce988d8669feebb4d9",
+      "source_bytes": 18853,
+      "public_path": "research/autonomy/TR16_EVALUATION_PUBLIC.json",
+      "public_sha256": "47854748dcdb9420a560272e29a1008d5a1a7f416f2290dd001d67ba2116a71d",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    },
+    "research/autonomy/TR16_ANALYSIS.md": {
+      "source_sha256": "85bb6964a52175f1b3ef61a96ad264f38d483f653b1150c51c29fd54836929fc",
+      "source_bytes": 1824,
+      "public_path": "research/autonomy/TR16_ANALYSIS.md",
+      "public_sha256": "5c57529bf41e94377c400253b8a9c79310dd7a5e208f23e45c00b45a2310645d",
+      "transformation": "selected public projection; no raw replay or recovery payload"
+    }
+  },
+  "new_endpoint_BO3": 2450,
+  "reused_parent_phase": "TR15",
+  "training_or_recovery_payloads_published": false,
+  "training_started": false,
+  "original_sources_modified": false
+}

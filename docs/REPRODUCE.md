@@ -54,3 +54,8 @@ TR13离线统计重算：`python -B tools/verify_tr13_results.py`。依赖NumPy�
 TR15实际执行源码位于 `research/training_snapshots/TR15/`；运行 `python -B tools/verify_tr15_snapshot.py` 检查其文件哈希和语法。根目录基础生产快照与独立v3工程候选保持历史版本，不能与该冻结实现混作一个运行版本。服务器/账户/个人路径的替换已在来源清单明确记录，未替换的源码保持原字节。
 
 模型输入、optimizer、RNG、完整归档、官方原生环境和第三方模型需由有权访问者自行取得并另做环境/资源验收。公开部署入口没有对应权重，不是可直接运行的参赛模型包；统计复算与完整训练复现是不同验证范围。
+
+
+## TR16 v107统计复现
+
+运行 `python -B tools/verify_tr16_results.py` 重算TR16主比较及八对手面板的20,000次bootstrap，核验2450个新结局、席位和零错误。父版2400场复用 `evidence/TR15/`。终点登记和报告见[TR16最终报告](TR16_FINAL_REPORT.md)。只重算精选统计，不下载训练数据、不加载权重、不续训；完整数值重放仍需私有原件。

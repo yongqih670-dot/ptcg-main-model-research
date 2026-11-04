@@ -1,0 +1,107 @@
+{
+  "at": "2026-11-04T08:25:04.540985+00:00",
+  "phase": "TR16",
+  "complete": true,
+  "classification": "inconclusive",
+  "actual_additional_unique_decisions": 431968,
+  "actual_lineage_unique_decisions": 839120,
+  "target_overshoot": 0,
+  "new_PPO_updates": 53,
+  "inherited_pending_first_epoch_coverage": 0,
+  "new_sampling_first_epoch_coverage": 431968,
+  "primary": {
+    "parent_score": 0.60625,
+    "endpoint_score": 0.623125,
+    "gain": 0.016875,
+    "ci95": [
+      -0.01749999999999996,
+      0.05125000000000002
+    ],
+    "BO3_per_strategy": 1600,
+    "seats_per_strategy": [
+      800,
+      800
+    ],
+    "learning_signal_passed": false,
+    "required_gain": 0.05,
+    "required_CI_lower_above": 0,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 2026103001
+  },
+  "development": {
+    "parent_score": 0.68875,
+    "endpoint_score": 0.75,
+    "gain": 0.06125000000000003,
+    "ci95": [
+      0.02124999999999999,
+      0.10125
+    ],
+    "BO3_per_strategy": 800,
+    "weights": {
+      "endpoint-vs-lucario": 0.125,
+      "endpoint-vs-alakazam": 0.125,
+      "endpoint-vs-archaludon": 0.125,
+      "endpoint-vs-ppo": 0.125,
+      "endpoint-vs-tr01-ppo": 0.125,
+      "endpoint-vs-tr02-ppo": 0.125,
+      "endpoint-vs-tr03-ppo": 0.125,
+      "endpoint-vs-tr09-epochs4-hdd2": 0.125
+    },
+    "cell_scores": {
+      "parent|endpoint-vs-lucario": 0.93,
+      "endpoint|endpoint-vs-lucario": 0.92,
+      "parent|endpoint-vs-alakazam": 0.92,
+      "endpoint|endpoint-vs-alakazam": 0.99,
+      "parent|endpoint-vs-archaludon": 0.96,
+      "endpoint|endpoint-vs-archaludon": 0.98,
+      "parent|endpoint-vs-ppo": 0.52,
+      "endpoint|endpoint-vs-ppo": 0.7,
+      "parent|endpoint-vs-tr01-ppo": 0.47,
+      "endpoint|endpoint-vs-tr01-ppo": 0.56,
+      "parent|endpoint-vs-tr02-ppo": 0.63,
+      "endpoint|endpoint-vs-tr02-ppo": 0.62,
+      "parent|endpoint-vs-tr03-ppo": 0.53,
+      "endpoint|endpoint-vs-tr03-ppo": 0.56,
+      "parent|endpoint-vs-tr09-epochs4-hdd2": 0.55,
+      "endpoint|endpoint-vs-tr09-epochs4-hdd2": 0.67
+    },
+    "descriptive_unadjusted_multiple_comparisons": true
+  },
+  "reliability": {
+    "complete_BO3": 50,
+    "errors": 0,
+    "invalid_actions": 0,
+    "internal_fallbacks": 0
+  },
+  "evaluation_runs": {
+    "reliability": "20261104T072949Z_tr16-v107-reliability_969278",
+    "primary": "20261104T073151Z_tr16-v107-primary_1b1046",
+    "development": "20261104T080609Z_tr16-v107-development_74ec78"
+  },
+  "new_endpoint_BO3": 2450,
+  "parent_BO3_reused": 2400,
+  "limitations": [
+    "Further training amount is the intended change relative to TR15; latest-frozen-self policy refresh remains fixed.",
+    "The primary evaluation opponent overlaps earlier inherited training history; TR16 itself trains against frozen self only. No general-strength claim.",
+    "Native environment seed is not exposed; independent unpaired complete-BO3 bootstrap, no paired reproducibility claim.",
+    "Eight-opponent development results are descriptive; final pool was not accessed.",
+    "The user stopped training at +431968 instead of original+600000 before any v107 endpoint evaluation; this estimates the registered earlier endpoint only."
+  ],
+  "promotion_eligible": false,
+  "champion_changed": false,
+  "submission_made": false,
+  "no_further_training": true,
+  "full_training_and_recovery_data_retained_local_server_only": true,
+  "endpoint_version": 107,
+  "registered_endpoint_actual_unique": 839120,
+  "registered_endpoint_stage_unique": 431968,
+  "endpoint_selection": "Direct user-registered v107 after zero-science raw008 startup failure; no strength-based selection",
+  "original_training_target": 1007152,
+  "original_training_target_complete": false,
+  "original_training_target_shortfall": 168032,
+  "training_stopped_by_user": true,
+  "endpoint_authority": {
+    "path": "research/autonomy/authorizations/TR16-v107-endpoint-evaluation-20261104.json",
+    "sha256": "b3e435a316d0904eea280fbc678e8ca6d52026095497f43b9f0f5c0b4e3b0b2d"
+  }
+}
