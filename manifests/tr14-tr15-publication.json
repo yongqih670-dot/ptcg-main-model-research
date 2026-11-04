@@ -1,0 +1,2963 @@
+{
+  "schema": 1,
+  "publication_date": "2026-11-04",
+  "previous_commit": "7bddfb2a3313cbdc4bce2334549de00cd12e769b",
+  "scientific_cutoff_utc": "2026-11-02T11:55:07.024306+00:00",
+  "TR14_result": "research/autonomy/TR14-result.json",
+  "TR15_result": "research/autonomy/TR15-result.json",
+  "frozen_source_run_id": "20261102T040541Z_tr15-selfplay-segment-002_a76406",
+  "public_snapshot": "research/training_snapshots/TR15",
+  "source_files": {
+    "research/autonomy/TR14-result.json": {
+      "source_sha256": "1d73203229dea9fd68a0e8977772927306486582af3ddc56c7dc24f00f4f1b6a",
+      "source_bytes": 3117,
+      "public_path": "research/autonomy/TR14-result.json",
+      "public_sha256": "1d73203229dea9fd68a0e8977772927306486582af3ddc56c7dc24f00f4f1b6a",
+      "public_bytes": 3117,
+      "transformation": "byte-identical"
+    },
+    "research/autonomy/TR14-training-frozen.json": {
+      "source_sha256": "85e51d789a61d00e14326e94451d9a68abbcee5056b62412781539e88df32b37",
+      "source_bytes": 3577,
+      "public_path": "research/autonomy/TR14-training-frozen.json",
+      "public_sha256": "bc7557c131c438834f38a3311c6149b720600c1297d4a34dec22bb7de1c919b3",
+      "public_bytes": 3494,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T165639Z_tr14-reliability_eccdc9/series.jsonl": {
+      "source_sha256": "4158a9228ac52d3bec05a8032dbb958cf7fe4571cb8994e0ef9851e51f276f28",
+      "source_bytes": 174636,
+      "public_path": "evidence/TR14/reliability-outcomes.jsonl",
+      "public_sha256": "1a36a93a48e933ac9ee27290e871fcc5bed6658739ef5800bca2e369cc8e2df8",
+      "public_bytes": 8461,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T165639Z_tr14-reliability_eccdc9/metrics.json": {
+      "source_sha256": "730753772e4d38e2584e6c438afa8c3f296ba0c569fbdcb3c981033e9ccdc697",
+      "source_bytes": 505,
+      "public_path": "evidence/TR14/reliability-metrics.json",
+      "public_sha256": "730753772e4d38e2584e6c438afa8c3f296ba0c569fbdcb3c981033e9ccdc697",
+      "public_bytes": 505,
+      "transformation": "byte-identical"
+    },
+    "runs/20261031T165639Z_tr14-reliability_eccdc9/config.json": {
+      "source_sha256": "329782e36276e1cd20d37002f61021f5a4adc3ef4ab0fd9c37c6be3beecaeb8f",
+      "source_bytes": 3765,
+      "public_path": "configs/TR14/reliability.json",
+      "public_sha256": "238df1684e312f083c97ea1197d1e1fe8ff7a41deac3ef3af77627377fbb3ef4",
+      "public_bytes": 492,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T165846Z_tr14-primary_9473aa/series.jsonl": {
+      "source_sha256": "004073619b9ad34b6b866758c8463206047d29b4a53e6aed2ffc3df52de31427",
+      "source_bytes": 5564971,
+      "public_path": "evidence/TR14/primary-outcomes.jsonl",
+      "public_sha256": "1842ab6635821e52557f817fa59eb79a6e3faf134aa9cac722abe8eafe5f05a2",
+      "public_bytes": 268330,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T165846Z_tr14-primary_9473aa/metrics.json": {
+      "source_sha256": "93776f843290dc8f9f98eabec72da20055d664c7609b1e0ce5b3d2dca44e5079",
+      "source_bytes": 512,
+      "public_path": "evidence/TR14/primary-metrics.json",
+      "public_sha256": "93776f843290dc8f9f98eabec72da20055d664c7609b1e0ce5b3d2dca44e5079",
+      "public_bytes": 512,
+      "transformation": "byte-identical"
+    },
+    "runs/20261031T165846Z_tr14-primary_9473aa/config.json": {
+      "source_sha256": "a1d69745bf515ee0b0e83c4ecb3daf5fef7d61db7295c72b8bcb78808e98570e",
+      "source_bytes": 3762,
+      "public_path": "configs/TR14/primary.json",
+      "public_sha256": "a079921053e720c626a2a3ce2a08beb438d66f271fb1f7de267854ad4b0ed8d4",
+      "public_bytes": 493,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T174259Z_tr14-development_3cebad/series.jsonl": {
+      "source_sha256": "0d37718d9a285cf28a464019ef55fb55005c3b77b8d7146f6c1da10075167abc",
+      "source_bytes": 2842747,
+      "public_path": "evidence/TR14/development-outcomes.jsonl",
+      "public_sha256": "cfa19077ff8edcd298b0f9e7a8b45106c6676a09a9d906b048e197800ae44688",
+      "public_bytes": 138213,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T174259Z_tr14-development_3cebad/metrics.json": {
+      "source_sha256": "aac6daa23c4a64cc121f0a3e9a8760a62f0c90b3b96eeac05d2e67e03aa0ff9b",
+      "source_bytes": 516,
+      "public_path": "evidence/TR14/development-metrics.json",
+      "public_sha256": "aac6daa23c4a64cc121f0a3e9a8760a62f0c90b3b96eeac05d2e67e03aa0ff9b",
+      "public_bytes": 516,
+      "transformation": "byte-identical"
+    },
+    "runs/20261031T174259Z_tr14-development_3cebad/config.json": {
+      "source_sha256": "e2a0a57d129c28ca0c590e1a4f8c77518186877723379c601071d5086fd54450",
+      "source_bytes": 20624,
+      "public_path": "configs/TR14/development.json",
+      "public_sha256": "d0aa79e2f6977b73c47d0387859df9600fdb29c43bb23df9c266e8b6832ebdc4",
+      "public_bytes": 2009,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR14_EVALUATION_FROZEN.json": {
+      "source_sha256": "0a22c861b5db76c25633b77da5790d4545e35061b48a80262df0451c77a96561",
+      "source_bytes": 18819,
+      "public_path": "research/autonomy/TR14_EVALUATION_FROZEN.json",
+      "public_sha256": "a7b688ea19ce2b4d77c2f4e31acd82f0de2e021483d885bc7d39484e0186b721",
+      "public_bytes": 18717,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR14_PROTOCOL.json": {
+      "source_sha256": "85840f4edd4afb5e4e98019bee3d32e68c669f5e2638a065af9595081ffd0844",
+      "source_bytes": 2504,
+      "public_path": "research/autonomy/TR14_PROTOCOL.json",
+      "public_sha256": "f8074b46042de2d252dec7ae959fc6f9b3acf1bb000e0807835826c1aa0cdeb8",
+      "public_bytes": 2784,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR14_ANALYSIS.md": {
+      "source_sha256": "d298de3c9d2bc80c53c6810175fe9d85acd398a786505e50d88399ad6befce2d",
+      "source_bytes": 1327,
+      "public_path": "research/autonomy/TR14_ANALYSIS.md",
+      "public_sha256": "d298de3c9d2bc80c53c6810175fe9d85acd398a786505e50d88399ad6befce2d",
+      "public_bytes": 1327,
+      "transformation": "byte-identical"
+    },
+    "research/autonomy/TR15-result.json": {
+      "source_sha256": "cb57bda7de3937390bf343f3894d6c845790b09f5ef600e5ef9dd719f20cc4fe",
+      "source_bytes": 3354,
+      "public_path": "research/autonomy/TR15-result.json",
+      "public_sha256": "cb57bda7de3937390bf343f3894d6c845790b09f5ef600e5ef9dd719f20cc4fe",
+      "public_bytes": 3354,
+      "transformation": "byte-identical"
+    },
+    "research/autonomy/TR15-training-frozen.json": {
+      "source_sha256": "f9c67c71bb729c77455f774f709e520d8138f48410cc648297ea8103e8d5a97e",
+      "source_bytes": 3636,
+      "public_path": "research/autonomy/TR15-training-frozen.json",
+      "public_sha256": "2cdf5abb77898146c313f877e619dd6896bd25c2f47c2a09ecbe0b914e3e9d02",
+      "public_bytes": 3553,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T105622Z_tr15-reliability_6d0319/series.jsonl": {
+      "source_sha256": "5040511b57d631f86eac5a49a5dbb9bd681b2e179fc1b0ef5c97a64135cdddb3",
+      "source_bytes": 176753,
+      "public_path": "evidence/TR15/reliability-outcomes.jsonl",
+      "public_sha256": "7c2ba5226ed12c77828b5407b8544b63c5c0b08b6bf73bf227eed23970e1a698",
+      "public_bytes": 8454,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T105622Z_tr15-reliability_6d0319/metrics.json": {
+      "source_sha256": "007b10b09ea1e4a4c4fc0d6a8f0ae20113eb15b3836af6ddd92a12b796737bbd",
+      "source_bytes": 505,
+      "public_path": "evidence/TR15/reliability-metrics.json",
+      "public_sha256": "007b10b09ea1e4a4c4fc0d6a8f0ae20113eb15b3836af6ddd92a12b796737bbd",
+      "public_bytes": 505,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T105622Z_tr15-reliability_6d0319/config.json": {
+      "source_sha256": "781396d4e8dc932fc35795a06a1be2750fbea0c4759b34ffc9dc9708d744a590",
+      "source_bytes": 3763,
+      "public_path": "configs/TR15/reliability.json",
+      "public_sha256": "470c11466036a99e3c2ef04663365522d976e709b39a35c6b938e2bd987242c6",
+      "public_bytes": 492,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T105837Z_tr15-primary_53a8d3/series.jsonl": {
+      "source_sha256": "be02ec1af9b7c21d9e959ac5d45d6a49b5d20abdec4538267dee984768db9ab5",
+      "source_bytes": 5551215,
+      "public_path": "evidence/TR15/primary-outcomes.jsonl",
+      "public_sha256": "9f730441a280c3802fe43826b59cfe588a6d14b751b114847bec376d2a82e099",
+      "public_bytes": 268320,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T105837Z_tr15-primary_53a8d3/metrics.json": {
+      "source_sha256": "f94bd106ae346c72de9bd216282b21a8be2cd9a5a5ba55405794ef34dfddf6c8",
+      "source_bytes": 516,
+      "public_path": "evidence/TR15/primary-metrics.json",
+      "public_sha256": "f94bd106ae346c72de9bd216282b21a8be2cd9a5a5ba55405794ef34dfddf6c8",
+      "public_bytes": 516,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T105837Z_tr15-primary_53a8d3/config.json": {
+      "source_sha256": "4121c157603e87f44b0f48cc354fc6d5d8b59f8652be9ee0f4fad3902b984d3a",
+      "source_bytes": 3760,
+      "public_path": "configs/TR15/primary.json",
+      "public_sha256": "b04481f54b75f83fdb071e87733b5be93b4ae21642e99e312fc49956d7af13b9",
+      "public_bytes": 493,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T113743Z_tr15-development_2ad17c/series.jsonl": {
+      "source_sha256": "f04dbc67942014b2d056e4c2f3dcafed3d7160fe3f98b8698fbb200ef6f2f458",
+      "source_bytes": 2803559,
+      "public_path": "evidence/TR15/development-outcomes.jsonl",
+      "public_sha256": "e34980a2aca66a39f3a84e74318d0b1aafbac938a650432a6c12d38a8e305fc1",
+      "public_bytes": 138239,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T113743Z_tr15-development_2ad17c/metrics.json": {
+      "source_sha256": "1436f44eb4b7df179a2d875c0b5c2cb41956fd3fe6140254275aecd7f574a98e",
+      "source_bytes": 516,
+      "public_path": "evidence/TR15/development-metrics.json",
+      "public_sha256": "1436f44eb4b7df179a2d875c0b5c2cb41956fd3fe6140254275aecd7f574a98e",
+      "public_bytes": 516,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T113743Z_tr15-development_2ad17c/config.json": {
+      "source_sha256": "712c4d36b6ddf07eca4a0c67960ae4d796eaf067498ba53cf18ba4acbe8b5fa4",
+      "source_bytes": 20636,
+      "public_path": "configs/TR15/development.json",
+      "public_sha256": "e1a11b4b07aa0a5e5331c247c93564f8350228f8db439a8730f3e61455eb6971",
+      "public_bytes": 2009,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR15_EVALUATION_FROZEN.json": {
+      "source_sha256": "469959bc9005c58de77f2305013fea7a8e1f2328efbe287aafee101c9809df64",
+      "source_bytes": 18666,
+      "public_path": "research/autonomy/TR15_EVALUATION_FROZEN.json",
+      "public_sha256": "0a216066069c938468b2c4d347c051d5950894799a331c0773b3096161daac04",
+      "public_bytes": 18564,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR15_PROTOCOL.json": {
+      "source_sha256": "076982259a792d2befa4f97c0fdf37ddbaea9c0b7587038f5c6ef58a74a996cc",
+      "source_bytes": 2791,
+      "public_path": "research/autonomy/TR15_PROTOCOL.json",
+      "public_sha256": "c83dcb0f33f98b108a38f539201e848b69ac55f49786a4a9349678f2b0c645ae",
+      "public_bytes": 3087,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/TR15_ANALYSIS.md": {
+      "source_sha256": "1473a0dd575405f1b035c5d41c399a6c128020064d212d52ceb8ba9fc2c5d467",
+      "source_bytes": 1427,
+      "public_path": "research/autonomy/TR15_ANALYSIS.md",
+      "public_sha256": "1473a0dd575405f1b035c5d41c399a6c128020064d212d52ceb8ba9fc2c5d467",
+      "public_bytes": 1427,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/__init__.py": {
+      "source_sha256": "409842c3bda399b63e7b98e8ae263683eaa185f22cddfd36fd07e63df80d7da0",
+      "source_bytes": 75,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/__init__.py",
+      "public_sha256": "409842c3bda399b63e7b98e8ae263683eaa185f22cddfd36fd07e63df80d7da0",
+      "public_bytes": 75,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/active_clock.py": {
+      "source_sha256": "314b854f68eb8c603a5764b606297368518aed6526cc50f5fbaf49e5be39b674",
+      "source_bytes": 9196,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/active_clock.py",
+      "public_sha256": "314b854f68eb8c603a5764b606297368518aed6526cc50f5fbaf49e5be39b674",
+      "public_bytes": 9196,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/active_clock_acceptance.py": {
+      "source_sha256": "a0c4ac42b3c2f834d190244178458e0ffee148ee2241f569a0ab0a24e228da92",
+      "source_bytes": 9745,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/active_clock_acceptance.py",
+      "public_sha256": "7fac529ce4b936807b8b3e97fdc55092060cdf75cfaaadbde53aecf21ba0fd4d",
+      "public_bytes": 9751,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/agents.py": {
+      "source_sha256": "633785a85fb2c3e099eb36c9676ca24d4f63562aa672dd00217eaf17ea25e0e6",
+      "source_bytes": 2874,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/agents.py",
+      "public_sha256": "633785a85fb2c3e099eb36c9676ca24d4f63562aa672dd00217eaf17ea25e0e6",
+      "public_bytes": 2874,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_ack.py": {
+      "source_sha256": "7a033ad33bfeec2644e93b41d34871f788bdd7d4c8a194d07f95ae6a5d92e2db",
+      "source_bytes": 5515,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_ack.py",
+      "public_sha256": "7a033ad33bfeec2644e93b41d34871f788bdd7d4c8a194d07f95ae6a5d92e2db",
+      "public_bytes": 5515,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_barrier.py": {
+      "source_sha256": "e1da5476045a871b0a97dfb173dc2abf19e1d443f5d0601839eb4a9051b62f52",
+      "source_bytes": 4291,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_barrier.py",
+      "public_sha256": "e1da5476045a871b0a97dfb173dc2abf19e1d443f5d0601839eb4a9051b62f52",
+      "public_bytes": 4291,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_barrier_check.py": {
+      "source_sha256": "93ae5f3a1cb32eb0ba535fe6dbe6453f34415ba929514bf0da117e2abdd02f47",
+      "source_bytes": 5076,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_barrier_check.py",
+      "public_sha256": "93ae5f3a1cb32eb0ba535fe6dbe6453f34415ba929514bf0da117e2abdd02f47",
+      "public_bytes": 5076,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_compressed.py": {
+      "source_sha256": "4266eb1bd28da7b060780e83ca4d18ef606e9ad17b8b211ae25e40ad08390bc7",
+      "source_bytes": 5959,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_compressed.py",
+      "public_sha256": "4266eb1bd28da7b060780e83ca4d18ef606e9ad17b8b211ae25e40ad08390bc7",
+      "public_bytes": 5959,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_live_check.py": {
+      "source_sha256": "d3799b65afe3bd2bc65d3ad563564dcbed4d84670e60c1c79a5acbb6d8432ae2",
+      "source_bytes": 9001,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_live_check.py",
+      "public_sha256": "d3799b65afe3bd2bc65d3ad563564dcbed4d84670e60c1c79a5acbb6d8432ae2",
+      "public_bytes": 9001,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_outbox.py": {
+      "source_sha256": "f1f44bd32df1d3b4bd9be3c9b80ebf1a8fe2eeb0719ee2429395508e1b42b06f",
+      "source_bytes": 16746,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_outbox.py",
+      "public_sha256": "f1f44bd32df1d3b4bd9be3c9b80ebf1a8fe2eeb0719ee2429395508e1b42b06f",
+      "public_bytes": 16746,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_prefix.py": {
+      "source_sha256": "5a56171a69bdc9929a1f6ca0ce938e480bdc6cabecb17522247de6fb9fa1bbe9",
+      "source_bytes": 7407,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_prefix.py",
+      "public_sha256": "5a56171a69bdc9929a1f6ca0ce938e480bdc6cabecb17522247de6fb9fa1bbe9",
+      "public_bytes": 7407,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_state.py": {
+      "source_sha256": "bef1c423c2800117b6292926d2432b640f62ba3a8fb0405238a21a47cc2349d1",
+      "source_bytes": 6687,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_state.py",
+      "public_sha256": "bef1c423c2800117b6292926d2432b640f62ba3a8fb0405238a21a47cc2349d1",
+      "public_bytes": 6687,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/archive_transfer_measurement.py": {
+      "source_sha256": "70c4978610b24b236b64d9b4825b7a62a4fdf953a445f51b8b285630584aa4fe",
+      "source_bytes": 873,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/archive_transfer_measurement.py",
+      "public_sha256": "70c4978610b24b236b64d9b4825b7a62a4fdf953a445f51b8b285630584aa4fe",
+      "public_bytes": 873,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/bc_agent.py": {
+      "source_sha256": "f902a277d8b8afafa36eb04c32138b0a825e03ed0c17f5ff193d05672a311630",
+      "source_bytes": 2122,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/bc_agent.py",
+      "public_sha256": "f902a277d8b8afafa36eb04c32138b0a825e03ed0c17f5ff193d05672a311630",
+      "public_bytes": 2122,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/bc_features.py": {
+      "source_sha256": "8110ef4afc97fb472817dbcf4381b1a8bc73c79b59147defda71196e319ec2b0",
+      "source_bytes": 2952,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/bc_features.py",
+      "public_sha256": "8110ef4afc97fb472817dbcf4381b1a8bc73c79b59147defda71196e319ec2b0",
+      "public_bytes": 2952,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/bounded_checkpoint_audit.py": {
+      "source_sha256": "536a6d4a1e47f385d12f3e341f79fe6d03dc7fcbe67309a74ccedf7d9ffb2e2e",
+      "source_bytes": 8149,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/bounded_checkpoint_audit.py",
+      "public_sha256": "536a6d4a1e47f385d12f3e341f79fe6d03dc7fcbe67309a74ccedf7d9ffb2e2e",
+      "public_bytes": 8149,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/bounded_io.py": {
+      "source_sha256": "8f1fc046f09b2d44a0768efb2aef747249a4ceafd3a2790aee991956ef83b6e1",
+      "source_bytes": 7311,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/bounded_io.py",
+      "public_sha256": "8f1fc046f09b2d44a0768efb2aef747249a4ceafd3a2790aee991956ef83b6e1",
+      "public_bytes": 7311,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/bounded_read.py": {
+      "source_sha256": "f8988a8a101dc494290f8939246479d7d31b0c0f5626d5e7ee4f2945a8a29582",
+      "source_bytes": 3707,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/bounded_read.py",
+      "public_sha256": "f8988a8a101dc494290f8939246479d7d31b0c0f5626d5e7ee4f2945a8a29582",
+      "public_bytes": 3707,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/checkpoint_refs.py": {
+      "source_sha256": "da480a5f5c17eb4be80c6ae32bc792e60a3c4db23e067a438357c865960cde85",
+      "source_bytes": 9930,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/checkpoint_refs.py",
+      "public_sha256": "da480a5f5c17eb4be80c6ae32bc792e60a3c4db23e067a438357c865960cde85",
+      "public_bytes": 9930,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/compact_audit.py": {
+      "source_sha256": "d07eebf786ef8e6c4ef33d049d3d8291415a3ec36707ca1bf93d4f4148a7ccfe",
+      "source_bytes": 7320,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/compact_audit.py",
+      "public_sha256": "d07eebf786ef8e6c4ef33d049d3d8291415a3ec36707ca1bf93d4f4148a7ccfe",
+      "public_bytes": 7320,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/conditional_beam.py": {
+      "source_sha256": "976fbdf4123acc6a4a40bbf97faa1d7868765e10b5a3ec006e91b4e3f7729b99",
+      "source_bytes": 3864,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/conditional_beam.py",
+      "public_sha256": "976fbdf4123acc6a4a40bbf97faa1d7868765e10b5a3ec006e91b4e3f7729b99",
+      "public_bytes": 3864,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_archive_accept.py": {
+      "source_sha256": "eb51579b3a030a9bef2dd7dc38be1d52d8720c2627112f7feb0efb2e3a2062d3",
+      "source_bytes": 5483,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_archive_accept.py",
+      "public_sha256": "eb51579b3a030a9bef2dd7dc38be1d52d8720c2627112f7feb0efb2e3a2062d3",
+      "public_bytes": 5483,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_archive_inventory.py": {
+      "source_sha256": "3aece0e4231ec985666e922233ee08ff5e48609d34f24b225d4342a86714238f",
+      "source_bytes": 4270,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_archive_inventory.py",
+      "public_sha256": "3aece0e4231ec985666e922233ee08ff5e48609d34f24b225d4342a86714238f",
+      "public_bytes": 4270,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_diagnostic_stats.py": {
+      "source_sha256": "2d194006137819d232491d345624d8ed52cadc3c8b6d64f284b9804ebd8abf49",
+      "source_bytes": 993,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_diagnostic_stats.py",
+      "public_sha256": "2d194006137819d232491d345624d8ed52cadc3c8b6d64f284b9804ebd8abf49",
+      "public_bytes": 993,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_league_readiness.py": {
+      "source_sha256": "660917e2a6ef7c5f8da8a64cc60ae9fe8f39c33cc14c08f10df3a6267381a90f",
+      "source_bytes": 3852,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_league_readiness.py",
+      "public_sha256": "660917e2a6ef7c5f8da8a64cc60ae9fe8f39c33cc14c08f10df3a6267381a90f",
+      "public_bytes": 3852,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_mainline.py": {
+      "source_sha256": "8b2c0f42e04cd08ccdb571efee71d389a2cea570b4cf7e1672bffe4c39f783e6",
+      "source_bytes": 14479,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_mainline.py",
+      "public_sha256": "8b2c0f42e04cd08ccdb571efee71d389a2cea570b4cf7e1672bffe4c39f783e6",
+      "public_bytes": 14479,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_parent.py": {
+      "source_sha256": "6239440e62c395277eead314669ba422a9a8abe33ac5d7353872e5af2b4cd77f",
+      "source_bytes": 5017,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_parent.py",
+      "public_sha256": "6239440e62c395277eead314669ba422a9a8abe33ac5d7353872e5af2b4cd77f",
+      "public_bytes": 5017,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_result_audit.py": {
+      "source_sha256": "261e01c7a030205d848e09f7473de0cd7460501b79eae915207076bf9257fcd0",
+      "source_bytes": 6891,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_result_audit.py",
+      "public_sha256": "261e01c7a030205d848e09f7473de0cd7460501b79eae915207076bf9257fcd0",
+      "public_bytes": 6891,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/continuous_runtime.py": {
+      "source_sha256": "2b50807db3b1d22aa953a23c5a2241bbb2a88b28d4502d60e450be3c30921b11",
+      "source_bytes": 2956,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/continuous_runtime.py",
+      "public_sha256": "2b50807db3b1d22aa953a23c5a2241bbb2a88b28d4502d60e450be3c30921b11",
+      "public_bytes": 2956,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/cooperative_probe.py": {
+      "source_sha256": "656cb875a9af5ed1ed72fbabee0f6a841c5f72491b9b662926f88151bab1838e",
+      "source_bytes": 2825,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/cooperative_probe.py",
+      "public_sha256": "656cb875a9af5ed1ed72fbabee0f6a841c5f72491b9b662926f88151bab1838e",
+      "public_bytes": 2825,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/cooperative_shutdown.py": {
+      "source_sha256": "1593adb3d882d89ecf828b3b35ee16f61f744d9da0bf4c4db00a67a08c9dd4bb",
+      "source_bytes": 689,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/cooperative_shutdown.py",
+      "public_sha256": "1593adb3d882d89ecf828b3b35ee16f61f744d9da0bf4c4db00a67a08c9dd4bb",
+      "public_bytes": 689,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/cpu_sampling_check.py": {
+      "source_sha256": "968ffdb828762dc1905a6b03830b84e032f5ba297c83b53ad800fc52c20eba26",
+      "source_bytes": 14641,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/cpu_sampling_check.py",
+      "public_sha256": "968ffdb828762dc1905a6b03830b84e032f5ba297c83b53ad800fc52c20eba26",
+      "public_bytes": 14641,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/cpu_sampling_scope.py": {
+      "source_sha256": "2dcdb90269c5329073d4bda84d718517cfc99d027d93e1dcab199a72a2f2f532",
+      "source_bytes": 2205,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/cpu_sampling_scope.py",
+      "public_sha256": "2dcdb90269c5329073d4bda84d718517cfc99d027d93e1dcab199a72a2f2f532",
+      "public_bytes": 2205,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/engine_maintenance.py": {
+      "source_sha256": "77ed2f2b2b95910c92e2e38baca52f5e52113ad0eef943fb0d9e0cb54a8997f7",
+      "source_bytes": 998,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/engine_maintenance.py",
+      "public_sha256": "77ed2f2b2b95910c92e2e38baca52f5e52113ad0eef943fb0d9e0cb54a8997f7",
+      "public_bytes": 998,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/engineering_retry.py": {
+      "source_sha256": "e7b5d9a96a21337128c0614a477fe4f83b2a8f589574e5ef7deca2d21501c53f",
+      "source_bytes": 1781,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/engineering_retry.py",
+      "public_sha256": "fdd061872eea2add74541232b9d23fc58d2be7fcb4e1ba55d64f532382cf2d16",
+      "public_bytes": 1777,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/evaluate.py": {
+      "source_sha256": "3ea5bc03fded952e0361dab3a2b71a744ca2e1f797ddc584651b1b7bfea887ba",
+      "source_bytes": 10356,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/evaluate.py",
+      "public_sha256": "3ea5bc03fded952e0361dab3a2b71a744ca2e1f797ddc584651b1b7bfea887ba",
+      "public_bytes": 10356,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/evidence_tiering.py": {
+      "source_sha256": "d0a60d23f3e7e283d9a57ea8b13df44f74a4249fe95042f8756694c9929b695d",
+      "source_bytes": 6970,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/evidence_tiering.py",
+      "public_sha256": "d0a60d23f3e7e283d9a57ea8b13df44f74a4249fe95042f8756694c9929b695d",
+      "public_bytes": 6970,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/__init__.py": {
+      "source_sha256": "494cbc7fcfbe1d7a2c7932469e4ecb36b48bcfc9a7b8d628a7288159bc55543e",
+      "source_bytes": 83,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/__init__.py",
+      "public_sha256": "494cbc7fcfbe1d7a2c7932469e4ecb36b48bcfc9a7b8d628a7288159bc55543e",
+      "public_bytes": 83,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/archive.py": {
+      "source_sha256": "25129dc420864746ad638caa8bbd055c29177d6b1fe9f6afcaf391515565b7e5",
+      "source_bytes": 5175,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/archive.py",
+      "public_sha256": "25129dc420864746ad638caa8bbd055c29177d6b1fe9f6afcaf391515565b7e5",
+      "public_bytes": 5175,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/bridge.py": {
+      "source_sha256": "8f00db0ccc901455f0f66b21e17e9869e1e17378aa8d687a3db8fc4e12987afc",
+      "source_bytes": 4127,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/bridge.py",
+      "public_sha256": "8f00db0ccc901455f0f66b21e17e9869e1e17378aa8d687a3db8fc4e12987afc",
+      "public_bytes": 4127,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/bundle.py": {
+      "source_sha256": "07eb0da8594f77147f06c944a5c7e7b03d256f24e5b3e158e7b0498cf862df04",
+      "source_bytes": 4775,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/bundle.py",
+      "public_sha256": "07eb0da8594f77147f06c944a5c7e7b03d256f24e5b3e158e7b0498cf862df04",
+      "public_bytes": 4775,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/cadence.py": {
+      "source_sha256": "f9efd0e442a9984cea254f53ef760df9a0711eeb0bb25a137fea765e1c6a0fd4",
+      "source_bytes": 1081,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/cadence.py",
+      "public_sha256": "f9efd0e442a9984cea254f53ef760df9a0711eeb0bb25a137fea765e1c6a0fd4",
+      "public_bytes": 1081,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/checkpoint.py": {
+      "source_sha256": "5c29717128440ab9d155369c5a94725c1def349defba0b37e0e622496bd24b6e",
+      "source_bytes": 8289,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/checkpoint.py",
+      "public_sha256": "5c29717128440ab9d155369c5a94725c1def349defba0b37e0e622496bd24b6e",
+      "public_bytes": 8289,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/control.py": {
+      "source_sha256": "cf1fd9464f1d5b9a8cc9d55c77d97e8c2ee7ba7453ec84b8fdd67d43efd53b78",
+      "source_bytes": 6861,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/control.py",
+      "public_sha256": "cf1fd9464f1d5b9a8cc9d55c77d97e8c2ee7ba7453ec84b8fdd67d43efd53b78",
+      "public_bytes": 6861,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/durable.py": {
+      "source_sha256": "1e12ff2f6eec381a0af7eba61da1be1a6364a4410d3fd3228fb2510c98ccc7f6",
+      "source_bytes": 12060,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/durable.py",
+      "public_sha256": "1e12ff2f6eec381a0af7eba61da1be1a6364a4410d3fd3228fb2510c98ccc7f6",
+      "public_bytes": 12060,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/io_budget.py": {
+      "source_sha256": "27155341fbf6b391b58d9b70be9927ac9200c02f7f3fac521892eb7b2cc0925a",
+      "source_bytes": 1142,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/io_budget.py",
+      "public_sha256": "27155341fbf6b391b58d9b70be9927ac9200c02f7f3fac521892eb7b2cc0925a",
+      "public_bytes": 1142,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fo_v2/transactional.py": {
+      "source_sha256": "ec364ae5cd0b66e164ae663fa5ac41d8964a5193ee4bd677e2cc9c9bb44b255f",
+      "source_bytes": 1082,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fo_v2/transactional.py",
+      "public_sha256": "ec364ae5cd0b66e164ae663fa5ac41d8964a5193ee4bd677e2cc9c9bb44b255f",
+      "public_bytes": 1082,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v2_checkpoint_cadence.py": {
+      "source_sha256": "7998191274979e0a4bc377546e6d08441fd4f35c88b86a72e77702c1abf20565",
+      "source_bytes": 6540,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v2_checkpoint_cadence.py",
+      "public_sha256": "7998191274979e0a4bc377546e6d08441fd4f35c88b86a72e77702c1abf20565",
+      "public_bytes": 6540,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v2_scope.py": {
+      "source_sha256": "b215ecb4035cfec0bed284ccbd02ea711543de8a9e2642218aff067daf87649c",
+      "source_bytes": 7597,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v2_scope.py",
+      "public_sha256": "b215ecb4035cfec0bed284ccbd02ea711543de8a9e2642218aff067daf87649c",
+      "public_bytes": 7597,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v2_training.py": {
+      "source_sha256": "d88a53c220e72a5e6100fc44820c671e3c6a742cb44e1648d52261f72e11cdeb",
+      "source_bytes": 10632,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v2_training.py",
+      "public_sha256": "d88a53c220e72a5e6100fc44820c671e3c6a742cb44e1648d52261f72e11cdeb",
+      "public_bytes": 10632,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v3_admission.py": {
+      "source_sha256": "8fa59b9a958848590abcc3386aaa235de7a8ba27bcbb69627987c2fe61b9bd33",
+      "source_bytes": 4748,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v3_admission.py",
+      "public_sha256": "8fa59b9a958848590abcc3386aaa235de7a8ba27bcbb69627987c2fe61b9bd33",
+      "public_bytes": 4748,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v3_exit.py": {
+      "source_sha256": "c1fe65868fa9cbacbf3b29fc57cf3f64e5747411121e25f322d01e14fb90705d",
+      "source_bytes": 2822,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v3_exit.py",
+      "public_sha256": "c1fe65868fa9cbacbf3b29fc57cf3f64e5747411121e25f322d01e14fb90705d",
+      "public_bytes": 2822,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/framework_v3_runtime.py": {
+      "source_sha256": "87fe09f67faabe31c7968b1ae21c34bdd051a20db35133fd799d4fc641c67358",
+      "source_bytes": 9221,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/framework_v3_runtime.py",
+      "public_sha256": "87fe09f67faabe31c7968b1ae21c34bdd051a20db35133fd799d4fc641c67358",
+      "public_bytes": 9221,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fresh_compact.py": {
+      "source_sha256": "9652623ed3998bec2782a58cb66726aa85afbe3c629d518b6959dbc173709ece",
+      "source_bytes": 4677,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fresh_compact.py",
+      "public_sha256": "9652623ed3998bec2782a58cb66726aa85afbe3c629d518b6959dbc173709ece",
+      "public_bytes": 4677,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/fresh_experiment.py": {
+      "source_sha256": "5350aeac0bba1db3ff94e83f781ec937786b9dc6697e8b863a42320534b7957b",
+      "source_bytes": 7609,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/fresh_experiment.py",
+      "public_sha256": "5350aeac0bba1db3ff94e83f781ec937786b9dc6697e8b863a42320534b7957b",
+      "public_bytes": 7609,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/gpu_restore.py": {
+      "source_sha256": "4f5554621680d83e5d10fdc0e2fa40e08f9c0ec08f9a82f7a917940c86d43adb",
+      "source_bytes": 9460,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/gpu_restore.py",
+      "public_sha256": "4f5554621680d83e5d10fdc0e2fa40e08f9c0ec08f9a82f7a917940c86d43adb",
+      "public_bytes": 9460,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/gradient_diagnostic.py": {
+      "source_sha256": "b2cd233d7ce16a260beb24b73b5d335079cebaaa7d460791eea78e73b31b8070",
+      "source_bytes": 4134,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/gradient_diagnostic.py",
+      "public_sha256": "b2cd233d7ce16a260beb24b73b5d335079cebaaa7d460791eea78e73b31b8070",
+      "public_bytes": 4134,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/history_delta.py": {
+      "source_sha256": "12a0a5b16a25a7f10af36ec2b0fd921d43443080bf32622fa8bf8beb7dd602c9",
+      "source_bytes": 5538,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/history_delta.py",
+      "public_sha256": "12a0a5b16a25a7f10af36ec2b0fd921d43443080bf32622fa8bf8beb7dd602c9",
+      "public_bytes": 5538,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/host_block_io.py": {
+      "source_sha256": "1c83eb03a3f4628f297ca0ae83414bf74a0566efde348c4f4d29d90134b1166a",
+      "source_bytes": 2598,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/host_block_io.py",
+      "public_sha256": "1c83eb03a3f4628f297ca0ae83414bf74a0566efde348c4f4d29d90134b1166a",
+      "public_bytes": 2598,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/hybrid_continue.py": {
+      "source_sha256": "170cdba49205539386ab918dc728f36faf98718716a93098efd966c8ca5c278d",
+      "source_bytes": 7296,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/hybrid_continue.py",
+      "public_sha256": "170cdba49205539386ab918dc728f36faf98718716a93098efd966c8ca5c278d",
+      "public_bytes": 7296,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/hybrid_credit_analysis.py": {
+      "source_sha256": "b727497c1cee84a35d626cb82cb1acf206a16cfeb81616d29f553a1926e5d1b6",
+      "source_bytes": 6485,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/hybrid_credit_analysis.py",
+      "public_sha256": "b727497c1cee84a35d626cb82cb1acf206a16cfeb81616d29f553a1926e5d1b6",
+      "public_bytes": 6485,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/hybrid_materialization.py": {
+      "source_sha256": "4c3aac721d40e9ca6442ae39f2af592cd1e03ee4e970d803e1c643f411b4dadf",
+      "source_bytes": 8862,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/hybrid_materialization.py",
+      "public_sha256": "4c3aac721d40e9ca6442ae39f2af592cd1e03ee4e970d803e1c643f411b4dadf",
+      "public_bytes": 8862,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/incremental_hash_cache.py": {
+      "source_sha256": "96b057c12afa2a364416ea2aed3b0f8f98ce98e150728db4d5a4b9568f6efd48",
+      "source_bytes": 3523,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/incremental_hash_cache.py",
+      "public_sha256": "96b057c12afa2a364416ea2aed3b0f8f98ce98e150728db4d5a4b9568f6efd48",
+      "public_bytes": 3523,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/io.py": {
+      "source_sha256": "1f4c5f2aa63f9732b578574bceb8a5facfca27caebb2007513e16d3fba9370f8",
+      "source_bytes": 4560,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/io.py",
+      "public_sha256": "1f4c5f2aa63f9732b578574bceb8a5facfca27caebb2007513e16d3fba9370f8",
+      "public_bytes": 4560,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/io_pacing.py": {
+      "source_sha256": "6c938756644271899b71a545eaa7d882ffd2dbcb72dfaca588a879f9dc629730",
+      "source_bytes": 1416,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/io_pacing.py",
+      "public_sha256": "6c938756644271899b71a545eaa7d882ffd2dbcb72dfaca588a879f9dc629730",
+      "public_bytes": 1416,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/linux_probe.py": {
+      "source_sha256": "eb796448d9eb7061a79f3d4a287c5be2ee66e608e2e1009ec15e1daa38917c45",
+      "source_bytes": 25642,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/linux_probe.py",
+      "public_sha256": "eb796448d9eb7061a79f3d4a287c5be2ee66e608e2e1009ec15e1daa38917c45",
+      "public_bytes": 25642,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/local_cache_finalize.py": {
+      "source_sha256": "a9b910167f19d9ea53b596b21eeb61022fbaa96d1a98ae612e1801132981b6bc",
+      "source_bytes": 5205,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/local_cache_finalize.py",
+      "public_sha256": "a9b910167f19d9ea53b596b21eeb61022fbaa96d1a98ae612e1801132981b6bc",
+      "public_bytes": 5205,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/local_cache_retirement.py": {
+      "source_sha256": "d3c413e45f11cde45ae5251b5ffeb77a05d6cd5e27fd19c78f10dd3a69f78f2e",
+      "source_bytes": 12503,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/local_cache_retirement.py",
+      "public_sha256": "d3c413e45f11cde45ae5251b5ffeb77a05d6cd5e27fd19c78f10dd3a69f78f2e",
+      "public_bytes": 12503,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/local_forensic_retirement.py": {
+      "source_sha256": "56f6eddfbaeb7a3a6083cc7d8176e03367148be829aaa73f9f19fcf4dea1db57",
+      "source_bytes": 7766,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/local_forensic_retirement.py",
+      "public_sha256": "56f6eddfbaeb7a3a6083cc7d8176e03367148be829aaa73f9f19fcf4dea1db57",
+      "public_bytes": 7766,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/local_fragment_retirement.py": {
+      "source_sha256": "1d4ee647e49437e56a4158e059abd018f8fd8b8b59d8ea8307b87776e8fba606",
+      "source_bytes": 6204,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/local_fragment_retirement.py",
+      "public_sha256": "1d4ee647e49437e56a4158e059abd018f8fd8b8b59d8ea8307b87776e8fba606",
+      "public_bytes": 6204,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/local_trajectory_archive.py": {
+      "source_sha256": "4c6c18d38ef49e7071d84ba6b712cc198e26a1c2b7f76e91cbb9f27adc07aaba",
+      "source_bytes": 8830,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/local_trajectory_archive.py",
+      "public_sha256": "4c6c18d38ef49e7071d84ba6b712cc198e26a1c2b7f76e91cbb9f27adc07aaba",
+      "public_bytes": 8830,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/migration_summary.py": {
+      "source_sha256": "321b6c12859381a55db296e25e434bd6ce0beacc3232237c796ec61c7e1faeb0",
+      "source_bytes": 2383,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/migration_summary.py",
+      "public_sha256": "321b6c12859381a55db296e25e434bd6ce0beacc3232237c796ec61c7e1faeb0",
+      "public_bytes": 2383,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/package_probe.py": {
+      "source_sha256": "feb1925ca1d3e9163e992daaae4b5eece0310d2e46263f8575be19ed8ba898a3",
+      "source_bytes": 11384,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/package_probe.py",
+      "public_sha256": "feb1925ca1d3e9163e992daaae4b5eece0310d2e46263f8575be19ed8ba898a3",
+      "public_bytes": 11384,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/phase_timing.py": {
+      "source_sha256": "dc7593c833b8bb0bfa653195f2ee33826a459166d90698df5a84d1a0479e7123",
+      "source_bytes": 3510,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/phase_timing.py",
+      "public_sha256": "dc7593c833b8bb0bfa653195f2ee33826a459166d90698df5a84d1a0479e7123",
+      "public_bytes": 3510,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ppo_accounting.py": {
+      "source_sha256": "1bcae61c696b3f5f7574a966b5d1dcb16d13c82601f49ee0d2bfee31befa1823",
+      "source_bytes": 2460,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ppo_accounting.py",
+      "public_sha256": "1bcae61c696b3f5f7574a966b5d1dcb16d13c82601f49ee0d2bfee31befa1823",
+      "public_bytes": 2460,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ppo_counter_compatibility.py": {
+      "source_sha256": "a68c30e88df9677d1ccffa25e92329fe8c763244fd7f252999438eb56e73adcd",
+      "source_bytes": 3466,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ppo_counter_compatibility.py",
+      "public_sha256": "a68c30e88df9677d1ccffa25e92329fe8c763244fd7f252999438eb56e73adcd",
+      "public_bytes": 3466,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ppo_transaction.py": {
+      "source_sha256": "a2dc1d93ed11f91b2c7f9ffe75ff253c645eee07fe75131e2659ec9989bbf32c",
+      "source_bytes": 2821,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ppo_transaction.py",
+      "public_sha256": "a2dc1d93ed11f91b2c7f9ffe75ff253c645eee07fe75131e2659ec9989bbf32c",
+      "public_bytes": 2821,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ppo_volume_audit.py": {
+      "source_sha256": "3ab167e564ec48707b7cea51c043af53e08e8089b68e790036fba8e91f065795",
+      "source_bytes": 7174,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ppo_volume_audit.py",
+      "public_sha256": "3ab167e564ec48707b7cea51c043af53e08e8089b68e790036fba8e91f065795",
+      "public_bytes": 7174,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/prepare_bc.py": {
+      "source_sha256": "11b8a21ce9757f68a655e1e5f922fc52066a5d28ff4c7362263d60818cc3c973",
+      "source_bytes": 5757,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/prepare_bc.py",
+      "public_sha256": "11b8a21ce9757f68a655e1e5f922fc52066a5d28ff4c7362263d60818cc3c973",
+      "public_bytes": 5757,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/prepare_tokens.py": {
+      "source_sha256": "8ad048d410e8b82080f8f1d12971df4245bf13247ef97462c011bb5d9f410c62",
+      "source_bytes": 5499,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/prepare_tokens.py",
+      "public_sha256": "8ad048d410e8b82080f8f1d12971df4245bf13247ef97462c011bb5d9f410c62",
+      "public_bytes": 5499,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/prepared_parent_verify.py": {
+      "source_sha256": "ba2c38cbb4e953163d8e47fc22568ddf462fc9322c1451abdb5911352fb1a4d5",
+      "source_bytes": 7419,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/prepared_parent_verify.py",
+      "public_sha256": "ba2c38cbb4e953163d8e47fc22568ddf462fc9322c1451abdb5911352fb1a4d5",
+      "public_bytes": 7419,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/process_guardian.py": {
+      "source_sha256": "7df84c047bef9ac4d59c5ce988d22053297ef200d074fb5a1f09b71614b1f84d",
+      "source_bytes": 13564,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/process_guardian.py",
+      "public_sha256": "7df84c047bef9ac4d59c5ce988d22053297ef200d074fb5a1f09b71614b1f84d",
+      "public_bytes": 13564,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/processes.py": {
+      "source_sha256": "66c5ac6f0629e5cbe70253303eff3591d5f47c7590ff2fc785ce9a3240ecc7e0",
+      "source_bytes": 2648,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/processes.py",
+      "public_sha256": "66c5ac6f0629e5cbe70253303eff3591d5f47c7590ff2fc785ce9a3240ecc7e0",
+      "public_bytes": 2648,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_agent.py": {
+      "source_sha256": "802a03c0c286a45a4f88461adc0db7f1fc317a335e4aefa7c33967e7887cd541",
+      "source_bytes": 8161,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_agent.py",
+      "public_sha256": "802a03c0c286a45a4f88461adc0db7f1fc317a335e4aefa7c33967e7887cd541",
+      "public_bytes": 8161,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_cg/__init__.py": {
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_cg/__init__.py",
+      "public_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "public_bytes": 0,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_cg/api.py": {
+      "source_sha256": "264155d08ed8beccb49a5964c94c44204124e3eafbcbaadb2f22cc646bae296c",
+      "source_bytes": 21178,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_cg/api.py",
+      "public_sha256": "264155d08ed8beccb49a5964c94c44204124e3eafbcbaadb2f22cc646bae296c",
+      "public_bytes": 21178,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_cg/metadata.json": {
+      "source_sha256": "4d9d8ffee48b87a6ff0f25aa24103f1b331c87e791c8a2f1e6a7d45455dafb32",
+      "source_bytes": 1231398,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_cg/metadata.json",
+      "public_sha256": "4d9d8ffee48b87a6ff0f25aa24103f1b331c87e791c8a2f1e6a7d45455dafb32",
+      "public_bytes": 1231398,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_cg/sim.py": {
+      "source_sha256": "91e6bf7e6fbec11830e9781871bca3f59faa125bedc36a2e43cd869fda909b7b",
+      "source_bytes": 439,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_cg/sim.py",
+      "public_sha256": "91e6bf7e6fbec11830e9781871bca3f59faa125bedc36a2e43cd869fda909b7b",
+      "public_bytes": 439,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_cg/utils.py": {
+      "source_sha256": "60f29665cee0a88525d6f0383bc45959a6262d16fe35ef380aece1e0ea13c49b",
+      "source_bytes": 1970,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_cg/utils.py",
+      "public_sha256": "60f29665cee0a88525d6f0383bc45959a6262d16fe35ef380aece1e0ea13c49b",
+      "public_bytes": 1970,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/public_fragment_retirement.py": {
+      "source_sha256": "019aac0946fbe66a1d36ecd4dc3c671ccb54cb2b8d91f838b256b935a2bd0d35",
+      "source_bytes": 6722,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/public_fragment_retirement.py",
+      "public_sha256": "019aac0946fbe66a1d36ecd4dc3c671ccb54cb2b8d91f838b256b935a2bd0d35",
+      "public_bytes": 6722,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/range_artifacts.py": {
+      "source_sha256": "bee9bfb76f7cba4809fc2cdb91bb67c180ecdebe71e648afc9cf701febe8e1b7",
+      "source_bytes": 4734,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/range_artifacts.py",
+      "public_sha256": "bee9bfb76f7cba4809fc2cdb91bb67c180ecdebe71e648afc9cf701febe8e1b7",
+      "public_bytes": 4734,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/range_fetch.py": {
+      "source_sha256": "50ae4a03d5888b9ce258e5612e79493f475fbcbc9a9fb5f125ddd362f739443f",
+      "source_bytes": 5865,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/range_fetch.py",
+      "public_sha256": "50ae4a03d5888b9ce258e5612e79493f475fbcbc9a9fb5f125ddd362f739443f",
+      "public_bytes": 5865,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ranged_wheelhouse.py": {
+      "source_sha256": "c4557f612b066d6085239a9a308bb9158bc64ec1aa9f3759ab392c3edfd787bf",
+      "source_bytes": 13050,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ranged_wheelhouse.py",
+      "public_sha256": "c4557f612b066d6085239a9a308bb9158bc64ec1aa9f3759ab392c3edfd787bf",
+      "public_bytes": 13050,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/remote_lease.py": {
+      "source_sha256": "756d90a5676c07d4263656eb0d161f62f808a435c819cfcecc90aa54a20eb126",
+      "source_bytes": 3621,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/remote_lease.py",
+      "public_sha256": "21e177dfd506027c0e1a18d7a57d1731d0195a529d95129ce5cef98772e0b6a5",
+      "public_bytes": 3617,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/replay_data.py": {
+      "source_sha256": "f4d065a8b0584d873bbf56f77c0d43886acbcc05fe6cd2ae88dfa011d8ea13df",
+      "source_bytes": 2993,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/replay_data.py",
+      "public_sha256": "f4d065a8b0584d873bbf56f77c0d43886acbcc05fe6cd2ae88dfa011d8ea13df",
+      "public_bytes": 2993,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/resource_journal.py": {
+      "source_sha256": "13807c972bdd46fa9dd91d711fb51c9fe2b83ba02f4d47d00517c9d80c885550",
+      "source_bytes": 3745,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/resource_journal.py",
+      "public_sha256": "13807c972bdd46fa9dd91d711fb51c9fe2b83ba02f4d47d00517c9d80c885550",
+      "public_bytes": 3745,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/resource_profile.py": {
+      "source_sha256": "16c42a2405ac7b8e98b0c0e3fcd2d4e2f47aa6a9686527679f705b8daa5c25d6",
+      "source_bytes": 4741,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/resource_profile.py",
+      "public_sha256": "16c42a2405ac7b8e98b0c0e3fcd2d4e2f47aa6a9686527679f705b8daa5c25d6",
+      "public_bytes": 4741,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/restore_capsule.py": {
+      "source_sha256": "18e71085f342b7ead57381b0ceb8a6392473df6aef5e2aac42199aee73c942a3",
+      "source_bytes": 19827,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/restore_capsule.py",
+      "public_sha256": "18e71085f342b7ead57381b0ceb8a6392473df6aef5e2aac42199aee73c942a3",
+      "public_bytes": 19827,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/retained_source.py": {
+      "source_sha256": "9eacdfba77a6cf2880ac0d807d36af28e83c1fd4b16c5f7b8dbb714150a91efd",
+      "source_bytes": 3349,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/retained_source.py",
+      "public_sha256": "9eacdfba77a6cf2880ac0d807d36af28e83c1fd4b16c5f7b8dbb714150a91efd",
+      "public_bytes": 3349,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_agent.py": {
+      "source_sha256": "29b5c097e3a18d419a5ef6d726db6329fd4e1e010ce41d5254ebf9f3377dfc53",
+      "source_bytes": 1131,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_agent.py",
+      "public_sha256": "29b5c097e3a18d419a5ef6d726db6329fd4e1e010ce41d5254ebf9f3377dfc53",
+      "public_bytes": 1131,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_audit.py": {
+      "source_sha256": "ce85710b468ce17c4f194b9978096813d03d1c899a4d7bbd94dd6687d40c3ef2",
+      "source_bytes": 14958,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_audit.py",
+      "public_sha256": "ce85710b468ce17c4f194b9978096813d03d1c899a4d7bbd94dd6687d40c3ef2",
+      "public_bytes": 14958,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_collector.py": {
+      "source_sha256": "ce276bc7db1a081708fea9f8c1b82e87b1c2dacfabe2bf7ea739255263c4387a",
+      "source_bytes": 6133,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_collector.py",
+      "public_sha256": "ce276bc7db1a081708fea9f8c1b82e87b1c2dacfabe2bf7ea739255263c4387a",
+      "public_bytes": 6133,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_core.py": {
+      "source_sha256": "a517871c9642a2afb29186074171041b5af2c6d5f1874537875ec0f7ea3c72ee",
+      "source_bytes": 10583,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_core.py",
+      "public_sha256": "a517871c9642a2afb29186074171041b5af2c6d5f1874537875ec0f7ea3c72ee",
+      "public_bytes": 10583,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_engine_worker.py": {
+      "source_sha256": "90a93afdbaaa291bbf2821e8b383d7e1f15d3487b58f2f1df81cf14ef628e770",
+      "source_bytes": 2558,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_engine_worker.py",
+      "public_sha256": "90a93afdbaaa291bbf2821e8b383d7e1f15d3487b58f2f1df81cf14ef628e770",
+      "public_bytes": 2558,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_journal.py": {
+      "source_sha256": "c005c997338c97185f56ad234e260a17843e76b7924429d3d4cfe53fceab6c88",
+      "source_bytes": 1166,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_journal.py",
+      "public_sha256": "c005c997338c97185f56ad234e260a17843e76b7924429d3d4cfe53fceab6c88",
+      "public_bytes": 1166,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_league.py": {
+      "source_sha256": "b34ec0c24d17c43b126dfb581a95ef60ba1b50a6f4b6a39e82877078f262fe4a",
+      "source_bytes": 6315,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_league.py",
+      "public_sha256": "b34ec0c24d17c43b126dfb581a95ef60ba1b50a6f4b6a39e82877078f262fe4a",
+      "public_bytes": 6315,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_resume.py": {
+      "source_sha256": "d97580dde8551b99d682358cfe038b41871c660e7e87b6b600e1a0872766d3b2",
+      "source_bytes": 6051,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_resume.py",
+      "public_sha256": "d97580dde8551b99d682358cfe038b41871c660e7e87b6b600e1a0872766d3b2",
+      "public_bytes": 6051,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/rl_sampling.py": {
+      "source_sha256": "ace31c91ff3a5fc3fda7d4dbe9b4aead77c524c9385d3c46e30a06f9b79ed817",
+      "source_bytes": 2318,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/rl_sampling.py",
+      "public_sha256": "ace31c91ff3a5fc3fda7d4dbe9b4aead77c524c9385d3c46e30a06f9b79ed817",
+      "public_bytes": 2318,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/sampling_parity.py": {
+      "source_sha256": "2bd68380e80ca0531a930ea0384e645978a5100d8584859533958e07f9b59620",
+      "source_bytes": 2548,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/sampling_parity.py",
+      "public_sha256": "2bd68380e80ca0531a930ea0384e645978a5100d8584859533958e07f9b59620",
+      "public_bytes": 2548,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/scale_accounting.py": {
+      "source_sha256": "46f5c38f308e9f65632553f8011a6080c0ca74fa1bcd1857b15891c9fa93c6f0",
+      "source_bytes": 4592,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/scale_accounting.py",
+      "public_sha256": "46f5c38f308e9f65632553f8011a6080c0ca74fa1bcd1857b15891c9fa93c6f0",
+      "public_bytes": 4592,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/scientific_resume.py": {
+      "source_sha256": "d952e388b4333f64dd6f78e10ddbb9836893f513f8595f9a50a75175fe922f48",
+      "source_bytes": 29995,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/scientific_resume.py",
+      "public_sha256": "d952e388b4333f64dd6f78e10ddbb9836893f513f8595f9a50a75175fe922f48",
+      "public_bytes": 29995,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_archive.py": {
+      "source_sha256": "22f1a38030d08db3036ddaecc4d9a9b65c358594fca455089beba0d4b83384c2",
+      "source_bytes": 27116,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_archive.py",
+      "public_sha256": "1e17b5a259034cf6297b751303b5a0ff82c60b3be3eca33a167c82fabed07b2b",
+      "public_bytes": 27140,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_boundary_audit.py": {
+      "source_sha256": "72c38f4e7bd47031aa01deafd4fcb6b5298676412070e276dfd120ed2e32c74a",
+      "source_bytes": 14296,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_boundary_audit.py",
+      "public_sha256": "907e800bb0f0f693059fafdb7cfbb89ffb4f91fe59d9d77e4c8281b41ec48fec",
+      "public_bytes": 14305,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_environment.py": {
+      "source_sha256": "ea453f7721ba7872c454e782b067c63d2fe6e7dae0c81019b01745e205cade1c",
+      "source_bytes": 15909,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_environment.py",
+      "public_sha256": "ea453f7721ba7872c454e782b067c63d2fe6e7dae0c81019b01745e205cade1c",
+      "public_bytes": 15909,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_environment_agent.py": {
+      "source_sha256": "2c562133d155fe87d3771cfd53cfdd1a529b1f15d54797819167b7a6d7e0477a",
+      "source_bytes": 17463,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_environment_agent.py",
+      "public_sha256": "2c562133d155fe87d3771cfd53cfdd1a529b1f15d54797819167b7a6d7e0477a",
+      "public_bytes": 17463,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_environment_worker.py": {
+      "source_sha256": "ae08f6008c7b48fa77128cc0cf488115d6da6c55a01d5a27655f11296c6b60e3",
+      "source_bytes": 11662,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_environment_worker.py",
+      "public_sha256": "ae08f6008c7b48fa77128cc0cf488115d6da6c55a01d5a27655f11296c6b60e3",
+      "public_bytes": 11662,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_feedback.py": {
+      "source_sha256": "c02fdb3955d000252786e6be94c6a1026e316a96535def23278d7d063fe5aa07",
+      "source_bytes": 6213,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_feedback.py",
+      "public_sha256": "c02fdb3955d000252786e6be94c6a1026e316a96535def23278d7d063fe5aa07",
+      "public_bytes": 6213,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_handoff.py": {
+      "source_sha256": "ed8cefa919de6e1bb8cceb9e8fa495d3396d7c4a1b32f7fa7da7dd7862552e10",
+      "source_bytes": 8586,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_handoff.py",
+      "public_sha256": "ed8cefa919de6e1bb8cceb9e8fa495d3396d7c4a1b32f7fa7da7dd7862552e10",
+      "public_bytes": 8586,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_io_check.py": {
+      "source_sha256": "cf7e4ec921ab95a8b1eb2b933a2f57c8c4aaedb75df6414fbeab3e7f57c61074",
+      "source_bytes": 9889,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_io_check.py",
+      "public_sha256": "cf7e4ec921ab95a8b1eb2b933a2f57c8c4aaedb75df6414fbeab3e7f57c61074",
+      "public_bytes": 9889,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_resource_agent.py": {
+      "source_sha256": "0aee1cd7b84b8cfa0c85787b5fe666504c98ead780b0fed963ad9dfe8a275be1",
+      "source_bytes": 11922,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_resource_agent.py",
+      "public_sha256": "0aee1cd7b84b8cfa0c85787b5fe666504c98ead780b0fed963ad9dfe8a275be1",
+      "public_bytes": 11922,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_resource_audit.py": {
+      "source_sha256": "2b327199061815576d7363dd02c152b76b1f84dd8e80c24344eae745d3c32db9",
+      "source_bytes": 12648,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_resource_audit.py",
+      "public_sha256": "dd353ccca33857cef3b4d65ce4a1565cdb17671b9e27bca89f862b972106de13",
+      "public_bytes": 12654,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_resource_worker.py": {
+      "source_sha256": "0fff0e9df5fceace5fcf5fff9d487aef4a6010d6b2dcd59c83b269cfd877f6e9",
+      "source_bytes": 7673,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_resource_worker.py",
+      "public_sha256": "0fff0e9df5fceace5fcf5fff9d487aef4a6010d6b2dcd59c83b269cfd877f6e9",
+      "public_bytes": 7673,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_storage_acceptance.py": {
+      "source_sha256": "7c490a9cc6357d3e46df2af460cda7bfcb13ac8377df473f3d1bff59dabf1468",
+      "source_bytes": 7004,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_storage_acceptance.py",
+      "public_sha256": "7c490a9cc6357d3e46df2af460cda7bfcb13ac8377df473f3d1bff59dabf1468",
+      "public_bytes": 7004,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_storage_migration.py": {
+      "source_sha256": "ff0167dbd8fda0d0cae3201037f74d6a0ec05ec5275dbbd1f1d07440dd4ec540",
+      "source_bytes": 5356,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_storage_migration.py",
+      "public_sha256": "ff0167dbd8fda0d0cae3201037f74d6a0ec05ec5275dbbd1f1d07440dd4ec540",
+      "public_bytes": 5356,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_trial.py": {
+      "source_sha256": "00dd568fcb57e28a33d7a31839edd03f70cd617206dfdc66f2d2d0bc981f3c37",
+      "source_bytes": 61145,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_trial.py",
+      "public_sha256": "00dd568fcb57e28a33d7a31839edd03f70cd617206dfdc66f2d2d0bc981f3c37",
+      "public_bytes": 61145,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_trial_agent.py": {
+      "source_sha256": "a336ecca953c6b2bc6ca4b75a7c59ffff64202af3f5851066b88d0d346dee5f1",
+      "source_bytes": 33407,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_trial_agent.py",
+      "public_sha256": "bfacb15e603bfdea32ddc52d52cb5777cb445461329b5b907965dde09f34bcb4",
+      "public_bytes": 33419,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_trial_worker.py": {
+      "source_sha256": "758bef33387bcbaaedaff52fcbdb3fd1e52d19e096a13a60e80512b164596433",
+      "source_bytes": 46025,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_trial_worker.py",
+      "public_sha256": "758bef33387bcbaaedaff52fcbdb3fd1e52d19e096a13a60e80512b164596433",
+      "public_bytes": 46025,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/server_workspace.py": {
+      "source_sha256": "793da8bc04385c3f15911e5733761429bfe8671849aa7a6d18f01c7b16a0f2c0",
+      "source_bytes": 4167,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/server_workspace.py",
+      "public_sha256": "793da8bc04385c3f15911e5733761429bfe8671849aa7a6d18f01c7b16a0f2c0",
+      "public_bytes": 4167,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/shared_capacity.py": {
+      "source_sha256": "fd85a9e6eb1b3f788ae515aaff4e457d00368224072a4d15fd61c542ea1dc29f",
+      "source_bytes": 6859,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/shared_capacity.py",
+      "public_sha256": "fd85a9e6eb1b3f788ae515aaff4e457d00368224072a4d15fd61c542ea1dc29f",
+      "public_bytes": 6859,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/shared_server_safety.py": {
+      "source_sha256": "ea8b98aa5da148bb5573b8ace2fe3048dfa880cc6b0983e59d3e6317e8efef4b",
+      "source_bytes": 48833,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/shared_server_safety.py",
+      "public_sha256": "ea8b98aa5da148bb5573b8ace2fe3048dfa880cc6b0983e59d3e6317e8efef4b",
+      "public_bytes": 48833,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/ssh_stream.py": {
+      "source_sha256": "1380da8074ebaba48e2c59980ea90e87b887e8ea8d2300216f0804bb78ad11fa",
+      "source_bytes": 7039,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/ssh_stream.py",
+      "public_sha256": "1380da8074ebaba48e2c59980ea90e87b887e8ea8d2300216f0804bb78ad11fa",
+      "public_bytes": 7039,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/stage_control.py": {
+      "source_sha256": "44e1f6597328a744f918893927d15902d4a570d8386f7b8b939eb3c104479cbc",
+      "source_bytes": 9935,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/stage_control.py",
+      "public_sha256": "44e1f6597328a744f918893927d15902d4a570d8386f7b8b939eb3c104479cbc",
+      "public_bytes": 9935,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/staged_environment.py": {
+      "source_sha256": "a04ddbc632b9bc5c1c2547ddcdfdb0a3770adad3eded960cc7b221828ae8f1f6",
+      "source_bytes": 9992,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/staged_environment.py",
+      "public_sha256": "a04ddbc632b9bc5c1c2547ddcdfdb0a3770adad3eded960cc7b221828ae8f1f6",
+      "public_bytes": 9992,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/storage_acceptance_worker.py": {
+      "source_sha256": "919867fc6a5e3c80069e5d49c4e5758b349b07e73d8fe5fd596ec903f59820b3",
+      "source_bytes": 16713,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/storage_acceptance_worker.py",
+      "public_sha256": "96e818d2ba99e7803f0927313ac134ff13341218b45b903f5ebcf4e08a690a55",
+      "public_bytes": 16719,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/storage_cadence.py": {
+      "source_sha256": "1ec63c6d1dfc1c873751b9a501057685b1c8c5fc21932c3b335e12733ab4f6af",
+      "source_bytes": 2937,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/storage_cadence.py",
+      "public_sha256": "1ec63c6d1dfc1c873751b9a501057685b1c8c5fc21932c3b335e12733ab4f6af",
+      "public_bytes": 2937,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/storage_copy_worker.py": {
+      "source_sha256": "003f603d544831ff619aef4406ce956c9bcd7461c97e8f99ad6c9a45e1b2c7ff",
+      "source_bytes": 9046,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/storage_copy_worker.py",
+      "public_sha256": "003f603d544831ff619aef4406ce956c9bcd7461c97e8f99ad6c9a45e1b2c7ff",
+      "public_bytes": 9046,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/storage_migration_agent.py": {
+      "source_sha256": "09d9fe5e354ee47691bf505d52112b0aaed0645c76c9490f4215637a98e68e68",
+      "source_bytes": 20474,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/storage_migration_agent.py",
+      "public_sha256": "15f9d4a966c4227aa6ff852db79e0663f1314e7ab0d0c85ef09a0275a77c2c6b",
+      "public_bytes": 20486,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/storage_profile.py": {
+      "source_sha256": "945be21da348527b7c688edd3fb7b59ebe4679b616f1db67e509f4f294d37b03",
+      "source_bytes": 2765,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/storage_profile.py",
+      "public_sha256": "021bfcd7224c1c0ea1ff8b80e2b087024bfb15d2e4e4686f6b177360713fc66e",
+      "public_bytes": 2777,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/stream_fetch.py": {
+      "source_sha256": "0247f3c1db09e129f567e6d1fdf17f2cde1ff396db593ebba26a805edd89bc49",
+      "source_bytes": 2718,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/stream_fetch.py",
+      "public_sha256": "0247f3c1db09e129f567e6d1fdf17f2cde1ff396db593ebba26a805edd89bc49",
+      "public_bytes": 2718,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/systemd_job.py": {
+      "source_sha256": "6ce63eed599e9d80b719d1a8ebb419c8cb4db0322eb9ee255565d972edd52fb8",
+      "source_bytes": 12669,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/systemd_job.py",
+      "public_sha256": "6ce63eed599e9d80b719d1a8ebb419c8cb4db0322eb9ee255565d972edd52fb8",
+      "public_bytes": 12669,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tensor_io.py": {
+      "source_sha256": "79be307f5d86cf4a6de527aaec703ec36bdcbda96ba0b56af75051187037c6a6",
+      "source_bytes": 1795,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tensor_io.py",
+      "public_sha256": "79be307f5d86cf4a6de527aaec703ec36bdcbda96ba0b56af75051187037c6a6",
+      "public_bytes": 1795,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/terminal_cache_plans.py": {
+      "source_sha256": "9fc8a8902cbe9ba9805fcdf3ddfb26d5898a61fb2236a933941e66989d648d7d",
+      "source_bytes": 2225,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/terminal_cache_plans.py",
+      "public_sha256": "9fc8a8902cbe9ba9805fcdf3ddfb26d5898a61fb2236a933941e66989d648d7d",
+      "public_bytes": 2225,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/terminal_journal.py": {
+      "source_sha256": "61ca220571fd4ee105ee8196caeb30e88306b03409c69150229248c7be04130d",
+      "source_bytes": 6302,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/terminal_journal.py",
+      "public_sha256": "61ca220571fd4ee105ee8196caeb30e88306b03409c69150229248c7be04130d",
+      "public_bytes": 6302,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/token_features.py": {
+      "source_sha256": "52f0a7a5b501e69f90f06d9663d1627a26fea4879d00a9ab5311765aa22bcc0b",
+      "source_bytes": 3847,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/token_features.py",
+      "public_sha256": "52f0a7a5b501e69f90f06d9663d1627a26fea4879d00a9ab5311765aa22bcc0b",
+      "public_bytes": 3847,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr05_failure_analysis.py": {
+      "source_sha256": "c7de5428a74baecce59c9136e64ff0330c141a335c9451ea08571359bef4cab8",
+      "source_bytes": 9438,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr05_failure_analysis.py",
+      "public_sha256": "c7de5428a74baecce59c9136e64ff0330c141a335c9451ea08571359bef4cab8",
+      "public_bytes": 9438,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr07_failure_analysis.py": {
+      "source_sha256": "32f1a9ec2f63fe283ab48e980b028a1e86f42bf21c8c588aae0b3b432cb31db8",
+      "source_bytes": 10132,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr07_failure_analysis.py",
+      "public_sha256": "32f1a9ec2f63fe283ab48e980b028a1e86f42bf21c8c588aae0b3b432cb31db8",
+      "public_bytes": 10132,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr08_failure_analysis.py": {
+      "source_sha256": "6b82f828d3b2891a162fd056a124e8a2598f6e07c3f9a9fc65cb37f4e6d3e8c2",
+      "source_bytes": 10254,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr08_failure_analysis.py",
+      "public_sha256": "6b82f828d3b2891a162fd056a124e8a2598f6e07c3f9a9fc65cb37f4e6d3e8c2",
+      "public_bytes": 10254,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr08_recovery_analysis.py": {
+      "source_sha256": "98d7956267ff3dff5ce7a6ca28e7473ce7d00a2065d9142cc12355a50f2dfebf",
+      "source_bytes": 8624,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr08_recovery_analysis.py",
+      "public_sha256": "98d7956267ff3dff5ce7a6ca28e7473ce7d00a2065d9142cc12355a50f2dfebf",
+      "public_bytes": 8624,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr09_recovery_analysis.py": {
+      "source_sha256": "d1552b728a009b52f29da803bd623e0ad54cb1d2f4466bf8c1241afa6f9c52e8",
+      "source_bytes": 19047,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr09_recovery_analysis.py",
+      "public_sha256": "d1552b728a009b52f29da803bd623e0ad54cb1d2f4466bf8c1241afa6f9c52e8",
+      "public_bytes": 19047,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr10_recovery_analysis.py": {
+      "source_sha256": "7bca28766d8326f72048201690f53969ee3d147ada24c6b86e397ccb1503c829",
+      "source_bytes": 13055,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr10_recovery_analysis.py",
+      "public_sha256": "7bca28766d8326f72048201690f53969ee3d147ada24c6b86e397ccb1503c829",
+      "public_bytes": 13055,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_acceptance_reuse.py": {
+      "source_sha256": "294fba4d8fb4b56d077912c896ae4a7051e2aacb32b4c717844f25f31bd4b9c8",
+      "source_bytes": 8714,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_acceptance_reuse.py",
+      "public_sha256": "294fba4d8fb4b56d077912c896ae4a7051e2aacb32b4c717844f25f31bd4b9c8",
+      "public_bytes": 8714,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_analysis.py": {
+      "source_sha256": "e3faf2ef9919fef1d2f8c8655a1fe0eaaa036567933886db21ac2d52a0288604",
+      "source_bytes": 9211,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_analysis.py",
+      "public_sha256": "e3faf2ef9919fef1d2f8c8655a1fe0eaaa036567933886db21ac2d52a0288604",
+      "public_bytes": 9211,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_archive_audit.py": {
+      "source_sha256": "1c328a60f4001a33c264d1af5153ed02447237e21bca6d97c7779c15ebc4cee4",
+      "source_bytes": 11718,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_archive_audit.py",
+      "public_sha256": "1c328a60f4001a33c264d1af5153ed02447237e21bca6d97c7779c15ebc4cee4",
+      "public_bytes": 11718,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_cold_recovery.py": {
+      "source_sha256": "bb2ac93b7719ae2dcf49429bf7ff63de47a6c15d9a120630af0bb1f4f489b991",
+      "source_bytes": 3573,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_cold_recovery.py",
+      "public_sha256": "bb2ac93b7719ae2dcf49429bf7ff63de47a6c15d9a120630af0bb1f4f489b991",
+      "public_bytes": 3573,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_gpu_cursor_acceptance.py": {
+      "source_sha256": "5d5e80144db6933201dfd707e3271be1711e74105bd24044857d46386f64a456",
+      "source_bytes": 10143,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_gpu_cursor_acceptance.py",
+      "public_sha256": "5d5e80144db6933201dfd707e3271be1711e74105bd24044857d46386f64a456",
+      "public_bytes": 10143,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_gpu_transaction.py": {
+      "source_sha256": "1d76165e9f1893c7bd55c8330b44d5e38ed3a7e312fc310a4f104f38db8550d2",
+      "source_bytes": 5097,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_gpu_transaction.py",
+      "public_sha256": "1d76165e9f1893c7bd55c8330b44d5e38ed3a7e312fc310a4f104f38db8550d2",
+      "public_bytes": 5097,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_prepare.py": {
+      "source_sha256": "ce1918d6ca55d2dbf79f77af2573c17549930498c391854e451dc0cfa97f0931",
+      "source_bytes": 11618,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_prepare.py",
+      "public_sha256": "7d068fe7a7d6f9cf3b33866c2124094341575c004d8be9a9cd83ad54d3e8e455",
+      "public_bytes": 11630,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_scope.py": {
+      "source_sha256": "1e286be2d862744ca140ccc0389998cb47b0e62592d75f36a30108f54712292e",
+      "source_bytes": 9182,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_scope.py",
+      "public_sha256": "1e286be2d862744ca140ccc0389998cb47b0e62592d75f36a30108f54712292e",
+      "public_bytes": 9182,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_source.py": {
+      "source_sha256": "00c76488408e3d326a93321e03bbc89d513b34408e37b8fcebd9e815934c82d8",
+      "source_bytes": 8788,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_source.py",
+      "public_sha256": "8321cd7efe45c95c96b1cbb2a9f9db88ee1823fa4c85ccc4e407c3085b96061b",
+      "public_bytes": 8794,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_terminal_archive.py": {
+      "source_sha256": "183e598e6eac612e5a3f6100818be85d6c8a443b0132fb371fcad49a3539cbd3",
+      "source_bytes": 2848,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_terminal_archive.py",
+      "public_sha256": "183e598e6eac612e5a3f6100818be85d6c8a443b0132fb371fcad49a3539cbd3",
+      "public_bytes": 2848,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_timeout_acceptance.py": {
+      "source_sha256": "6f8b42a375ab7eeeddeea84e6199f6237359ef430b8fb0a7af8c549ec7d21690",
+      "source_bytes": 6429,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_timeout_acceptance.py",
+      "public_sha256": "6f8b42a375ab7eeeddeea84e6199f6237359ef430b8fb0a7af8c549ec7d21690",
+      "public_bytes": 6429,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr13_train.py": {
+      "source_sha256": "7cfc6c2f81d11e5069677378e567b89873585a7072fe5dad4817136c5788aff1",
+      "source_bytes": 31554,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr13_train.py",
+      "public_sha256": "7cfc6c2f81d11e5069677378e567b89873585a7072fe5dad4817136c5788aff1",
+      "public_bytes": 31554,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_acceptance_reuse.py": {
+      "source_sha256": "406f01b0030c45a58c04e07a9bb1a71e078d2a00e76c76d476fe2c8bd2dfb59f",
+      "source_bytes": 9190,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_acceptance_reuse.py",
+      "public_sha256": "406f01b0030c45a58c04e07a9bb1a71e078d2a00e76c76d476fe2c8bd2dfb59f",
+      "public_bytes": 9190,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_analysis.py": {
+      "source_sha256": "cc80dc4d702c30065ff512a2ced37352515f5259855b0726d90f1dc3d6f088a7",
+      "source_bytes": 9312,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_analysis.py",
+      "public_sha256": "cc80dc4d702c30065ff512a2ced37352515f5259855b0726d90f1dc3d6f088a7",
+      "public_bytes": 9312,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_archive_audit.py": {
+      "source_sha256": "8771c9282190cd827d2b0bb4d210051316060d03308650d379845e38be29e2e6",
+      "source_bytes": 11872,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_archive_audit.py",
+      "public_sha256": "8771c9282190cd827d2b0bb4d210051316060d03308650d379845e38be29e2e6",
+      "public_bytes": 11872,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_cold_recovery.py": {
+      "source_sha256": "40d66414ccfed86bbf14c5de7ef2602324c78dd97e6a05e3e4faaec27a762fbc",
+      "source_bytes": 3629,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_cold_recovery.py",
+      "public_sha256": "40d66414ccfed86bbf14c5de7ef2602324c78dd97e6a05e3e4faaec27a762fbc",
+      "public_bytes": 3629,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_parent_check.py": {
+      "source_sha256": "1c156d6db8e9a7bef15bb7f511ab342c77cc46280870d3b72642e2160416aa8b",
+      "source_bytes": 3353,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_parent_check.py",
+      "public_sha256": "1c156d6db8e9a7bef15bb7f511ab342c77cc46280870d3b72642e2160416aa8b",
+      "public_bytes": 3353,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_prepare.py": {
+      "source_sha256": "2ca8bee75e3c78433a883bad15d73bda1f0d42e5abf8ddb36faaf6c82da41e71",
+      "source_bytes": 11625,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_prepare.py",
+      "public_sha256": "a00d254014380f1618621034e209afad6ba9c8ec4bbdc93173ed0532f75b7c0c",
+      "public_bytes": 11637,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_scope.py": {
+      "source_sha256": "1e4c969eef27489c0bc7f4c9f74c3836fca2aef95f741d05199345d98b917bab",
+      "source_bytes": 9304,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_scope.py",
+      "public_sha256": "1e4c969eef27489c0bc7f4c9f74c3836fca2aef95f741d05199345d98b917bab",
+      "public_bytes": 9304,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_source.py": {
+      "source_sha256": "f83f9ec343c7f2db1a3459d00c8d0e660e9ae0d0eb272a3ab70de370b3e322f9",
+      "source_bytes": 8917,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_source.py",
+      "public_sha256": "4196430c351961c7adaf82dd9f61de8ae952060d660047f025f88dd15b8658b4",
+      "public_bytes": 8923,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr14_train.py": {
+      "source_sha256": "b7c104c0d0a09257da6567e9f0b44fafc5ca8b243aac6917e8a473c1bb49136f",
+      "source_bytes": 31548,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr14_train.py",
+      "public_sha256": "b7c104c0d0a09257da6567e9f0b44fafc5ca8b243aac6917e8a473c1bb49136f",
+      "public_bytes": 31548,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_acceptance_reuse.py": {
+      "source_sha256": "4ee958715d732ab12aae9f46c5ddf12633423c52204831aeb098349b5fd1d9ba",
+      "source_bytes": 9191,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_acceptance_reuse.py",
+      "public_sha256": "4ee958715d732ab12aae9f46c5ddf12633423c52204831aeb098349b5fd1d9ba",
+      "public_bytes": 9191,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_analysis.py": {
+      "source_sha256": "6cd789670563343aaee25005723c808c16ad0b7cb5920a6ee47ac3d73d466cc6",
+      "source_bytes": 9653,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_analysis.py",
+      "public_sha256": "6cd789670563343aaee25005723c808c16ad0b7cb5920a6ee47ac3d73d466cc6",
+      "public_bytes": 9653,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_archive_audit.py": {
+      "source_sha256": "503a3ecfa376e7d322cefcaeafb79e164797448f45dcf2ba6234ec5db3e90dc2",
+      "source_bytes": 12077,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_archive_audit.py",
+      "public_sha256": "503a3ecfa376e7d322cefcaeafb79e164797448f45dcf2ba6234ec5db3e90dc2",
+      "public_bytes": 12077,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_cold_recovery.py": {
+      "source_sha256": "435ac88a8bbb9ed2efaf1c6380bd6d406a1d62e13aebddfe822a66b3f5857797",
+      "source_bytes": 3712,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_cold_recovery.py",
+      "public_sha256": "435ac88a8bbb9ed2efaf1c6380bd6d406a1d62e13aebddfe822a66b3f5857797",
+      "public_bytes": 3712,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_cuda_comparison.py": {
+      "source_sha256": "9a5f8bc618801550bd472f6b607b72b130a0d81cb384b42e9b50f8c21f69ba2c",
+      "source_bytes": 1840,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_cuda_comparison.py",
+      "public_sha256": "9a5f8bc618801550bd472f6b607b72b130a0d81cb384b42e9b50f8c21f69ba2c",
+      "public_bytes": 1840,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_framework.py": {
+      "source_sha256": "bebae16714af59a777309fedf4e0d64a1f08879708e7c0dbf58df7058ed8fcda",
+      "source_bytes": 8574,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_framework.py",
+      "public_sha256": "bebae16714af59a777309fedf4e0d64a1f08879708e7c0dbf58df7058ed8fcda",
+      "public_bytes": 8574,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_native_acceptance.py": {
+      "source_sha256": "e073c95cc3d59459f9c160809ca4228803bf3f2cfa5b045e64cdbc9d42ffc2d0",
+      "source_bytes": 18400,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_native_acceptance.py",
+      "public_sha256": "e073c95cc3d59459f9c160809ca4228803bf3f2cfa5b045e64cdbc9d42ffc2d0",
+      "public_bytes": 18400,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_parent_check.py": {
+      "source_sha256": "a763809418fd8dff5f7051b9e6db8b6abdd4903a50eab4fcea9138a186d2c817",
+      "source_bytes": 3640,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_parent_check.py",
+      "public_sha256": "a763809418fd8dff5f7051b9e6db8b6abdd4903a50eab4fcea9138a186d2c817",
+      "public_bytes": 3640,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_prepare.py": {
+      "source_sha256": "bf8b2fed62c6a7ac8bf19776cf73b40e9cc5420aca3d448af04fe0b6951fe183",
+      "source_bytes": 12403,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_prepare.py",
+      "public_sha256": "11b27048e96e0b0c629b012ec0c01dbf90caa9af5a7c102024858eeaf5e89f79",
+      "public_bytes": 12415,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_scope.py": {
+      "source_sha256": "1ab73191278613ebf83f1c6466b99ed2b42dcab3a9510dc30dfe920af17fa7eb",
+      "source_bytes": 9968,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_scope.py",
+      "public_sha256": "1ab73191278613ebf83f1c6466b99ed2b42dcab3a9510dc30dfe920af17fa7eb",
+      "public_bytes": 9968,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_selfplay.py": {
+      "source_sha256": "0f79457387d5cdeddcd91aeed44021be38420b4fbca65432be413b30777aa4a4",
+      "source_bytes": 3439,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_selfplay.py",
+      "public_sha256": "0f79457387d5cdeddcd91aeed44021be38420b4fbca65432be413b30777aa4a4",
+      "public_bytes": 3439,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_server_archive.py": {
+      "source_sha256": "a8d0f871789c1a0099eb8b8b24fa398c81303b407a4674c86157137bd9eca435",
+      "source_bytes": 12530,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_server_archive.py",
+      "public_sha256": "a609e8a6c7b7caeec7ce24c308426cb678eb14c0cf7835e63d4665bcd05537c5",
+      "public_bytes": 12542,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_source.py": {
+      "source_sha256": "97d678369c3d0f6842a50058cc4cff1ef6586172cedab246f0c96c48d90ea835",
+      "source_bytes": 9912,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_source.py",
+      "public_sha256": "91b2938e3669efc830cdca9eda70277c6b378c19dc1966fd280c6691e6b95164",
+      "public_bytes": 9918,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/tr15_train.py": {
+      "source_sha256": "6290db84bf5454468928add579b6d527d9a5442382daac2aa552987dd9d2eb03",
+      "source_bytes": 33585,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/tr15_train.py",
+      "public_sha256": "6290db84bf5454468928add579b6d527d9a5442382daac2aa552987dd9d2eb03",
+      "public_bytes": 33585,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/train_catboost.py": {
+      "source_sha256": "e05e144f9ffe46dd501e551ff7573a0cefb207b145697ae8cf2d1e9dad10da88",
+      "source_bytes": 6477,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/train_catboost.py",
+      "public_sha256": "e05e144f9ffe46dd501e551ff7573a0cefb207b145697ae8cf2d1e9dad10da88",
+      "public_bytes": 6477,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/train_ppo.py": {
+      "source_sha256": "321ceb1b93a28398d7975a78221ed29fb6dacbc33828b8ca5f2f4ef43c7e6384",
+      "source_bytes": 23794,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/train_ppo.py",
+      "public_sha256": "321ceb1b93a28398d7975a78221ed29fb6dacbc33828b8ca5f2f4ef43c7e6384",
+      "public_bytes": 23794,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/train_transformer.py": {
+      "source_sha256": "0203a7affdd86544a4443c3c3141a6c670485ed2e67cf0ee0d0c91adecaef1ad",
+      "source_bytes": 11496,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/train_transformer.py",
+      "public_sha256": "0203a7affdd86544a4443c3c3141a6c670485ed2e67cf0ee0d0c91adecaef1ad",
+      "public_bytes": 11496,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/training_checkpoint.py": {
+      "source_sha256": "f44b829dbffb1961c6450db048a908522ef4175afe2523b39ee03b68dacb08b3",
+      "source_bytes": 4918,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/training_checkpoint.py",
+      "public_sha256": "f44b829dbffb1961c6450db048a908522ef4175afe2523b39ee03b68dacb08b3",
+      "public_bytes": 4918,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/training_control.py": {
+      "source_sha256": "849acb1ff86d558c25b5ba553d51ea047756f992c53c41445e3fdfa26e813acd",
+      "source_bytes": 9455,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/training_control.py",
+      "public_sha256": "849acb1ff86d558c25b5ba553d51ea047756f992c53c41445e3fdfa26e813acd",
+      "public_bytes": 9455,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/training_failure_analysis.py": {
+      "source_sha256": "bcac099ec5e0440120512e546df944d1eb780670997712190d4c1e4af358781f",
+      "source_bytes": 7446,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/training_failure_analysis.py",
+      "public_sha256": "bcac099ec5e0440120512e546df944d1eb780670997712190d4c1e4af358781f",
+      "public_bytes": 7446,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/transformer_agent.py": {
+      "source_sha256": "0a27f85a45577333ddaa8d50fa13bcf096f0e1358c207f2a40cec61030d5530a",
+      "source_bytes": 3101,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/transformer_agent.py",
+      "public_sha256": "0a27f85a45577333ddaa8d50fa13bcf096f0e1358c207f2a40cec61030d5530a",
+      "public_bytes": 3101,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/transformer_model.py": {
+      "source_sha256": "924c38ac418a1a7f3436d249159ed587db2967e3a7a7fb489f3c1dedaabd5e05",
+      "source_bytes": 1855,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/transformer_model.py",
+      "public_sha256": "924c38ac418a1a7f3436d249159ed587db2967e3a7a7fb489f3c1dedaabd5e05",
+      "public_bytes": 1855,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/unit_io_guard.py": {
+      "source_sha256": "e7bb54fb467b80849980aefb4ecba8d26b979c4ac08d86eefd486ae4ec0129f2",
+      "source_bytes": 6310,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/unit_io_guard.py",
+      "public_sha256": "e7bb54fb467b80849980aefb4ecba8d26b979c4ac08d86eefd486ae4ec0129f2",
+      "public_bytes": 6310,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_boundary.py": {
+      "source_sha256": "d364594d3da72235ff8a03d9c00fe3235b7020f8dabe50288f821cbf888f5d4b",
+      "source_bytes": 6915,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_boundary.py",
+      "public_sha256": "d364594d3da72235ff8a03d9c00fe3235b7020f8dabe50288f821cbf888f5d4b",
+      "public_bytes": 6915,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_early_stop_audit.py": {
+      "source_sha256": "121afebee8c1b590de563afbb1f3ffb64dd50596ce5fcd9f06ffea4dbff962fb",
+      "source_bytes": 16109,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_early_stop_audit.py",
+      "public_sha256": "121afebee8c1b590de563afbb1f3ffb64dd50596ce5fcd9f06ffea4dbff962fb",
+      "public_bytes": 16109,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_extension.py": {
+      "source_sha256": "fda4dc12da589c3d36074ff2c7e47e15df6efb515f04a5969f393c6fa625c92f",
+      "source_bytes": 11551,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_extension.py",
+      "public_sha256": "fda4dc12da589c3d36074ff2c7e47e15df6efb515f04a5969f393c6fa625c92f",
+      "public_bytes": 11551,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_interrupted_audit.py": {
+      "source_sha256": "569d37a25dd9070fb2195ff5c828af4eb3c22c21fa92ea7c46ca8e64fa924f91",
+      "source_bytes": 17282,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_interrupted_audit.py",
+      "public_sha256": "569d37a25dd9070fb2195ff5c828af4eb3c22c21fa92ea7c46ca8e64fa924f91",
+      "public_bytes": 17282,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_results.py": {
+      "source_sha256": "c156b9bd23d3d6c9af93175a15c7459e970c74fb21684b1194c02faa89a0e072",
+      "source_bytes": 9815,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_results.py",
+      "public_sha256": "c156b9bd23d3d6c9af93175a15c7459e970c74fb21684b1194c02faa89a0e072",
+      "public_bytes": 9815,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_scope.py": {
+      "source_sha256": "19c6b5b5435f7c23b4487d8c03217aafe315b77c78c439016f5a2e53e2f95552",
+      "source_bytes": 5534,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_scope.py",
+      "public_sha256": "19c6b5b5435f7c23b4487d8c03217aafe315b77c78c439016f5a2e53e2f95552",
+      "public_bytes": 5534,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_source_audit.py": {
+      "source_sha256": "dbd565dec11c883bdae9df521700e1bd43d06b302c45a30c86f275da1dd30d84",
+      "source_bytes": 10302,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_source_audit.py",
+      "public_sha256": "dbd565dec11c883bdae9df521700e1bd43d06b302c45a30c86f275da1dd30d84",
+      "public_bytes": 10302,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_statistics.py": {
+      "source_sha256": "4382ea22d50ae00fec716fe2938cf547d0d3d91292a70d581631ae95f62456a8",
+      "source_bytes": 2533,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_statistics.py",
+      "public_sha256": "4382ea22d50ae00fec716fe2938cf547d0d3d91292a70d581631ae95f62456a8",
+      "public_bytes": 2533,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/volume_tail.py": {
+      "source_sha256": "0d83ed711cdb23084370396cd7dbf4e9bfad89daf7161adcbc4cd8428b50d323",
+      "source_bytes": 2530,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/volume_tail.py",
+      "public_sha256": "0d83ed711cdb23084370396cd7dbf4e9bfad89daf7161adcbc4cd8428b50d323",
+      "public_bytes": 2530,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/wheelhouse_prepare.py": {
+      "source_sha256": "ddf2ad1ea4927ae141722e129b441de088230547ec9a1d3649669b49b46b7672",
+      "source_bytes": 8276,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/wheelhouse_prepare.py",
+      "public_sha256": "ddf2ad1ea4927ae141722e129b441de088230547ec9a1d3649669b49b46b7672",
+      "public_bytes": 8276,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/ptcg_lab/windows_archive_check.py": {
+      "source_sha256": "5836d41c7e363807ee77546cb826e5db1c25721ae7b0d61056287bcb11888132",
+      "source_bytes": 8595,
+      "public_path": "research/training_snapshots/TR15/ptcg_lab/windows_archive_check.py",
+      "public_sha256": "5836d41c7e363807ee77546cb826e5db1c25721ae7b0d61056287bcb11888132",
+      "public_bytes": 8595,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/analyze_panel.py": {
+      "source_sha256": "8c98dc986c79114b94c3905ee0524fcaeec3aedad4568724627f72693193f75a",
+      "source_bytes": 3345,
+      "public_path": "research/training_snapshots/TR15/scripts/analyze_panel.py",
+      "public_sha256": "8c98dc986c79114b94c3905ee0524fcaeec3aedad4568724627f72693193f75a",
+      "public_bytes": 3345,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/execute_TR13.py": {
+      "source_sha256": "12084fbdcc5cdb7038093bf594ff09b06c45baa3e4fa2816d63293022cc06eba",
+      "source_bytes": 30238,
+      "public_path": "research/training_snapshots/TR15/scripts/execute_TR13.py",
+      "public_sha256": "12084fbdcc5cdb7038093bf594ff09b06c45baa3e4fa2816d63293022cc06eba",
+      "public_bytes": 30238,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/execute_TR14.py": {
+      "source_sha256": "0665eff4e53811e544ca20a6cb4aeb80737757988c40ff19cdf2dcb102543215",
+      "source_bytes": 18880,
+      "public_path": "research/training_snapshots/TR15/scripts/execute_TR14.py",
+      "public_sha256": "0665eff4e53811e544ca20a6cb4aeb80737757988c40ff19cdf2dcb102543215",
+      "public_bytes": 18880,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/execute_TR15.py": {
+      "source_sha256": "cfef6ea47ef7ec0e89692c3980bf9d1496520c8c793cc76075b65de63157dc3e",
+      "source_bytes": 16146,
+      "public_path": "research/training_snapshots/TR15/scripts/execute_TR15.py",
+      "public_sha256": "cfef6ea47ef7ec0e89692c3980bf9d1496520c8c793cc76075b65de63157dc3e",
+      "public_bytes": 16146,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/freeze_TR13_evaluation.py": {
+      "source_sha256": "7b2392e0ce44182a572eaa6f5b65a7e44b1a86b72a0a209c6962a18f7d79c7a1",
+      "source_bytes": 2586,
+      "public_path": "research/training_snapshots/TR15/scripts/freeze_TR13_evaluation.py",
+      "public_sha256": "7b2392e0ce44182a572eaa6f5b65a7e44b1a86b72a0a209c6962a18f7d79c7a1",
+      "public_bytes": 2586,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/run_experiment.py": {
+      "source_sha256": "63a7b40c0758402322743cb1ddb018f367520e1ead7a3d37aa5ba2fc1d1f0788",
+      "source_bytes": 32531,
+      "public_path": "research/training_snapshots/TR15/scripts/run_experiment.py",
+      "public_sha256": "63a7b40c0758402322743cb1ddb018f367520e1ead7a3d37aa5ba2fc1d1f0788",
+      "public_bytes": 32531,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/summarize_ppo_training.py": {
+      "source_sha256": "0eaad83a303097a05c840ff3a36f4b6a94f68eb02ba7657e3fd9ceb6ecfb9189",
+      "source_bytes": 3198,
+      "public_path": "research/training_snapshots/TR15/scripts/summarize_ppo_training.py",
+      "public_sha256": "0eaad83a303097a05c840ff3a36f4b6a94f68eb02ba7657e3fd9ceb6ecfb9189",
+      "public_bytes": 3198,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/TR15_detached_executor.py": {
+      "source_sha256": "827d40b5896b4da0db3edbd4c588a691c83580eb6041f57016a4856022366081",
+      "source_bytes": 10426,
+      "public_path": "research/training_snapshots/TR15/scripts/TR15_detached_executor.py",
+      "public_sha256": "827d40b5896b4da0db3edbd4c588a691c83580eb6041f57016a4856022366081",
+      "public_bytes": 10426,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/TR15_launch_entry.py": {
+      "source_sha256": "589a3c991ce1fad466fdfda644557572463a3d5bfaeba23763f3e5f930cb02a3",
+      "source_bytes": 361,
+      "public_path": "research/training_snapshots/TR15/scripts/TR15_launch_entry.py",
+      "public_sha256": "589a3c991ce1fad466fdfda644557572463a3d5bfaeba23763f3e5f930cb02a3",
+      "public_bytes": 361,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/scripts/validate_ppo_resume.py": {
+      "source_sha256": "10cc51901e9256751f074f1ede8a0959b45a2f6f21c08b4d2dcad6aec302b320",
+      "source_bytes": 3739,
+      "public_path": "research/training_snapshots/TR15/scripts/validate_ppo_resume.py",
+      "public_sha256": "10cc51901e9256751f074f1ede8a0959b45a2f6f21c08b4d2dcad6aec302b320",
+      "public_bytes": 3739,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_activation_amendments.py": {
+      "source_sha256": "9b818f318aa1b9a9332a8e6b9c9c427053edd0e5a9d1dfc2181c158a01e1234e",
+      "source_bytes": 1772,
+      "public_path": "research/training_snapshots/TR15/tests/test_activation_amendments.py",
+      "public_sha256": "9b818f318aa1b9a9332a8e6b9c9c427053edd0e5a9d1dfc2181c158a01e1234e",
+      "public_bytes": 1772,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_active_clock.py": {
+      "source_sha256": "c3c841ce44953d6220c79514d0fcb86f98afe88df037b3a7a9f01080f6b81136",
+      "source_bytes": 5808,
+      "public_path": "research/training_snapshots/TR15/tests/test_active_clock.py",
+      "public_sha256": "c3c841ce44953d6220c79514d0fcb86f98afe88df037b3a7a9f01080f6b81136",
+      "public_bytes": 5808,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_analysis.py": {
+      "source_sha256": "c4395f1d807d468f8e4789bfe0095260acd8947782d167afce5c6515ea8b1167",
+      "source_bytes": 1451,
+      "public_path": "research/training_snapshots/TR15/tests/test_analysis.py",
+      "public_sha256": "c4395f1d807d468f8e4789bfe0095260acd8947782d167afce5c6515ea8b1167",
+      "public_bytes": 1451,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_barrier.py": {
+      "source_sha256": "71087ecb6521508505d0d27010cc299e5531eaf5c7eb5f89da02b186e47f2e21",
+      "source_bytes": 4468,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_barrier.py",
+      "public_sha256": "71087ecb6521508505d0d27010cc299e5531eaf5c7eb5f89da02b186e47f2e21",
+      "public_bytes": 4468,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_compressed.py": {
+      "source_sha256": "425d80dd36b64183b846feead8b4b909ad589c6541d89aef5713a40dced78f73",
+      "source_bytes": 4731,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_compressed.py",
+      "public_sha256": "425d80dd36b64183b846feead8b4b909ad589c6541d89aef5713a40dced78f73",
+      "public_bytes": 4731,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_compressed_reuse.py": {
+      "source_sha256": "e02a81604e2d374a12d1e5a40c1c55046c5f95a12190835b0c780228a3d03fbd",
+      "source_bytes": 1762,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_compressed_reuse.py",
+      "public_sha256": "e02a81604e2d374a12d1e5a40c1c55046c5f95a12190835b0c780228a3d03fbd",
+      "public_bytes": 1762,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_live_check.py": {
+      "source_sha256": "d81944847c5fc58d10f31ba9d5f96a452876c373629f605be00cc620cd0ce9ab",
+      "source_bytes": 1145,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_live_check.py",
+      "public_sha256": "d81944847c5fc58d10f31ba9d5f96a452876c373629f605be00cc620cd0ce9ab",
+      "public_bytes": 1145,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_outbox.py": {
+      "source_sha256": "6385f580c676d73326fa4bfc471cf4280616c6df475695204386f2a9d790e215",
+      "source_bytes": 8117,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_outbox.py",
+      "public_sha256": "6385f580c676d73326fa4bfc471cf4280616c6df475695204386f2a9d790e215",
+      "public_bytes": 8117,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_protocol.py": {
+      "source_sha256": "d1204f976cfe0580fe0f88b8cf6cb1ca2a763a312fe42432765decc7641d8b17",
+      "source_bytes": 5496,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_protocol.py",
+      "public_sha256": "d1204f976cfe0580fe0f88b8cf6cb1ca2a763a312fe42432765decc7641d8b17",
+      "public_bytes": 5496,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_state.py": {
+      "source_sha256": "631a7e8edf241c8d28ff3d8ab875f092e7f299500fbfdd6101ae441ebe96bb92",
+      "source_bytes": 4744,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_state.py",
+      "public_sha256": "631a7e8edf241c8d28ff3d8ab875f092e7f299500fbfdd6101ae441ebe96bb92",
+      "public_bytes": 4744,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_archive_windows_paths.py": {
+      "source_sha256": "6f9564a900b6dc1842a82d92ced7e672ba210beec3f714ed94c53e5952b047b8",
+      "source_bytes": 1938,
+      "public_path": "research/training_snapshots/TR15/tests/test_archive_windows_paths.py",
+      "public_sha256": "6f9564a900b6dc1842a82d92ced7e672ba210beec3f714ed94c53e5952b047b8",
+      "public_bytes": 1938,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_artifact_budget_visibility.py": {
+      "source_sha256": "b47008181d52774e52a01c726b1229fae8b65914f5fe7876ad3120be3734dec5",
+      "source_bytes": 1453,
+      "public_path": "research/training_snapshots/TR15/tests/test_artifact_budget_visibility.py",
+      "public_sha256": "b47008181d52774e52a01c726b1229fae8b65914f5fe7876ad3120be3734dec5",
+      "public_bytes": 1453,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_atomic_json_windows.py": {
+      "source_sha256": "754a9f986590d076d9f2ec8116cd370c54d5aaf0d6ec0fadaea6323e504bb249",
+      "source_bytes": 2908,
+      "public_path": "research/training_snapshots/TR15/tests/test_atomic_json_windows.py",
+      "public_sha256": "754a9f986590d076d9f2ec8116cd370c54d5aaf0d6ec0fadaea6323e504bb249",
+      "public_bytes": 2908,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_batched_actor_prototype.py": {
+      "source_sha256": "194316cbc35f9e6c3437fa5680938da790091765dfa89cd7b770fe43680fdb99",
+      "source_bytes": 6015,
+      "public_path": "research/training_snapshots/TR15/tests/test_batched_actor_prototype.py",
+      "public_sha256": "194316cbc35f9e6c3437fa5680938da790091765dfa89cd7b770fe43680fdb99",
+      "public_bytes": 6015,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_bc_dataset.py": {
+      "source_sha256": "706544a0ac5f029a1e5de36af131a43cbd62bc0165042269903f0264962a322f",
+      "source_bytes": 1471,
+      "public_path": "research/training_snapshots/TR15/tests/test_bc_dataset.py",
+      "public_sha256": "706544a0ac5f029a1e5de36af131a43cbd62bc0165042269903f0264962a322f",
+      "public_bytes": 1471,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_bc_features.py": {
+      "source_sha256": "a7cdfb2ede4bc6f3247ea27ee35a9b48708cc0286e2de5612b835d20045c11c3",
+      "source_bytes": 2368,
+      "public_path": "research/training_snapshots/TR15/tests/test_bc_features.py",
+      "public_sha256": "a7cdfb2ede4bc6f3247ea27ee35a9b48708cc0286e2de5612b835d20045c11c3",
+      "public_bytes": 2368,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_bounded_io.py": {
+      "source_sha256": "ac73e3ca8d2279f9a0afd0180a55a34ab00ecc2b22abce57e19afa092f14afb3",
+      "source_bytes": 7007,
+      "public_path": "research/training_snapshots/TR15/tests/test_bounded_io.py",
+      "public_sha256": "ac73e3ca8d2279f9a0afd0180a55a34ab00ecc2b22abce57e19afa092f14afb3",
+      "public_bytes": 7007,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_bounded_read.py": {
+      "source_sha256": "a4ae0c41c9383f51a56884add3706289d9a471829a2287c8e61e957265bcec53",
+      "source_bytes": 3181,
+      "public_path": "research/training_snapshots/TR15/tests/test_bounded_read.py",
+      "public_sha256": "a4ae0c41c9383f51a56884add3706289d9a471829a2287c8e61e957265bcec53",
+      "public_bytes": 3181,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_checkpoint_refs.py": {
+      "source_sha256": "5a35c88d8085923082e9d2d9cfa1aae787b5f642bd8e854cdd24bc3f98c76c5c",
+      "source_bytes": 5282,
+      "public_path": "research/training_snapshots/TR15/tests/test_checkpoint_refs.py",
+      "public_sha256": "5a35c88d8085923082e9d2d9cfa1aae787b5f642bd8e854cdd24bc3f98c76c5c",
+      "public_bytes": 5282,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_checkpoint_transaction.py": {
+      "source_sha256": "b47af8a581fb205c497eb29cdd87b2a12bd771ea0e669436d79182011635bdf6",
+      "source_bytes": 3289,
+      "public_path": "research/training_snapshots/TR15/tests/test_checkpoint_transaction.py",
+      "public_sha256": "b47af8a581fb205c497eb29cdd87b2a12bd771ea0e669436d79182011635bdf6",
+      "public_bytes": 3289,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_conditional_beam.py": {
+      "source_sha256": "057b39c5e2fa6de7b1044fb0ddb9e2ef6ce6246a91cafef05376474cc48066ba",
+      "source_bytes": 2117,
+      "public_path": "research/training_snapshots/TR15/tests/test_conditional_beam.py",
+      "public_sha256": "057b39c5e2fa6de7b1044fb0ddb9e2ef6ce6246a91cafef05376474cc48066ba",
+      "public_bytes": 2117,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_continuous_archive_reuse.py": {
+      "source_sha256": "93fcc71745b6ce12060a812a7378068e6e1d1e1d926014506d635a9fb8bb2b5e",
+      "source_bytes": 2811,
+      "public_path": "research/training_snapshots/TR15/tests/test_continuous_archive_reuse.py",
+      "public_sha256": "93fcc71745b6ce12060a812a7378068e6e1d1e1d926014506d635a9fb8bb2b5e",
+      "public_bytes": 2811,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_continuous_diagnostic_stats.py": {
+      "source_sha256": "eb778f743eb806d3b9948937fd0665ee7bb300b1e7dc75465425e62c441b0f00",
+      "source_bytes": 669,
+      "public_path": "research/training_snapshots/TR15/tests/test_continuous_diagnostic_stats.py",
+      "public_sha256": "eb778f743eb806d3b9948937fd0665ee7bb300b1e7dc75465425e62c441b0f00",
+      "public_bytes": 669,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_continuous_mainline.py": {
+      "source_sha256": "45e0c6a5f22a666cd6f00eeb7443566371c0579812b5ec1d75605028caa0f682",
+      "source_bytes": 9282,
+      "public_path": "research/training_snapshots/TR15/tests/test_continuous_mainline.py",
+      "public_sha256": "45e0c6a5f22a666cd6f00eeb7443566371c0579812b5ec1d75605028caa0f682",
+      "public_bytes": 9282,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_continuous_runtime.py": {
+      "source_sha256": "76ec7de0060ec6c5192b76017c882c175e96427e1545f0f063cb7e9c578149d1",
+      "source_bytes": 5201,
+      "public_path": "research/training_snapshots/TR15/tests/test_continuous_runtime.py",
+      "public_sha256": "76ec7de0060ec6c5192b76017c882c175e96427e1545f0f063cb7e9c578149d1",
+      "public_bytes": 5201,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_cooperative_probe.py": {
+      "source_sha256": "9fdcee6eee3e21dfa8f2b828405141e554f37425a47629cff4e8e29134a3e0e3",
+      "source_bytes": 2292,
+      "public_path": "research/training_snapshots/TR15/tests/test_cooperative_probe.py",
+      "public_sha256": "9fdcee6eee3e21dfa8f2b828405141e554f37425a47629cff4e8e29134a3e0e3",
+      "public_bytes": 2292,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_cpu_sampler_route.py": {
+      "source_sha256": "82d1c86bfba0f59025401bae4b1b8a10ed0cbcfb39d85dddd47ba4ea90bbb069",
+      "source_bytes": 1487,
+      "public_path": "research/training_snapshots/TR15/tests/test_cpu_sampler_route.py",
+      "public_sha256": "82d1c86bfba0f59025401bae4b1b8a10ed0cbcfb39d85dddd47ba4ea90bbb069",
+      "public_bytes": 1487,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_cpu_worker_startup.py": {
+      "source_sha256": "bb29806a6eff849b1526835d8df71f6cb9ccdbc02c106706ba30ff79ddf9bfad",
+      "source_bytes": 1406,
+      "public_path": "research/training_snapshots/TR15/tests/test_cpu_worker_startup.py",
+      "public_sha256": "bb29806a6eff849b1526835d8df71f6cb9ccdbc02c106706ba30ff79ddf9bfad",
+      "public_bytes": 1406,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_critic_gradient_route.py": {
+      "source_sha256": "97e9c3d4b1155e87879dda90ef585541a6087b3828a922e06ae9b9c6fabc49d8",
+      "source_bytes": 2185,
+      "public_path": "research/training_snapshots/TR15/tests/test_critic_gradient_route.py",
+      "public_sha256": "97e9c3d4b1155e87879dda90ef585541a6087b3828a922e06ae9b9c6fabc49d8",
+      "public_bytes": 2185,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_engine_platform.py": {
+      "source_sha256": "84b225ac19c17e8fbce729dd512fa98e2ff63d4b0d6f1cf437defbc9842263fe",
+      "source_bytes": 2176,
+      "public_path": "research/training_snapshots/TR15/tests/test_engine_platform.py",
+      "public_sha256": "84b225ac19c17e8fbce729dd512fa98e2ff63d4b0d6f1cf437defbc9842263fe",
+      "public_bytes": 2176,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_evidence_tiering.py": {
+      "source_sha256": "56b265cf8f2770915fb6578f5b071127721fd800366502a2c18342526a5f67b1",
+      "source_bytes": 8411,
+      "public_path": "research/training_snapshots/TR15/tests/test_evidence_tiering.py",
+      "public_sha256": "56b265cf8f2770915fb6578f5b071127721fd800366502a2c18342526a5f67b1",
+      "public_bytes": 8411,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_final_preparation.py": {
+      "source_sha256": "032b60e99c3396e99b1511aa53376018398565705407906def68e7c044be9400",
+      "source_bytes": 5225,
+      "public_path": "research/training_snapshots/TR15/tests/test_final_preparation.py",
+      "public_sha256": "032b60e99c3396e99b1511aa53376018398565705407906def68e7c044be9400",
+      "public_bytes": 5225,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_fresh_compact.py": {
+      "source_sha256": "5a88bfdf3ee87b4f2f6897568839dbce2c8494196e05064f30bc56e015a9e34b",
+      "source_bytes": 2554,
+      "public_path": "research/training_snapshots/TR15/tests/test_fresh_compact.py",
+      "public_sha256": "5a88bfdf3ee87b4f2f6897568839dbce2c8494196e05064f30bc56e015a9e34b",
+      "public_bytes": 2554,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_fresh_retirement.py": {
+      "source_sha256": "b840e0303dbfb5ce8d1265a99ea46d2a59f1a5fe72009f1c85cecbe43812cf04",
+      "source_bytes": 1869,
+      "public_path": "research/training_snapshots/TR15/tests/test_fresh_retirement.py",
+      "public_sha256": "b840e0303dbfb5ce8d1265a99ea46d2a59f1a5fe72009f1c85cecbe43812cf04",
+      "public_bytes": 1869,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_gradient_diagnostic.py": {
+      "source_sha256": "b1cd49d94c542d42dddfcec74ead0f2ef3c74760ad8f47e73018a03e104d985b",
+      "source_bytes": 2397,
+      "public_path": "research/training_snapshots/TR15/tests/test_gradient_diagnostic.py",
+      "public_sha256": "b1cd49d94c542d42dddfcec74ead0f2ef3c74760ad8f47e73018a03e104d985b",
+      "public_bytes": 2397,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_history_delta.py": {
+      "source_sha256": "619b84ebc51b151c9fb015a3f566c041de456b097a43e51f181fe5ffd5a1c4ce",
+      "source_bytes": 979,
+      "public_path": "research/training_snapshots/TR15/tests/test_history_delta.py",
+      "public_sha256": "619b84ebc51b151c9fb015a3f566c041de456b097a43e51f181fe5ffd5a1c4ce",
+      "public_bytes": 979,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_host_block_io.py": {
+      "source_sha256": "1f59a1f9858849fdab8eb2930a334926008c4978e86d6cca3bffafed337162f0",
+      "source_bytes": 2494,
+      "public_path": "research/training_snapshots/TR15/tests/test_host_block_io.py",
+      "public_sha256": "1f59a1f9858849fdab8eb2930a334926008c4978e86d6cca3bffafed337162f0",
+      "public_bytes": 2494,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hybrid_capacity_lease.py": {
+      "source_sha256": "a20afbb17cc80f61aaafacaf8acbbfa09ebaf2d7087c14c6ecbd893c8df815ab",
+      "source_bytes": 4000,
+      "public_path": "research/training_snapshots/TR15/tests/test_hybrid_capacity_lease.py",
+      "public_sha256": "a20afbb17cc80f61aaafacaf8acbbfa09ebaf2d7087c14c6ecbd893c8df815ab",
+      "public_bytes": 4000,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hybrid_continue.py": {
+      "source_sha256": "ad763fba76dd7290c1c2281194d24948daac2a02535a098c8241ffd3e7f8ece6",
+      "source_bytes": 3367,
+      "public_path": "research/training_snapshots/TR15/tests/test_hybrid_continue.py",
+      "public_sha256": "ad763fba76dd7290c1c2281194d24948daac2a02535a098c8241ffd3e7f8ece6",
+      "public_bytes": 3367,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hybrid_credit_analysis.py": {
+      "source_sha256": "ea96d1317b97fbefee5d0e079dafa6db95b0c487909ec456e70a00a84f5b108a",
+      "source_bytes": 1290,
+      "public_path": "research/training_snapshots/TR15/tests/test_hybrid_credit_analysis.py",
+      "public_sha256": "ea96d1317b97fbefee5d0e079dafa6db95b0c487909ec456e70a00a84f5b108a",
+      "public_bytes": 1290,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hybrid_final_training_evidence.py": {
+      "source_sha256": "6e3575a63578602a00d1686f5bd9374bdb0f23142af75e2a62f912a51cebb9a7",
+      "source_bytes": 7220,
+      "public_path": "research/training_snapshots/TR15/tests/test_hybrid_final_training_evidence.py",
+      "public_sha256": "726907d8ceb3b0f4f5e5a6f742d3e673dabf7e12c6e0f765e86df74e61122444",
+      "public_bytes": 7216,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hybrid_materialization.py": {
+      "source_sha256": "44fc4f4c8f465533301bcf08d64d2d1c7957fe55a67bd78143e764e2290b8199",
+      "source_bytes": 5754,
+      "public_path": "research/training_snapshots/TR15/tests/test_hybrid_materialization.py",
+      "public_sha256": "44fc4f4c8f465533301bcf08d64d2d1c7957fe55a67bd78143e764e2290b8199",
+      "public_bytes": 5754,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_hypothesis_closure.py": {
+      "source_sha256": "59ae35397180644e4d8aef7345253580651f0f79446ce8201fecd0d1b0da64b9",
+      "source_bytes": 2465,
+      "public_path": "research/training_snapshots/TR15/tests/test_hypothesis_closure.py",
+      "public_sha256": "59ae35397180644e4d8aef7345253580651f0f79446ce8201fecd0d1b0da64b9",
+      "public_bytes": 2465,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_idle_gpu_selection.py": {
+      "source_sha256": "456f742eb9cdfaa819d20d35f4c6c6f4f00e23045e3c7d6c35318bcae69ba81a",
+      "source_bytes": 846,
+      "public_path": "research/training_snapshots/TR15/tests/test_idle_gpu_selection.py",
+      "public_sha256": "456f742eb9cdfaa819d20d35f4c6c6f4f00e23045e3c7d6c35318bcae69ba81a",
+      "public_bytes": 846,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_incremental_hash_cache.py": {
+      "source_sha256": "0a809c04631f3244143e3e44ae95188430585460896065c63e8af830c6d08afe",
+      "source_bytes": 3578,
+      "public_path": "research/training_snapshots/TR15/tests/test_incremental_hash_cache.py",
+      "public_sha256": "0a809c04631f3244143e3e44ae95188430585460896065c63e8af830c6d08afe",
+      "public_bytes": 3578,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_journal_policy_version.py": {
+      "source_sha256": "526762569fa30d1fd3b213ce1aa1ddb4aeb3075ab7cff9fd10c07f7369711505",
+      "source_bytes": 612,
+      "public_path": "research/training_snapshots/TR15/tests/test_journal_policy_version.py",
+      "public_sha256": "526762569fa30d1fd3b213ce1aa1ddb4aeb3075ab7cff9fd10c07f7369711505",
+      "public_bytes": 612,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_linked_hypothesis_budget.py": {
+      "source_sha256": "9c33cae9079cc46ce7f447ce7c653ef55988d373f8e472b584a9f3e05428a1c8",
+      "source_bytes": 1299,
+      "public_path": "research/training_snapshots/TR15/tests/test_linked_hypothesis_budget.py",
+      "public_sha256": "9c33cae9079cc46ce7f447ce7c653ef55988d373f8e472b584a9f3e05428a1c8",
+      "public_bytes": 1299,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_linux_probe.py": {
+      "source_sha256": "123dfa2597b6bccdf84e71292d0725bd0f7e72236070cc7be8ff676dde79b334",
+      "source_bytes": 7088,
+      "public_path": "research/training_snapshots/TR15/tests/test_linux_probe.py",
+      "public_sha256": "123dfa2597b6bccdf84e71292d0725bd0f7e72236070cc7be8ff676dde79b334",
+      "public_bytes": 7088,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_local_cache_finalize.py": {
+      "source_sha256": "ad4fdc0b866912401fcf8ad59ae6687d325be965034d54f7038fadb40b2befad",
+      "source_bytes": 572,
+      "public_path": "research/training_snapshots/TR15/tests/test_local_cache_finalize.py",
+      "public_sha256": "ad4fdc0b866912401fcf8ad59ae6687d325be965034d54f7038fadb40b2befad",
+      "public_bytes": 572,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_local_cache_retirement.py": {
+      "source_sha256": "7562934e008aab5942f2c88182e8205f54813a7915f83dbb7676fd139c3a183a",
+      "source_bytes": 3140,
+      "public_path": "research/training_snapshots/TR15/tests/test_local_cache_retirement.py",
+      "public_sha256": "7562934e008aab5942f2c88182e8205f54813a7915f83dbb7676fd139c3a183a",
+      "public_bytes": 3140,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_local_fragment_retirement.py": {
+      "source_sha256": "50b40efbe9ab759699dff6f62b7c701418b34f9adef8b905b2e896bd4320fd80",
+      "source_bytes": 5345,
+      "public_path": "research/training_snapshots/TR15/tests/test_local_fragment_retirement.py",
+      "public_sha256": "50b40efbe9ab759699dff6f62b7c701418b34f9adef8b905b2e896bd4320fd80",
+      "public_bytes": 5345,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_local_trajectory_archive.py": {
+      "source_sha256": "f2868cdd6d120e6782d913dabf691651c46fa6ded774059c8c62a684192d9465",
+      "source_bytes": 6850,
+      "public_path": "research/training_snapshots/TR15/tests/test_local_trajectory_archive.py",
+      "public_sha256": "f2868cdd6d120e6782d913dabf691651c46fa6ded774059c8c62a684192d9465",
+      "public_bytes": 6850,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_original_panel_gate.py": {
+      "source_sha256": "5a930297206b8ae1f7cd055f50036dc0be2170c8b167e160dae56678906b1e5e",
+      "source_bytes": 1496,
+      "public_path": "research/training_snapshots/TR15/tests/test_original_panel_gate.py",
+      "public_sha256": "5a930297206b8ae1f7cd055f50036dc0be2170c8b167e160dae56678906b1e5e",
+      "public_bytes": 1496,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_package_probe.py": {
+      "source_sha256": "95cdb106dfffad58e907903488b177cbb85f692995d97944d7827bc64d30713d",
+      "source_bytes": 2790,
+      "public_path": "research/training_snapshots/TR15/tests/test_package_probe.py",
+      "public_sha256": "95cdb106dfffad58e907903488b177cbb85f692995d97944d7827bc64d30713d",
+      "public_bytes": 2790,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_phase_timing.py": {
+      "source_sha256": "2a550c7ebf6b7bd70a626b7d7c4c51e604320082c35206063cbd2b55a684e048",
+      "source_bytes": 1387,
+      "public_path": "research/training_snapshots/TR15/tests/test_phase_timing.py",
+      "public_sha256": "2a550c7ebf6b7bd70a626b7d7c4c51e604320082c35206063cbd2b55a684e048",
+      "public_bytes": 1387,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_ppo_accounting.py": {
+      "source_sha256": "3e7e4ab8d03b35f537ee64e497a1cb6e93fe5c6015cdf5f4ab647619cc6b0136",
+      "source_bytes": 3896,
+      "public_path": "research/training_snapshots/TR15/tests/test_ppo_accounting.py",
+      "public_sha256": "3e7e4ab8d03b35f537ee64e497a1cb6e93fe5c6015cdf5f4ab647619cc6b0136",
+      "public_bytes": 3896,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_ppo_credit_diagnostic.py": {
+      "source_sha256": "e65ab3ab14716db8705f3d432382feac03813d879893072f24642bfbf02bdea8",
+      "source_bytes": 1562,
+      "public_path": "research/training_snapshots/TR15/tests/test_ppo_credit_diagnostic.py",
+      "public_sha256": "e65ab3ab14716db8705f3d432382feac03813d879893072f24642bfbf02bdea8",
+      "public_bytes": 1562,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_ppo_mapping.py": {
+      "source_sha256": "c737d3a5960a1307fc5db2dac3fe79741751da95b04721d0f83d022a8ef0ae7c",
+      "source_bytes": 820,
+      "public_path": "research/training_snapshots/TR15/tests/test_ppo_mapping.py",
+      "public_sha256": "c737d3a5960a1307fc5db2dac3fe79741751da95b04721d0f83d022a8ef0ae7c",
+      "public_bytes": 820,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_protocol.py": {
+      "source_sha256": "930c6e3f39f166fd5277fc2e191c9c16446768dc336b4051003bdc992f7d9df8",
+      "source_bytes": 2515,
+      "public_path": "research/training_snapshots/TR15/tests/test_protocol.py",
+      "public_sha256": "930c6e3f39f166fd5277fc2e191c9c16446768dc336b4051003bdc992f7d9df8",
+      "public_bytes": 2515,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_public_agents.py": {
+      "source_sha256": "62cbd04b33068c45d9e5fa5ca4675e73d9b40d3b138f4c0a0508cd27a4f7a435",
+      "source_bytes": 1539,
+      "public_path": "research/training_snapshots/TR15/tests/test_public_agents.py",
+      "public_sha256": "62cbd04b33068c45d9e5fa5ca4675e73d9b40d3b138f4c0a0508cd27a4f7a435",
+      "public_bytes": 1539,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_range_artifacts.py": {
+      "source_sha256": "ad207bf6803b71f55ebc205b5af759f383d1d168caf3769ca1660ecf6b25ad5b",
+      "source_bytes": 2519,
+      "public_path": "research/training_snapshots/TR15/tests/test_range_artifacts.py",
+      "public_sha256": "ad207bf6803b71f55ebc205b5af759f383d1d168caf3769ca1660ecf6b25ad5b",
+      "public_bytes": 2519,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_range_fetch.py": {
+      "source_sha256": "56e8dee2bf2b0a10d9d2a10045a3a8bf86921d9303541e5f09d6256c626c0a7f",
+      "source_bytes": 5134,
+      "public_path": "research/training_snapshots/TR15/tests/test_range_fetch.py",
+      "public_sha256": "56e8dee2bf2b0a10d9d2a10045a3a8bf86921d9303541e5f09d6256c626c0a7f",
+      "public_bytes": 5134,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_ranged_wheelhouse.py": {
+      "source_sha256": "cff855a58071c356bd6491ae674539adbd8642baca41b35d5c6cf2d675fed0e5",
+      "source_bytes": 1855,
+      "public_path": "research/training_snapshots/TR15/tests/test_ranged_wheelhouse.py",
+      "public_sha256": "cff855a58071c356bd6491ae674539adbd8642baca41b35d5c6cf2d675fed0e5",
+      "public_bytes": 1855,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_replay_data.py": {
+      "source_sha256": "463146330fc99b7264c0c55eebfea2939d12173962becb85b0fe1486d2ccf887",
+      "source_bytes": 1709,
+      "public_path": "research/training_snapshots/TR15/tests/test_replay_data.py",
+      "public_sha256": "463146330fc99b7264c0c55eebfea2939d12173962becb85b0fe1486d2ccf887",
+      "public_bytes": 1709,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_resource_journal.py": {
+      "source_sha256": "57fdbab4ba40c79cf7cfed98663a5f964ee1504b248351b81bb88932a16524ac",
+      "source_bytes": 2443,
+      "public_path": "research/training_snapshots/TR15/tests/test_resource_journal.py",
+      "public_sha256": "57fdbab4ba40c79cf7cfed98663a5f964ee1504b248351b81bb88932a16524ac",
+      "public_bytes": 2443,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_resource_profile.py": {
+      "source_sha256": "a945a53ed9274dea652e15f52a6014e43839fd3103cb0caa3555018f0e18ea4a",
+      "source_bytes": 6153,
+      "public_path": "research/training_snapshots/TR15/tests/test_resource_profile.py",
+      "public_sha256": "a945a53ed9274dea652e15f52a6014e43839fd3103cb0caa3555018f0e18ea4a",
+      "public_bytes": 6153,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_restore_capsule.py": {
+      "source_sha256": "34cdcba224882d52693f7dc6764a846896916a682ca11aff20797d8598a9bcbc",
+      "source_bytes": 3268,
+      "public_path": "research/training_snapshots/TR15/tests/test_restore_capsule.py",
+      "public_sha256": "34cdcba224882d52693f7dc6764a846896916a682ca11aff20797d8598a9bcbc",
+      "public_bytes": 3268,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_rl_journal.py": {
+      "source_sha256": "798c39f88d12b5e1fea48d2bea3bbf859862ee4b4d8da1d55d17ca48712bb0fa",
+      "source_bytes": 2466,
+      "public_path": "research/training_snapshots/TR15/tests/test_rl_journal.py",
+      "public_sha256": "798c39f88d12b5e1fea48d2bea3bbf859862ee4b4d8da1d55d17ca48712bb0fa",
+      "public_bytes": 2466,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_rl_resume.py": {
+      "source_sha256": "f874ede089d1fc04b0b4fa42250c0226bee101dcffe5ae5edcbe90eaf4b2afe8",
+      "source_bytes": 5300,
+      "public_path": "research/training_snapshots/TR15/tests/test_rl_resume.py",
+      "public_sha256": "f874ede089d1fc04b0b4fa42250c0226bee101dcffe5ae5edcbe90eaf4b2afe8",
+      "public_bytes": 5300,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_scientific_resume.py": {
+      "source_sha256": "fa247475e83590290fa0127dfc09731ebe4ee2d8654d076c4bfcd124cb8d0bd3",
+      "source_bytes": 8879,
+      "public_path": "research/training_snapshots/TR15/tests/test_scientific_resume.py",
+      "public_sha256": "fa247475e83590290fa0127dfc09731ebe4ee2d8654d076c4bfcd124cb8d0bd3",
+      "public_bytes": 8879,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_archive.py": {
+      "source_sha256": "5163d4b6883bd9b314bf83d0d5564b2e43372817ccf378b36a4b828e40311db4",
+      "source_bytes": 10574,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_archive.py",
+      "public_sha256": "5163d4b6883bd9b314bf83d0d5564b2e43372817ccf378b36a4b828e40311db4",
+      "public_bytes": 10574,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_boundary_audit.py": {
+      "source_sha256": "242eee6218b83916363680f8da031243884452ccce43fb2b24d147eacf28b9fe",
+      "source_bytes": 1343,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_boundary_audit.py",
+      "public_sha256": "e8620be6c3239398608701c5e47b60a38c9cda1f2c588274270362fce0e4326c",
+      "public_bytes": 1350,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_environment.py": {
+      "source_sha256": "763bc8fb01cb7e2ecb31c8473d9f37f3920a921b03f2c02e18ef31e7e9e92db9",
+      "source_bytes": 5283,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_environment.py",
+      "public_sha256": "763bc8fb01cb7e2ecb31c8473d9f37f3920a921b03f2c02e18ef31e7e9e92db9",
+      "public_bytes": 5283,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_feedback.py": {
+      "source_sha256": "6d2be93422ad1c69f32cb40e5a0d252c11ab3d91096d14f1ba663fbdc1a2aee2",
+      "source_bytes": 4181,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_feedback.py",
+      "public_sha256": "6d2be93422ad1c69f32cb40e5a0d252c11ab3d91096d14f1ba663fbdc1a2aee2",
+      "public_bytes": 4181,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_handoff.py": {
+      "source_sha256": "0e97e4c5e8964721f2ecc68c464ee825c9d30c3570be52fe5fad0f938e667e57",
+      "source_bytes": 3511,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_handoff.py",
+      "public_sha256": "0e97e4c5e8964721f2ecc68c464ee825c9d30c3570be52fe5fad0f938e667e57",
+      "public_bytes": 3511,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_io_check.py": {
+      "source_sha256": "a1925d36256a98b6a8f71cfd7ea361f1b0d7ab56432c3d3df6882d7b9c1d79b7",
+      "source_bytes": 1765,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_io_check.py",
+      "public_sha256": "a1925d36256a98b6a8f71cfd7ea361f1b0d7ab56432c3d3df6882d7b9c1d79b7",
+      "public_bytes": 1765,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_resource_audit.py": {
+      "source_sha256": "4934ed2b74849a9a7bcb6076c0562efdea9dbb38cdc89e56645643789ca25ad2",
+      "source_bytes": 2853,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_resource_audit.py",
+      "public_sha256": "4934ed2b74849a9a7bcb6076c0562efdea9dbb38cdc89e56645643789ca25ad2",
+      "public_bytes": 2853,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_server_trial.py": {
+      "source_sha256": "72cbd3094c35b611a9cc4ff574103050a79b238402461dd9567e71f7f99f9db1",
+      "source_bytes": 5302,
+      "public_path": "research/training_snapshots/TR15/tests/test_server_trial.py",
+      "public_sha256": "72cbd3094c35b611a9cc4ff574103050a79b238402461dd9567e71f7f99f9db1",
+      "public_bytes": 5302,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_shared_server_safety.py": {
+      "source_sha256": "46f28700bdb33f35ed8468e81a990915a44beab1691ff197b013519fffa77259",
+      "source_bytes": 5024,
+      "public_path": "research/training_snapshots/TR15/tests/test_shared_server_safety.py",
+      "public_sha256": "46f28700bdb33f35ed8468e81a990915a44beab1691ff197b013519fffa77259",
+      "public_bytes": 5024,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_ssh_stream.py": {
+      "source_sha256": "a47f9db09c579e8ad5f1a3410c7f1eb98f8cad949556c9d744eb3e99b038e4e0",
+      "source_bytes": 5210,
+      "public_path": "research/training_snapshots/TR15/tests/test_ssh_stream.py",
+      "public_sha256": "a47f9db09c579e8ad5f1a3410c7f1eb98f8cad949556c9d744eb3e99b038e4e0",
+      "public_bytes": 5210,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_stage_control.py": {
+      "source_sha256": "5b3b933272c1d3f354e009e60cedbbd1104dd20caa51ba9e84e00efa543820b1",
+      "source_bytes": 5262,
+      "public_path": "research/training_snapshots/TR15/tests/test_stage_control.py",
+      "public_sha256": "5b3b933272c1d3f354e009e60cedbbd1104dd20caa51ba9e84e00efa543820b1",
+      "public_bytes": 5262,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_staged_environment.py": {
+      "source_sha256": "f7fc21a2d2fd31533968d5c0e572eb1691e97abac07576575a123b297afca7c7",
+      "source_bytes": 4298,
+      "public_path": "research/training_snapshots/TR15/tests/test_staged_environment.py",
+      "public_sha256": "f7fc21a2d2fd31533968d5c0e572eb1691e97abac07576575a123b297afca7c7",
+      "public_bytes": 4298,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_storage_cadence.py": {
+      "source_sha256": "945484081cf33b42a034d9025457b6c8025d3a2896c3751d0cf5fbe17e81c927",
+      "source_bytes": 1655,
+      "public_path": "research/training_snapshots/TR15/tests/test_storage_cadence.py",
+      "public_sha256": "945484081cf33b42a034d9025457b6c8025d3a2896c3751d0cf5fbe17e81c927",
+      "public_bytes": 1655,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_storage_migration.py": {
+      "source_sha256": "57640a86f2d8ee5f9af91e529b32312789b03e0532f6561dd2e25bbccefe59f1",
+      "source_bytes": 3244,
+      "public_path": "research/training_snapshots/TR15/tests/test_storage_migration.py",
+      "public_sha256": "57640a86f2d8ee5f9af91e529b32312789b03e0532f6561dd2e25bbccefe59f1",
+      "public_bytes": 3244,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_stream_fetch.py": {
+      "source_sha256": "4f5fd21fae3b30e049be01b7fe41a4e244e862de67e2097567c732e1be8023fe",
+      "source_bytes": 2476,
+      "public_path": "research/training_snapshots/TR15/tests/test_stream_fetch.py",
+      "public_sha256": "4f5fd21fae3b30e049be01b7fe41a4e244e862de67e2097567c732e1be8023fe",
+      "public_bytes": 2476,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_supervisor.py": {
+      "source_sha256": "480c79e0733a02d2e8ccfaf60a63b77f0330772b39d146a396ca9a45e024ddda",
+      "source_bytes": 5270,
+      "public_path": "research/training_snapshots/TR15/tests/test_supervisor.py",
+      "public_sha256": "480c79e0733a02d2e8ccfaf60a63b77f0330772b39d146a396ca9a45e024ddda",
+      "public_bytes": 5270,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_systemd_job.py": {
+      "source_sha256": "0fdea75ca1a00aa835be70226cd3426256df9df9e4fc0dbe1735e1eaf4e88d14",
+      "source_bytes": 2772,
+      "public_path": "research/training_snapshots/TR15/tests/test_systemd_job.py",
+      "public_sha256": "0fdea75ca1a00aa835be70226cd3426256df9df9e4fc0dbe1735e1eaf4e88d14",
+      "public_bytes": 2772,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_terminal_cache_safe_point.py": {
+      "source_sha256": "4c3031b4ee5ef9538c931761da45c04bc48795ad33392547e3dc8c79dfe5b0e0",
+      "source_bytes": 2267,
+      "public_path": "research/training_snapshots/TR15/tests/test_terminal_cache_safe_point.py",
+      "public_sha256": "4c3031b4ee5ef9538c931761da45c04bc48795ad33392547e3dc8c79dfe5b0e0",
+      "public_bytes": 2267,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_terminal_journal.py": {
+      "source_sha256": "709b28445708ac151dfc31f30de4e6634e40c178975340de23109cf52d0c2bf9",
+      "source_bytes": 5072,
+      "public_path": "research/training_snapshots/TR15/tests/test_terminal_journal.py",
+      "public_sha256": "709b28445708ac151dfc31f30de4e6634e40c178975340de23109cf52d0c2bf9",
+      "public_bytes": 5072,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_token_features.py": {
+      "source_sha256": "aeed985e0243fa8db68d13e91e7da2539406b7ca819b6154f17ff8f65b439e08",
+      "source_bytes": 3107,
+      "public_path": "research/training_snapshots/TR15/tests/test_token_features.py",
+      "public_sha256": "aeed985e0243fa8db68d13e91e7da2539406b7ca819b6154f17ff8f65b439e08",
+      "public_bytes": 3107,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr06_configuration.py": {
+      "source_sha256": "18a705d367f0a583b8a4bfaca743df16922922d63f72435d7c3d90e38d479f54",
+      "source_bytes": 3870,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr06_configuration.py",
+      "public_sha256": "18a705d367f0a583b8a4bfaca743df16922922d63f72435d7c3d90e38d479f54",
+      "public_bytes": 3870,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr08_single_change.py": {
+      "source_sha256": "8e3b89aef70d27e9883c2d236c6049a27430a4a8211c64fe0bab35a860c837fa",
+      "source_bytes": 1730,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr08_single_change.py",
+      "public_sha256": "8e3b89aef70d27e9883c2d236c6049a27430a4a8211c64fe0bab35a860c837fa",
+      "public_bytes": 1730,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr09_audit_snapshot.py": {
+      "source_sha256": "243c85d1e5a66420859ea0b4fefc0398418a61fef8cbfdf68aad58220131ad51",
+      "source_bytes": 1271,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr09_audit_snapshot.py",
+      "public_sha256": "243c85d1e5a66420859ea0b4fefc0398418a61fef8cbfdf68aad58220131ad51",
+      "public_bytes": 1271,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr09_numeric_transport.py": {
+      "source_sha256": "1b77da531c92af3b45538bfee3b8731aeaf4ef7164822eff91e71d2ba2edb313",
+      "source_bytes": 1942,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr09_numeric_transport.py",
+      "public_sha256": "1b77da531c92af3b45538bfee3b8731aeaf4ef7164822eff91e71d2ba2edb313",
+      "public_bytes": 1942,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr09_recovery_contract.py": {
+      "source_sha256": "12234420ba8d4b30bdec84f648db9222a3cbe864b5189979d9b4363b3d29097d",
+      "source_bytes": 2549,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr09_recovery_contract.py",
+      "public_sha256": "12234420ba8d4b30bdec84f648db9222a3cbe864b5189979d9b4363b3d29097d",
+      "public_bytes": 2549,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr09_single_change.py": {
+      "source_sha256": "eb7fe7de56d020767e9fce0bb8384ad3e53be70b338f04cec41cf8f888d8f6bf",
+      "source_bytes": 1127,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr09_single_change.py",
+      "public_sha256": "eb7fe7de56d020767e9fce0bb8384ad3e53be70b338f04cec41cf8f888d8f6bf",
+      "public_bytes": 1127,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr10_diagnostic.py": {
+      "source_sha256": "86348a911b103f7df95fb52ebbdd4f695ae885a956a5d3476a10e2f04f989fab",
+      "source_bytes": 1504,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr10_diagnostic.py",
+      "public_sha256": "86348a911b103f7df95fb52ebbdd4f695ae885a956a5d3476a10e2f04f989fab",
+      "public_bytes": 1504,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_tr10_evaluation_binding.py": {
+      "source_sha256": "1bfbf9cbd04b39c3a6a58ff74038c3e2d593a5180248eb52fe7a61e5ecaac15c",
+      "source_bytes": 1074,
+      "public_path": "research/training_snapshots/TR15/tests/test_tr10_evaluation_binding.py",
+      "public_sha256": "1bfbf9cbd04b39c3a6a58ff74038c3e2d593a5180248eb52fe7a61e5ecaac15c",
+      "public_bytes": 1074,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_training_checkpoint.py": {
+      "source_sha256": "1fa72fdabecfd71e069b10ca08220ddd3ddd8288ee6a7209a1c813125b5696b9",
+      "source_bytes": 5350,
+      "public_path": "research/training_snapshots/TR15/tests/test_training_checkpoint.py",
+      "public_sha256": "1fa72fdabecfd71e069b10ca08220ddd3ddd8288ee6a7209a1c813125b5696b9",
+      "public_bytes": 5350,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_training_control.py": {
+      "source_sha256": "dc03b797dea5f0fa5910f84fd6f3e35e6c9d86be9642209de49606c0af21d747",
+      "source_bytes": 3797,
+      "public_path": "research/training_snapshots/TR15/tests/test_training_control.py",
+      "public_sha256": "dc03b797dea5f0fa5910f84fd6f3e35e6c9d86be9642209de49606c0af21d747",
+      "public_bytes": 3797,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_trial_outcome.py": {
+      "source_sha256": "71b528da2c682847137b5462ba28d1612aa4086290d6b32e8c4dbb8a49adcc34",
+      "source_bytes": 2501,
+      "public_path": "research/training_snapshots/TR15/tests/test_trial_outcome.py",
+      "public_sha256": "71b528da2c682847137b5462ba28d1612aa4086290d6b32e8c4dbb8a49adcc34",
+      "public_bytes": 2501,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_unit_io_guard.py": {
+      "source_sha256": "bedb6da062e8fb9d9a22299fe334c5862811ec06d8de2ef80477cb2131b52fd8",
+      "source_bytes": 3015,
+      "public_path": "research/training_snapshots/TR15/tests/test_unit_io_guard.py",
+      "public_sha256": "bedb6da062e8fb9d9a22299fe334c5862811ec06d8de2ef80477cb2131b52fd8",
+      "public_bytes": 3015,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_volume_scope.py": {
+      "source_sha256": "e08974daaeba4a6afc0f2899f51b804d52df6ebf9ffd3eddd173099a18b44f03",
+      "source_bytes": 7712,
+      "public_path": "research/training_snapshots/TR15/tests/test_volume_scope.py",
+      "public_sha256": "e08974daaeba4a6afc0f2899f51b804d52df6ebf9ffd3eddd173099a18b44f03",
+      "public_bytes": 7712,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_volume_statistics.py": {
+      "source_sha256": "5b96907f65727a7b449e6b16e48ca1615e94c64060c3f774fdb4187ded7460d9",
+      "source_bytes": 1538,
+      "public_path": "research/training_snapshots/TR15/tests/test_volume_statistics.py",
+      "public_sha256": "5b96907f65727a7b449e6b16e48ca1615e94c64060c3f774fdb4187ded7460d9",
+      "public_bytes": 1538,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_volume_tail.py": {
+      "source_sha256": "c020e34d8267674790d9c78bbc088d1ffcc205309132589d0bc4fe54cc269770",
+      "source_bytes": 3546,
+      "public_path": "research/training_snapshots/TR15/tests/test_volume_tail.py",
+      "public_sha256": "c020e34d8267674790d9c78bbc088d1ffcc205309132589d0bc4fe54cc269770",
+      "public_bytes": 3546,
+      "transformation": "byte-identical"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/source/tests/test_wheelhouse_prepare.py": {
+      "source_sha256": "9c93a969802c5c55abcbb43c9d70d5bb99425560527fc1b721afcf7e044fb4e1",
+      "source_bytes": 2130,
+      "public_path": "research/training_snapshots/TR15/tests/test_wheelhouse_prepare.py",
+      "public_sha256": "9c93a969802c5c55abcbb43c9d70d5bb99425560527fc1b721afcf7e044fb4e1",
+      "public_bytes": 2130,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/deck.csv": {
+      "source_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+      "source_bytes": 232,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/deck.csv",
+      "public_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+      "public_bytes": 232,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/LICENSE": {
+      "source_sha256": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+      "source_bytes": 1074,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/LICENSE",
+      "public_sha256": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+      "public_bytes": 1074,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/main.py": {
+      "source_sha256": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+      "source_bytes": 7053,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/main.py",
+      "public_sha256": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+      "public_bytes": 7053,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/spec.json": {
+      "source_sha256": "9561068e914057d3b8215bc725a6bcf0f5bf1d69d74051111a3df5efbf81fd53",
+      "source_bytes": 547,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/spec.json",
+      "public_sha256": "1d36802143245bb604b4c5b001244d29ccbdb0ee486a4c84bbf51bd14e92eeae",
+      "public_bytes": 534,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/README.md": {
+      "source_sha256": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+      "source_bytes": 1930,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/README.md",
+      "public_sha256": "bf50fe59405a0dbb2af28dba41aac781fe0210bc935b21a3e0854535d3f878f2",
+      "public_bytes": 2444,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/provenance.json": {
+      "source_sha256": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+      "source_bytes": 3615,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/provenance.json",
+      "public_sha256": "deb8196211d1eb2496bee1dcaafb37e56ca4cf7d84586ecc932e5add6dbdea20",
+      "public_bytes": 3565,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr14-volume-100000-endpoint/ppo-provenance.json": {
+      "source_sha256": "f10c9f0b9ad028642a7cd11be04d0a25fca8b71eb91a66b0d1df5c0f3af7fb1f",
+      "source_bytes": 1097,
+      "public_path": "agents/learned/tr14-volume-100000-endpoint/ppo-provenance.json",
+      "public_sha256": "b990c6e888babe32b8def3b763b44ee19cfbcee4814ce18048c8fa9d479f3d8d",
+      "public_bytes": 1162,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/deck.csv": {
+      "source_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+      "source_bytes": 232,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/deck.csv",
+      "public_sha256": "ad5364e09165f7e54393ffda71d05696c54595a6d00cd6cdd6382b88436b16ec",
+      "public_bytes": 232,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/LICENSE": {
+      "source_sha256": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+      "source_bytes": 1074,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/LICENSE",
+      "public_sha256": "812cee1d7763aef84d0cbb54b181e7f68fd3d4f3274d9320591b4efc1418b970",
+      "public_bytes": 1074,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/main.py": {
+      "source_sha256": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+      "source_bytes": 7053,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/main.py",
+      "public_sha256": "7cb5b5a0652cb2cc8f8b49a31c1c204a3f5af8f4555d7a250cf46cf16a2f1262",
+      "public_bytes": 7053,
+      "transformation": "byte-identical"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/spec.json": {
+      "source_sha256": "71cb076dfa7f71cece8306f96ede7f1fda6b6bdf9a700137f0cbd6016f7f2f0a",
+      "source_bytes": 549,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/spec.json",
+      "public_sha256": "194d56fde4426f608d5c5366e48337724cf68a5ed0d6fade560dffdb09c9eeca",
+      "public_bytes": 536,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/README.md": {
+      "source_sha256": "8edb7a5af62dcc74f99dd820477830e217e24c0423361e70ee4856f1fa89d396",
+      "source_bytes": 1930,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/README.md",
+      "public_sha256": "4b623c7f9aadf8882b2c6f431046c4f078284d93ae404ed98efd82ae33c1709a",
+      "public_bytes": 2444,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/provenance.json": {
+      "source_sha256": "6cac3962351767bc13d2bd705cd20fa954bee863e4c4ff7459f2df0fcdb3933b",
+      "source_bytes": 3615,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/provenance.json",
+      "public_sha256": "deb8196211d1eb2496bee1dcaafb37e56ca4cf7d84586ecc932e5add6dbdea20",
+      "public_bytes": 3565,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "agents/learned/tr15-volume-100000-endpoint/ppo-provenance.json": {
+      "source_sha256": "f10c9f0b9ad028642a7cd11be04d0a25fca8b71eb91a66b0d1df5c0f3af7fb1f",
+      "source_bytes": 1097,
+      "public_path": "agents/learned/tr15-volume-100000-endpoint/ppo-provenance.json",
+      "public_sha256": "b990c6e888babe32b8def3b763b44ee19cfbcee4814ce18048c8fa9d479f3d8d",
+      "public_bytes": 1162,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261031T165529Z_tr14-segment-001-archive_eeb178/metrics.json": {
+      "source_sha256": "8e00ae152f1e0a48584a14d8e42844f7ef73421dc72a8f3a52ed7d5cdbcfdb6b",
+      "source_bytes": 15007,
+      "public_path": "evidence/TR14/recovery-acceptance-summary.json",
+      "public_sha256": "898a9ba137e71ebcdb6c492109f441e2dea1011c762421bc4903a4e33f7dfb6f",
+      "public_bytes": 585,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T040541Z_tr15-selfplay-segment-002_a76406/postflight/20261102T040541Z_tr15-selfplay-segment-002_a76406/metrics.json": {
+      "source_sha256": "9d5d18fb1a7b70d4db667154e9a3ef0e36051f893914bd973e8f83875293f809",
+      "source_bytes": 16193,
+      "public_path": "evidence/TR15/recovery-acceptance-summary.json",
+      "public_sha256": "f3ebe6f44f9c573535dccc2e196546625729f98a372ed8d98689415c35eae9e7",
+      "public_bytes": 585,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "runs/20261102T024850Z_tr15-native-v41-selfplay-difference-repair-003_a674de/remote-results/TR15-native-selfplay-acceptance.json": {
+      "source_sha256": "d5d256e26146cb8ae2397d5986c5f6f45667b50a1b5b36040d2ec8e056adfb99",
+      "source_bytes": 77364,
+      "public_path": "evidence/TR15/native-acceptance-summary.json",
+      "public_sha256": "18b7cb2d583a2a2abdd8776fe3f52ee54146a7c7bf564e68c50d9a335a2a727e",
+      "public_bytes": 1298,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/activations/TR15-selfplay-100000-20261101/ACCEPTANCE_REUSE.json": {
+      "source_sha256": "01b9e730a2c7f133b8cffaa5145148c2e7cfec11412178ac4e177d85aad02b12",
+      "source_bytes": 23058,
+      "public_path": "evidence/TR15/accepted-source-hashes.json",
+      "public_sha256": "fbd58b290ccff830f56f5968415e1a5d9d7bef6c2c5701eb2d73630b845e4018",
+      "public_bytes": 13010,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    },
+    "research/autonomy/activations/TR16-volume-600000-20261102/before/research/autonomy/CURRENT_VOLUME.json": {
+      "source_sha256": "ac08b043e77f830809c1714297ae09e008f6c7c79ba3d710e8cc6203c4b9b241",
+      "source_bytes": 25059,
+      "public_path": "research/autonomy/CURRENT_VOLUME.json",
+      "public_sha256": "21bb67c16433796cc59191dcb9af56bf17801995c3951afdde4e3c12f8bbfcb5",
+      "public_bytes": 26830,
+      "transformation": "public projection; compact fields, endpoint/account placeholders or explicit public-scope note"
+    }
+  },
+  "new_endpoint_outcome_rows": 4900,
+  "parent_outcomes_reused_without_duplication": true,
+  "account_endpoint_and_personal_path_substitutions_recorded_per_file": true,
+  "raw_training_replay_model_optimizer_RNG_and_recovery_payloads_uploaded": false,
+  "protected_final_pool_accessed": false,
+  "active_training_state_or_code_modified": false,
+  "TR16_result_or_code_included": false
+}

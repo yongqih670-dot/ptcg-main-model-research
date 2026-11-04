@@ -1,0 +1,59 @@
+{
+  "reference_only": true,
+  "execution_authorized": false,
+  "source_config_sha256": "712c4d36b6ddf07eca4a0c67960ae4d796eaf067498ba53cf18ba4acbe8b5fa4",
+  "series_count": 800,
+  "policy_seed": 2026103000,
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 2026103001,
+  "cells": [
+    {
+      "cell_id": "endpoint-vs-lucario",
+      "series_count": 100,
+      "reference_id": "lucario",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-alakazam",
+      "series_count": 100,
+      "reference_id": "alakazam",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-archaludon",
+      "series_count": 100,
+      "reference_id": "archaludon",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_count": 100,
+      "reference_id": "ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-tr01-ppo",
+      "series_count": 100,
+      "reference_id": "tr01-ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-tr02-ppo",
+      "series_count": 100,
+      "reference_id": "tr02-ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-tr03-ppo",
+      "series_count": 100,
+      "reference_id": "tr03-ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    },
+    {
+      "cell_id": "endpoint-vs-tr09-epochs4-hdd2",
+      "series_count": 100,
+      "reference_id": "tr09-epochs4-hdd2",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    }
+  ]
+}

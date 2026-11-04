@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "hypothesis_id": "TR14",
+  "authority": {
+    "source_path": "research/autonomy/authorizations/TR14-volume-100000-local200-20261031.json",
+    "original_source_sha256": "b944ae19f40e22a0261268c3df37e60bff14f03e5bf002b70c826ccbc8b0a4f9",
+    "payload_published": false
+  },
+  "scientific_parent": "TR13 version28",
+  "parent_unique": 206957,
+  "parent_updates": 28,
+  "scientific_source_run_id": "20261030T142634Z_tr13-volume-segment-004_53eca8",
+  "parent_full_recovery": {
+    "source_path": "runs/20261030T180855Z_tr13-segment-004-archive_290b8b/metrics.json",
+    "original_source_sha256": "d4b1c008c39898d4ba435e53a507a01fb1fffb023fd4eef00d5a384c0c8f1625",
+    "payload_published": false
+  },
+  "additional_unique": 100000,
+  "absolute_target": 306957,
+  "inherited_pending": 0,
+  "accounting": "unique_successful_first_epoch_coverage_v1",
+  "whole_BO3_update_overshoot_reported": true,
+  "only_scientific_variable": "further training amount",
+  "training": {
+    "path": "research/autonomy/TR14-training-frozen.json",
+    "sha256": "bc7557c131c438834f38a3311c6149b720600c1297d4a34dec22bb7de1c919b3",
+    "original_source_sha256": "85e51d789a61d00e14326e94451d9a68abbcee5056b62412781539e88df32b37"
+  },
+  "evaluation": {
+    "path": "research/autonomy/TR14_EVALUATION_FROZEN.json",
+    "sha256": "a7b688ea19ce2b4d77c2f4e31acd82f0de2e021483d885bc7d39484e0186b721",
+    "original_source_sha256": "0a22c861b5db76c25633b77da5790d4545e35061b48a80262df0451c77a96561"
+  },
+  "checkpoint_profile": {
+    "source_path": "research/autonomy/framework-v2-checkpoint-cadence.json",
+    "original_source_sha256": "19b7688f7ca0bc19e66c6fda4a9526ac3894fae0c53d412223737c2e68cc1968",
+    "payload_published": false
+  },
+  "GPU_hours_max": 16,
+  "CPU_hours_max": 6,
+  "combined_hours_max": 22,
+  "raw_limits": {
+    "training_run_ids": 2,
+    "evaluation_run_ids": 3,
+    "engineering_run_ids": 3
+  },
+  "job_limits": {
+    "training_net_seconds": 28800,
+    "evaluation_seconds": 21600,
+    "engineering_seconds": 1800,
+    "attempts_per_raw": 1
+  },
+  "budget_from_existing_ordinary_project_allowance_only": true,
+  "protected_final_GPU_hours": 8,
+  "protected_final_CPU_hours": 12,
+  "protected_final_raw": 6,
+  "single_GPU_capacity_sharing": {
+    "indices": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "CPU_choices": [
+      4,
+      2,
+      1
+    ],
+    "memory_GiB": 48,
+    "GPU_target_GiB": 10
+  },
+  "local_capacity": {
+    "hard_GiB": 200,
+    "warning_GiB": 160,
+    "free_GiB_min": 20
+  },
+  "server_capacity": {
+    "hard_GiB": 80,
+    "warning_GiB": 64,
+    "free_GiB_min": 20
+  },
+  "prior_acceptance_reused_latest_state_only": true,
+  "TR13_closed_history_preserved": true,
+  "full_data_GitHub_upload": false,
+  "no_promotion_submission_final_pool": true
+}

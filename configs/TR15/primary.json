@@ -1,0 +1,17 @@
+{
+  "reference_only": true,
+  "execution_authorized": false,
+  "source_config_sha256": "4121c157603e87f44b0f48cc354fc6d5d8b59f8652be9ee0f4fad3902b984d3a",
+  "series_count": 1600,
+  "policy_seed": 2026103000,
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 2026103001,
+  "cells": [
+    {
+      "cell_id": "endpoint-vs-ppo",
+      "series_count": 1600,
+      "reference_id": "ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    }
+  ]
+}

@@ -45,3 +45,12 @@ python -B tools/verify_tr12_results.py
 
 
 TR13离线统计重算：`python -B tools/verify_tr13_results.py`。依赖NumPy，输入仅公开精简BO3结局。
+
+
+## TR14、TR15统计与冻结源码
+
+执行 `python -B tools/verify_tr14_tr15_results.py` 可重算两阶段全部主比较和开发面板的20,000次bootstrap，以及席位/错误/样本量检查。TR14父版复用 `evidence/TR13/`，TR15父版复用 `evidence/TR14/`；各自新增终点2450 BO3。
+
+TR15实际执行源码位于 `research/training_snapshots/TR15/`；运行 `python -B tools/verify_tr15_snapshot.py` 检查其文件哈希和语法。根目录基础生产快照与独立v3工程候选保持历史版本，不能与该冻结实现混作一个运行版本。服务器/账户/个人路径的替换已在来源清单明确记录，未替换的源码保持原字节。
+
+模型输入、optimizer、RNG、完整归档、官方原生环境和第三方模型需由有权访问者自行取得并另做环境/资源验收。公开部署入口没有对应权重，不是可直接运行的参赛模型包；统计复算与完整训练复现是不同验证范围。

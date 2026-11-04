@@ -1,48 +1,36 @@
 # PTCG 精选研究材料
 
-公开仓库保留精选源码、冻结配置、实验结果、依赖版本、来源许可和统计复现材料。基础代码快照为 2026-10-28；最新于 2026-10-31 同步 TR13 最终结果，保留 TR12 历史报告。历史运行记录不代表实时状态。
+公开仓库保留精选源码、冻结配置、实验结果、来源许可和离线统计复现材料。**本次科学结果截止TR15完整终点（2026-11-02），于2026-11-04补齐上次GitHub同步后缺失的TR14、TR15材料。** TR16属于另行授权且仍在进行的阶段，本次不发布其未完成实验结论。
 
-**TR13 已完成：version15 → version28，新增100,022条有效唯一决策，学习信号门槛通过。训练已停止；独立最终池尚未验证，champion仍为H002。**
+**TR14、TR15均为证据不足（inconclusive），没有更新champion。** TR13此前通过学习信号门槛；独立最终池与其他晋级条件仍未完成，champion保持H002。
 
-| 项目 | TR13 最终结果 |
-|---|---|
-| 训练量 | 新增100,022条 / 13次更新；累计206,957条；完整更新越过目标22条 |
-| 固定对手，各1600 BO3 | 54.6875% → **60.50%**；+5.8125个百分点，95% CI [+2.375,+9.3125] |
-| 8对手面板，各800 BO3 | 67.125% → **72.25%**；+5.125个百分点，95% CI [+1.125,+9.125] |
-| 可靠性 | 全部2450场终点评测无错误、超时、非法动作或内部随机回退 |
+| 阶段 | 新增有效唯一决策 | 主模型累计 | 固定对手终点得分 | 相对父版增益（百分点）及95% CI | 八对手面板终点得分 |
+|---|---:|---:|---:|---|---:|
+| TR13 | 100,022 | 206,957 | 60.500% | +5.8125 [ +2.3750, +9.3125 ] | 72.250% |
+| TR14 | 100,080 | 307,037 | 60.000% | −0.5000 [ −3.9375, +2.8750 ] | 72.125% |
+| TR15 | 100,115 | 407,152 | 60.625% | +0.6250 [ −2.7500, +4.0000 ] | 68.875% |
 
-主对手与训练对手重叠，开发面板不是最终池；不能据此宣称泛化达标。用户另行授权的一次Kaggle试提交已被接收（**57825976**），平台自测已通过（COMPLETE），初始评分600，正式对局反馈待积累，见[提交状态](docs/TR13_KAGGLE_TRIAL.md)；不等同研究晋级。TR12历史结论仍为证据不足。
+主比较每策略1600完整BO3、席位800/800；八对手面板每策略800BO3、每对手100、席位50/50。预注册主门槛为增益至少5个百分点且95% CI下界大于0，20,000次完整BO3非配对bootstrap。TR14和TR15各新增2450个终点评测BO3，均正常结束；父版2400个既有BO3复用。固定主对手与当前或继承训练历史重叠，开发面板不是独立最终池，不直接代表Kaggle天梯胜率或泛化达标。
 
-## 最新框架 v3（2026-11-01）
-
-[源码、测试与验收说明](research/framework_optimization/v3_tr13/README.md) · [完整工程报告](research/framework_optimization/v3_tr13/REPORT.md)。
-
-相同48完整BO3／8203决策的四例本地CPU固定回放中，包含运行、两点冷恢复和无损归档的中位耗时5350.954 → 3794.181秒，减少29.09%，通过原15%门槛及资源子门槛。首epoch覆盖100%，8个冷恢复点严格匹配；源码和冻结协议哈希随包发布。
-
-本次仅同步独立工程候选与精选证据，默认开关仍关闭；容量事务优化未纳入本地通过配置。未启用服务器v3或科学训练，不将此结果等同GPU训练提速或棋力提升。原始训练数据、权重和完整恢复归档继续保留本地／服务器。
-
-```powershell
-python -B tools/verify_framework_v3.py
-python -B tools/test_framework_v3_public.py
-```
+TR15改为最新冻结自身策略作对手，完整PPO更新后刷新；新增训练量和对手分布同时变化，不能分离其因果贡献。TR13–TR15是同一连续谱系，不是三个独立训练种子。全项目不同分支历史合计1,045,844个实际唯一优化决策/134次更新，当前TR15主线为407,152/54，不能把分支总量当作主模型训练量。
 
 ## 报告与下载
 
-- **[TR13 最终报告](docs/TR13_FINAL_REPORT.md)**、[机器可读结果](research/autonomy/TR13-result.json)、[精简结局](evidence/TR13/)与[统计重算工具](tools/verify_tr13_results.py)。
-
-- **[TR12 最终评测与分析报告](docs/TR12_FINAL_REPORT.md)**：逐对手结果、训练健康、实际耗时、停止根因、恢复限制及费用。
-- [TR12 机器可读结果](research/autonomy/TR12-result.json)、[提前停止协议修订](research/autonomy/TR12_EARLY_STOP_PROTOCOL.json)、[精选结果来源清单](manifests/tr12-final-publication.json)。
-- [精简 BO3 结局表](evidence/TR12/)及[离线统计重算工具](tools/verify_tr12_results.py)：仅包含系列编号、席位、胜平负及运行检查，不含对局动作或回放。
-- [全部实验结论](docs/RESULTS.md)、[复现说明](docs/REPRODUCE.md)、[公开材料范围](docs/DATA.md)、[来源与许可](docs/THIRD_PARTY.md)。
-- [下载当前精选源码与报告 ZIP](https://github.com/yongqih670-dot/ptcg-main-model-research/archive/refs/heads/main.zip)，或 `git clone https://github.com/yongqih670-dot/ptcg-main-model-research.git`。
-- [文件 SHA-256 清单](manifests/curated-files.json)及[发布范围收据](manifests/publication-scope.json)。
+- **[TR15最终报告](docs/TR15_FINAL_REPORT.md)** · [机器可读结果](research/autonomy/TR15-result.json) · [冻结自博弈配置](research/autonomy/TR15-training-frozen.json) · [精简结局](evidence/TR15/)。
+- **[TR14最终报告](docs/TR14_FINAL_REPORT.md)** · [机器可读结果](research/autonomy/TR14-result.json) · [固定对手配置](research/autonomy/TR14-training-frozen.json) · [精简结局](evidence/TR14/)。
+- [TR13最终报告](docs/TR13_FINAL_REPORT.md) · [TR13已完成的平台试提交记录](docs/TR13_KAGGLE_TRIAL.md) · [TR12历史最终报告](docs/TR12_FINAL_REPORT.md)。
+- [TR15实际冻结源码、测试与执行入口](research/training_snapshots/TR15/README.md) · [TR15实际框架与恢复验收](docs/TR15_FRAMEWORK_ACCEPTANCE.md)。
+- [v3原始工程候选及本地CPU验收](research/framework_optimization/v3_tr13/README.md) · [原工程报告](research/framework_optimization/v3_tr13/REPORT.md)。原29.09%耗时改善仅对应该CPU固定回放。
+- [实验结论](docs/RESULTS.md) · [复现说明](docs/REPRODUCE.md) · [公开范围](docs/DATA.md) · [来源与许可](docs/THIRD_PARTY.md)。
+- [下载当前精选源码与报告ZIP](https://github.com/yongqih670-dot/ptcg-main-model-research/archive/refs/heads/main.zip)，或 `git clone https://github.com/yongqih670-dot/ptcg-main-model-research.git`。
+- [文件SHA-256清单](manifests/curated-files.json) · [本次来源清单](manifests/tr14-tr15-publication.json) · [发布范围](manifests/publication-scope.json)。
 
 ```powershell
 python -B tools/verify_curated.py
-python -B tools/verify_tr12_results.py
-python -B tools/verify_tr13_results.py
+python -B tools/verify_tr14_tr15_results.py
+python -B tools/verify_tr15_snapshot.py
 ```
 
-统计重算命令需要 NumPy，只重算已公开结局的统计，不下载数据、不加载模型、不启动对战或训练。
+统计工具只需NumPy，仅重算公开结局，不下载数据、不加载模型、不启动对战或训练。根目录生产代码保留历史基础快照；TR15实际实现位于独立冻结目录，二者的版本边界见复现说明。
 
-**完整训练数据、原始回放、模型权重、checkpoint、optimizer/RNG 及恢复归档不上传。** 原件继续保留在所有者本地和服务器；完整数据上传及重试保持禁用，旧数据 Release 与附件已撤回。TR12 不再续训；本仓库中的历史实现、配置与预算记录不构成启动训练的授权。`research/framework_optimization/` 中的候选未部署于 TR12。
+**完整训练数据、原始回放、权重、checkpoint、optimizer/RNG和恢复归档不上传GitHub。** 原件继续保留本地和服务器；旧数据Release及附件已撤回，完整数据上传和自动重试继续禁用。历史实现、配置、验收及预算记录不构成启动训练的授权。

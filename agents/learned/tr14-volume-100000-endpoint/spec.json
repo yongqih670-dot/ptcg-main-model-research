@@ -1,0 +1,13 @@
+{
+  "id": "tr14-volume-100000-endpoint",
+  "kind": "transformer_rl",
+  "path": "agents/learned/tr14-volume-100000-endpoint",
+  "lineage": "dipam_unown_gradiant_ppo",
+  "parameters": {
+    "_actor_seat_mode": "zero"
+  },
+  "model_sha256": "85983df4f02c4508bf494b3773ff38c906f4d200a80e47be078dd27e4243829e",
+  "training_run_id": "20261031T111127Z_tr14-volume-segment-001_e112d1",
+  "training_config_sha256": "85e51d789a61d00e14326e94451d9a68abbcee5056b62412781539e88df32b37",
+  "feature_schema": "full-inherited-blind-conditional-v3"
+}

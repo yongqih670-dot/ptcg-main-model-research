@@ -1,0 +1,70 @@
+{
+  "at": "2026-11-01T14:20:12.659722+00:00",
+  "phase": "TR15",
+  "authority": {
+    "source_path": "research/autonomy/authorizations/TR15-selfplay-v3-100000-20261101.json",
+    "original_source_sha256": "b1ea7ea33285743ff27c4e499a9c36e869047fb15106b5b7661ca305683a5e47",
+    "payload_published": false
+  },
+  "scientific_parent": "TR14 v41",
+  "parent_unique": 307037,
+  "parent_updates": 41,
+  "inherited_pending": 0,
+  "additional_unique": 100000,
+  "absolute_target": 407037,
+  "accounting": "unique_successful_first_epoch_coverage_v1",
+  "whole_update_overshoot_reported": true,
+  "training": {
+    "path": "research/autonomy/TR15-training-frozen.json",
+    "sha256": "2cdf5abb77898146c313f877e619dd6896bd25c2f47c2a09ecbe0b914e3e9d02",
+    "original_source_sha256": "f9c67c71bb729c77455f774f709e520d8138f48410cc648297ea8103e8d5a97e"
+  },
+  "evaluation": {
+    "path": "research/autonomy/TR15_EVALUATION_FROZEN.json",
+    "sha256": "0a216066069c938468b2c4d347c051d5950894799a331c0773b3096161daac04",
+    "original_source_sha256": "469959bc9005c58de77f2305013fea7a8e1f2328efbe287aafee101c9809df64"
+  },
+  "checkpoint_profile": {
+    "source_path": "research/autonomy/framework-v2-checkpoint-cadence.json",
+    "original_source_sha256": "19b7688f7ca0bc19e66c6fda4a9526ac3894fae0c53d412223737c2e68cc1968",
+    "payload_published": false
+  },
+  "selfplay": {
+    "opponent": "latest frozen own snapshot",
+    "refresh": "after complete PPO commit only",
+    "fixed_throughout_complete_BO3": true,
+    "opponent_actions": "existing accepted FrozenOpponent greedy=True",
+    "learner_sampling_unchanged": true,
+    "selfplay_internal_winrate_not_strength_evidence": true
+  },
+  "attribution": "Training amount and opponent distribution both change; no extra fixed-opponent training control, so they cannot be strictly separated.",
+  "framework_delivery": {
+    "source_path": "research/autonomy/activations/TR15-selfplay-100000-20261101/DELIVERY_VERIFIED.json",
+    "original_source_sha256": "57e3d875195039cbf3b5d169eabf517c63074a4a9689e2582f4eb934ae9edeb2",
+    "payload_published": false
+  },
+  "mandatory_native_GPU_difference_before_science": true,
+  "AMP": false,
+  "GPU_hours_max": 20,
+  "CPU_hours_max": 8,
+  "combined_hours_max": 28,
+  "raw_limits": {
+    "training_run_ids": 2,
+    "evaluation_run_ids": 3,
+    "engineering_run_ids": 8
+  },
+  "job_limits": {
+    "training_net_seconds": 28800,
+    "evaluation_seconds": 21600,
+    "local_engineering_seconds": 1800,
+    "new_full_native_GPU_engineering_seconds": 5400,
+    "attempts_per_raw": 1
+  },
+  "engineering_window_reason": "Latest v41 contains42 frozen snapshots and full RNG/optimizer; original4MiB/s multiple full hash/restore passes and actual CUDA interruption need a newly signed finite window. No old deadline extended.",
+  "single_GPU4_7_dynamic4_2_1CPU_memory48GiB_shared_protection": true,
+  "local_capacity200_160_free20": true,
+  "server_capacity80_64_free20_unchanged": true,
+  "final_GPU8_CPU12_raw6_protected": true,
+  "full_data_local_server_only": true,
+  "no_promotion_submission_or_final_pool": true
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-29T03:32:25.286715+00:00",
+  "training_run_id": "20261028T120947Z_tr12-volume-segment-002-timed_f86562",
+  "model_sha256": "3df85e0d43faf31ead3b0cdc67f27781e1f7ccbeff4d2303e10901058a11961f",
+  "endpoint_checkpoint": {
+    "source_path": "checkpoint-commits/objects/cp-97e4b9a11386a187849f5d68237bffda52099aee7a7ddd21032f8e22fafefaaf.pt",
+    "original_source_sha256": "97e4b9a11386a187849f5d68237bffda52099aee7a7ddd21032f8e22fafefaaf",
+    "payload_published": false
+  },
+  "actual_unique_lineage_decisions": 106935,
+  "new_TR12_unique_decisions": 57762,
+  "updates": 15,
+  "unoptimized_pending_decisions": 6807,
+  "endpoint_selected_as": "last committed update before user stopped training; no win-rate selection",
+  "original_target_complete": false,
+  "qualification": "unqualified early-stop candidate, independent evaluation pending",
+  "CPU_recovery": {
+    "source_path": "runs/20261029T033029Z_tr12-early-stop-cold-recovery-repair2_93c518/metrics.json",
+    "original_source_sha256": "424df50dff9293e753ff1fe1ff630872295a898ff9b2c0ae9574e7984318ae4f",
+    "payload_published": false
+  },
+  "GPU_zero_update_acceptance_pending": true
+}

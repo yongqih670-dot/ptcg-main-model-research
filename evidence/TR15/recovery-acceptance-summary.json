@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-02T10:55:11.909569+00:00",
+  "complete": true,
+  "actual_unique": 407152,
+  "new_unique": 100115,
+  "new_PPO_updates": 13,
+  "latest_pending_decisions": 0,
+  "local_and_server_full_recovery_verified": true,
+  "local_full_state_recovery_verified": true,
+  "two_recovery_points_retained": true,
+  "all_full_original_hashes_verified": true,
+  "maximum_reliable_commit_gap_seconds": 781.1558029619046,
+  "within_800_seconds": true,
+  "source_audit_sha256": "9d5d18fb1a7b70d4db667154e9a3ef0e36051f893914bd973e8f83875293f809",
+  "full_recovery_payload_published": false
+}

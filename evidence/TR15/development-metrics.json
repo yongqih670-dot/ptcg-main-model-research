@@ -1,0 +1,22 @@
+{
+  "series_count": 800,
+  "wins": 551,
+  "draws": 0,
+  "losses": 249,
+  "errors": 0,
+  "score_with_errors_counted_as_losses": 0.68875,
+  "seats": {
+    "1": 400,
+    "0": 400
+  },
+  "series_seconds_total": 3141.4329456999694,
+  "invalid_actions": 0,
+  "internal_random_fallbacks": 0,
+  "timeouts": 0,
+  "round_count_histogram": {
+    "2": 469,
+    "3": 331
+  },
+  "scope": "official Windows BO3 callable harness; local comparison, not final strength or Linux acceptance",
+  "complete": true
+}

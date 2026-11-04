@@ -1,0 +1,17 @@
+{
+  "reference_only": true,
+  "execution_authorized": false,
+  "source_config_sha256": "781396d4e8dc932fc35795a06a1be2750fbea0c4759b34ffc9dc9708d744a590",
+  "series_count": 50,
+  "policy_seed": 2026103000,
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 2026103001,
+  "cells": [
+    {
+      "cell_id": "reliability-vs-ppo",
+      "series_count": 50,
+      "reference_id": "ppo",
+      "candidate_model_sha256": "e61d79daaec46e8f9ec17708ff57347b9e1c80772f646b360bf7252f541446f3"
+    }
+  ]
+}
