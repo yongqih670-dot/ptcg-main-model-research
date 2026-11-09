@@ -1,0 +1,141 @@
+{
+  "publication_kind": "selected_results_only_projections",
+  "latest_status": "NOT_READY_FINAL_BOUNDED_DELIVERY",
+  "formal_enablement": false,
+  "B4_15pct_gate": "UNMEASURED",
+  "historical_pass_does_not_override_latest_failure": true,
+  "history": [
+    {
+      "revision": "v13_20261108_full_B_lifecycle",
+      "retained_receipt_projection": {
+        "status": "B_FULL_LIFECYCLE_PASS_PERFORMANCE_UNMEASURED",
+        "completed_at": "2026-11-08T11:54:07.953793+00:00",
+        "normal_full_GPU_lifecycle_pass": true,
+        "actual_GPU_seconds": 5741.561999999998,
+        "this_revision_hours": {
+          "CPU": 0.504106388888875,
+          "GPU": 1.5948783333333338
+        },
+        "cumulative_pending_hours": {
+          "CPU": 22.060014583323415,
+          "GPU": 16.630449997252896
+        },
+        "old_A_four_and_all_old_results_fees_retained": true,
+        "all_originals_retained_both_sides": true,
+        "performance_15pct_measured": false,
+        "formal_enablement": false,
+        "science_credit": 0
+      }
+    },
+    {
+      "revision": "v15_20261108_remaining_cpu_archive",
+      "retained_receipt_projection": {
+        "status": "BOUNDED_ARCHIVE_ADMISSION_ACCEPTED_CPU_BUDGET_PROPOSAL_READY_NO_B4",
+        "at": "2026-11-08T13:15:34.393183+00:00",
+        "actual_max_archive_job_seconds": 128.375,
+        "repair_CPU_hours_including_failed_scope": 0.6090927777777768,
+        "no_active_job": true,
+        "B4_started": false,
+        "new_scientific_training": false,
+        "formal_enablement": false,
+        "all_old_results_and_fees_retained": true
+      }
+    },
+    {
+      "revision": "v18_20261109_log_archive_acceptance",
+      "retained_receipt_projection": {
+        "status": "CLOSED_FAILURE_NEW_ARCHIVE_TRANSPORT_GPU_RUNTIME_PASS_NO_RETRY",
+        "completed_UTC": "2026-11-09T00:19:37.606597+00:00",
+        "GPU_native_exit": 0,
+        "owned_GPU_cgroup_empty": true,
+        "GPU_attempts": 1,
+        "automatic_GPU_retries": 0,
+        "automatic_archive_retries": 0,
+        "overall_acceptance": "FAIL_REQUIRED_ARCHIVE_LINK",
+        "formal_enablement": false,
+        "B4_15pct_gate": "UNMEASURED",
+        "this_revision_seconds": {
+          "CPU": 853.3730000000069,
+          "GPU": 909.5629999999946
+        },
+        "all_prior_results_and_fees_retained": true
+      }
+    },
+    {
+      "revision": "v20_20261109_serial_authenticated_archive",
+      "retained_receipt_projection": {
+        "status": "PASS_ORIGINAL_V18_FULL_ARCHIVE_AND_INDEPENDENT_REPLAY_CPU_SCOPE_COMPLETE",
+        "completed_UTC": "2026-11-09T01:05:37.903428+00:00",
+        "SSH_authentication_attempts_used": 1,
+        "authenticated_connections_used": 1,
+        "serial_business_requests": 5,
+        "SSH_native_exit": 0,
+        "foreground_helper_closed_normally": true,
+        "complete_original_files": 62,
+        "complete_original_raw_bytes": 20658023,
+        "missing_files": 0,
+        "all_full_original_SHA_and_exact_initial_final_census_verified": true,
+        "independent_GPU_queries": 898,
+        "independent_coverage": 1.0,
+        "stricter_coverage": 1.0,
+        "maximum_original_sample_gap_seconds": 1.0251137411687523,
+        "original_GPU_or_sampling_not_repeated": true,
+        "new_GPU_seconds": 0,
+        "this_revision_seconds": {
+          "CPU": 314.01500000001397,
+          "GPU": 0
+        },
+        "old_failures_results_attempts_and_all_fees_unchanged": true,
+        "formal_enablement": false,
+        "B4_15pct_gate": "UNMEASURED"
+      }
+    },
+    {
+      "revision": "v22_20261109_authorized_B4",
+      "retained_receipt_projection": {
+        "status": "STOPPED_AT_CPU_INTEGRATION_NO_GPU_NO_RETRY",
+        "completed_UTC": "2026-11-09T03:09:49.111377+00:00",
+        "B4_15pct_gate": "UNMEASURED",
+        "formal_enablement": false
+      }
+    },
+    {
+      "revision": "v23_20261109_local_repair_continuation",
+      "retained_receipt_projection": {
+        "status": "FAILED_STOP_LOSS_COMPLETE_ORIGINALS_SEALED_NO_RETRY",
+        "completed_UTC": "2026-11-09T04:38:31.340953+00:00",
+        "original_two_V22_harness_defects_fixed": true,
+        "final_CPU_integration_checks": 39,
+        "final_CPU_integration_status": "PASS",
+        "controlled_GPU_cases_started": 1,
+        "accepted_B_cases": 0,
+        "remaining_three_not_started": true,
+        "historical_A_four_preserved": true,
+        "all_actual_failed_case_original_files": 1405,
+        "all_actual_failed_case_original_bytes": 2591230952,
+        "all_full_SHA_exact_retained_bytes_and_initial_final_census_verified": true,
+        "all_original_data_retained_local_and_server": true,
+        "archive_authenticated_sessions": 1,
+        "archive_logical_requests_including_close": 28,
+        "CPU_original_archive_seconds": 1411.1570000000065,
+        "new_revision_seconds": {
+          "CPU": 2024.0290000000264,
+          "GPU": 2753.375
+        },
+        "prior_V22_CPU_seconds_retained": 198.75,
+        "same_approved_round_CPU_consumed_seconds": 2222.7790000000264,
+        "same_approved_round_CPU_max_seconds": 9480,
+        "cumulative_pending_hours": {
+          "CPU": 24.228646249990096,
+          "GPU": 17.912424719475116
+        },
+        "originals_seal_only_does_not_make_benchmark_valid": true,
+        "scientific_training_or_credit": 0,
+        "no_active_owned_job": true,
+        "all_V22_and_older_failures_attempts_and_fees_retained": true,
+        "formal_enablement": false,
+        "B4_15pct_gate": "UNMEASURED_NO_VALID_COMPLETE_B_COHORT"
+      }
+    }
+  ]
+}

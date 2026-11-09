@@ -1,0 +1,30 @@
+{
+  "unit": "charged job seconds; no monetary price inferred",
+  "accounting_scope": "framework receipts cumulative_pending_hours through v24, not the entire scientific project",
+  "latest_revision": "v24_20261109_final_bounded_CPU_delivery",
+  "latest_revision_seconds": {
+    "CPU": 192.375,
+    "GPU": 0
+  },
+  "cumulative_pending_hours": {
+    "CPU": 24.282083749990097,
+    "GPU": 17.912424719475116
+  },
+  "same_approved_9480_CPU_seconds_consumed": 2415.154000000026,
+  "same_approved_9480_CPU_seconds_remaining": 7064.845999999974,
+  "old_results_attempts_failures_and_costs_not_reset": true,
+  "publication_does_not_authorize_using_remaining_budget": true,
+  "v22_seconds": {
+    "CPU": 198.75,
+    "GPU": 0.0
+  },
+  "v23_seconds": {
+    "CPU": 2024.0290000000264,
+    "GPU": 2753.375
+  },
+  "v24_seconds": {
+    "CPU": 192.375,
+    "GPU": 0
+  },
+  "selected_history_is_not_an_exhaustive_additive_ledger": true
+}

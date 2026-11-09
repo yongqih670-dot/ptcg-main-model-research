@@ -1,0 +1,20 @@
+{
+  "status": "TERMINAL_NO_ACTIVE_OWNED_CHILDREN",
+  "CPU_charged_seconds": 192.375,
+  "formal_attempts": 1,
+  "formal_seconds": 2.922000000005937,
+  "development_batches": 2,
+  "delivery_start_UTC": "2026-11-09T05:44:48.139539+00:00",
+  "delivery_end_UTC": "2026-11-09T06:12:17.174370+00:00",
+  "delivery_elapsed_seconds": 1648.8600000000006,
+  "new_GPU_jobs": 0,
+  "new_SSH_connections": 0,
+  "new_scientific_updates": 0,
+  "new_B_or_replacement_cases": 0,
+  "owned_processes_remaining": [],
+  "job_lock_absent": true,
+  "old_v23_cost_sha256_unchanged": true,
+  "old_9480_not_reset": true,
+  "policy_and_science_state_unchanged": true,
+  "no_successor_task": true
+}

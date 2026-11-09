@@ -3,7 +3,7 @@
   "publication": "curated_code_configs_results_and_reproduction_materials",
   "repository": "https://github.com/yongqih670-dot/ptcg-main-model-research",
   "visibility": "public",
-  "updated_at": "2026-11-04",
+  "updated_at": "2026-11-09",
   "science_snapshot_cutoff_utc": "2026-11-04T08:25:04.540985+00:00",
   "full_training_data_upload_cancelled": true,
   "full_recovery_archive_upload_cancelled": true,
@@ -38,7 +38,7 @@
   "TR13_platform_validation_passed": true,
   "TR13_initial_platform_score": 600,
   "framework_v3_published": true,
-  "latest_framework_report": "research/framework_optimization/v3_tr13/REPORT.md",
+  "latest_framework_report": "research/framework_optimization/tr17_candidate_20261106/README.md",
   "framework_v3_publication_manifest": "manifests/framework-v3-publication.json",
   "framework_v3_local_CPU_threshold_passed": true,
   "framework_v3_server_or_science_activation": "historical local-only v3 candidate remains frozen; accepted TR15 deployment documented separately",
@@ -56,5 +56,12 @@
   "TR16_reused_parent_BO3": 2400,
   "TR16_training_stopped": true,
   "TR16_original_volume_target_complete": false,
-  "TR16_pending_unoptimized": 4174
+  "TR16_pending_unoptimized": 4174,
+  "framework_candidate_status": "NOT_READY_FINAL_BOUNDED_DELIVERY",
+  "framework_candidate_formally_enabled": false,
+  "framework_candidate_B4_15pct_gate": "UNMEASURED",
+  "framework_candidate_new_source_published": false,
+  "framework_candidate_publication_kind": "results_only",
+  "framework_candidate_publication_manifest": "manifests/framework-candidate-20261109-publication.json",
+  "framework_candidate_publication_is_execution_authorization": false
 }

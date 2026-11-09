@@ -1,0 +1,82 @@
+{
+  "purpose": "Original SHA-256 provenance for public numerical/result projections, not runnable source pins",
+  "full_originals_remain_private_and_unchanged": true,
+  "public_reports_are_projections_not_byte_identical_receipts": true,
+  "originals": [
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v24_20261109_final_bounded_CPU_delivery/RESULT.json",
+      "original_bytes": 6330,
+      "original_sha256": "56bbc926b824061a8b8bfa510cf23cd1d614b7b4b6c269342a7f8f9282dd5b9e"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v24_20261109_final_bounded_CPU_delivery/COST_AND_TERMINAL.json",
+      "original_bytes": 1580,
+      "original_sha256": "f61b57531d3cb1280633b06f17fba4c30cda55fd0fe494386df948986f81fba5"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v24_20261109_final_bounded_CPU_delivery/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 2507,
+      "original_sha256": "23b93c1a271a58cf14fe3290969f6f58f30c6f397b2c8b19fdac02e84730f24d"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v13_20261108_full_B_lifecycle/FINAL_ACCEPTANCE.json",
+      "original_bytes": 1423,
+      "original_sha256": "3cf663bd2cd5c6a54392ae9d3243cfce55811ba1c7b91e8d005e9b51fcb4ecfa"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v13_20261108_full_B_lifecycle/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 12373,
+      "original_sha256": "545c3741afd8e1c5ec332ddbe1525a4a03d111cdb1c3630c1ea6df6951553c3b"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v15_20261108_remaining_cpu_archive/FINAL_ACCEPTANCE.json",
+      "original_bytes": 1097,
+      "original_sha256": "2ed4a7056f35a2e0580279812c5239b87fb0361487463d90f572a25c0ee7fb47"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v15_20261108_remaining_cpu_archive/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 953,
+      "original_sha256": "79a00424bb8c365763ac2840235932f4c31333c69544947c02e417cfaea90819"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v18_20261109_log_archive_acceptance/FINAL_ACCEPTANCE.json",
+      "original_bytes": 3865,
+      "original_sha256": "8f5cf52691390cd7880de736a50b7658df9dd5775d2ed195e556683bb0b35ad5"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v18_20261109_log_archive_acceptance/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 7423,
+      "original_sha256": "1f9ffb2d825ab7c0f7bd3a6c462661a73a35bf2601fce9cf53addb5ba3136e66"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v20_20261109_serial_authenticated_archive/FINAL_ACCEPTANCE.json",
+      "original_bytes": 2853,
+      "original_sha256": "1a631f189312a57247bfebc704495c8865919405d5deb97d0eff9c7659005095"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v20_20261109_serial_authenticated_archive/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 2242,
+      "original_sha256": "b3a16fff4ebc75c263d5a9a4ca1faf7f4ee0758506651a276813b141d5846432"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v22_20261109_authorized_B4/FINAL_ACCEPTANCE.json",
+      "original_bytes": 1739,
+      "original_sha256": "3c1228ef33f1a314bc27cb4f62824b2358b4ab8e2c76a5de24f132c99a656509"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v22_20261109_authorized_B4/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 1464,
+      "original_sha256": "2fb068204d71d2f729ac159c0ef5dea2e2aaeaffd0c6ee95346f613aba7459a1"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v23_20261109_local_repair_continuation/FINAL_ACCEPTANCE.json",
+      "original_bytes": 3453,
+      "original_sha256": "b366762a05546ee69326c20d870a75c9f4cc92a50ae39130c48ab7601821268e"
+    },
+    {
+      "original_path": "research/framework_optimization/tr17_candidate_20261106/revisions/v23_20261109_local_repair_continuation/reports/FINAL_COST_LEDGER.json",
+      "original_bytes": 8108,
+      "original_sha256": "0eb36eaae20c51c1677d11b1907b2fba56f7d837c3d21e6ec06decb040d30a84"
+    }
+  ]
+}

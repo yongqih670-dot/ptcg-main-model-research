@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "publication_date": "2026-11-09",
+  "kind": "results_only",
+  "candidate_root": "research/framework_optimization/tr17_candidate_20261106",
+  "latest_revision": "v24_20261109_final_bounded_CPU_delivery",
+  "status": "NOT_READY_FINAL_BOUNDED_DELIVERY",
+  "formal_enablement": false,
+  "B4_15pct_gate": "UNMEASURED",
+  "publication_is_execution_authorization": false,
+  "new_internal_source_published": false,
+  "models_raw_logs_and_full_archives_published": false,
+  "public_results_are_projections": true,
+  "original_results_and_costs_unchanged": true,
+  "files": [
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/RESULT.json",
+      "bytes": 3081,
+      "sha256": "40a97538ea5b4a8fcf0c43e25ec507a7cfc0ec0469a6ccde2a7ec92d5f3caae9"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/ACCEPTANCE_HISTORY.json",
+      "bytes": 5571,
+      "sha256": "3ab4710f8b625967e7989fcb1800952dab18413cb451fb1b2f2c3864b73313a9"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/COST_HISTORY.json",
+      "bytes": 4609,
+      "sha256": "beddd2609ab5298a89903b21704a42c3da284ec0e9af3963dcc7a4355e64c8ac"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/COST_SUMMARY.json",
+      "bytes": 921,
+      "sha256": "90fbd87b4e47c2f2a1ba4204b3f0330571d6ecf164c26d6834bf7e5ef1ccb13e"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/TERMINAL_SUMMARY.json",
+      "bytes": 668,
+      "sha256": "7006d6796dc3cfd750440c6c52eb73e0a100a0ae97ed2c774d372e932bf433b8"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/PROVENANCE.json",
+      "bytes": 4586,
+      "sha256": "5ab29374586d1d900290e47b1f67c3e0acd1e21c01a1018faf8dd980d4de82bd"
+    },
+    {
+      "path": "research/framework_optimization/tr17_candidate_20261106/README.md",
+      "bytes": 5767,
+      "sha256": "9b838a27bea437ebbbba0e50a2a5b5cd47ceedfa7ac3603076c7dab7225430c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5331,
+      "sha256": "809ff2c67048ed89baa8fdecab30e8dfec42eaf4c0d8671add1bf3e4a5df0e81"
+    },
+    {
+      "path": "research/framework_optimization/README.md",
+      "bytes": 12234,
+      "sha256": "df79a7d1e3004c820d3199c480fdef30f2c92ebff6e5168d3aa8a20b8e529b32"
+    },
+    {
+      "path": "manifests/publication-scope.json",
+      "bytes": 3453,
+      "sha256": "d143659cdbbd16c662777683dc7e63ad0445d32dc4f7477d417955424ed4aa52"
+    }
+  ]
+}

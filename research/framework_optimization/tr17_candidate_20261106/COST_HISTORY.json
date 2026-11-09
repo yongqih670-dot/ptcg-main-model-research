@@ -1,0 +1,131 @@
+{
+  "unit": "charged job time, not monetary fees",
+  "selected_history_is_not_an_exhaustive_additive_ledger": true,
+  "all_original_ledgers_failures_and_fees_retained_privately": true,
+  "history": [
+    {
+      "revision": "v13_20261108_full_B_lifecycle",
+      "retained_ledger_projection": {
+        "status": "SEALED_PENDING_ORIGINAL_CONTROLLER_AGGREGATION",
+        "parent_unchanged_hours": {
+          "CPU": 21.55590819443454,
+          "GPU": 15.035571663919562
+        },
+        "this_revision_hours": {
+          "CPU": 0.504106388888875,
+          "GPU": 1.5948783333333338
+        },
+        "cumulative_unaggregated_prior_and_v13_hours": {
+          "CPU": 22.060014583323415,
+          "GPU": 16.630449997252896
+        },
+        "all_historical_failures_and_fees_retained_once": true
+      }
+    },
+    {
+      "revision": "v15_20261108_remaining_cpu_archive",
+      "retained_ledger_projection": {
+        "status": "SEALED_PENDING_ORIGINAL_CONTROLLER_AGGREGATION",
+        "parent_cost_sha256": "fd739bb2a5502c3b686850edfd21ae088f3cdfe7b5b7801de6a3554dead99698",
+        "parent_cumulative_hours_unchanged": {
+          "CPU": 22.20093041665675,
+          "GPU": 16.630449997252896
+        },
+        "this_revision_hours": {
+          "CPU": 0.4681769444444439,
+          "GPU": 0
+        },
+        "cumulative_unaggregated_prior_and_v15_hours": {
+          "CPU": 22.669107361101194,
+          "GPU": 16.630449997252896
+        },
+        "all_previous_results_failures_fees_retained_once": true
+      }
+    },
+    {
+      "revision": "v18_20261109_log_archive_acceptance",
+      "retained_ledger_projection": {
+        "status": "SEALED_FAILURE_WITH_UNVERIFIED_SUPPORT_RESERVE",
+        "parent_cost_sha256": "00b91c1c4b15f990190aa6c3e44c982db0d42c9ccf66769b603875b3f0cf01ef",
+        "this_revision_seconds": {
+          "CPU": 853.3730000000069,
+          "GPU": 909.5629999999946
+        },
+        "cumulative_pending_hours": {
+          "CPU": 23.422839583323416,
+          "GPU": 17.147598330586227
+        },
+        "all_previous_results_failures_and_fees_retained_once": true
+      }
+    },
+    {
+      "revision": "v20_20261109_serial_authenticated_archive",
+      "retained_ledger_projection": {
+        "status": "SEALED_CPU_ONLY_COMPLETION",
+        "parent_cost_sha256": "45a8969a444ccfbfa0eafeee34c18b434f5c1134c6f2b5da7e648a7159c5bb79",
+        "this_revision_seconds": {
+          "CPU": 314.01500000001397,
+          "GPU": 0
+        },
+        "cumulative_pending_hours": {
+          "CPU": 23.59454097221231,
+          "GPU": 17.147598330586227
+        },
+        "old_GPU909_563seconds_not_recharged": true,
+        "old180second_and_all_prior_failed_fees_not_refunded": true,
+        "no_old_counter_attempt_or_budget_reset": true
+      }
+    },
+    {
+      "revision": "v22_20261109_authorized_B4",
+      "retained_ledger_projection": {
+        "status": "SEALED_CPU_INTEGRATION_FAILURE_ALL_FEES_RETAINED",
+        "parent_cost_sha256": "0debe430183166b9e418f3f562286872222e5d2dc600a7152244f04cce8451fc",
+        "this_revision_seconds": {
+          "CPU": 198.75,
+          "GPU": 0.0
+        },
+        "cumulative_pending_hours": {
+          "CPU": 23.66641597221231,
+          "GPU": 17.147598330586227
+        },
+        "no_old_result_fee_attempt_or_clock_reset": true
+      }
+    },
+    {
+      "revision": "v23_20261109_local_repair_continuation",
+      "retained_ledger_projection": {
+        "status": "SEALED",
+        "parent_cost_sha256": "2fb068204d71d2f729ac159c0ef5dea2e2aaeaffd0c6ee95346f613aba7459a1",
+        "this_revision_seconds": {
+          "CPU": 2024.0290000000264,
+          "GPU": 2753.375
+        },
+        "cumulative_pending_hours": {
+          "CPU": 24.228646249990096,
+          "GPU": 17.912424719475116
+        },
+        "all_historical_fees_retained_once": true
+      }
+    },
+    {
+      "revision": "v24_20261109_final_bounded_CPU_delivery",
+      "retained_ledger_projection": {
+        "status": "SEALED_FINAL_BOUNDED_CPU_TASK_NOT_READY",
+        "parent_cost_sha256": "0eb36eaae20c51c1677d11b1907b2fba56f7d837c3d21e6ec06decb040d30a84",
+        "this_revision_seconds": {
+          "CPU": 192.375,
+          "GPU": 0
+        },
+        "cumulative_pending_hours": {
+          "CPU": 24.282083749990097,
+          "GPU": 17.912424719475116
+        },
+        "same_approved9480_CPU_consumed_seconds": 2415.154000000026,
+        "same_approved9480_CPU_remaining_seconds": 7064.845999999974,
+        "old_counters_fees_attempts_not_reset": true,
+        "policy_cap_and_final_reserves_unchanged": true
+      }
+    }
+  ]
+}
